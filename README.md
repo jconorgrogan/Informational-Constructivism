@@ -78,3 +78,27 @@ This principle implies that in an informational approach to mathematics, the emp
 By grounding our approach in these two foundational principles - distinguishability and constraints - we can begin reconstructing mathematics in terms of information theory.
 ....
 
+Example implication: Information constructivism and the Axiom of Choice 
+
+Theorem: There exists a collection of sets such that the information required to specify a choice function for this collection leads to a violation of the principle of distinguishability.
+Proof:
+Consider the following collection of sets: Ω = {A, B, C, ...}, where each set is defined as follows:
+A = {0, 1}
+B = {1, 2}
+C = {2, 3}
+...
+In other words, Ω is an infinite collection of sets, where each set contains two elements, and each element (except 0) appears in exactly two sets.
+Suppose, for the sake of contradiction, that there exists a choice function f for Ω that satisfies the principle of distinguishability. This means that for any two distinct sets X and Y in Ω, the information specifying f's choices for X and Y must be different.
+Now, consider the set S defined as follows:
+S = {x | there exist distinct sets A and B in Ω such that x ∉ f(A) and x ∉ f(B)}
+In other words, S is the set of all elements that are not chosen by f from at least two distinct sets in Ω.
+We claim that S is non-empty. To see this, consider any three sets A, B, and C in Ω. These sets contain a total of four distinct elements. Since f can only choose one element from each set, there must be at least one element that is not chosen from at least two of these sets. This element belongs to S.
+Now, let x be any element in S. By definition, there exist distinct sets A and B in Ω such that x ∉ f(A) and x ∉ f(B). Since x appears in exactly two sets in Ω, it must be the case that A and B are the only sets in Ω that contain x.
+Consider the information that specifies f's choices for A and B. Since f satisfies the principle of distinguishability, this information must be different for A and B. However, the only difference between A and B is the element that is not x. In other words, the information specifying f's choices for A and B can only differ in the bit that represents the choice between the two elements in each set.
+But this means that the information specifying f's choices for A and B is identical with respect to x. In other words, the information required to specify f does not distinguish between A and B when it comes to the element x, violating the principle of distinguishability.
+This contradiction arises from the assumption that there exists a choice function f for Ω that satisfies the principle of distinguishability. Therefore, no such f can exist.
+Conclusion:
+The axiom of choice, when applied to the collection Ω, implies the existence of a choice function f. However, we have shown that no such f can exist without violating the principle of distinguishability, one of the foundational principles of the information-theoretic framework.
+This suggests that, within this framework, the axiom of choice is not universally valid. There exist collections of sets (like Ω) for which no choice function can be specified without leading to contradictions.
+While this proof is specific to the collection Ω, it demonstrates the potential for the information-theoretic approach to provide new challenges to the axiom of choice
+
