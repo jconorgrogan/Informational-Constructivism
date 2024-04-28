@@ -1,5 +1,8 @@
 # Informational Constructivism
 
+4/28/23: Speculative musings on information as the root of mathematics and our observable universe; I hope to build out this theory over time. Below is a rough draft outline. 
+
+
 ### Introduction
 
 #### 1.1 The Limitations of Current Mathematical Foundations
