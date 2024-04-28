@@ -47,11 +47,11 @@ Essential operations on information include:
   
 - **Decoding**: This involves reconstructing the original message from its encoded form, even in the presence of noise or errors.
 
-- ### 2.3 Foundational Principles of Information for Mathematics
+### 2.3 Foundational Principles of Information for Mathematics
 
 To establish a robust foundation for mathematics based on information theory, we propose two principles:
 
-#### 2.5.1 The Principle of Distinguishability
+#### 2.3.1 The Principle of Distinguishability
 
 The core property of information is its capacity to differentiate between various possibilities. Information can be fundamentally defined by what it distinguishes or excludes.
 
@@ -63,7 +63,7 @@ Mathematically, this can be expressed using set theory. If Ω represents the set
 
 In an information-theoretic approach to mathematics, the fundamental elements are not sets themselves but the distinctions or differences between sets.
 
-#### 2.5.2 The Principle of Constraints
+#### 2.3.2 The Principle of Constraints
 
 The second principle is that information inherently arises from constraints. Without constraints, information cannot exist.
 
@@ -73,7 +73,7 @@ Constraints can be viewed as the rules or conditions that limit possibilities, e
 
 This principle implies that in an informational approach to mathematics, the emphasis should be on the constraints or rules that define mathematical objects, rather than on the objects themselves.
 
-#### 2.5.3 Building on These Principles
+#### 2.3.3 Building on These Principles
 
 By grounding our approach in these two foundational principles - distinguishability and constraints - we can begin reconstructing mathematics in terms of information theory.
 ....
