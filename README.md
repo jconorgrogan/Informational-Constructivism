@@ -1,6 +1,6 @@
 # Informational Constructivism
 
-4/28/24: I've been thinking about the problem with pure mathematics (as distinct from applied mathematics) for a while now. I'm not alone here (For instance: see N J Wildberger's recent comments https://www.youtube.com/watch?v=YhN4X56E7iM). Instead of just complaining, I figured I would try to think through a way out. The following are speculative musings on information as the root of mathematics and our observable universe that I think might address some of the root unaddressed issues. I hope to gradually build out this theory over time. Below is a rough intro of what I hope to accomplish: 
+4/28/24: I've been thinking about the problem with pure mathematics (as distinct from applied mathematics) for a while now. I'm not alone here (For instance: see N J Wildberger's recent comments https://www.youtube.com/watch?v=YhN4X56E7iM). Instead of just complaining, I figured I would try to think through alterantive systems. The following are speculative musings on information as the root of mathematics and our observable universe. I expect to gradually build out this theory over time, altering it as I learn more. Below is a rough intro of what I hope to flesh out over time: 
 
 
 ### Introduction
