@@ -17,3 +17,36 @@ Considering these constraints, we advocate for a novel foundational approach bas
 
 This paper aims to outline a framework for an information-theoretic foundation of mathematics. We will begin by defining the concept of information, exploring its essential properties and operations. Subsequently, we will reinterpret fundamental mathematical concepts such as numbers, functions, and spaces through an informational lens. We will examine how this approach can address some of the paradoxes and constraints of set theory. Then we will look into how this approach could apply to our observable universe and close with some ideas for future avenues for research.
 
+### 2.1 Historical Background and Context
+
+The modern framework of information theory owes much to Claude Shannon's contributions in the 1940s. Working at Bell Labs, Shannon tackled the problem of efficient message transmission across noisy communication channels. His pivotal 1948 paper, "A Mathematical Theory of Communication," introduced a quantitative measure of information, exploring its role in defining the limits of communication and computation.
+
+Central to Shannon's theory is a precise definition of information: it measures the uncertainty or surprise associated with a message or event. The more unexpected or improbable a message, the higher its informational content.
+
+Formally, given a set of possible messages or events, each with a specific probability of occurrence, the information content of a message is defined as the negative logarithm of its probability. This definition implies that rare or surprising events convey more information than those that are common or anticipated.
+
+This definition adheres to certain intuitive properties. For instance, if two events are independent, the information content of their combined occurrence equals the sum of their individual contents. Moreover, the information content of a deterministic event (one that invariably occurs or never happens) is zero.
+
+### 2.2 Key Properties and Operations of Information
+
+From this definition, several properties and operations of information emerge:
+
+- **Additivity**: The information content of independent events is cumulative. If A and B are independent, the information content of their joint occurrence, I(A, B), equals I(A) + I(B).
+  
+- **Monotonicity**: As the probability of an event increases, its information content decreases. If P(A) > P(B), then I(A) < I(B).
+  
+- **Symmetry**: The information content is independent of the sequence of events. Thus, I(A, B) is the same as I(B, A).
+  
+- **Conditioning**: Prior knowledge about an event can alter its information content. The conditional information of A given B, I(A|B), typically differs from the unconditional information I(A).
+
+Essential operations on information include:
+
+- **Encoding**: This is the process of formatting information for storage or transmission, often involving the assignment of codewords to messages to minimize average encoded message length.
+  
+- **Channel**: The medium or method through which information is conveyed. Channels can be noisy, introducing errors into transmitted messages.
+  
+- **Decoding**: This involves reconstructing the original message from its encoded form, even in the presence of noise or errors.
+  
+- **Compression**: This process reduces message size by eliminating redundancy or employing more efficient encoding techniques. Lossless compression allows for perfect reconstruction of the original message, whereas lossy compression permits some degradation.
+
+
