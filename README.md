@@ -75,7 +75,7 @@ This principle implies that in an informational approach to mathematics, the emp
 
 #### 3.1 Building on These Principles
 
-We propose that information, in its purest sense, is the resolution of ambiguity or the reduction of uncertainty. However, we diverge from the traditional probabilistic interpretation of information and instead view it as a measure of the degree to which a given state or outcome is specified or determined by the available data or constraints.
+In this theory, we diverge from the traditional probabilistic interpretation of information and instead view it as a measure of the degree to which a given state or outcome is specified or determined by the available data or constraints.
 
 Consider a set Ω representing all possible states or configurations of a system. For example, in a simple coin toss system, Ω might be {H, T}, representing the two possible outcomes, heads and tails. We define a partial order ≤ on Ω, where x ≤ y signifies that state y is at least as specified or constrained as state x. In other words, if x ≤ y, then all the data or constraints that specify x also specify y, but the converse may not be true.
 
@@ -88,7 +88,7 @@ This definition captures the essence of information as the accumulation of const
 
 ## 3.2 Distinguishability as Incomparability
 
-Building on our information-theoretic foundation, we can now formally define distinguishability. Two states x, y ∈ Ω are distinguishable if they are incomparable under the information partial order, i.e., if neither x ≤ y nor y ≤ x. This means that the data or constraints that specify x and y are mutually exclusive—they cannot both be satisfied simultaneously.
+ Two states x, y ∈ Ω are distinguishable if they are incomparable under the information partial order, i.e., if neither x ≤ y nor y ≤ x. This means that the data or constraints that specify x and y are mutually exclusive—they cannot both be satisfied simultaneously.
 
 To quantify distinguishability, we introduce a metric d on Ω, where d(x, y) is the minimum number of "steps" needed to go from x to y in the partial order. Formally:
 d(x, y) = min{n : there exists a chain x = x₀ < x₁ < ... < xₙ = y or y = y₀ < y₁ < ... < yₙ = x in Ω}
@@ -99,7 +99,7 @@ This metric provides a way to quantify the degree of distinguishability between 
 
 ## 3.3 Constraints as Building Blocks of Information
 
-In our framework, constraints are the fundamental building blocks of information. A constraint is any piece of data or condition that restricts the set of possible states. Formally, a constraint C is a subset of Ω, representing the states that satisfy the constraint.
+A constraint is any piece of data or condition that restricts the set of possible states. Formally, a constraint C is a subset of Ω, representing the states that satisfy the constraint.
 
 The information content of a state x is determined by the constraints it satisfies. The more constraints a state satisfies, the more information it contains. We define the set of constraints satisfied by a state x as:
 C(x) = {C ⊆ Ω : x ∈ C}
@@ -131,5 +131,6 @@ To create a complete deductive system, we can formalize our definitions as axiom
 
 6. (Partial Order from Constraints) For any x, y ∈ Ω, x ≤ y if and only if C(x) ⊆ C(y)
 
+...to be continued.
 
 
