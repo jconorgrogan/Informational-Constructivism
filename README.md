@@ -3,6 +3,7 @@
 
 4/28/24: I've been thinking about the problem with pure mathematics (as distinct from applied mathematics) for a while now. I'm not alone here (For instance: see N J Wildberger's recent comments https://www.youtube.com/watch?v=YhN4X56E7iM)  The following are speculative musings on information as the root of mathematics and our observable universe, based on information theory.
 
+![8olej2](https://github.com/jconorgrogan/Informational-Constructivism/assets/130090573/1708d403-c0af-498a-be63-d0c3d6f98edb)
 
 
 
