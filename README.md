@@ -4,6 +4,8 @@
 4/28/24: I've been thinking about the problem with pure mathematics (as distinct from applied mathematics) for a while now. I'm not alone here (For instance: see N J Wildberger's recent comments https://www.youtube.com/watch?v=YhN4X56E7iM)  The following are speculative musings on information as the root of mathematics and our observable universe, based on information theory.
 
 
+
+
 ### Introduction
 
 #### 1.1 The Limitations of Current Mathematical Foundations
