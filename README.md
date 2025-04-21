@@ -26,10 +26,6 @@ Therefore, IC develops two converging paths driven by the same underlying logic 
 
 The framework below formalizes this self-consistent loop, where the existence of contrast necessitates structure, and the attempt to enforce absolute lack of contrast ironically generates it.
 
-## The Counterpoint: The Instability of the Void (T25 / S₀)
-
-Let's say that you disagree with my entire premise. Consider the negation: assume F0 is false, that the most basic reality is a uniform void with no distinction. As formalized below (Box 0), the very act of encoding, describing, or proving this void within a system capable of representation introduces contrast (via the minimal distinction-creating operation, `Δ_gen`), making the void state (S₀) inherently unstable or unreachable *within* the system.
-
 **(Box 0: Pre-distinction state and the Genesis lemma)**
 > **Definition S₀**
 > The pre-distinction state S₀ is the unique configuration that satisfies
