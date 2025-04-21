@@ -2,23 +2,33 @@
 
 ## Preamble: The Primacy of Information and Contrast
 
-There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, and string theory each offer a different ontology, yet they converge on one premise: **information** sits at the root of every description. No matter how the theories differ, all agree that something is being distinguished from something else.
+There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, and string theory each offer a different ontology, yet they converge on one premise: **information** sits at the root of every description. No matter how the theories differ, all agree that something is being distinguished from something else. This points towards information processing as a fundamental aspect of reality.
 
-If every road points to information, the deeper question becomes, where does information come from in the first place? Why should there be any distinction at all, any structure, any state that differs from another?
+But can we go deeper? Where does information, or the capacity for distinction, come from in the first place? Why should there be *any* distinction at all, any structure, any state that differs from another? Why is there something rather than nothing? [Further discussion: https://github.com/jconorgrogan/Why-there-is-something-and-not-nothing]
 
-## F0: The Starting Point - Registered Distinction & Felt Contrast
+Informational Constructivism (IC) proposes that the most primitive *operational* event necessary for any structure or process is **Registered Contrast**. This minimal axiom, **F0**, consists of two inseparable components:
+*   **D0 (Distinction Event):** Something is distinguishable from something else (a potential difference exists).
+*   **R0 (Registration):** Some subsystem registers this distinction as a state change (an echo, a memory bit flip, however minimal).
 
-The most primitive ground any conscious communicator can confirm is the fact of feeling or presence. [This subjective observation serves as the experiential correlate of the minimal operational axiom.] Operationally, the most primitive informational event we can posit consists of two components:
-*   **D0 (Distinction Event):** Something is distinguishable from something else.
-*   **R0 (Registration):** Some subsystem registers D0 as a state change (an echo, a memory bit flip, however minimal).
+Without D0, there is no difference to register. Without R0, any potential distinction has no informational consequence, leaves no trace, and cannot participate in any causal or computational process. F0 = D0 + R0 is thus the minimal requirement for "something happening" in an informational sense.
 
-Without D0, nothing happens. Without R0, the distinction has no informational consequence, no record, and thus cannot be part of any structure or communicable experience. We therefore define the minimal operational axiom **F0** as the occurrence of **D0 + R0: Registered Contrast**.
+[From a phenomenological perspective, within sufficiently complex systems like evolved observers, the ongoing processing of such fundamental registered contrasts may correspond to the basic subjective experience of **feeling** or **presence** – the raw fact that *something* is being experienced, distinct from nothingness. This provides an experiential anchor, but the operational F0=D0+R0 is the formal starting point.]
 
-Even a single F0 (D0+R0) event implies latent "texture," not as an extra assumption, but because the set of possible simpler descriptions (programs) that could account for that registration has unbounded complexity. [See **Box 0b / TODO:** Formal lemma: For any registered bit-string x the set {p: U(p)=x} has unbounded description length, cf. Levin's coding theorem]. This potential complexity exists in the universal prior, providing a reservoir that later compression stages can exploit.
+Even a single F0 event implies latent "texture". This isn't an extra assumption, but a consequence of information theory: the set of possible simpler descriptions (programs) that could account for even one registered bit (`{p: U(p)=x}`) has unbounded complexity [See **Box 0b / TODO:** Formal lemma: Kolmogorov structure function / Levin's coding theorem application]. This potential complexity exists in the universal prior, providing a reservoir that later compression stages can exploit.
+
+From F0 alone, a surprising chain of consequences follows via information compression under resource constraints (the SUR dynamic, detailed below): Registered contrast (F0) implies limitation (T2), limitation forces compression (T3), compression yields memory, prediction, time, identity, and eventually the structured physical world we observe (T4-T24).
+
+Alternatively, consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). As argued formally (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state necessitates introducing a minimal contrast (via `Δ_gen`), making the void inherently unstable from an internal perspective.
+
+Therefore, IC develops two converging paths driven by the same underlying logic of information compression (SUR):
+1.  **The Generative Path:** Starting from F0, SUR builds complexity and structure, eventually leading to observers capable of experiencing F0.
+2.  **The Collapse Path:** Starting from the hypothetical void (T25/S₀), the instability forces the emergence of F0, initiating the generative path.
+
+The framework below formalizes this self-consistent loop, where the existence of contrast necessitates structure, and the attempt to enforce absolute lack of contrast ironically generates it.
 
 ## The Counterpoint: The Instability of the Void (T25 / S₀)
 
-Alternatively, consider the negation: assume F0 is false, that reality is a uniform void with no distinction. As formalized below (Box 0), the very act of encoding, describing, or proving this void within a system capable of representation introduces contrast (via the minimal distinction-creating operation, `Δ_gen`), making the void state (S₀) inherently unstable or unreachable *within* the system.
+Let's say that you disagree with my entire premise. Consider the negation: assume F0 is false, that the most basic reality is a uniform void with no distinction. As formalized below (Box 0), the very act of encoding, describing, or proving this void within a system capable of representation introduces contrast (via the minimal distinction-creating operation, `Δ_gen`), making the void state (S₀) inherently unstable or unreachable *within* the system.
 
 **(Box 0: Pre-distinction state and the Genesis lemma)**
 > **Definition S₀**
