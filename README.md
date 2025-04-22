@@ -12,33 +12,29 @@ Informational Constructivism (IC) proposes that the most primitive *operational*
 *   **D0 (Distinction Event):** Something is distinguishable from something else (a potential difference exists).
 *   **R0 (Registration):** Some subsystem registers this distinction as a state change (an echo, a memory bit flip, however minimal).
 
-Without D0, there is no difference to register. Without R0, any potential distinction has no informational consequence, leaves no trace, and cannot participate in any causal or computational process. F0 = D0 + R0 is thus the minimal requirement for "something happening" in an informational sense.
+Without D0, there is no difference to register. Without R0, any potential distinction has no informational consequence, leaves no trace, and cannot participate in any causal or computational process. F0 = D0 + R0 is thus the minimal requirement for "something happening" in an informational sense. As such, any theories of everything need to account for this. 
 
 [From a phenomenological perspective, within sufficiently complex systems like evolved observers, the ongoing processing of such fundamental registered contrasts may correspond to the basic subjective experience of **feeling** or **presence** – the raw fact that *something* is being experienced, distinct from nothingness. This provides an experiential anchor, but the operational F0=D0+R0 is the formal starting point.]
 
-Even a single F0 event implies latent "texture". This isn't an extra assumption, but a consequence of information theory: the set of possible simpler descriptions (programs) that could account for even one registered bit (`{p: U(p)=x}`) has unbounded complexity [See **Box 0b / TODO:** Formal lemma: Kolmogorov structure function / Levin's coding theorem application]. This potential complexity exists in the universal prior, providing a reservoir that later compression stages can exploit.
-
-From F0 alone, a surprising chain of consequences follows via information compression under resource constraints (the SUR dynamic, detailed below): Registered contrast (F0) implies limitation (T2), limitation forces compression (T3), compression yields memory, prediction, time, identity, and eventually the structured physical world we observe (T4-T24). The rough narrative goes as follows:
-
-A single difference exists
-- If a single physical difference comes into existence, then a physical trace is required.
-- If a trace exists, then at least two distinguishable system states are required.
-- If two states can be compared, then a minimal memory register is required.
-- If memory exists, then change becomes detectable.
-- If change is detectable, then statistical regularities become exploitable.
-- If regularities are exploited, then compression is required.
-- If compression operates under finite resources, then freed capacity permits additional structure to accumulate without overflow.
-- If compressed patterns remain stable, then prediction algorithms become possible.
-- If prediction is possible, then an internal/external partition is required.
-- If a partition exists, then irrelevant fluctuations must be suppressed.
-- If noise is suppressed, then branch pruning (hypothesis elimination) is required.
-- If multiple systems communicate under bandwidth limits, then a shared codebook is required.
-- If a shared codebook stabilizes, then redundant parameters become measurable and must be removed.
-- If redundancy is removed, then efficiency approaches an optimum where marginal accuracy gain equals marginal resource cost.
-- If the system sits on that optimum, then resource gradients define stable pathways for energy and information flow.
-
-Let's say that you disagree with my very premise. "Why are you just asserting that information and distinction arises?" Fair. But  consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). Let's follow that chain of logic.  Suppose you have only perfect void — a state with no differences, no structure, no information.
-
+Even a single F0 event implies latent "texture". This isn't an extra assumption, but a consequence of information theory: the set of possible simpler descriptions (programs) that could account for even one registered bit ({p: U(p)=x}) has unbounded complexity [See Box 0b / TODO: Formal lemma: Kolmogorov structure function / Levin's coding theorem application]. This potential complexity exists in the universal prior, providing a reservoir that later compression stages can exploit.
+From F0 alone, complemented by the unavoidable constraints of Finite Capacity (C) and a Stability requirement (S) for registrations to persist causally, a surprising chain of consequences follows via information compression under resource constraints (the SUR dynamic, detailed below). C arises fundamentally from the thermodynamic cost of irreversible registration (Landauer's principle implies finite energy cost ≥ kT ln 2 per bit, hence finite capacity if energy is finite), while S ensures that registered states last long enough to participate in processes. The rough narrative goes as follows:
+A single difference exists and is registered (F0) under constraints (C, S)
+If a single physical difference comes into existence and is registered (F0), then a physical trace is required (by R0 and S).
+If a trace exists, then at least two distinguishable system states are required (the registered state and its complement, implied by D0).
+If two states can be compared (requiring persistence S), then a minimal memory register is required.
+If memory exists, then change becomes detectable.
+If change is detectable, then statistical regularities become exploitable.
+If regularities are exploited, then compression is required (forced by capacity limit C).
+If compression operates under finite resources (inherent in C), then freed capacity permits additional structure to accumulate without overflow.
+If compressed patterns remain stable (due to S), then prediction algorithms become possible (driven by SUR dynamic's bias to short codes).
+If prediction is possible, then an internal/external partition is required (Information Bottleneck under C).
+If a partition exists, then irrelevant fluctuations must be suppressed.
+If noise is suppressed, then branch pruning (hypothesis elimination) is required.
+If multiple systems communicate under bandwidth limits (a consequence of C), then a shared codebook is required.
+If a shared codebook stabilizes, then redundant parameters become measurable and must be removed.
+If redundancy is removed, then efficiency approaches an optimum where marginal accuracy gain equals marginal resource cost (SUR optimization).
+If the system sits on that optimum, then resource gradients define stable pathways for energy and information flow (emergence of physics).
+Let's say that you disagree with my very premise. "Why are you just asserting that information and distinction arises?" Fair. But consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). Let's follow that chain of logic. Suppose you have only perfect void — a state with no differences, no structure, no information.
 → Then no system exists that can recognize or respond to anything.
 → So nothing maintains internal stability or updates itself over time.
 → So there are no models, no representations of anything.
@@ -56,8 +52,10 @@ Let's say that you disagree with my very premise. "Why are you just asserting th
 → So it loses its internal balance — resources drift and overload.
 → So any stable structure collapses — patterns, geometry, and energy all dissolve.
 → So it returns to the same undifferentiated void it started from…
-
-But now that void is unstable — because even describing it, or trying to represent it, requires creating a difference. This is what I will discuss in depth.
+This return to the void, however, highlights a fundamental inconsistency. Consider the initial premise: asserting that F0 is false (let's denote this proposition ¬P, where P := "F0 occurs"), meaning no registered contrast exists. Logic requires either P or ¬P to be true.
+If P is true, then F0 is admitted.
+If ¬P is true, then to evaluate this claim—to establish its truth value within any descriptive framework—requires distinguishing '¬P is true' from 'P is true'. This very act of distinction and assignment (mapping ¬P to 'true' and P to 'false', for instance) is itself an instance of registered contrast, an F0 event occurring within the framework evaluating the claim.
+Therefore, denying F0 necessitates invoking F0. Both branches (assuming P or assuming ¬P) lead to the conclusion that F0 occurs. Registered contrast is thus obligatory for any non-trivial, self-consistent descriptive scheme; it cannot be coherently negated. It stands as the minimum necessary starting point.
 
 ## Building a logic tree: The Genesis
 Let's take this slow. As formalized below (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state requires introducing a minimal contrast (via the `Δ_gen` operator), making the void inherently unstable from an internal perspective.
