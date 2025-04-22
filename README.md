@@ -1,5 +1,16 @@
 # Informational Constructivism
 
+The following is a WIP attempt to get my thoughts down on paper of a theory of everything that I've been thinking about for a few years now. Obviously, this will invite many (warrented) sketpics. There has never been a proper ToE that has answered every critic, and billions of schizo theories put forth by millions of people without any formal training. I understand. 
+
+I invite your review, criticisms, and feedback. I do ask for some rules of engagement:
+
+A candidate fundamental theory must supply:
+    a. explicit axioms,
+    b. a work plan turning those axioms into all later claims,
+    c. intermediate tests that can fail.
+
+I believe satisfies (a) now. Items (b) and (c) are documented as open tasks, not hand‑waved away. And I'm sure there will be a lot more twists and turns and many things changed over time. But I'm comfortable enough in this theory that I'm publishing this in an Open Source way and opening myself to ridicule. 
+
 ## Preamble: Theories of everything and the Primacy of Information and Contrast
 
 Confronting the inherent uncertainties in our scientific knowledge, which is built upon layers of potentially imperfect assumptions, interpretations, trust in complex experiments, and the very human chains transmitting that information, demands a cautious strategy for fundamental theory building. To establish a robust foundation, particularly for a Theory of Everything, we must seek the most undeniable starting point: the absolute minimum phenomenon or operational event that any coherent description of reality, regardless of its details, must necessarily incorporate. Identifying this bedrock allows us to build upwards with greater confidence, ensuring our foundations aren't inadvertently built on inherited errors. 
