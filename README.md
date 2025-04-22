@@ -81,9 +81,21 @@ Therefore, IC develops two converging paths driven by the same underlying logic 
 
 The framework below formalizes this self-consistent loop, where contrast necessitates structure, and the absence of contrast is representationally unstable.
 
+**Addendum: No Third Option
+One might try a logical escape by declaring, “P and ¬P are both wrong.” Call that claim X. To assert X you must:
+
+Identify the sentence “P and ¬P are wrong.”
+
+Mark that sentence as distinct from “P is right” and from “¬P is right.”
+
+Store that mark somewhere.
+
+Step 1 and 2 create a distinction. Step 3 records it. Together they instantiate F0.
+In other words, naming any purported third stance already draws and registers a line, so F0 fires again. A framework with zero registered distinctions cannot support a proposition, an argument, or a conversation. Therefore every coherent description is unavoidably inside an F0 world, and no genuine “third possibility” exists.
+
 ## The Engine: Δ-Operators and SUR Dynamics 
 
-How does a system build structure from that initial spark of Registered Contrast (F0), or escape the instability of the void (S₀)? IC posits that this happens through fundamental **information processing operations** governed by an equally fundamental drive towards **efficiency under resource limitation**. This combination acts as the engine driving the emergence of complexity.
+How does a system build structure from that initial spark of Registered Contrast (F0), or escape the instability of the void (S₀)? IC posits that this happens through fundamental **information processing operations** governed by an equally fundamental drive towards **efficiency under resource limitation**. This combination acts as the engine driving the emergence of complexity. Essentially, the logic that MUST FOLLOW if you take this minimum starting point as true (Which, as we discuss above, you MUST do as there are no other alternatives.)
 
 At the heart of this engine are three core operations, the **Δ-operators**. They represent the minimal ways an information-processing system can interact with distinctions: creating them (`Δ_gen`), stabilizing and compressing them (`Δ_proj`), and updating its own internal model or memory (`Δ_self`).
 
