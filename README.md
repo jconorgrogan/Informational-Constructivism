@@ -59,26 +59,6 @@ Let's say that you disagree with my very premise. "Why are you just asserting th
 
 But now that void is unstable — because even describing it, or trying to represent it, requires creating a difference. This is what I will discuss in depth.
 
-## Benchmarks: what defines a good "Theory of Everything" and where is IC on this journey? (WIP)
-
-| Section | ID | What needs to be done (plain English) | Status |
-|---------|----|---------------------------------------|--------|
-| **Foundation (P)** | P‑A | Write down the theory’s core rule‑set—its “source code of the universe”—in a clear, formal language that leaves no room for interpretation. | :heavy_check_mark: |
-| | P‑B | Prove, with Kolmogorov‑style math, that those rules are **much shorter** than the pile of raw observations they explain—so they really do compress reality. | :construction: |
-| | P‑C | Show the rule‑set is **minimal and simplest**: remove any rule and the fit breaks; add a rule and you must get a big accuracy boost to justify the extra complexity. | :construction: |
-| | P‑D | Give a convincing argument (logical or physical) for why *this* exact rule‑set has to exist instead of nothing or some totally different set. | :warning: |
-| **Generative power (E & Π)** | G‑A | Define a function that turns any real‑world observation into the theory’s internal “state” while still keeping important differences separate. | :heavy_check_mark: |
-| | G‑B | Define the engine that takes a current state and a time‑step and spits out probabilities for future states, with clear error bars. | :construction: |
-| | G‑C1 | Show that running that engine reproduces general relativity, quantum mechanics, the Standard Model, and cosmology—at least qualitatively. | :construction: |
-| | G‑C2 | Go further: derive (or tightly bound) the actual numbers—particle masses, α≈1/137, dark‑energy Λ, etc.—without hand‑tuning. | :white_large_square: |
-| **Scope & adaptability (B & M)** | S‑A | Spell out a boundary test that says when an observation is **inside** the theory’s domain of validity and when it isn’t. | :heavy_check_mark: |
-| | S‑B | Within that domain, explain any “mystery constants” and clean up known paradoxes without patch‑jobs. | :construction: |
-| | S‑C | Put at least one bold, near‑term, make‑or‑break prediction on the table so experiments can kill or confirm the theory. | :construction: |
-| | S‑D | Provide an explicit update rule that tells us how the theory rewrites itself when new data arrive—while cutting complexity, boosting accuracy, or widening scope. | :construction: |
-| **Multi‑level compression (human limits)** | C‑A | Show the core theory can be compressed into a form that a trained scientific community can genuinely understand (it fits in human working memory). | :white_large_square: |
-| | C‑B | Show that understood form can be further compressed into ordinary language / math so researchers can share, debate, and teach it. | :construction: |
-| **Internal consistency** | I‑1 | Prove there are no logical contradictions or non‑computable steps lurking anywhere in the full framework (rules, mapping, predictions, boundaries, updates). | :construction: |
-
 ## Building a logic tree: The Genesis
 Let's take this slow. As formalized below (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state requires introducing a minimal contrast (via the `Δ_gen` operator), making the void inherently unstable from an internal perspective.
 
@@ -249,6 +229,71 @@ This path shows that attempting to erase structure or reach the void state (S₀
 The Generative Path (F0 → T24) builds structure from contrast via SUR.
 The Collapse Path (T25 → F0) shows that eliminating contrast forces its re-emergence via SUR.
 Reality operates as a self-consistent, resource-constrained informational loop (F0 ↔ T25) governed by SUR, where structure formation and the instability of featurelessness are two sides of the same coin.
+
+### Limits of knowledge
+-------
+Any theory of everything must confront an awkward fact: every scientist who
+tries to test the theory is part of the very universe that the theory
+describes.  The observer, the formal proof, the measuring device, and the
+reasoning algorithm are not external referees; they are physical processes
+subject to the same limits that govern galaxies and quarks.  A sound
+framework must therefore answer two questions at the outset:
+
+1. **Internal testability.**  Can agents *inside* the world generate
+   evidence or formal demonstrations that the theory’s core claims are
+   correct?
+
+2. **Self‑stability.**  Does the theory predict its own demonstrable
+   consistency, or does it condemn every inhabitant to permanent doubt about
+   the framework itself?
+
+Informational Constructivism (IC) tackles these questions by making resource
+bounds explicit.  Every act of distinction, every line of proof, and every
+measurement trace occupies a ledger
+
+    L_{M,K,τ,ε} = (memory M, code K, run‑time τ, numerical precision ε).
+
+Within that ledger IC separates claims into three strata:
+
+* **Locked slice.**  Core tiers T₀ – T₇ and their proofs fit inside present
+  human‐scale ledgers, so agents can verify them directly.
+
+* **Neutral filling.**  Open problems whose resolution would not alter any
+  cost balance.  Proofs may arrive later, but their absence does not threaten
+  the framework.
+
+* **Growth slice.**  Conjectures whose *low‑cost* resolution would reshape an
+  upper tier.  IC forecasts here but invites empirical or mathematical
+  challenge.  If a cheap counter‑example arises, the affected tier is
+  rewritten while the lower structure stays intact.
+
+This architecture ensures that IC does **not** claim its own unprovability in
+any self‑defeating sense.  The locked slice is already verifiable by finite
+observers, and every forecast above that layer is framed so that an internal
+agent could—in principle—refute or confirm it once resources cross the
+appropriate threshold.  In short, IC treats testability as a design
+constraint, not an optional luxury.
+
+## Benchmarks: what defines a good "Theory of Everything" and where is IC on this journey? (WIP)
+
+| Section | ID | What needs to be done (plain English) | Status |
+|---------|----|---------------------------------------|--------|
+| **Foundation (P)** | P‑A | Write down the theory’s core rule‑set—its “source code of the universe”—in a clear, formal language that leaves no room for interpretation. | :heavy_check_mark: |
+| | P‑B | Prove, with Kolmogorov‑style math, that those rules are **much shorter** than the pile of raw observations they explain—so they really do compress reality. | :construction: |
+| | P‑C | Show the rule‑set is **minimal and simplest**: remove any rule and the fit breaks; add a rule and you must get a big accuracy boost to justify the extra complexity. | :construction: |
+| | P‑D | Give a convincing argument (logical or physical) for why *this* exact rule‑set has to exist instead of nothing or some totally different set. | :warning: |
+| **Generative power (E & Π)** | G‑A | Define a function that turns any real‑world observation into the theory’s internal “state” while still keeping important differences separate. | :heavy_check_mark: |
+| | G‑B | Define the engine that takes a current state and a time‑step and spits out probabilities for future states, with clear error bars. | :construction: |
+| | G‑C1 | Show that running that engine reproduces general relativity, quantum mechanics, the Standard Model, and cosmology—at least qualitatively. | :construction: |
+| | G‑C2 | Go further: derive (or tightly bound) the actual numbers—particle masses, α≈1/137, dark‑energy Λ, etc.—without hand‑tuning. | :white_large_square: |
+| **Scope & adaptability (B & M)** | S‑A | Spell out a boundary test that says when an observation is **inside** the theory’s domain of validity and when it isn’t. | :heavy_check_mark: |
+| | S‑B | Within that domain, explain any “mystery constants” and clean up known paradoxes without patch‑jobs. | :construction: |
+| | S‑C | Put at least one bold, near‑term, make‑or‑break prediction on the table so experiments can kill or confirm the theory. | :construction: |
+| | S‑D | Provide an explicit update rule that tells us how the theory rewrites itself when new data arrive—while cutting complexity, boosting accuracy, or widening scope. | :construction: |
+| **Multi‑level compression (human limits)** | C‑A | Show the core theory can be compressed into a form that a trained scientific community can genuinely understand (it fits in human working memory). | :white_large_square: |
+| | C‑B | Show that understood form can be further compressed into ordinary language / math so researchers can share, debate, and teach it. | :construction: |
+| **Internal consistency** | I‑1 | Prove there are no logical contradictions or non‑computable steps lurking anywhere in the full framework (rules, mapping, predictions, boundaries, updates). | :construction: |
+
 
 ## Appendix / Further Formalism (Outline- will build this out over time )
 
