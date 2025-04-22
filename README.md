@@ -229,8 +229,7 @@ This path shows that attempting to erase structure or reach the void state (S₀
 The Generative Path (F0 → T24) builds structure from contrast via SUR.
 The Collapse Path (T25 → F0) shows that eliminating contrast forces its re-emergence via SUR.
 Reality operates as a self-consistent, resource-constrained informational loop (F0 ↔ T25) governed by SUR, where structure formation and the instability of featurelessness are two sides of the same coin.
-
-### Limits of knowledge
+### Limits of Knowledge and the Structure of Progress in IC
 -------
 Any theory of everything must confront an awkward fact: every scientist who
 tries to test the theory is part of the very universe that the theory
@@ -253,48 +252,46 @@ measurement trace occupies a ledger
 
     L_{M,K,τ,ε} = (memory M, code K, run‑time τ, numerical precision ε).
 
-Within that ledger IC separates claims into three strata:
+**Crucially, IC's core engine—Simplicity under Resource-constraint (SUR)—predicts that perfect description (zero error) at infinite detail is often less optimal than a state balancing descriptive power (low error E) against complexity cost (low code K).** This implies that for any finite observer operating within a ledger C(t), a complete, simultaneous proof or description of all aspects of reality is not just impractical, but dynamically disfavored.
 
-* **Locked slice.**  Core tiers T₀ – T₇ and their proofs fit inside present
-  human‐scale ledgers, so agents can verify them directly.
+Consequently, IC naturally separates claims into three strata relative to the current collective ledger C(t):
 
-* **Neutral filling.**  Open problems whose resolution would not alter any
-  cost balance.  Proofs may arrive later, but their absence does not threaten
-  the framework.
+*   **Locked slice.** Core tiers (roughly T₀ – T₁₂) describing the emergence of foundational structures (compression, memory, observers, operational constraints, Hilbert space, basic geometry/energy analogues). The derivations here **must** be rigorous and fit within reasonable present resources (human‐scale ledgers) for the theory to be grounded. Agents can, and must, verify this slice directly.
 
-* **Growth slice.**  Conjectures whose *low‑cost* resolution would reshape an
-  upper tier.  IC forecasts here but invites empirical or mathematical
-  challenge.  If a cheap counter‑example arises, the affected tier is
-  rewritten while the lower structure stays intact.
+*   **Neutral filling.** Intermediate derivations or open problems whose current resolution status does not critically alter the core SUR cost balance or foundational structure. Proofs may arrive later as resources expand or priorities shift, but their current absence is an expected feature, not necessarily a flaw undermining the framework.
 
-This architecture ensures that IC does **not** claim its own unprovability in
-any self‑defeating sense.  The locked slice is already verifiable by finite
-observers, and every forecast above that layer is framed so that an internal
-agent could—in principle—refute or confirm it once resources cross the
-appropriate threshold.  In short, IC treats testability as a design
-constraint, not an optional luxury.
+*   **Growth slice.** Conjectures and extrapolations (e.g., T₁₃+, specific constant derivations, RH connection) representing the theory's predictive frontier. These claims **must** be formulated clearly enough to be falsifiable or verifiable by future advancements that expand C(t). IC forecasts here but invites empirical or mathematical challenge. If a low-cost counter-example arises, the affected upper tier is rewritten, demonstrating adaptability while preserving the lower structure.
+
+This architecture ensures that IC does **not** claim its own unprovability in any self‑defeating sense. Instead, it predicts a *structured and dynamic* frontier of knowledge. The locked slice provides the verifiable foundation, while the growth slice offers testable predictions. **The existence of the neutral filling and the yet-unproven aspects of the growth slice are expected consequences of the theory's own resource-limited dynamics.** Therefore, IC treats testability and structured progress as design constraints, not optional luxuries, while acknowledging the inherent limits faced by any observer embedded within the system.
 
 ## Benchmarks: what defines a good "Theory of Everything" and where is IC on this journey? (WIP)
 
-| Section | ID | What needs to be done (plain English) | Status |
-|---------|----|---------------------------------------|--------|
-| **Foundation (P)** | P‑A | Write down the theory’s core rule‑set—its “source code of the universe”—in a clear, formal language that leaves no room for interpretation. | :heavy_check_mark: |
-| | P‑B | Prove, with Kolmogorov‑style math, that those rules are **much shorter** than the pile of raw observations they explain—so they really do compress reality. | :construction: |
-| | P‑C | Show the rule‑set is **minimal and simplest**: remove any rule and the fit breaks; add a rule and you must get a big accuracy boost to justify the extra complexity. | :construction: |
-| | P‑D | Give a convincing argument (logical or physical) for why *this* exact rule‑set has to exist instead of nothing or some totally different set. | :warning: |
-| **Generative power (E & Π)** | G‑A | Define a function that turns any real‑world observation into the theory’s internal “state” while still keeping important differences separate. | :heavy_check_mark: |
-| | G‑B | Define the engine that takes a current state and a time‑step and spits out probabilities for future states, with clear error bars. | :construction: |
-| | G‑C1 | Show that running that engine reproduces general relativity, quantum mechanics, the Standard Model, and cosmology—at least qualitatively. | :construction: |
-| | G‑C2 | Go further: derive (or tightly bound) the actual numbers—particle masses, α≈1/137, dark‑energy Λ, etc.—without hand‑tuning. | :white_large_square: |
-| **Scope & adaptability (B & M)** | S‑A | Spell out a boundary test that says when an observation is **inside** the theory’s domain of validity and when it isn’t. | :heavy_check_mark: |
-| | S‑B | Within that domain, explain any “mystery constants” and clean up known paradoxes without patch‑jobs. | :construction: |
-| | S‑C | Put at least one bold, near‑term, make‑or‑break prediction on the table so experiments can kill or confirm the theory. | :construction: |
-| | S‑D | Provide an explicit update rule that tells us how the theory rewrites itself when new data arrive—while cutting complexity, boosting accuracy, or widening scope. | :construction: |
-| **Multi‑level compression (human limits)** | C‑A | Show the core theory can be compressed into a form that a trained scientific community can genuinely understand (it fits in human working memory). | :white_large_square: |
-| | C‑B | Show that understood form can be further compressed into ordinary language / math so researchers can share, debate, and teach it. | :construction: |
-| **Internal consistency** | I‑1 | Prove there are no logical contradictions or non‑computable steps lurking anywhere in the full framework (rules, mapping, predictions, boundaries, updates). | :construction: |
+The following table outlines ambitious benchmarks that any candidate Theory of Everything should strive towards. However, informed by the "Limits of Knowledge" discussion above, Informational Constructivism suggests that achieving all these benchmarks simultaneously is precluded by the finite resources and SUR dynamics governing any embedded observer.
 
+Therefore, IC should be evaluated not only on its ultimate potential but also on:
+1.  The rigor and completeness of its **Locked Slice** (addressing foundational benchmarks like P-A, G-A, S-A, and demonstrating pathways for P-B, P-C, G-B, G-C1, S-D, I-1 within reasonable complexity).
+2.  The clarity, novelty, and falsifiability of its **Growth Slice** predictions (aiming for G-C2, S-B, S-C).
+3.  The overall coherence of the framework in explaining *why* certain aspects might remain in the **Neutral Filling** or require future resource expansion for resolution.
 
+The statuses below reflect the current state of IC relative to these demanding goals, viewed through the lens of its own resource-aware framework.
+
+| Section                 | ID   | What needs to be done (plain English)                                                                                               | Status              |
+| ----------------------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| **Foundation (P)**      | P‑A  | Write down the theory’s core rule‑set—its “source code of the universe”—in a clear, formal language that leaves no room for interpretation. | :heavy_check_mark:  |
+|                         | P‑B  | Prove, with Kolmogorov‑style math, that those rules are **much shorter** than the pile of raw observations they explain—so they really do compress reality. | :construction:      |
+|                         | P‑C  | Show the rule‑set is **minimal and simplest**: remove any rule and the fit breaks; add a rule and you must get a big accuracy boost to justify the extra complexity. | :construction:      |
+|                         | P‑D  | Give a convincing argument (logical or physical) for why *this* exact rule‑set has to exist instead of nothing or some totally different set. | :warning:           |
+| **Generative power (E & Π)** | G‑A  | Define a function that turns any real‑world observation into the theory’s internal “state” while still keeping important differences separate. | :heavy_check_mark:  |
+|                         | G‑B  | Define the engine that takes a current state and a time‑step and spits out probabilities for future states, with clear error bars. | :construction:      |
+|                         | G‑C1 | Show that running that engine reproduces general relativity, quantum mechanics, the Standard Model, and cosmology—at least qualitatively. | :construction:      |
+|                         | G‑C2 | Go further: derive (or tightly bound) the actual numbers—particle masses, α≈1/137, dark‑energy Λ, etc.—without hand‑tuning. | :white_large_square: |
+| **Scope & adaptability (B & M)** | S‑A  | Spell out a boundary test that says when an observation is **inside** the theory’s domain of validity and when it isn’t. | :heavy_check_mark:  |
+|                         | S‑B  | Within that domain, explain any “mystery constants” and clean up known paradoxes without patch‑jobs. | :construction:      |
+|                         | S‑C  | Put at least one bold, near‑term, make‑or‑break prediction on the table so experiments can kill or confirm the theory. | :construction:      |
+|                         | S‑D  | Provide an explicit update rule that tells us how the theory rewrites itself when new data arrive—while cutting complexity, boosting accuracy, or widening scope. | :construction:      |
+| **Multi‑level compression (human limits)** | C‑A  | Show the core theory can be compressed into a form that a trained scientific community can genuinely understand (it fits in human working memory). | :white_large_square: |
+|                         | C‑B  | Show that understood form can be further compressed into ordinary language / math so researchers can share, debate, and teach it. | :construction:      |
+| **Internal consistency** | I‑1  | Prove there are no logical contradictions or non‑computable steps lurking anywhere in the full framework (rules, mapping, predictions, boundaries, updates). | :construction:      |
 ## Appendix / Further Formalism (Outline- will build this out over time )
 
 *   **Formal Proof Pack (Steps 0-4):** Details language, operator semantics, Δ-Factorisation proof, ΔCat ≅ FdHilb(ℂ) proof (snake fixed), SUR Lyapunov derivation, EFE derivation. *
