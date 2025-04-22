@@ -6,7 +6,7 @@ Confronting the inherent uncertainties in our scientific knowledge, which is bui
 
 There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, and string theory each offer a different ontology, yet they converge on one premise: **information** sits at the root of every description. No matter how the theories differ, all agree that something is being distinguished from something else. This points towards information processing as a fundamental aspect of reality.
 
-Informational Constructivism (IC) proposes that the most primitive *operational* event necessary for any structure or process is **Registered Contrast**. This minimal axiom, **F0**, consists of two inseparable components:
+Informational Constructivism (IC) is a fundamental approach that lookest at the simplest possible possibility. It starts with the most basic possibility; that the most primitive *operational* event necessary for any structure or process is **Registered Contrast**. This minimal axiom, **F0**, consists of two inseparable components:
 *   **D0 (Distinction Event):** Something is distinguishable from something else (a potential difference exists).
 *   **R0 (Registration):** Some subsystem registers this distinction as a state change (an echo, a memory bit flip, however minimal).
 
