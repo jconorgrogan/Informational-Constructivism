@@ -60,25 +60,26 @@ Let's say that you disagree with my very premise. "Why are you just asserting th
 But now that void is unstable — because even describing it, or trying to represent it, requires creating a difference. This is what I will discuss in depth.
 
 ## Benchmarks: what defines a good "Theory of Everything" and where is IC on this journey? (WIP)
-| Section | Sub‑ID | Checklist requirement | Status |
-|---------|--------|-----------------------|--------|
-| **Foundational elements P** | P‑A | Define the finite Compressible Process Set P in a precise symbolic language L. | :heavy_check_mark: |
-|  | P‑B | Prove that K_U(P) ≪ K_U(D) — P is a substantial compression of the observed data. | :construction: |
-|  | P‑C | Show minimality and parsimony: no strict subset matches performance; any strict superset needs a large accuracy gain to justify added complexity. | :construction: |
-|  | P‑D | Justify “Why this P?” with a mechanism forcing P to arise over nothingness or rival sets. | :warning: |
-| **Generative power E and Π** | G‑A | Specify the explanatory map E: observations O ↦ state space S, preserving ε‑level distinguishability. | :heavy_check_mark: |
-|  | G‑B | Specify the predictive map Π: (S, t) ↦ probability distribution over future states S′ with quantifiable error bounds. | :construction: |
-|  | G‑C1 | From initial conditions, show Π reproduces structural laws of GR, QM, SM, cosmology within its domain. | :construction: |
-|  | G‑C2 | Derive the numerical constants of physics or bound them within a principled uncertainty budget. | :white_large_square: |
-| **Scope, boundaries, adaptability B and M** | S‑A | Define the domain boundary function B and the threshold γ specifying the observation set O′ where the theory claims validity. | :heavy_check_mark: |
-|  | S‑B | Within O′, derive fundamental constants and resolve existing paradoxes without ad‑hoc patches. | :construction: |
-|  | S‑C | State at least one high‑stakes, empirically falsifiable prediction testable in the near term. | :construction: |
-|  | S‑D | Provide a computable meta‑recursive update operator M that lowers complexity, improves accuracy, or widens domain when new data arrive. | :construction: |
-| **Multi‑level compression constraints** | C‑A | Prove cognitive compressibility: there exists a representation C with K_H(C) < K_H(P) for the target scientific community. | :white_large_square: |
-|  | C‑B | Prove communicative compressibility: there exists a public encoding S with K_L(S) < K_L(C) using shared language and math. | :construction: |
-| **Internal consistency** | I‑1 | Demonstrate mathematical and logical self‑consistency of the full quintuple ⟨P, E, Π, B, M⟩; no internal contradictions or non‑computable steps. | :construction: |
 
+| Section | ID | What needs to be done (plain English) | Status |
+|---------|----|---------------------------------------|--------|
+| **Foundation (P)** | P‑A | Write down the theory’s core rule‑set—its “source code of the universe”—in a clear, formal language that leaves no room for interpretation. | :heavy_check_mark: |
+| | P‑B | Prove, with Kolmogorov‑style math, that those rules are **much shorter** than the pile of raw observations they explain—so they really do compress reality. | :construction: |
+| | P‑C | Show the rule‑set is **minimal and simplest**: remove any rule and the fit breaks; add a rule and you must get a big accuracy boost to justify the extra complexity. | :construction: |
+| | P‑D | Give a convincing argument (logical or physical) for why *this* exact rule‑set has to exist instead of nothing or some totally different set. | :warning: |
+| **Generative power (E & Π)** | G‑A | Define a function that turns any real‑world observation into the theory’s internal “state” while still keeping important differences separate. | :heavy_check_mark: |
+| | G‑B | Define the engine that takes a current state and a time‑step and spits out probabilities for future states, with clear error bars. | :construction: |
+| | G‑C1 | Show that running that engine reproduces general relativity, quantum mechanics, the Standard Model, and cosmology—at least qualitatively. | :construction: |
+| | G‑C2 | Go further: derive (or tightly bound) the actual numbers—particle masses, α≈1/137, dark‑energy Λ, etc.—without hand‑tuning. | :white_large_square: |
+| **Scope & adaptability (B & M)** | S‑A | Spell out a boundary test that says when an observation is **inside** the theory’s domain of validity and when it isn’t. | :heavy_check_mark: |
+| | S‑B | Within that domain, explain any “mystery constants” and clean up known paradoxes without patch‑jobs. | :construction: |
+| | S‑C | Put at least one bold, near‑term, make‑or‑break prediction on the table so experiments can kill or confirm the theory. | :construction: |
+| | S‑D | Provide an explicit update rule that tells us how the theory rewrites itself when new data arrive—while cutting complexity, boosting accuracy, or widening scope. | :construction: |
+| **Multi‑level compression (human limits)** | C‑A | Show the core theory can be compressed into a form that a trained scientific community can genuinely understand (it fits in human working memory). | :white_large_square: |
+| | C‑B | Show that understood form can be further compressed into ordinary language / math so researchers can share, debate, and teach it. | :construction: |
+| **Internal consistency** | I‑1 | Prove there are no logical contradictions or non‑computable steps lurking anywhere in the full framework (rules, mapping, predictions, boundaries, updates). | :construction: |
 
+## Building a logic tree: The Genesis
 Let's take this slow. As formalized below (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state requires introducing a minimal contrast (via the `Δ_gen` operator), making the void inherently unstable from an internal perspective.
 
 **(Box 0: Pre-distinction state and the Genesis lemma)**
