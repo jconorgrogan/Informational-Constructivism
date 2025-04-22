@@ -155,35 +155,35 @@ With F0 as the seed and {Δ-operators + SUR + Constraints} as the engine, the fo
 Registered Contrast (F0) + Salience (T1) hits Bottleneck (T2, Box 2) → Compression (T3, Box 3) via SUR (T3a) → Patterns & Memory Graph (T4, Box 4) → Observer (T4.5) → World Partition & Layering (T5, Box 8) → Time & Metric (T6) → Op. Constraints (T6a, Box 5) → Hilbert Space (T7) → Born Rule (T8) → Projection (T9) → Consensus (T10) → Curvature (T11, Box 6) → Energy Analogue (T12) → Gauge/QFT/Cosmology (T13–T23, Box 7). Result: Observers who instantiate F0 (T24), closing the loop.
 
 ### 3.2 Collapse Path (T25 → F0)
-This path shows that attempting to erase structure or reach the void state (S₀/T25) forces the re-emergence of contrast via the same SUR logic operating in reverse (optimizing *away* from featurelessness).
+This path shows that attempting to erase structure or reach the void state (S₀/T25) forces the re‑emergence of contrast via the same SUR logic operating in reverse (optimizing *away* from featurelessness).
 
-| From Tier | Assume structure is absent/uniform                   | Why state is unstable / costly under SUR               | What structure is forced next (Lower Tier) |
-| :-------- | :--------------------------------------------------- | :--------------------------------------------------- | :--------------------------------------- |
-| T24       | No F0 observers                                      | Loop broken, physics lacks grounding                 | T23 Nested Observers emerge              |
-| T23       | No nested compression                                | Suboptimal global K                                  | T22 Qualia Bias (shared compression)     |
-| T22       | No qualia seeding specific physics                   | Gauge choices arbitrary, higher K                    | T21 Comp. Irreducibility (patterns)      |
-| T21       | All patterns fully compressible                      | Violates K bounds / infinite regress               | T20 Robust Codes (cost floor)            |
-| T20       | No fault-tolerant codes                              | Unstable to noise D (Box 2)                          | T19 Stable Background (post-inflation)   |
-| T19       | No inflation/structure seeds                         | Uniform state costly (high E for any prediction)     | T18 GR Equations (curvature needed)        |
-| T18       | No GR / Cost-Curvature                               | Fails to explain large scale structure / SUR flow     | T17 SM Constants (λ_*≈137.036 fixed point)|
-| T17       | No stable constants / plateaus                       | λ runs indefinitely, no stable scales              | T16 RG Flow required                     |
-| T16       | No scale dependence / RG flow                        | Fails to link micro/macro physics                  | T15 Mode Factorization / QFT required    |
-| T15       | No QFT / Mode Bundles                                | Cannot describe local excitations efficiently        | T13/14 Gauge Symmetry needed             |
-| T13/14    | No Gauge Symmetry / Phase Freedom                    | Global phase tracking costly / redundant K           | T12 Energy Analogue (λ base)             |
-| T12       | No conserved λ / Energy Analogue                     | Fails to link SUR cost to thermodynamics (Box 5)   | T11 Geometric Curve (metric base)        |
-| T11       | No Info-Metric / Curvature                           | Cannot define path costs d_I (Box 4) consistently    | T10 Consensus Layer (shared basis)       |
-| T10       | No Consensus / Shared Basis                          | Observers cannot efficiently compare models (high E) | T9 Projection (state selection)          |
-| T9        | No Projection / Branch Pruning                       | Superpositions explode beyond capacity C (T2)        | T8 Born Rule (probability needed)        |
-| T8        | No Born Rule / Probabilities                         | Cannot assign predictive weights efficiently (high E)| T7 Hilbert Space needed                  |
-| T7        | No Hilbert Space Structure                           | Fails to satisfy Operational Constraints (T6a)       | T6a Operational Constraints required     |
-| T6a       | No Op. Constraints (Reversibility, Additivity etc.)  | Suboptimal SUR cost (leaky/non-additive K)         | T6 Process Dynamics needed               |
-| T6        | No Time Arrow / Metric d_I                           | Cannot order events or measure cost distance (Box 4)| T5 World Partition needed                |
-| T5        | No Self/World Partition                              | Observer (T4.5) cannot model environment           | T4 Pattern Extraction required           |
-| T4        | No Patterns / Self Cluster                           | Cannot predict / compress input stream (high K+E)    | T3 Compression required                  |
-| T3        | No Compression / Memory                              | Violates Bottleneck C (T2)                           | T2 Bottleneck required                   |
-| T2        | No Bottleneck / Infinite Capacity                    | Flattens Salience (T1)                               | T1 Phenomenology required                |
-| T1        | No Salience / Memory Ref / Multiplicity              | Cannot support structured F0                         | T0 F0 (Registered Contrast)            |
-| T0/T25    | No Contrast (S₀ / Void)                              | Unstable: Describing void creates contrast (Box 0)   | **F0 (Registered Contrast)**             |
+| From Tier | Assume structure is absent/uniform | Why state is unstable / costly under SUR | What structure is forced next (Lower Tier) |
+| :-------- | :--------------------------------- | :---------------------------------------- | :----------------------------------------- |
+| T24 | No F0 observers | Loop broken, physics lacks grounding | T23 Nested Observers emerge |
+| T23 | No nested compression | Suboptimal global K | T22 Qualia Bias (shared compression) |
+| T22 | No qualia seeding specific physics | Gauge choices arbitrary, higher K | T21 Comp. Irreducibility (patterns) |
+| T21 | All patterns fully compressible | Violates K bounds / infinite regress | T20 Robust Codes (cost floor) |
+| T20 | No fault‑tolerant codes | Unstable to noise D (Box 2) | T19 Stable Background (post‑inflation) |
+| T19 | No inflation/structure seeds | Uniform state costly (high E for any prediction) | T18 GR Equations (curvature needed) |
+| T18 | No GR / Cost‑Curvature | Fails to explain large scale structure / SUR flow | T17 SM Constants (λ_* ≈ 137.036 fixed point) |
+| T17 | No stable constants / plateaus | λ runs indefinitely, no stable scales | T16 RG Flow required |
+| T16 | No scale dependence / RG flow | Fails to link micro/macro physics | T15 Mode Factorization / QFT required |
+| T15 | No QFT / Mode Bundles | Cannot describe local excitations efficiently | T13/14 Gauge Symmetry needed |
+| T13/14 | No Gauge Symmetry / Phase Freedom | Global phase tracking costly / redundant K | T12 Energy Analogue (λ base) |
+| T12 | No conserved λ / Energy Analogue | Fails to link SUR cost to thermodynamics (Box 5) | T11 Geometric Curve (metric base) |
+| T11 | No Info‑Metric / Curvature | Cannot define path costs d_I (Box 4) consistently | T10 Consensus Layer (shared basis) |
+| T10 | No Consensus / Shared Basis | Observers cannot efficiently compare models (high E) | T9 Projection (state selection) |
+| T9 | No Projection / Branch Pruning | Superpositions explode beyond capacity C (T2) | T8 Born Rule (probability needed) |
+| T8 | No Born Rule / Probabilities | Cannot assign predictive weights efficiently (high E) | T7 Hilbert Space needed |
+| T7 | No Hilbert Space Structure | Fails to satisfy Operational Constraints (T6a) | T6a Operational Constraints required |
+| T6a | No Op. Constraints (Reversibility, Additivity etc.) | Suboptimal SUR cost (leaky/non‑additive K) | T6 Process Dynamics needed |
+| T6 | No Time Arrow / Metric d_I | Cannot order events or measure cost distance (Box 4) | T5 World Partition needed |
+| T5 | No Self/World Partition | Observer (T4.5) cannot model environment | T4 Pattern Extraction required |
+| T4 | No Patterns / Self Cluster | Cannot predict / compress input stream (high K + E) | T3 Compression required |
+| T3 | No Compression / Memory | Violates Bottleneck C (T2) | T2 Bottleneck required |
+| T2 | No Bottleneck / Infinite Capacity | Flattens Salience (T1) | T1 Phenomenology required |
+| T1 | No Salience / Memory Ref / Multiplicity | Cannot support structured F0 | T0 F0 (Registered Contrast) |
+| T0/T25 | No Contrast (S₀ / Void) | Unstable: Describing void creates contrast (Box 0) | **F0 (Registered Contrast)** |
 
 ### 3.3 Synthesis
 The Generative Path (F0 → T24) builds structure from contrast via SUR.
