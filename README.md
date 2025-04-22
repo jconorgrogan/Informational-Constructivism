@@ -64,6 +64,18 @@ If ¬P is true, then to evaluate this claim—to establish its truth value withi
 
 Therefore, denying F0 necessitates invoking F0 within the logical framework used to evaluate the denial. Both branches (assuming P or assuming ¬P) confirm that F0 is operative within that framework. Registered contrast is thus obligatory for any non-trivial, self-consistent descriptive scheme; it cannot be coherently negated within such a scheme. It stands as the minimum necessary axiom for constructing a communicable, logically grounded theory of reality.
 
+**Logical completeness: no third stance
+One might try a logical escape by declaring, “P and ¬P are both wrong.” Call that claim X. To assert X you must:
+
+Identify the sentence “P and ¬P are wrong.”
+
+Mark that sentence as distinct from “P is right” and from “¬P is right.”
+
+Store that mark somewhere.
+
+Step 1 and 2 create a distinction. Step 3 records it. Together they instantiate F0.
+In other words, naming any purported third stance already draws and registers a line, so F0 fires again. A framework with zero registered distinctions cannot support a proposition, an argument, or a conversation. Therefore every coherent description is unavoidably inside an F0 world, and no genuine “third possibility” exists.
+
 ## Building a logic tree: The Genesis
 Let's take this slow. As formalized below (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state requires introducing a minimal contrast (via the `Δ_gen` operator), making the void inherently unstable from an internal perspective.
 
@@ -80,18 +92,6 @@ Therefore, IC develops two converging paths driven by the same underlying logic 
 2.  **The Collapse Path:** Starting from the hypothetical void (T25/S₀), instability forces the emergence of F0, initiating the generative path.
 
 The framework below formalizes this self-consistent loop, where contrast necessitates structure, and the absence of contrast is representationally unstable.
-
-**Addendum: No Third Option
-One might try a logical escape by declaring, “P and ¬P are both wrong.” Call that claim X. To assert X you must:
-
-Identify the sentence “P and ¬P are wrong.”
-
-Mark that sentence as distinct from “P is right” and from “¬P is right.”
-
-Store that mark somewhere.
-
-Step 1 and 2 create a distinction. Step 3 records it. Together they instantiate F0.
-In other words, naming any purported third stance already draws and registers a line, so F0 fires again. A framework with zero registered distinctions cannot support a proposition, an argument, or a conversation. Therefore every coherent description is unavoidably inside an F0 world, and no genuine “third possibility” exists.
 
 ## The Engine: Δ-Operators and SUR Dynamics 
 
