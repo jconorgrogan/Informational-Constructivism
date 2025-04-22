@@ -2,7 +2,7 @@
 
 ## Preamble: Theories of everything and the Primacy of Information and Contrast
 
-Confronting the inherent uncertainties in our scientific knowledge—built upon layers of potentially imperfect assumptions, interpretations, trust in complex experiments, and the very human chains transmitting that information—demands a cautious strategy for fundamental theory building. To establish a robust foundation, particularly for a Theory of Everything, we must seek the most undeniable starting point: the absolute minimum phenomenon or operational event that any coherent description of reality, regardless of its details, must necessarily incorporate. Identifying this bedrock allows us to build upwards with greater confidence, ensuring our foundations aren't inadvertently built on inherited errors. I flesh out other important criteria in https://github.com/jconorgrogan/Informational-Constructivism/blob/main/TheoriesOfEverythingFramework
+Confronting the inherent uncertainties in our scientific knowledge—built upon layers of potentially imperfect assumptions, interpretations, trust in complex experiments, and the very human chains transmitting that information—demands a cautious strategy for fundamental theory building. To establish a robust foundation, particularly for a Theory of Everything, we must seek the most undeniable starting point: the absolute minimum phenomenon or operational event that any coherent description of reality, regardless of its details, must necessarily incorporate. Identifying this bedrock allows us to build upwards with greater confidence, ensuring our foundations aren't inadvertently built on inherited errors. 
 
 There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, and string theory each offer a different ontology, yet they converge on one premise: **information** sits at the root of every description. No matter how the theories differ, all agree that something is being distinguished from something else. This points towards information processing as a fundamental aspect of reality.
 
@@ -57,7 +57,27 @@ Let's say that you disagree with my very premise. "Why are you just asserting th
 → So any stable structure collapses — patterns, geometry, and energy all dissolve.
 → So it returns to the same undifferentiated void it started from…
 
-But now that void is unstable — because even describing it, or trying to represent it, requires creating a difference.
+But now that void is unstable — because even describing it, or trying to represent it, requires creating a difference. This is what I will discuss in depth.
+
+## Benchmarks: what defines a good "Theory of Everything" and where is IC on this journey? (WIP)
+| Section | Sub‑ID | Checklist requirement | Status |
+|---------|--------|-----------------------|--------|
+| **Foundational elements P** | P‑A | Define the finite Compressible Process Set P in a precise symbolic language L. | :heavy_check_mark: |
+|  | P‑B | Prove that K_U(P) ≪ K_U(D) — P is a substantial compression of the observed data. | :construction: |
+|  | P‑C | Show minimality and parsimony: no strict subset matches performance; any strict superset needs a large accuracy gain to justify added complexity. | :construction: |
+|  | P‑D | Justify “Why this P?” with a mechanism forcing P to arise over nothingness or rival sets. | :warning: |
+| **Generative power E and Π** | G‑A | Specify the explanatory map E: observations O ↦ state space S, preserving ε‑level distinguishability. | :heavy_check_mark: |
+|  | G‑B | Specify the predictive map Π: (S, t) ↦ probability distribution over future states S′ with quantifiable error bounds. | :construction: |
+|  | G‑C1 | From initial conditions, show Π reproduces structural laws of GR, QM, SM, cosmology within its domain. | :construction: |
+|  | G‑C2 | Derive the numerical constants of physics or bound them within a principled uncertainty budget. | :white_large_square: |
+| **Scope, boundaries, adaptability B and M** | S‑A | Define the domain boundary function B and the threshold γ specifying the observation set O′ where the theory claims validity. | :heavy_check_mark: |
+|  | S‑B | Within O′, derive fundamental constants and resolve existing paradoxes without ad‑hoc patches. | :construction: |
+|  | S‑C | State at least one high‑stakes, empirically falsifiable prediction testable in the near term. | :construction: |
+|  | S‑D | Provide a computable meta‑recursive update operator M that lowers complexity, improves accuracy, or widens domain when new data arrive. | :construction: |
+| **Multi‑level compression constraints** | C‑A | Prove cognitive compressibility: there exists a representation C with K_H(C) < K_H(P) for the target scientific community. | :white_large_square: |
+|  | C‑B | Prove communicative compressibility: there exists a public encoding S with K_L(S) < K_L(C) using shared language and math. | :construction: |
+| **Internal consistency** | I‑1 | Demonstrate mathematical and logical self‑consistency of the full quintuple ⟨P, E, Π, B, M⟩; no internal contradictions or non‑computable steps. | :construction: |
+
 
 Let's take this slow. As formalized below (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state requires introducing a minimal contrast (via the `Δ_gen` operator), making the void inherently unstable from an internal perspective.
 
