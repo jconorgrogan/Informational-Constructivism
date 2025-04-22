@@ -6,8 +6,6 @@ Confronting the inherent uncertainties in our scientific knowledge, which is bui
 
 There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, and string theory each offer a different ontology, yet they converge on one premise: **information** sits at the root of every description. No matter how the theories differ, all agree that something is being distinguished from something else. This points towards information processing as a fundamental aspect of reality.
 
-But can we go deeper? Where does information, or the capacity for distinction, come from in the first place? Why should there be *any* distinction at all, any structure, any state that differs from another? Why is there something rather than nothing? [Further discussion: https://github.com/jconorgrogan/Why-there-is-something-and-not-nothing]
-
 Informational Constructivism (IC) proposes that the most primitive *operational* event necessary for any structure or process is **Registered Contrast**. This minimal axiom, **F0**, consists of two inseparable components:
 *   **D0 (Distinction Event):** Something is distinguishable from something else (a potential difference exists).
 *   **R0 (Registration):** Some subsystem registers this distinction as a state change (an echo, a memory bit flip, however minimal).
@@ -34,7 +32,13 @@ If multiple systems communicate under bandwidth limits (a consequence of C), the
 If a shared codebook stabilizes, then redundant parameters become measurable and must be removed.
 If redundancy is removed, then efficiency approaches an optimum where marginal accuracy gain equals marginal resource cost (SUR optimization).
 If the system sits on that optimum, then resource gradients define stable pathways for energy and information flow (emergence of physics).
-Let's say that you disagree with my very premise. "Why are you just asserting that information and distinction arises?" Fair. But consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). Let's follow that chain of logic. Suppose you have only perfect void — a state with no differences, no structure, no information.
+
+
+But can we go deeper? Where does information, or the capacity for distinction, come from in the first place? Why should there be *any* distinction at all, any structure, any state that differs from another? Why is there something rather than nothing? [Further discussion: https://github.com/jconorgrogan/Why-there-is-something-and-not-nothing]
+
+Let's say that you disagree with my very premise. "Why are you just asserting that information and distinction arises?" Fair. But consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25).
+
+Let's follow that chain of logic. Suppose you have only perfect void — a state with no differences, no structure, no information.
 → Then no system exists that can recognize or respond to anything.
 → So nothing maintains internal stability or updates itself over time.
 → So there are no models, no representations of anything.
