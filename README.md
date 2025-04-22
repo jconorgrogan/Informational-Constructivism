@@ -18,9 +18,30 @@ Even a single F0 event implies latent "texture". This isn't an extra assumption,
 
 From F0 alone, a surprising chain of consequences follows via information compression under resource constraints (the SUR dynamic, detailed below): Registered contrast (F0) implies limitation (T2), limitation forces compression (T3), compression yields memory, prediction, time, identity, and eventually the structured physical world we observe (T4-T24).
 
-Alternatively, consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). 
+Alternatively, consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). Well, as we will see:
+Suppose you start with a perfect void — a state with no differences, no structure, no information.
 
- As formalized below (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state requires introducing a minimal contrast (via the `Δ_gen` operator), making the void inherently unstable from an internal perspective.
+→ Then no system exists that can recognize or respond to anything.
+→ So nothing maintains internal stability or updates itself over time.
+→ So there are no models, no representations of anything.
+→ So comparisons — between internal expectations and external input — become impossible.
+→ So nothing stands out as important or relevant.
+→ So no simplification or learning can occur.
+→ So memory fills with undifferentiated signals or noise.
+→ So limits on capacity are quickly overwhelmed.
+→ So the system loses the ability to predict or make sense of inputs.
+→ So it can no longer tell if anything has changed — time and causality dissolve.
+→ So it can’t separate itself from its surroundings.
+→ So it can’t discard irrelevant possibilities — confusion multiplies.
+→ So it can’t coordinate with anything else — shared meaning breaks down.
+→ So it can’t eliminate redundancies — unnecessary complexity piles up.
+→ So it loses its internal balance — resources drift and overload.
+→ So any stable structure collapses — patterns, geometry, and energy all dissolve.
+→ So it returns to the same undifferentiated void it started from…
+
+But now that void is unstable — because even describing it, or trying to represent it, requires creating a difference.
+
+Let's take this slow. As formalized below (Box 0), the very act of representing or processing this "void" state within *any* system capable of holding state requires introducing a minimal contrast (via the `Δ_gen` operator), making the void inherently unstable from an internal perspective.
 
 **(Box 0: Pre-distinction state and the Genesis lemma)**
 > **Definition S₀**
