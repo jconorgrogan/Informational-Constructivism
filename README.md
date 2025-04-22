@@ -16,10 +16,26 @@ Without D0, there is no difference to register. Without R0, any potential distin
 
 Even a single F0 event implies latent "texture". This isn't an extra assumption, but a consequence of information theory: the set of possible simpler descriptions (programs) that could account for even one registered bit (`{p: U(p)=x}`) has unbounded complexity [See **Box 0b / TODO:** Formal lemma: Kolmogorov structure function / Levin's coding theorem application]. This potential complexity exists in the universal prior, providing a reservoir that later compression stages can exploit.
 
-From F0 alone, a surprising chain of consequences follows via information compression under resource constraints (the SUR dynamic, detailed below): Registered contrast (F0) implies limitation (T2), limitation forces compression (T3), compression yields memory, prediction, time, identity, and eventually the structured physical world we observe (T4-T24).
+From F0 alone, a surprising chain of consequences follows via information compression under resource constraints (the SUR dynamic, detailed below): Registered contrast (F0) implies limitation (T2), limitation forces compression (T3), compression yields memory, prediction, time, identity, and eventually the structured physical world we observe (T4-T24). The rough narrative goes as follows:
 
-Alternatively, consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). Well, as we will see:
-Suppose you start with a perfect void — a state with no differences, no structure, no information.
+A single difference exists
+- If a single physical difference comes into existence, then a physical trace is required.
+- If a trace exists, then at least two distinguishable system states are required.
+- If two states can be compared, then a minimal memory register is required.
+- If memory exists, then change becomes detectable.
+- If change is detectable, then statistical regularities become exploitable.
+- If regularities are exploited, then compression is required.
+- If compression operates under finite resources, then freed capacity permits additional structure to accumulate without overflow.
+- If compressed patterns remain stable, then prediction algorithms become possible.
+- If prediction is possible, then an internal/external partition is required.
+- If a partition exists, then irrelevant fluctuations must be suppressed.
+- If noise is suppressed, then branch pruning (hypothesis elimination) is required.
+- If multiple systems communicate under bandwidth limits, then a shared codebook is required.
+- If a shared codebook stabilizes, then redundant parameters become measurable and must be removed.
+- If redundancy is removed, then efficiency approaches an optimum where marginal accuracy gain equals marginal resource cost.
+- If the system sits on that optimum, then resource gradients define stable pathways for energy and information flow.
+
+Let's say that you disagree with my very premise. "Why are you just asserting that information and distinction arises?" Fair. But  consider the negation: Everything I started from is wrong; you do not permit me any axioms, and we therefore assume F0 is false – a uniform void (S₀) with absolutely no distinction (T25). Let's follow that chain of logic.  Suppose you have only perfect void — a state with no differences, no structure, no information.
 
 → Then no system exists that can recognize or respond to anything.
 → So nothing maintains internal stability or updates itself over time.
