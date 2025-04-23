@@ -1,20 +1,6 @@
 # Informational Constructivism
 
-
 When thinking about **anything** (reality, a system, a state), there are fundamentally three ways it can be with respect to differences or distinctions:
-
-**A) Absolutely No Difference (S₀)**  
-*Pure, perfect sameness everywhere. Nothing is distinct from anything else.*
-
-**B) Absolutely All Differences (Ω)**  
-*Every possible difference exists all at once. Infinite complexity.*
-
-**C) Something In Between**  
-*There is at least one difference, but not all possible differences.*
-
----
-
-When thinking about anything (reality, a system, a state), there are fundamentally three ways it can be with respect to differences or distinctions:
 
 **A) Absolutely No Difference (S₀)**  
 *Pure, perfect sameness everywhere. Nothing is distinct from anything else.*
