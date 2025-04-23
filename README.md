@@ -156,12 +156,19 @@ With F0 as the seed and {Δ-operators + SUR + Constraints} as the engine, the fo
 > *   **Mode_R (relational):** All distinctions addressable under current C.
 > *   **Mode_L (logged):** The compressed, stabilized image of Mode_R stored in memory M via `Δ_proj`. Only Mode_L structures directly participate in the system's code K.
 
-**(Box 4: Memory graph metric)**
-> The history of processing leaves a trace. The observer's memory M (containing Mode_L states) implicitly forms a **directed labelled graph G=(V,E)**, where states are nodes and Δ-operations are edges. This graph defines emergent notions of:
-> *   **Time (d_T):** Minimum path length between states.
-> *   **Information Distance (d_I):** Minimum cumulative SUR cost (`L`, or potentially related path integrals on the `(K, C₂, F_β)` manifold) along a path. This metric grounds geometry.
+**(Revised Box 4: Memory graph metric and Information Distance)**
+> The history of processing leaves a trace. The observer's memory M (containing Mode_L states) implicitly forms a **directed labelled graph G=(V,E)**, where states are nodes and Δ-operations are edges associated with a SUR cost `L=K+λE` (or related cost from RG analysis, like changes in `F_β`).
 >
-> **(Update based on ToDos):** The state space relevant for RG flow and detailed geometric analysis is often better described by the Ledger triple **(K, C₂, F_β)**, where K is entropy/code length, C₂ is surprisal variance, and F_β is the free-energy gap relative to the unresolved background. RG flow preserves a 2-form **σ = dK ∧ dC₂ - μ dF_β ∧ dC₂** on this space.
+> While the raw cost `L` along a path of operations might be asymmetric (e.g., cost A→B ≠ cost B→A), we can define rigorous distance measures:
+> *   **Directed Information Cost (`d_I→`):** For states `s₁`, `s₂` in `G`, `d_I→(s₁, s₂) = inf { Σ L }` over all finite sequences of Δ-operations mapping `s₁` to `s₂`. This captures the minimal resource cost for a specific transformation direction.
+> *   **Symmetrized Information Distance (`d_I`):** `d_I(s₁, s₂) = ½ [ d_I→(s₁, s₂) + d_I→(s₂, s₁) ]`. This quantity satisfies the properties of a metric (or pseudometric): `d_I ≥ 0`, `d_I(s,s) = 0`, `d_I(s₁, s₂) = d_I(s₂, s₁)` (symmetry by construction), and the triangle inequality `d_I(s₁, s₃) ≤ d_I(s₁, s₂) + d_I(s₂, s₃)`.
+>
+> This emergent metric space `(G, d_I)` grounds subsequent geometric notions:
+> *   **Time (d_T):** Minimum path length (number of Δ-op steps) between states. (Remains unchanged).
+> *   **Geometric Distance (d_I):** The symmetrized `d_I` provides the robust measure of informational separation used for geometric interpretations (T6, T11, Box 6). *(Note: The directed `d_I→` remains relevant when analyzing thermodynamic work or irreversible processes like Landauer erasure).*
+>
+> **(Update based on ToDos):** The state space relevant for RG flow and detailed geometric analysis is often better described by the Ledger triple **(K, C₂, F_β)**, where K is entropy/code length, C₂ is surprisal variance, and F_β is the free-energy gap relative to the unresolved background. RG flow preserves a 2-form **σ = dK ∧ dC₂ - μ dF_β ∧ dC₂** on this space, now understood to be equipped with the metric structure derived from `d_I`.
+
 
 **(Box 5: Landauer link, λ, and F_β)**
 > The base SUR trade-off parameter `λ` relating `K` and `E` in `L=K+λE` is fixed by the physics of information erasure: `λ = k_B T ln 2`. It represents the minimum thermodynamic cost per bit of information change (ΔK=1).
@@ -183,7 +190,7 @@ With F0 as the seed and {Δ-operators + SUR + Constraints} as the engine, the fo
 | 4    | Pattern extraction  | P1 MDL attractor, P2 Proto-self cluster.  | SUR (T3a) prunes redundant bits. Memory Graph G forms (Box 4).              | prediction, self cluster, memory graph G, d_T, d_I |
 | 4.5  | Observer (O1)       | MDL compressor (K) + self-cluster (M) + `Δ_self` loop. | Minimal D0→R0→`Δ_self` loop under SUR for recursive prediction (T4).       | observer                    |
 | 5    | World partition     | E1 World = non-self, ToM lemma.             | Complement of self + cheapest agent model (SUR). Uses Layering (Box 8).       | world, other mind           |
-| 6    | Process dynamics    | D1 Arrow of time, D2 Info-metric distance d_I. | Compression (K reduction) monotone → time. Metric from SUR cost/flow (Box 4). | time, metric d_I            |
+| 6    | Process dynamics    | D1 Arrow of time, D2 Symmetrized info-metric distance d_I (Box 4). | Compression (K reduction) monotone → time. Metric from SUR cost/flow (Box 4). | time, metric d_I            |
 | 6a   | Op. constraints     | R1 Reversibility, R2 Additive cost, R3 No cloning. | SUR selects optimal codes [L rises if E grows w/o K drop]. Link Box 5. | —                           |
 | 7    | Theorem MIN (QM Base) | Constraints (T6a) force complex Hilbert space H. | Via Category theory: ΔCat ≅ FdHilb(ℂ) (Proof Pack Step 2).                 | Hilbert space H             |
 | 8    | Probability rule    | Gleason ⇒ Born weights uniquely minimise relevant cost L. | Cost optimization on projectors in H (dim ≥ 3) (T7).                        | Born weights                |
@@ -193,7 +200,7 @@ With F0 as the seed and {Δ-operators + SUR + Constraints} as the engine, the fo
 | 12   | Energy analogue     | Landauer slope (`λ`) links base cost to thermo; `F_β` links flow dynamics to thermo. Conserved quantity emerges. | Lagrange multiplier & cost trade-off (T3a, Box 2, Box 5). | energy analogue             |
 
 **(Box 6: Curvature algebra / Proposed EFE Derivation Path)**
-> Let `g_ab` be the metric derived from the Hessian of the relevant cost functional (e.g., related to `L`, `F_β`) on the appropriate state manifold (Box 4, often `(K, C₂, F_β)` space). Using the Raychaudhuri equation, the IC Area Law `S = A k_B / (4ℓ_p²)` (linked via `F_β`/Landauer), and the Ledger Clausius relation `δQ=TδS`, the proposed derivation path leads to the Einstein Field Equations (as per Proof Pack Step 4 target):
+> Let `g_ab` be the metric derived from the Hessian of the relevant cost functional (e.g., related to `L`, `F_β`) on the appropriate state manifold (Box 4, often `(K, C₂, F_β)` space, understood as equipped with metric `d_I`). Using the Raychaudhuri equation, the IC Area Law `S = A k_B / (4ℓ_p²)` (linked via `F_β`/Landauer), and the Ledger Clausius relation `δQ=TδS`, the proposed derivation path leads to the Einstein Field Equations (as per Proof Pack Step 4 target):
 > `R_ab - ½R g_ab + Λ g_ab = 8πG T_ab`.
 > **Current Status:** This is a targeted derivation path, not yet a completed proof within the documentation.
 > **(Update based on ToDos):** Geometrically, the RG flow acts on the state space parametrized by `(K, C₂, F_β)` preserving the 2-form σ. Curvature arises from the Fisher metric associated with `(K, C₂)` projected along the leaves defined by σ. The EFE derivation remains fundamentally linked to this curvature.
