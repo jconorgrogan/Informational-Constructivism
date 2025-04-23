@@ -14,60 +14,79 @@ I believe IC satisfies (a) now. Items (b) and (c) are documented as open tasks, 
 ---
 
 ## Core Logic: Why Registered Contrast is Unavoidable
-
-Before diving into formal axioms, the core idea of Informational Constructivism (IC) can be grasped through a simple line of reasoning about the fundamental limits of representation:
-
-### Starting Points (Two Extremes)
-
-You can imagine starting in one of two impossible places:
-
-1.  **Everything is already different and explicit (Ω).**
-    But to represent all those differences, you’d need infinite memory.
-    **Conclusion:** Any real system with **finite resources** can’t start here.
-    So most differences must be *latent* — they exist, but aren’t all registered.
-
-2.  **Nothing is different at all (S₀).**
-    But the moment you say “nothing is different,” you’ve made a difference — between that and “something is different.”
-    **Conclusion:** Pure sameness is representationally unstable. As soon as you try to describe it, you break it.
-    Again, we end up with latent differences — just nothing explicit yet.
-
-→ **Either way**, finite representation forces us into a middle state:
-**Latent structure exists, but none of it has been registered yet.**
+Before invoking any axioms, the core logic of IC can be extracted from first principles:
 
 ---
 
-### Step-by-step Logic
+## The Two Extremes: Both Fail
 
-1.  **Latent differences exist, but none are yet marked.**
-    But even to represent the state “none are registered” requires *at least one bit* — to distinguish that state from one where something *is* registered.
-    That means **one registered contrast must exist**.
-    → You’ve arrived at **F0: Registered Contrast**.
+1. **Ω: Every possible difference is explicit at once**  
+   This configuration cannot be finitely described. It would require an unbounded memory register to represent all distinctions.  
+   **Therefore:** Any system with a finite ledger (bounded memory, code, runtime, precision) cannot occupy Ω. Differences must exist latently, unregistered.
 
----
+2. **S₀: No difference at all**  
+   To specify “no difference” requires distinguishing it from “some difference.” That act instantiates a contrast.  
+   **Therefore:** S₀ is unstable under self-description. The moment it is representable, it is false.  
+   Latent differences again follow.
 
-2.  **F0: One registered contrast exists.**
-    A minimal register implies at least two states.
-    To reliably maintain a state against noise or decay, you need **memory**.
-    Memory in any physical system is **finite** (bounded by resources). Finite memory can fill.
-    → The system needs a way to manage this: **compression**.
-    → This launches the **SUR loop (Simplicity under Resource-constraint)**: optimize the trade-off between model complexity (`K`) and error/cost (`E`), locally represented as minimizing `L = K + λE`.
+→ **Conclusion:** Any representable system with finite resources is forced into a middle state:  
+latent distinctions exist, but none have yet been registered.
 
 ---
 
-3.  **The SUR loop drives emergence.**
-    As the system continuously registers, compresses, and updates under finite constraints:
-    - The ordered sequence of states defines **time**.
-    - The cost patterns needed to resolve remaining differences define **space** and distance.
-    - Stable compression strategies and bookkeeping rules emerge as **observers**, **physical laws**, etc.
+## Core Logic Flow
+
+### 1. **Latent contrasts exist, none registered**
+
+The state “no distinctions have been registered” is itself a distinction — it must differ from a state in which one contrast is registered.  
+To represent that difference requires a bit.  
+**Therefore:** At least one contrast must be registered.  
+→ This is **F0** (Registered Contrast).
 
 ---
 
-### Final Summary
+### 2. **F0 exists within a finite system**
 
-Starting from the impossibility of pure void (S₀) or total explicit complexity (Ω) for any system with **finite resources**, logic dictates that **at least one registered contrast (F0)** must occur. Once F0 exists within a finite system, the drive to **compress information efficiently (SUR)** becomes inevitable. This constrained optimization process inherently generates the structures we perceive as **time, space, physics, and observers.**
+A single registered contrast implies a minimal register with at least two states.  
+To preserve this contrast stably under environmental fluctuation, the system must encode the state — that is, it must contain memory.  
+Any such memory is finite (by ledger constraint `M`).  
+**Therefore:** It is possible for that memory to saturate.
 
-No extra rules are needed beyond distinction and finite resources.
-**The entire world of structure appears forced from the logic of difference under constraint.**
+---
+
+### 3. **Once memory is finite, some representations must be shorter than others**
+
+Not all sequences of distinctions can be stored in raw form.  
+There must exist transformations that represent equivalent distinction patterns using fewer bits.  
+Among those, some representations minimize a cost functional combining description length (K) and residual distortion or processing effort (E).  
+**This defines the SUR cost:** `L = K + λE`.
+
+No external drive is needed. **SUR minimization is the structural necessity imposed by:**
+- existing registered contrast (F0),
+- finite storage and representation capacity (C),
+- and the fact that multiple codes can represent the same distinctions with varying cost.
+
+---
+
+### 4. **The result: ordered updates, gradient structure, compression dynamics**
+
+Minimizing cost over successive distinctions implies:
+- An ordering of registration events — a trace — which defines **time**.
+- Residual cost gradients between incomplete or compressed distinctions — which define **distance** or **space**.
+- Recursive bookkeeping structures that stabilize distinctions over time — which instantiate **observers**, **physical law analogues**, and **dynamics**.
+
+---
+
+## Final Summary
+
+Any attempt to describe either extreme — total difference (Ω) or pure sameness (S₀) — collapses under finite representation.
+
+This collapse forces the existence of a minimal contrast (F0).  
+Once F0 exists within a system constrained by ledger limits, **optimal representation** becomes a matter of necessity, not intent.  
+That necessity gives rise to SUR, and from it, the layered structure we identify as time, space, physics, and observers.
+
+> No extra assumptions are required.  
+> **Structure is the inevitable consequence of attempting to represent difference under constraint.**
 
 ---
 
