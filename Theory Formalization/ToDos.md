@@ -13,40 +13,9 @@ Part A · Clean findings to incorporate
 5. Geometrically, RG acts as a contact-Hamiltonian flow preserving the 2-form
   $\sigma=dK\wedge dC_2-\mu\,dF_\beta\wedge dC_2$; Box 6’s curvature story lifts unchanged (interpreted on this space).
 
-Part B · Concrete manuscript edits
-
-(Use search-and-replace or rewrite as indicated; keep internal cross-refs coherent.)
-
-LedgerToddBridge.md
-• Rename every occurrence of “mean energy $E$” relevant to RG flow to “free-energy gap $F_\beta$”; keep a one-sentence note that $F_\beta\to E$ in the high-$T$ limit.
-• Replace equations involving the RG ratio $\lambda$ to use $\tilde\lambda = C_2 / (12 F_β)$ and ensure monotonicity justification follows from data-processing of $F_\beta$.
-• Delete text discussing “Conjecture 4.1” regarding `E` monotonicity and insert the proved/standard inequality for $F_\beta$ and assumed/standard inequality for $C_2$:
-  $C_2(\mathcal C\rho) \ge C_2(\rho)$, $F_\beta(\mathcal C\rho) \le F_\beta(\rho)$.
-
-README.md
-• Box 5: rewrite the definition of λ so that it relates the fundamental thermodynamic cost to information change at the SUR minimum, e.g., $\displaystyle \lambda=\partial F_\beta/\partial K\big|_{\text{SUR min}}=k_BT\ln2$. Clarify its role vs. E.
-• In Tier-12 entry (“Energy analogue”) change wording from “λ = ∂L/∂C” to “Landauer slope set by free energy $F_\beta$”.
-• Ledger geometry boxes (Boxes 4 & 6): Introduce the Ledger triple $(K,C_2,F_\beta)$ and the preserved 2-form σ in the context of RG flow. State that curvature now derives from the Fisher metric of $(K,C_2)$ along σ-leaves.
-
-Theory Formalization/InProgress.md
-• Step 3 (SUR Lyapunov) stays linear in $K+\lambda E$; add a footnote: “In RG analysis replace $E$ by $F_\beta$ to obtain monotone flows.”
-
-Ledger-Todd flow diagrams & text
-• Every arrow labelled “λ ↑” -> change to “$\tilde\lambda$ ↑”.
-• Add a sidebar: “If $H_N$ is EM vacuum, plateau $\tilde\lambda_\star(k_BT\ln2)=\alpha^{-1}$ (unchanged).”
-
-ToDos.md
-• Insert new task: “Prove RG monotonicity of $F_\beta$ for general CPTP maps.”
-• Retitle the old Conjecture 4.1 task to: "Confirm monotonic behavior of $C_2$ under $\mathcal C$".
-
-Noise.md, ISG.md, DimensionalProof.mf, RH.md, SUR linearity proof.md
-• No substantive math changes; just update any narrative sentences claiming ‘λ always increases [under RG flow]’ to ‘$\tilde\lambda$ is the relevant monotone [under RG flow]’. (Perform check).
-
-Global search-replace guidelines
-• Context-dependent: “mean energy $E$” → “free-energy gap $F_\beta$” (primarily within RG/Todd Bridge context).
-• Context-dependent: “λ = C₂/(12E)” → “$\tilde\lambda = C_2 / (12 F_\beta)$”.
-• Keep variable names in maths consistent with original proofs where `E` is appropriate (e.g., base SUR linearity); adjust prose to avoid confusion between base `λ` and RG flow `λ̃`.
-
+---
+**Outstanding Theoretical Tasks / Proof Goals**
+---
 
 | # | Target theorem / result | Why it matters | Key sub‑tasks | Suggested tools / refs |
 |---|-------------------------|----------------|---------------|------------------------|
