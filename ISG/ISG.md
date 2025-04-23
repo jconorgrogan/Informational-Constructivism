@@ -1,4 +1,5 @@
 **ISG**
+**ISG**
 
 1.  **Introduction and Purpose**
     This document describes the Integer Structure Grid (ISG), a derived conceptual tool for visualizing structural complexity within the framework of Informational Constructivism (IC). It is not an additional axiom of IC but rather arises naturally when representing the compositional structure of information built from irreducible primitives (`Δ_gen`). The ISG provides a map to understand how structures balance novelty generation (`k` distinct prime factors) against self-reuse (`x`, maximal exponent), offering insights into their potential cost profile under IC's resource constraints (`C`). Crucially, the ISG provides a language to distinguish between different structural profiles even for systems whose full detail may challenge the observer's descriptive capacity (Ledger C), effectively mapping the distinct features of this complexity boundary.
