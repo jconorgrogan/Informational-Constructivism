@@ -1,7 +1,8 @@
 **ISG**
+**ISG**
 
 1.  **Introduction and Purpose**
-    This document describes the Integer Structure Grid (ISG), a derived conceptual tool for visualizing structural complexity within the framework of Informational Constructivism (IC). It is not an additional axiom of IC but rather arises naturally when representing the compositional structure of information built from irreducible primitives. The ISG provides a map to understand how structures balance novelty generation against self-reuse, offering insights into their potential cost profile under IC's resource constraints.
+    This document describes the Integer Structure Grid (ISG), a derived conceptual tool for visualizing structural complexity within the framework of Informational Constructivism (IC). It is not an additional axiom of IC but rather arises naturally when representing the compositional structure of information built from irreducible primitives. The ISG provides a map to understand how structures balance novelty generation against self-reuse, offering insights into their potential cost profile under IC's resource constraints. Crucially, the ISG provides a language to distinguish between different structural profiles even for systems whose full detail may challenge the observer's descriptive capacity (Ledger C), effectively mapping the features of this complexity boundary.
     Understanding the ISG assumes familiarity with core IC concepts:
     *   Δ<sub>gen</sub>: Introduction of a novel, irreducible distinction (primitive generator).
     *   Δ<sub>self</sub>: Reuse or self-application of an existing represented structure/code, potentially increasing exponents.
@@ -33,7 +34,7 @@
     *   Which specific generators (primes) are used.
     *   The detailed distribution of exponents, beyond the maximum and the sum.
     *   The number of distinct prime factors k = |{p₁, ..., pₖ}|.
-    This projection is valid and useful **if and only if** the SUR cost L or the aspect of the system being analyzed is primarily sensitive to the maximal reuse depth (x) and the total count of primitive instances (y). If ledger cost depends on the number of distinct generators k, extend the projection to (x, y, k) or note explicitly that the present grid assumes uniform overhead per generator.
+    This projection is valid and useful **if and only if** the SUR cost L or the aspect of the system being analyzed is primarily sensitive to the maximal reuse depth (x) and the total count of primitive instances (y). This coarse-graining is particularly relevant for understanding systems near the limits imposed by Ledger C. While full description might be too costly (high K or E), the ISG profile (x, y) still allows the observer to classify *how* a system is complex – differentiating between deep reuse (high x) and broad aggregation (high y) – thereby describing systems by the distinct ways they challenge finite description. If ledger cost depends on the number of distinct generators k, extend the projection to (x, y, k) or note explicitly that the present grid assumes uniform overhead per generator.
     Think of the ISG as a coarse phase diagram summarizing complexity profiles based on depth vs. breadth. When the identity of specific generators matters or when interactions introduce costs not captured by x and y alone, the full exponent vector or other richer descriptions must be employed.
 
 5.  **Interpretation of Coordinates: Mapping to IC Operations and SUR Cost**
@@ -45,7 +46,7 @@
         *   **Handling Ties:** When several generators share the same maximum exponent, the current model treats them as equivalent. If split reuse carries a different cost, introduce x₂ = second‑largest exponent (or a full ordered exponent vector).
     *   **y (Total Primitive Instances):** Counts the total number of primitive building blocks used in the structure n. This includes the initial introduction of each distinct generator type (via Δ_gen) plus every subsequent reuse (via Δ_self) that contributes to the exponents. This count often directly reflects:
         *   The baseline description length (K) required to list the primitive constituents (e.g., K might have a term proportional to y).
-    Therefore, the (x, y) coordinates provide a profile of a structure's assembly strategy in terms of depth of reuse vs. total component count, which corresponds to its general position within the SUR cost landscape, **given a specific cost model relating x and y to K and E.**
+    Therefore, the (x, y) coordinates provide a profile of a structure's assembly strategy in terms of depth of reuse vs. total component count, which corresponds to its general position within the SUR cost landscape, **given a specific cost model relating x and y to K and E.** Thus, the ISG coordinates classify the structure of systems pushing against the observer's Ledger limits. It makes distinctions based on *how* limits are approached, even if the systems resist full internal description.
 
 6.  **Mapping IC Operations to Grid Movements**
     Assuming distinct primes map to distinct irreducible Δ_gen events:
@@ -87,4 +88,5 @@
     *   **Intentional Projection:** The map to (x, y) is a deliberate coarse-graining, valid when the SUR cost or analysis focuses primarily on these two aggregate measures (depth vs. breadth), potentially requiring extension to (x, y, k) if generator diversity is costly.
     *   **Baseline Composition:** Integer multiplication represents the minimal, order-independent, non-interacting composition within IC; more complex interactions require augmenting this model.
     *   **Visualization Tool:** The ISG provides a valuable conceptual grid for visualizing complexity profiles, comparing structures, and understanding the evolution of an observer's state under SUR dynamics and a given cost model.
+    *   **Classifying Limits:** The ISG offers a framework to distinguish between different structural profiles (high `x`, high `y`, high `k`, etc.) that characterize systems challenging an observer's descriptive capacity (Ledger C), effectively mapping the features of this complexity boundary.
     *   **Limitations:** **ISG fails when ordering or inter-component coupling dominates cost; then an ordered or graph-valued factorisation replaces plain integers.**
