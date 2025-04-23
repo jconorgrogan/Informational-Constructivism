@@ -36,7 +36,7 @@ When thinking about anything (reality, a system, a state), there are fundamental
 
 
 **Conclusion for A**  
-Absolute sameness is both logically unstable and structurally sterile. It cannot serve as a foundation.
+Absolute sameness is both logically unstable and structurally sterile. It **cannot** serve as a foundation.
 
 ---
 
