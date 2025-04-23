@@ -1,5 +1,7 @@
 # Informational Constructivism
 
+Is there anything we can prove universally about the universe? Things that must be true about all possible systems?
+
 When thinking about **anything** (reality, a system, a state), there are fundamentally three ways it could ever be with respect to differences or distinctions:
 
 **A) Absolutely No Difference (S₀)**  
@@ -11,6 +13,7 @@ When thinking about **anything** (reality, a system, a state), there are fundame
 **C) Something In Between**  
 *There is at least one difference, but not all possible differences.*
 
+Let's explore the logic that comes with each of these possibilities
 ---
 
 #### Test Possibility A: Absolute Sameness (S₀)
