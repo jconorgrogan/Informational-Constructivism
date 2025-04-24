@@ -217,7 +217,7 @@ Consider systems on Path 4.B (Dynamic, Finite, Sufficient Novelty → Necessary 
 
 The inescapable consequence of these combined necessities (L5, C1, C2) under the overarching constraint P0-2 is that the system is **structurally forced to optimize**. It cannot afford arbitrarily inefficient strategies (unbounded K or E). To persist (C2) while managing saturation (L5) with costly operations (C1) under finite resources (P0-2), it *must* continuously select or converge towards information management strategies that achieve a viable, efficient balance between descriptive costs (K) and processing/error/loss costs (E).
 
-**This forced optimization dynamic, necessitated by the conditions within Path 4.B + C1 + C2 under P0-2, is defined as the SUR (Simplicity under Resource-constraint) dynamic.**
+This forced optimization dynamic, necessitated by the conditions within Path 4.B + C1 + C2 under P0-2, is defined as the SUR (Simplicity under Resource-constraint) dynamic.**
 ---
 **### Final Synthesis: From Distinction to Self-Consistent Logic**
 
