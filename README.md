@@ -1,4 +1,4 @@
-## The Core Logic: Prerequisites for Describable, Finite Systems
+## The Core Logic of Informational Constructivism
 
 **What must be true for any system capable of description, internal registration, and operating under finite constraints? Can we deduce the minimal prerequisites from first principles?**
 
