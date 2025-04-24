@@ -1,4 +1,4 @@
-****What This Is About ****
+**What Informational Constructivism is all about (Overview)**
 
 1.  **Starting from Scratch:** We explore what can be logically deduced about *any* possible reality using only the most basic idea imaginable - whether things inside it are different or exactly the same - without assuming any specific physics.
 2.  **Logic + Limits Reveal What's Necessary:** By thinking logically about the possibilities and unavoidable limits (like avoiding total chaos or infinite complexity with finite means), we figure out:
