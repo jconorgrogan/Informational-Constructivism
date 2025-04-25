@@ -1,4 +1,17 @@
 **What Informational Constructivism is all about (Overview)**
+5/25 to dos; need to add implications of: 
+Theorem (CL-Feasibility).
+Let D be any finite device that
+
+(F0) registers at least one concrete distinction A ≠ B, and
+
+satisfies the ledger bound
+    K(D) + λ E(D) ≤ L_max   (λ ≡ k_B T ln 2).
+
+Then every admissible inference rule-set implemented by D is bivalent, consistent, and extensionally identical to classical propositional logic.
+Put differently: within the feasible region
+F = { R | K(R)+λE(R) ≤ L_max },
+the only rule-sets are classical ones.
 
 1.  **Starting from Scratch:** We explore what can be logically deduced about *any* possible reality using only the most basic idea imaginable - whether things inside it are different or exactly the same - without assuming any specific physics or inserting any axioms at all
 2.  **Logic + Limits Reveal What's Necessary:** By thinking logically about the possibilities and unavoidable limits (like avoiding total chaos or infinite complexity with finite means), we figure out:
