@@ -282,3 +282,6 @@ Self-Consistency of Logic (Rephrased):
 - This dynamic drives further structure formation and complexity, while simultaneously reinforcing the effectiveness of the very logical framework used to deduce its necessity,  
 - Creating a robust, **self-consistent picture** for this branch of reality.  
 - The next step (Contained in this github repository_ is to explore the **concrete structural manifestations** driven by this SUR imperative, to verify if the observations in physics and math logically flow from this theory.
+
+- Other to-dos: flesh out existing connections that fit within the IC framework eg: https://github.com/jconorgrogan/Musing-on-Consciousness/tree/main
+- -
