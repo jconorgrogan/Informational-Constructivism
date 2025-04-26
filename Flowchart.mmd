@@ -1,0 +1,53 @@
+flowchart TD
+    %% Level 0 – starting point
+    A0["Distinction = at least one difference"]
+
+    %% Level 1 – exhaustive partition
+    A0 --> A1a["S0 (absolute sameness)"]
+    A0 --> A1b["Omega (all differences)"]
+    A0 --> A1c["C (constrained differences)"]
+
+    %% Eliminate non-viable branches
+    A1a -.-> Z1["X  inert"]
+    A1b -.-> Z2["X  violates EFR"]
+
+    %% Viability filter
+    A1c --> B0["EFR  explosion-free reference"]
+
+    %% Operational finiteness
+    B0  --> B1["FRS  finite reachable set per cycle"]
+    B1  --> B2["F0  registered contrast"]
+
+    %% Static consequences
+    B2  --> C1["L1  finite state set (>= 2)"]
+    C1  --> C2["L2–L4  partition & labelling"]
+
+    %% Behaviour space
+    C2  --> D0{"Dynamics?"}
+    D0  -->|No | D1["Static systems"]
+    D0  -->|Yes| D2["Dynamic systems"]
+
+    %% Interaction / novelty
+    D2  --> E0{"Sufficient novelty?"}
+    E0  -->|No | E1["Path 4.A  no saturation"]
+    E0  -->|Yes| E2["L5  saturation risk"]
+
+    %% Responses to saturation
+    E2  --> F1["Fail / halt"]
+    E2  --> F2["Overwrite / forget"]
+    E2  --> F3["Complex encoding"]
+
+    %% Cost landscape
+    F2  --> G0["Cost (C1) + RCR"]
+    F3  --> G0
+    G0  --> H0{"Persist?"}
+
+    H0  -->|No | H1["Transient systems"]
+    H0  -->|Yes| H2["PO  persistence objective"]
+
+    %% Forced optimisation
+    H2  --> I0["SUR-systems"]
+
+    %% Highlight final node
+    classDef final fill:#e2f2ff,stroke:#007acc,stroke-width:2px;
+    class I0 final
