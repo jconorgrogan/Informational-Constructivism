@@ -1,55 +1,71 @@
 flowchart TD
-    %% ───────── 0 · Starting datum ─────────
-    F0["F0  Registered Contrast<br/>(difference noticed)"]
+    %% ───────── PRE-EVENT LAYERS ─────────
+    P0["P-0 Latent possibility<br/>(substrate admits ≥ 2 micro-configs)"]
+    P1["P-1 Enablement<br/>(one writable slot + non-zero noise)"]
+    P0 --> P1
 
-    %% ───────── 1 · Immediate necessities ─────────
-    subgraph N0["Global necessities (true in every continuation)"]
-        M1["Multiplicity (≥2 poles)"]
-        P1["Trace persistence"]
-        O1["Minimal ordering (unmarked→marked)"]
-        L0["Proto-logic (Id,¬Contrad.)"]
-        R0["Finite action (per-cycle resources)"]
+    %% ───────── EVENT ─────────
+    F0["F0 Registered Contrast<br/>(difference actually recorded)"]
+    P1 --> F0
+
+    %% ───────── IMMEDIATE CONSEQUENCES ─────────
+    subgraph C0["C-0 Immediate consequences"]
+        C0_1["Multiplicity realised"]
+        C0_2["Trace persists"]
+        C0_3["Asymmetric before → after"]
     end
-    F0 --> N0
+    F0 --> C0
 
-    %% ───────── 2 · Global‐structure branch ─────────
-    F0 --> B0{"Global structure of reality"}
-    B0 --> S0["S₀ (no differences)"] -.-> X0["⊗ Contradicts F0"]
-    B0 --> OMEGA["Ω (all differences)"] -.-> X1["⊗ Violates stable reference"]
-    B0 --> C0["C (constrained differences)"]
+    %% ───────── STRUCTURAL NECESSITIES ─────────
+    subgraph C1["C-1 Structural necessities"]
+        L1["Identity & ¬Contradiction"]
+        EFR["Explosion-Free Reference"]
+        FA["Finite action per cycle"]
+    end
+    C0 --> C1
 
-    %% ───────── 3 · Necessity inside C ─────────
-    C0 --> FRS["FRS  Finite Reachable Set"]
+    %% ───────── FINITE REACHABLE SET ─────────
+    FRS["C-2 FRS Finite Reachable Set"]
+    C1 --> FRS
 
-    %% ───────── 4 · Internal dynamics branch ─────────
-    FRS --> DYN{"Internal dynamics?"}
-    DYN --> STAT["Static system"]
-    DYN --> DYNyes["Dynamic system"]
+    %% ───────── DYNAMICS BRANCH ─────────
+    DYN{"C-3 Internal dynamics?"}
+    FRS --> DYN
+    STAT["Static system"]
+    DYNyes["Dynamic system"]
+    DYN --> STAT
+    DYN --> DYNyes
 
-    %% Static terminates
-    STAT -.-> ZS["(No saturation, no SUR)"]
+    %% ───────── NOVELTY BRANCH ─────────
+    NOVEL{"C-4 Sufficient novelty?"}
+    DYNyes --> NOVEL
+    LOWNOV["Insufficient novelty<br/>(no saturation)"]
+    SATRISK["L5 Saturation risk"]
+    NOVEL --> LOWNOV
+    NOVEL --> SATRISK
 
-    %% ───────── 5 · Novelty branch ─────────
-    DYNyes --> NOVEL{"Sufficient novelty?"}
-    NOVEL --> LOWNOV["Insufficient novelty"] -.-> ZN["(Within FRS, no L5)"]
-    NOVEL --> SATRISK["L5  Saturation risk"]
+    %% ───────── COST NECESSITY ─────────
+    COST["C-5 C1 + RCR<br/>(non-zero operation cost)"]
+    SATRISK --> COST
 
-    %% ───────── 6 · Cost necessity ─────────
-    SATRISK --> COST["C1 + RCR (non-zero operation cost)"]
+    %% ───────── PERSISTENCE BRANCH ─────────
+    PERS{"C-6 Persistence objective?"}
+    COST --> PERS
+    HALT["No → halt/fail"]
+    YESPO["Yes → must continue"]
+    PERS --> HALT
+    PERS --> YESPO
 
-    %% ───────── 7 · Persistence branch ─────────
-    COST --> PERS{"Persistence objective?"}
-    PERS --> HALT["No PO  → halt/fail"] -.-> ZH["(terminates)"]
-    PERS --> YESPO["Yes PO"]
+    %% ───────── SUR OPTIMISATION ─────────
+    SUR["C-7 SUR<br/>(minimise L = K + λE)"]
+    YESPO --> SUR
 
-    %% ───────── 8 · Forced optimisation ─────────
-    YESPO --> SUR["SUR  (minimise L = K + λE)"]
-
-    %% ───────── 9 · Final class ─────────
-    SUR --> FINAL["SUR-systems<br/>(cost-optimising, logical)"]
+    %% ───────── FINAL CLASS ─────────
+    FINAL["SUR-systems<br/>(cost-optimising, logical)"]
+    SUR --> FINAL
 
     %% Styling
     classDef final fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
     class FINAL final
-    classDef dead fill:#ffe0e0,stroke:#d32f2f,stroke-width:1px,stroke-dasharray: 4 2;
-    class X0,X1,ZS,ZN,ZH dead
+    classDef dead fill:#ffe0e0,stroke:#d32f2f,stroke-width:1px,stroke-dasharray:4 2;
+    class HALT,LOWNOV,STAT dead
