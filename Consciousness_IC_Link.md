@@ -1,6 +1,5 @@
 # Consciousness_IC_Link.md
 
-*(Revised based on review feedback)*
 
 ## Bridging the Phenomenological Description of Consciousness with Informational Constructivism (IC)
 
