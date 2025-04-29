@@ -51,6 +51,7 @@
 9.  **Logic & Computation**: The combination of stable, distinguishable states (L1, S-Carrier, S-FiniteQ), controlled transitions (S-Carrier), and non-zero operational costs (S-Cost) forms the basis for implementing logic gates and arithmetic. **The pressure to operate efficiently under S-Cost within the limits of S-FiniteQ drives the emergence of optimization strategies (SUR).**
 10. **Compression & Coarse-Graining**: The SUR dynamic, forced by finite memory (S-FiniteQ) and update costs (S-Cost), necessitates the development of efficient, often lossy, information encoding schemes (compression). Apparent continua in observed physics can arise as idealized limits (n → ∞, resolution → 0) of these underlying finite, discrete processes.
 
+Readers who deny any of S-Carrier, S-FiniteQ, or S-Cost are free to explore alternative branches; this paper confines itself to the branch where all three hold, because that branch alone reproduces the hallmarks of observable, resource-limited worlds, the most minimum set of things that all humans would agree must exist.
 ---
 
 ## Conclusion
