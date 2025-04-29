@@ -1,5 +1,5 @@
 # How Could a Universe Be *Logically* Inevitable?  
-*A strictly minimal-assumption derivation, now with built-in clarifications*
+*A strictly minimal-assumption derivation*
 
 ---
 
