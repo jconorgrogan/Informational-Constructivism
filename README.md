@@ -1,4 +1,5 @@
-# How Could a Universe Be *Logically* Inevitable?
+# How Could a Universe Be *Logically* Inevitable? (Or: Why is there something and not nothing?)
+
 *A strictly minimal-assumption derivation*
 
 ---
