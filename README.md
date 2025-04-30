@@ -4,10 +4,9 @@
 ---
 
 ## TLDR
-1.  **Even referencing “absolute nothing” *within any descriptive framework* forces a Null vs. Not-Null distinction.**
-2.  **Any distinction that can be *re-identified* (recurs just once, requiring minimal persistence L1) supplies the seed of ordinal time and memory.**
-3.  **Therefore, *if* this recurrence is embodied in a stable medium that is finite-distinguishable and incurs update costs, the system inevitably faces internal representational limits. Persistent trajectories (those avoiding halt states, Condition C2) resolving L5 must adopt mechanisms (state reuse or patterned encoding) whose viability is governed by resource constraints, necessarily leading to a structured dynamic favouring efficiency (SUR).**
-
+1. Making any distinction creates a fundamental contrast: Even trying to conceptualize "absolute nothing" forces a distinction between it and something (like the concept itself), establishing a basic logical split.
+2. Recognizing a distinction again creates time & memory: If the same distinction can be identified more than once ("this happened," "this happened again"), you get the simplest possible form of time (before/after) and memory (recognizing the repeat).
+3. Finite systems under pressure develop structure: If these repeating distinctions occur within a system that has real-world limits (e.g., finite capacity to hold information, costs associated with making changes), it will inevitably run into complexity bottlenecks. To continue operating without breaking down, the system must find efficient ways to manage information (like reusing existing states or creating compressed codes). This pressure to be efficient under constraints inherently forces the system to develop structure, rules, and complexity as a survival mechanism.
 ---
 
 ## Key Operational Concepts
