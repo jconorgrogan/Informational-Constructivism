@@ -4,9 +4,9 @@
 ---
 
 ## TLDR
-1.  **Even referencing “absolute nothing” *within any descriptive framework* (Assumption L0: Discourse Possible) forces a Null vs. Not-Null distinction.**
+1.  **Even referencing “absolute nothing” *within any descriptive framework* forces a Null vs. Not-Null distinction.**
 2.  **Any distinction that can be *re-identified* (recurs just once, requiring minimal persistence L1) supplies the seed of ordinal time and memory.**
-3.  **Therefore, *if* this recurrence is embodied in a stable medium (S-Carrier) that is finite-distinguishable (S-FiniteQ) and incurs update costs (S-Cost), the system inevitably faces internal representational limits (L5). Persistent trajectories (those avoiding halt states, Condition C2) resolving L5 must adopt mechanisms (state reuse or patterned encoding) whose viability is governed by resource constraints, necessarily leading to a structured dynamic favouring efficiency (SUR).**
+3.  **Therefore, *if* this recurrence is embodied in a stable medium that is finite-distinguishable and incurs update costs, the system inevitably faces internal representational limits. Persistent trajectories (those avoiding halt states, Condition C2) resolving L5 must adopt mechanisms (state reuse or patterned encoding) whose viability is governed by resource constraints, necessarily leading to a structured dynamic favouring efficiency (SUR).**
 
 ---
 
