@@ -5,8 +5,8 @@
 
 ## TLDR
 1. Making any distinction creates a fundamental contrast: Even trying to conceptualize "absolute nothing" forces a distinction between it and something (like the concept itself), establishing a basic logical split.
-2. Recognizing a distinction again creates time & memory: If the same distinction can be identified more than once ("this happened," "this happened again"), you get the simplest possible form of time (before/after) and memory (recognizing the repeat).
-3. Finite systems under pressure develop structure: If these repeating distinctions occur within a system that has real-world limits (e.g., finite capacity to hold information, costs associated with making changes), it will inevitably run into complexity bottlenecks. To continue operating without breaking down, the system must find efficient ways to manage information (like reusing existing states or creating compressed codes). This pressure to be efficient under constraints inherently forces the system to develop structure, rules, and complexity as a survival mechanism.
+2. Recognizing a distinction again is the seed of time & memory: If the same distinction can be identified more than once ("this happened," "this happened again"), this recurrence itself provides the minimal basis for before/after (time) and recognition (memory).
+3. Structure is required for persistent operation under limits: If a system has this capacity for recurrence (point 2) and is subject to real-world constraints (finite information capacity, costs of change), then any sequence of operations that avoids halting must necessarily manage the resulting representational limits. This management is only possible through efficient mechanisms (like reusing states or encoding information compactly), thereby logically dictating the emergence of internal structure, rules, and complexity within such persistent trajectories.
 ---
 
 ## Key Operational Concepts
