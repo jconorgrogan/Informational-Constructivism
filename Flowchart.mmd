@@ -1,11 +1,11 @@
 flowchart TD
-    %% ───────── PRE-EVENT LAYERS ─────────
-    P0["P-0 Latent possibility<br/>(substrate admits ≥ 2 micro-configs)"]
-    P1["P-1 Enablement<br/>(one writable slot + non-zero noise)"]
+    %% ───────── PRE-INTERFACE LAYERS ─────────
+    P0["P-0 Latent multiplicity<br/>(S₀ vs Ω distinction)"]
+    P1["P-1 Writable / noisy slot<br/>(unstable S₀ ∥ Ω boundary)"]
     P0 --> P1
 
     %% ───────── EVENT ─────────
-    F0["F0 Registered Contrast<br/>(difference actually recorded)"]
+    F0["F0 Registered Contrast<br/>(first forced bit)"]
     P1 --> F0
 
     %% ───────── IMMEDIATE CONSEQUENCES ─────────
@@ -20,16 +20,16 @@ flowchart TD
 
     %% ───────── STRUCTURAL NECESSITIES ─────────
     subgraph C1["C-1 Structural necessities"]
-        L1["Identity & ¬Contradiction"]
+        L1stub["Identity & ¬Contradiction"]
         EFR["Explosion-Free Reference"]
         FA["Finite action per cycle"]
     end
-    C0_1 --> L1
+    C0_1 --> L1stub
     C0_2 --> EFR
     C0_3 --> FA
 
     %% ───────── FINITE REACHABLE SET ─────────
-    FRS["C-2 FRS Finite Reachable Set"]
+    FRS["C-2 Finite Reachable Set (S-FiniteQ)"]
     C1 --> FRS
 
     %% ───────── DYNAMICS BRANCH ─────────
@@ -40,16 +40,20 @@ flowchart TD
     DYN -- No --> STAT
     DYN -- Yes --> DYNyes
 
+    %% ───────── RECURRENCE (L1 realisation) ─────────
+    REC["C-3a Recurrence forced<br/>(L1 via pigeon-hole)"]
+    DYNyes --> REC
+
     %% ───────── NOVELTY BRANCH ─────────
     NOVEL{"C-4 Sufficient novelty?"}
-    DYNyes --> NOVEL
+    REC --> NOVEL
     LOWNOV["Insufficient novelty<br/>(no saturation)"]
     SATRISK["L5 Saturation risk"]
     NOVEL -- No --> LOWNOV
     NOVEL -- Yes --> SATRISK
 
     %% ───────── COST NECESSITY ─────────
-    COST["C-5 C1 + RCR<br/>(non-zero operation cost)"]
+    COST["C-5 Non-zero op cost (S-Cost)"]
     SATRISK --> COST
 
     %% ───────── PERSISTENCE BRANCH ─────────
