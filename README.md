@@ -13,6 +13,7 @@
 ---
 
 ## Key Operational Concepts
+(These terms are explained more fully in the main text below)
 
 | Term                         | Minimal meaning                                                                   | Clarification                                                                                                                               |
 | :--------------------------- | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -31,6 +32,7 @@
 ---
 
 ## Stage 1: Forced Finite Distinction from Ontological Limits
+(Here we argue why some finite structure must exist)
 
 0.  **Consider Ontological Extremes:** Instead of starting within a pre-defined framework, consider the absolute conceptual limits:
     *   **S₀ (Absolute Null):** Pure non-being, lacking any states or distinctions.
@@ -49,6 +51,7 @@
 ---
 
 ## Stage 2: Emergence of Structured Dynamics (Requires S-Assumptions)
+(Here we explore how dynamics acting on finite labels inevitably leads to time, memory, and complex structure)
 
 **Preamble:** We now consider systems founded on the forced, finite set of labels (`Σ`, F-0 arising from the S₀/Ω interface, implying S-FiniteQ) that *also* possess properties enabling **dynamic evolution, internal stability, and information processing under resource constraints.** This necessitates further assumptions related to the nature of the medium supporting persistence and change:
 
