@@ -12,8 +12,8 @@ This argument outlines how core features of reality are logically inevitable via
 2.  **Time & Memory are Forced Consequences of Finite Dynamics:** Given the derived FRS, any persistent system capable of change (**SE** via **S-Carrier**) is *mathematically compelled* (Pigeonhole Principle) to reuse labels (**Label Recurrence, L1/LR**). This unavoidable consequence generates internal time-ordering and memory-as-compression directly from the interplay of derived finiteness and dynamics.
 3.  **Structure (SUR) is Forced by Persistence Under Derived Limits:** State changes within the derived FRS imply **Necessary Irreversibility (NI)** and its unavoidable **Operational Consequences (NOC)**. Persistent systems (**C2/PF**) inevitably hit complexity limits (**Saturation L5/SP**) relative to FRS. To avoid halting, they *must* navigate these limits by managing NOC trade-offs using only FRS pathways. This necessary navigation *is* **SUR (Structure Under Resource-constraint)** – the dynamic forcing the emergence of rules and complexity as the only viable way to persist under logically derived constraints.
 
-**In essence:** The framework attempts to deduce finite states (FRS), internal time/memory (L1/LR), and structure-generating dynamics (SUR) as *logically necessary consequences* flowing purely from the untenability of S₀/Ω (revealed by L0) and the requirements for persistence under the resulting derived operational constraints (FRS, NOC), aiming to ground how a structured reality MUST form.
----
+**In essence:**  The framework attempts to deduce finite states (FRS), internal time/memory (L1/LR), and structure-generating dynamics (SUR) as *logically necessary consequences* flowing purely from the untenability of S₀/Ω (revealed by L0) and the requirements for persistence under the resulting derived operational constraints (FRS, NOC), aiming to ground how a structured reality MUST form.
+---**
 
 ## Key Operational Concepts
 (These terms are explained more fully in the main text below)
