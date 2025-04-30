@@ -14,7 +14,9 @@ flowchart TD
         C0_2["Trace persists"]
         C0_3["Asymmetric before → after"]
     end
-    F0 --> C0
+    F0 --> C0_1
+    F0 --> C0_2
+    F0 --> C0_3
 
     %% ───────── STRUCTURAL NECESSITIES ─────────
     subgraph C1["C-1 Structural necessities"]
@@ -22,7 +24,9 @@ flowchart TD
         EFR["Explosion-Free Reference"]
         FA["Finite action per cycle"]
     end
-    C0 --> C1
+    C0_1 --> L1
+    C0_2 --> EFR
+    C0_3 --> FA
 
     %% ───────── FINITE REACHABLE SET ─────────
     FRS["C-2 FRS Finite Reachable Set"]
@@ -33,16 +37,16 @@ flowchart TD
     FRS --> DYN
     STAT["Static system"]
     DYNyes["Dynamic system"]
-    DYN --> STAT
-    DYN --> DYNyes
+    DYN -- No --> STAT
+    DYN -- Yes --> DYNyes
 
     %% ───────── NOVELTY BRANCH ─────────
     NOVEL{"C-4 Sufficient novelty?"}
     DYNyes --> NOVEL
     LOWNOV["Insufficient novelty<br/>(no saturation)"]
     SATRISK["L5 Saturation risk"]
-    NOVEL --> LOWNOV
-    NOVEL --> SATRISK
+    NOVEL -- No --> LOWNOV
+    NOVEL -- Yes --> SATRISK
 
     %% ───────── COST NECESSITY ─────────
     COST["C-5 C1 + RCR<br/>(non-zero operation cost)"]
@@ -51,10 +55,10 @@ flowchart TD
     %% ───────── PERSISTENCE BRANCH ─────────
     PERS{"C-6 Persistence objective?"}
     COST --> PERS
-    HALT["No → halt/fail"]
-    YESPO["Yes → must continue"]
-    PERS --> HALT
-    PERS --> YESPO
+    HALT["Halt / fail"]
+    YESPO["Persist"]
+    PERS -- No --> HALT
+    PERS -- Yes --> YESPO
 
     %% ───────── SUR OPTIMISATION ─────────
     SUR["C-7 SUR<br/>(minimise L = K + λE)"]
@@ -66,6 +70,6 @@ flowchart TD
 
     %% Styling
     classDef final fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
+    classDef dead  fill:#ffe0e0,stroke:#d32f2f,stroke-width:1px,stroke-dasharray:4 2;
     class FINAL final
-    classDef dead fill:#ffe0e0,stroke:#d32f2f,stroke-width:1px,stroke-dasharray:4 2;
     class HALT,LOWNOV,STAT dead
