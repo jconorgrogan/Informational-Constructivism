@@ -1,4 +1,4 @@
-# Could a Universe Be logically AND illogically inevitable? (Or: Why is there something and not nothing)
+# Could a Universe Be logically AND illogically inevitable? (Or: Why there MUST be something and not nothing)
 
 *A Strictly Minimal-Assumption Derivation*
 
