@@ -6,26 +6,28 @@ flowchart TD
 
     %% ───────── EVENT ─────────
     F0["F0 Registered Contrast<br/>(first forced bit)"]
-    P1 -- Δ_gen --> F0          %% ① annotated operator
+    %% first non-identity generator
+    P1 -- "Δ_gen" --> F0
 
     %% ───────── IMMEDIATE CONSEQUENCES ─────────
     subgraph C0["C-0 Immediate consequences"]
         C0_1["Multiplicity realised"]
         C0_2["Trace persists"]
         C0_3["Asymmetric before → after"]
-        C0_4["Non-invertible Δ ⇒ DAG"]      %% ② renamed
-        C0_5["Proto-arrow<br/>(≤₍info₎ order)"]
+        C0_4["Non-invertible Δ ⇒ DAG"]
+        C0_5["Proto-arrow:<br/>earlier ≺ later"]
         C0_6["Minimal memory:<br/>present encodes ancestors"]
     end
-    F0  --> C0_1
-    F0  --> C0_2
-    F0  --> C0_3
-    %% Proto-Arrow call-out
-    PAT0["PA-Thm-0<br/>Non-injective Δ ⇒ partial-order ≤₍info₎ ⇒ time-like chains"]
+    F0 --> C0_1
+    F0 --> C0_2
+    F0 --> C0_3
+
+    %% Proto-Arrow theorem ref
+    PAT0["PA-Thm-0<br/>Non-injective Δ ⇒ partial order ⇒ time-like chains"]
     classDef note fill:#ffffe0,stroke:#9e9e9e,stroke-dasharray:4 3;
     class PAT0 note
     C0_3 -.-> PAT0
-    PAT0 -.-> C0_4             %% ③ theorem anchored on the edge
+    PAT0 -.-> C0_4
 
     C0_3 --> C0_4
     C0_4 --> C0_5
@@ -33,28 +35,29 @@ flowchart TD
 
     %% ───────── STRUCTURAL NECESSITIES ─────────
     subgraph C1["C-1 Structural necessities"]
-        L1["Identity & ¬Contradiction<br/>(forced by DAG semantics)"]  %% ④ clarified
+        L1["Identity & ¬Contradiction<br/>(forced by DAG semantics)"]
         EFR["Explosion-Free Reference"]
         FA["Finite action per cycle"]
     end
     C0_1 --> L1
     C0_2 --> EFR
     C0_3 --> FA
-    C0_4 -.ordering ensures.-> L1      %% dotted helper edge
-    C0_6 -.first stable ref.-> EFR     %% ⑤ memory ⇒ EFR
+    C0_4 -. "ordering ensures" .-> L1
+    C0_6 -. "first stable ref" .-> EFR
 
     %% ───────── FINITE REACHABLE SET ─────────
     FRS["C-2 Finite Reachable Set (S-FiniteQ)"]
     C1 --> FRS
-    FRS -- Δ_id --> FRS                %% ⑥ reflexive identity loop
+    FRS -- "Δ_id" --> FRS
 
     %% ───────── DYNAMICS BRANCH ─────────
     DYN{"C-3 Internal dynamics?"}
     FRS --> DYN
-    TERMINAL["Static / Halt<br/>(terminal object)"]  %% ⑦ merged sinks
+    TERMINAL["Static / Halt<br/>(terminal object)"]
+    class TERMINAL dead
     DYNyes["Dynamic system"]
-    DYN -- No --> TERMINAL
-    DYN -- Yes --> DYNyes
+    DYN -- "No"  --> TERMINAL
+    DYN -- "Yes" --> DYNyes
 
     %% ───────── RECURRENCE ─────────
     REC["C-3a Recurrence forced<br/>(pigeon-hole)"]
@@ -65,19 +68,19 @@ flowchart TD
     REC --> NOVEL
     LOWNOV["Insufficient novelty<br/>(no saturation)"]
     SATRISK["L5 Saturation risk"]
-    NOVEL -- No --> LOWNOV
-    NOVEL -- Yes --> SATRISK
+    NOVEL -- "No"  --> LOWNOV
+    NOVEL -- "Yes" --> SATRISK
 
     %% ───────── COST NECESSITY ─────────
-    COST["C-5 Non-zero op cost (S-Cost)<br/>(ΔH > 0 or ΔE ≥ kBT ln 2)"]  %% ⑧ Landauer hook
+    COST["C-5 Non-zero op cost (S-Cost)<br/>(ΔH > 0 or ΔE ≥ kBT ln 2)"]
     SATRISK --> COST
 
     %% ───────── PERSISTENCE BRANCH ─────────
     PERS{"C-6 Persistence objective?"}
     COST --> PERS
-    PERS -- No --> TERMINAL
     YESPO["Persist"]
-    PERS -- Yes --> YESPO
+    PERS -- "No"  --> TERMINAL
+    PERS -- "Yes" --> YESPO
 
     %% ───────── SUR OPTIMISATION ─────────
     SUR["C-7 SUR<br/>(minimise L = K + λE)"]
@@ -85,14 +88,14 @@ flowchart TD
 
     %% ───────── FINAL CLASS ─────────
     FINAL["SUR-systems<br/>(cost-optimising, logical)"]
+    class FINAL final
     SUR --> FINAL
 
     %% ───────── ARROW-OF-TIME CALLOUT ─────────
-    TOT["**Arrow of Time begins here.**<br/>C0-4 makes the graph a DAG;<br/>≤₍info₎ order in that DAG **is**<br/>the arrow; memory C0-6 stores<br/>its irreversible footprint."]
+    TOT["**Arrow of Time starts here.**<br/>C0-4 forces a DAG.<br/>The ≤₍info₎ order in that DAG<br/>*is* the arrow; memory (C0-6)<br/>stores its irreversible footprint."]
+    class TOT note
     C0_6 --> TOT
 
     %% Styling
     classDef final fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
     classDef dead  fill:#ffe0e0,stroke:#d32f2f,stroke-width:1px,stroke-dasharray:4 2;
-    class FINAL final
-    class TERMINAL dead
