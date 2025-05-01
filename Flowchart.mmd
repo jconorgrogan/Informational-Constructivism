@@ -79,7 +79,7 @@ flowchart TD
     class FINAL final
     SUR --> FINAL
 
-    TOT["**Arrow of Time starts here.**<br/>C0-4 forces a DAG.<br/>The ≤₍info₎ order in that DAG<br/>*is* the arrow; memory (C0-6)<br/>stores its irreversible footprint."]
+    TOT["**Arrow of Time starts here.**<br/>C0-4 forces a DAG;<br/>the ≤₍info₎ order in that DAG<br/>*is* the arrow. Memory (C0-6)<br/>stores its irreversible footprint."]
     class TOT note
     C0_6 --> TOT
 
@@ -87,17 +87,13 @@ flowchart TD
     classDef final fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
     classDef dead  fill:#ffe0e0,stroke:#d32f2f,stroke-width:1px,stroke-dasharray:4 2;
 
-    %% ───────── PART B · HOW A LOOP APPEARS AFTER COLLAPSE ─────────
-    subgraph Loop_Demo["Event vs Collapsed View – cycles arise only after forgetting timestamps"]
+    %% ───────── PART B · LOOP EMERGES AFTER COLLAPSE ─────────
+    subgraph Loop_Demo["Event view vs Collapsed view"]
         direction LR
         subgraph EV["Event-level DAG (acyclic – full info)"]
             A0["(s0, t₀)"] --> A1["(s1, t₁)"] --> A2["(s0, t₂)"] --> A3["(s1, t₃)"]
         end
-        subgraph CV["Collapsed state graph (cycle emerges)"]
+        subgraph CV["Collapsed state graph (cycle appears)"]
             S0((s0)) --> S1((s1)) --> S0
         end
     end
-
-    %% Colour links for clarity in Part B
-    linkStyle 0,1,2,3 stroke:#1f77b4,stroke-width:2px;   %% event-level
-    linkStyle 4,5 stroke:#d62728,stroke-width:2px;       %% collapsed cycle
