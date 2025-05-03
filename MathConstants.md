@@ -1,219 +1,142 @@
 # Constants as Ledger-Residuals  
 *A Simplicity-Under-Resource account of transcendental numbers*  
-**May 2025 — v1.4**
+ 
+## 1  Introduction & Critical Assumptions  
+
+Informational Constructivism (IC) proposes that **fundamental constants** arise
+as *ledger residuals*: immutable slack left when a finite
+information-processing system minimises cost but halts in front of an
+**infinite-cost wall**.  This note refines the idea and flags what is proven,
+conjectured, or open.
+
+> **Key assumptions (under active investigation)**  
+> 1. **Universality** – wall templates are the same for all observers once
+>    their ledger budget clears a threshold.  
+> 2. **Uniqueness** – each wall supports exactly one SUR optimum.  
+> 3. **Weight-independence** – residual values do not depend on arbitrary
+>    cost-weights (λ, μ) or those weights are themselves fixed
+>    thermodynamically.  
+
+A formal measure-theoretic definition of *wall* and *residual* is in
+preparation (see **To-Do 1**); present wording is illustrative.
 
 ---
 
-## Abstract  
+## 2  Ledger incompleteness & compression walls  
 
-Informational Constructivism (IC) models any finite information-processor by a **ledger**  
+A ledger  
+\(C=(M,K,\tau,\varepsilon)\)  
+is **incomplete**: pushing any column to infinity is prohibited.
 
-\[
-C=(M,K,\tau,\varepsilon)
-\]
+### 2.1  Illustrative wall archetypes  
 
-recording memory, code length, run-time and numerical precision.  
-Local dynamics minimise the **SUR** functional  
+| Diverging column(s) | Conceptual gap | Prototype wall |
+|---------------------|----------------|----------------|
+| \(K\!\to\!\infty\) | Polygon → circle | π |
+| \(\tau\!\to\!\infty\) | Discrete sum → integral | e, γ |
+| \(C_{2}\downarrow,F_{\beta}\downarrow\) | RG fixed point | Feigenbaum δ |
+| \(K\!\to\!\infty\) by fiat | Liouville digit rule | any real |
+
+> *Incompressible boundary.*  
+> A **compression wall** is the boundary of the region  
+> \(\{\,x : L(x)<\infty\}\)  
+> in ledger state-space.  **Formalisation is scheduled in *wall.mm* (\*To-Do 1\*).**
+
+---
+
+## 3  SUR cost & why constants appear  
+
+The base cost forced by monotonicity + additivity is  
 
 \[
 L(K,E)=K+\lambda E,
-\qquad 
-\lambda = k_{\!B}T\ln 2 ,
-\]
-
-while coarse-grained (RG) dynamics minimise the monotone Lyapunov  
-
-\[
-\tilde{\lambda} \;=\; \frac{C_{2}}{12\,F_{\beta}},
-\qquad 
-F_{\beta}=E-\beta^{-1}K .
-\]
-
-When optimisation meets an **infinite-cost wall**—a configuration that would send one ledger column to ∞—search halts at a finite plateau and leaves a rigid, observer-independent **ledger residual**.  
-IC identifies famous constants (π, e, γ, Feigenbaum δ, the inverse fine-structure constant α⁻¹, …) with such residuals.
-
-This paper
-
-* formalises the ledger-wall mechanism;  
-* distinguishes **single-limit residuals** (π-type) from **ratio-of-limits residuals** (δ-type, including α⁻¹);  
-* explains why Bailey–Borwein–Plouffe (BBP) digit extractors occur **only** when the wall has exact radix self-similarity;  
-* shows that under any bounded code budget only *finitely* many residuals can be known, and under arbitrarily growing budgets the set remains *countable*;  
-* supplies an **Appendix B** mapping successive conceptual gaps to their predicted constants.
-
----
-
-## 1  Background & Critical Assumptions  
-
-Classical analysis treats all real numbers alike, yet scientists repeatedly encounter a tiny elite.  
-IC explains the imbalance as a **cost filter**: only constants whose *generating walls* can be encoded below an observer’s code budget ever appear.
-
-> **Critical assumptions (to be proved or falsified)**  
-> * **Universality** – the structural form of walls is universal: every sufficiently capable ledger meets the *same* wall template and converges to the same residual (up to units).  
-> * **Uniqueness** – SUR has a unique optimum next to each wall.  
-> * **Weight independence / canonisation** – residual values do not depend on arbitrary cost-weights (λ, μ) or those weights are themselves fixed by thermodynamics.
-
----
-
-## 2  Ledger columns, SUR cost & compression walls  
-
-### 2.1  Ledger columns  
-
-| Symbol | Meaning |
-|--------|---------|
-| \(M\)  | memory cells |
-| \(K\)  | code length (bits) |
-| \(\tau\)| run-time steps |
-| \(\varepsilon\)| numerical precision |
-
-### 2.2  Base cost  
-
-SUR linearity forces  
-
-\[
-L = K + \lambda E ,\qquad 
-\lambda = k_{\!B}T\ln 2 .
-\]
-
-### 2.3  Stage-specific cost box  
-
-For a focussed task the active functional may privilege additional terms  
-
-\[
-L_{\text{stage}} =  
-K + \lambda E + \mu F_{\beta} + \dots ,
 \qquad
-F_{\beta}=E-\beta^{-1}K .
+\lambda = k_{\!B}T\ln2 .
 \]
 
-### 2.4  Infinite-cost (compression) walls  
+Near a wall either
 
-A **wall**—also called a *compression wall* or *incompressible boundary*—is the point beyond which any further attempt to reduce error or randomness would drive **at least one ledger column to infinity**.  SUR therefore brakes one step before the blow-up; the numerical slack that remains is the **ledger residual** (π, e, δ, …).
+* a *single* cost component stalls (π-type residual), or  
+* two independent components co-shrink and their **ratio** locks
+  (δ-type, candidate for α⁻¹).
 
-**Example (π in one breath).**  
-Approximating a unit circle with an \(n\)-gon gives  
+### Example: π without sneaking π in  
 
-\[
-K(n) \;\propto\; \log n, 
-\qquad 
-E(n) \;\propto\; n^{-2}.
-\]
-
-Minimising  
-
-\[
-L(n)=a\log n + \lambda b n^{-2}
-\]
-
-yields a finite optimum \(n_{*}\).  Adding one more side would raise \(K\) faster than it lowers \(E\), forcing an infinite marginal cost—the **compression wall**.  
-The unreduced arc-length slack at that point is the constant π.
+*Coding cost* \(K(n)=a\log_2 n\) – Kolmogorov bits to state
+“regular n-gon”.  
+*Error cost* \(E(n)=b\,n^{-2}\) – observer-chosen mean-square radius error.  
+Minimising \(L(n)=a\log n+\lambda b n^{-2}\) gives
+finite \(n_\star\); adding a side would raise \(K\) faster than it lowers
+\(E\).  The unreduced perimeter gap is **π**, produced with no prior mention
+of π.  Robustness under any \(E\!\sim\!n^{-p}(p\!>\!1)\) will be proved
+(\*To-Do 2\*).
 
 ---
 
-## 3  Two flavours of residual  
+## 4  Status of the α⁻¹ pathway  
 
-| Flavour | Mechanism | Example constants |
-|---------|-----------|-------------------|
-| **Single-limit residual** | One cost trend vs. code length stalls at a wall. | π, e, γ |
-| **Ratio-of-limits residual** | **Two** independent costs co-shrink; their ratio locks. | Feigenbaum δ, α; conjecturally α⁻¹ |
+| Step | Status |
+|------|--------|
+| \(C_{2}\) monotonic under Δ_proj | *open theorem* (\*To-Do 4\*) |
+| λ̃ flow converges to λ̃★ | *open theorem* |
+| Identify EM vacuum as unique rank-1 massless gauge field | *open argument* (\*To-Do 5\*) |
+| Dimensional analysis gives \(k_{\!B}T\ln2\,λ̃★ = α^{-1}\) | *conditional result* |
 
-*Plain picture.*  
-Random-ness bill \(C_{2}\) and energy bill \(F_{\beta}\) both fall under coarse-graining; their ratio  
-
-\[
-\tilde{\lambda}=C_{2}/12F_{\beta}
-\]
-
-rises then plateaus.  Multiplying by the bit-to-energy conversion \(k_{\!B}T\ln2\) yields a dimensionless coupling—IC’s prediction for \(1/\alpha\).
+All α⁻¹ claims are therefore **conditional** on these proofs.
 
 ---
 
-## 4  Wall archetypes & case studies  
+## 5  BBP digit-extraction criterion (conjecture)  
 
-| Archetype | Diverging columns | Symmetry | Typical residual |
-|-----------|-------------------|----------|------------------|
-| **Curvature** (polygon → circle) | \(K↑,E↓\) | radix-4 | π, ζ(2) |
-| **Discrete ↔ continuous** | \(\tau↑\) | log drift | e, γ, ζ(3) |
-| **Modular / elliptic** | \(\varepsilon↓\) | modular | Catalan G |
-| **RG fixed point** | \(\tau↑,\varepsilon↓\) | log-2 | δ, α, α⁻¹ (?) |
-| **Statistical** | \(K↑\) | ergodic | Khinchin K₀ |
-| **Constructed extreme** | \(K→∞\) | — | Liouville, Ω |
-
-### 4.1  Selected examples  
-
-*π* Regular \(n\)-gon wall (§2.4).  Exact 4-fold scaling ⇒ BBP series in base 16.
-
-*e* \((1+1/n)^n\) wall.  Broken scaling ⇒ no BBP.
-
-*Fine-structure constant* Flow of \(C_{2},F_{\beta}\) for EM vacuum plateaus; Landauer-scaled ratio matches 137.036.
+> **Conjecture.**  
+> If a wall shows exact radix-\(b\) self-similarity then its residual admits a
+> finite polylog / BBP-type series in base \(b\).
+>
+> Verified for π (base 16) and ζ(2); proof or counter-example is
+> outstanding (\*To-Do 9\*).
 
 ---
 
-## 5  Digit extraction & radix symmetry  
+## 6  Falsifiability principle  
 
-> **Conjecture 2 (BBP criterion).**  
-> If a wall has exact radix-\(b\) self-similarity  
-> \(\nabla L(Sx)=b^{-d}\nabla L(x)\) with \(S:x\mapsto b\,x\),  
-> its residual admits a finite polylog / BBP series in base \(b\).
-
-Verified for π, ζ(2) in base 16.  No such symmetry for γ ⇒ no BBP expected.
+*Protocol.*  The derivation forbids inserting the target constant into either
+\(L\) or wall specification.  Discovery of a ledger-independent constant that
+cannot be produced as a residual under any finite ledger would falsify IC’s
+claim about constants (\*To-Do 11\*).
 
 ---
 
-## 6  Curvature, Hessians & structure constants  
+## 7  Road-map to further constants  
 
-Residual values such as π, ζ(2k) appear in the Hessian of the cost landscape,  
-\(g_{ij}=\partial_{i}\partial_{j}L\), acting as **structure constants** of the emergent information-metric.  Under RG flow they surface as universal fixed-point data.
+| Constant class | Proposed wall mechanism |
+|----------------|-------------------------|
+| Newton’s *G* | Curvature-Hessian wall (information metric → spacetime) |
+| Cosmological Λ | IR fixed point of \(F_{\beta}\) flow |
+| Yukawa masses | Symmetry-breaking compression walls |
 
----
-
-## 7  How many constants fit any ledger?  
-
-Walls describable with ≤ \(K_{\max}\) bits are ≤ \(2^{K_{\max}}\).  
-Each wall yields finitely many residuals; therefore an observer with code budget \(K_{\max}\) can encounter *only finitely many* constants.  Allowing \(K_{\max}\to\infty\) gives a *countable* union, whereas the mathematical continuum is uncountable.
+Details are future work (\*To-Do 8\*).
 
 ---
 
-## 8  Future work  
+## 8  Future work checklist  
 
-1. **Universality proof** – residual independence from ledger budget above threshold.  
-2. **Uniqueness proof** – convexity or dynamical argument for single optimum.  
-3. **Weight analysis** – derive λ, μ canonically.  
-4. **Explicit RG test of α⁻¹** – lattice-QED or functional RG for \(C_{2},F_{\beta}\) flow.  
-5. **BBP criterion** – prove Conjecture 2 or find counter-example.  
-6. **Modular walls** – classify elliptic constants; predict BBP status.  
-7. **Hierarchy simulations** – verify Appendix B table in toy models.  
-8. **Constant-free derivations** – show π emerges without prior π in the ledger.  
-9. **Signed residuals** – interpret negative ζ(½) within optimal-structure parameters.
-
----
-
-## Appendix A – Proof sketch: SUR linearity  
-
-SUR linearity follows from monotonicity, subsystem additivity and unit-scale invariance; see formal Metamath file *sur.mm*.
-
----
-
-## Appendix B – Hierarchy of minimal extensions  
-
-| Stage | Task variable | Dominant cost term(s) | Wall / gap | Predicted residual | Status |
-|-------|---------------|-----------------------|------------|--------------------|--------|
-| 0 → 1 | Presence bit \(b\) | \(K\) | Distinct vs. indistinct | – | ✓ |
-| 1 → 2 | Count \(N\) | \(E\) | Unbounded enumeration | – (Hₙ gap) | ✓ |
-| 2 → 3 | Smoothing δ | \(F_{\beta}\) | Hₙ vs. ln n | γ | PTM |
-| 3 → 4 | Rule \(R\) | \(K+\lambda E\) | Off-integer Γ | (π via reflection) | C |
-| 4 → 5 | Truncation \(N\) | \(τ\) | Infinite series | e | C |
-| ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ |
-| “Angle” ϕ | \(K+\mu F_{\beta}\) | Perfect alignment | ζ(½) | C |
-
-Symbols: ✓ proved PTM = toy-model proof C = conjecture.
+1. **Formal wall definition & existence proof.**  
+2. **Cost-scaling invariance lemma (π case).**  
+3. **Circularity audit checklist.**  
+4. **Proofs for \(C_{2}\) monotonicity and λ̃ convergence.**  
+5. **EM-vacuum uniqueness derivation.**  
+6. **Universality & uniqueness theorems; non-linear-L renormalisation.**  
+7. **Extension to G, Λ, Yukawa masses.**  
+8. **BBP criterion proof or demotion to open conjecture.**  
+9. **Explicit falsifiability protocol.**
 
 ---
 
 ## References  
 
-Bailey, D. H.; Borwein, P.; Plouffe, S. (1997) “On the rapid computation of various polylogarithmic constants.”  
-Borwein, J.; Bradley, D.; Gallimore, M. (2004) “A BBP-type formula for ζ(2).”  
-Feigenbaum, M. J. (1978) “Quantitative universality for a class of nonlinear transformations.”  
-Khinchin, A. (1935) *Continued Fractions.*  
-Selinger, P. (2010) “A survey of graphical languages for monoidal categories.”  
-IC technical notes: *ISG.md*, *sur.mm*, *deltafactorisation.mm*.
+Bailey D. H., Borwein P., Plouffe S. (1997) *Rapid computation of
+polylogarithmic constants*.  
+Feigenbaum M. (1978) *Quantitative universality for nonlinear transformations*.  
+Khinchin A. (1935) *Continued Fractions*.  
+Selinger P. (2010) *Graphical languages for monoidal categories*.  
+IC technical files: *sur.mm*, *wall.mm* (in preparation).
