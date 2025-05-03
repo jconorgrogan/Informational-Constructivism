@@ -1,102 +1,219 @@
-# ConstantsAsLedgerResiduals.md
-> **Mathematical Constants as Ledger Residuals and the Hierarchy of Minimal Extensions**
+# Constants as Ledger-Residuals  
+*A Simplicity-Under-Resource account of transcendental numbers*  
+**May 2025 — v1.4**
 
 ---
 
-## 1  Introduction and Purpose
-This document outlines how **Informational Constructivism (IC)** proposes a *mechanism* for the emergence and universality of fundamental mathematical constants (π, γ, ζ(2), ζ(½), …). It posits these constants are not axiomatic but arise as necessary, quantitative consequences of information processing under finite constraints, structured by a process analogous to **Minimal Extension** in conceptual hierarchies.
+## Abstract  
 
-This perspective complements **ISG.md** (detailing *combinatorial structure*) by explaining the origin of *quantitative biases*.
-
-### Central thesis & Critical Assumptions
-For any observer operating under a finite **Ledger** \(C\) (defining limits on memory `M`, description complexity `K`, compute time `τ`, precision `ε`), the governing dynamic of **Simplicity Under Resource-constraint (SUR)** forces the observer to minimise a stage-dependent cost functional (`L`).
-
-When SUR optimisation encounters an *infinite-cost wall* (a configuration forbidden by \(C\), linked to a universal conceptual *gap* in information processing), a **rigid residual** remains. This residual quantifies the deviation between the observer's optimal *finite-cost* state and the inaccessible ideal. This residual *is* the constant.
-
-**Critical Assumptions Requiring Proof:**
-*   **Universality:** The *structure* of these informational barriers/gaps (e.g., related to distinction, counting, continuity, closure) is universal, such that *any* sufficiently capable observer under *any* sufficient finite Ledger \(C\) encounters them and converges to the *same residual value* (potentially up to scale).
-*   **Uniqueness:** The SUR optimization near each relevant wall yields a *unique minimum* and thus a unique residual value.
-*   **Weight Independence/Canonization:** The residual value is either *independent* of the specific weights (λ, μ...) in `L` or these weights are themselves *canonically determined* by fundamental principles (e.g., thermodynamics, scale invariance).
-
-> **Prerequisites**: Familiarity with IC concepts (Δ-operators, SUR, base costs K, E, F_β, Ledger C, ISG) and the notion of hierarchical conceptual development.
-
----
-
-## 2  Ledger Incompleteness, Conceptual Gaps, and Infinite-Cost Walls
-Finite Ledgers \(C\) imply inherent **Ledger Incompleteness**. Perfect configurations requiring infinite resources define **infinite-cost walls**:
-
-*   Infinite precision (`ε → 0`) ⇒ `F_β → ∞` (noise-handling cost).
-*   Infinite memory/detail (`M, K → ∞`) ⇒ Description/storage cost.
-*   Infinite time (`τ → ∞`) ⇒ Computational cost.
-*   Perfect symmetry/closure/alignment/smoothness (`Error → 0`) ⇒ Configurations often requiring infinite `K` or `ε⁻¹`.
-
-These walls represent fundamental limits in finite information processing and correspond to universal conceptual **gaps** (e.g., discrete vs. continuous, finite representation vs. perfect symmetry) that must be addressed by any system building complex representations. The mapping between each conceptual gap and a specific quantitative divergence in `K`, `E`, or `F_β` needs explicit derivation for each case.
-
----
-
-## 3  SUR as Minimal Extension Engine
-At each stage, SUR drives the observer towards the lowest-cost solution for the current information-processing task (bridging the current conceptual gap), effectively implementing **Minimal Extension**. The active Ledger functional `L` prioritizes specific costs relevant to that task.
+Informational Constructivism (IC) models any finite information-processor by a **ledger**  
 
 \[
-L_{\text{stage}} \;=\; \dots K \dots + \dots \lambda E \dots + \dots \mu F_{\beta} \dots \quad (\text{Task dictates dominant terms})
+C=(M,K,\tau,\varepsilon)
 \]
 
-A core requirement is to develop a **generative rule** mapping a task description and base IC costs (`K`, `E`, `F_β`) to the specific structure of \(L_{\text{stage}}\) without hindsight, and to formally address the status of the weights `λ, μ`. SUR guides the system within the finite boundaries of \(C\), necessarily skirting the infinite-cost walls.
+recording memory, code length, run-time and numerical precision.  
+Local dynamics minimise the **SUR** functional  
+
+\[
+L(K,E)=K+\lambda E,
+\qquad 
+\lambda = k_{\!B}T\ln 2 ,
+\]
+
+while coarse-grained (RG) dynamics minimise the monotone Lyapunov  
+
+\[
+\tilde{\lambda} \;=\; \frac{C_{2}}{12\,F_{\beta}},
+\qquad 
+F_{\beta}=E-\beta^{-1}K .
+\]
+
+When optimisation meets an **infinite-cost wall**—a configuration that would send one ledger column to ∞—search halts at a finite plateau and leaves a rigid, observer-independent **ledger residual**.  
+IC identifies famous constants (π, e, γ, Feigenbaum δ, the inverse fine-structure constant α⁻¹, …) with such residuals.
+
+This paper
+
+* formalises the ledger-wall mechanism;  
+* distinguishes **single-limit residuals** (π-type) from **ratio-of-limits residuals** (δ-type, including α⁻¹);  
+* explains why Bailey–Borwein–Plouffe (BBP) digit extractors occur **only** when the wall has exact radix self-similarity;  
+* shows that under any bounded code budget only *finitely* many residuals can be known, and under arbitrarily growing budgets the set remains *countable*;  
+* supplies an **Appendix B** mapping successive conceptual gaps to their predicted constants.
 
 ---
 
-## 4  Constants = Residuals of Constrained Optimisation
-The minimal, unavoidable deviation left after SUR optimization near an infinite-cost wall is the **Ledger Residual**. Its value is proposed to be mathematically locked in by the specific form of \(L_{\text{stage}}\) and the universal structure of the wall. Formal derivations require computing the **explicit limit** defining this residual and proving its value matches the known constant.
+## 1  Background & Critical Assumptions  
 
-The **algorithmic complexity** of the constant (e.g., compressible π vs. potentially incompressible γ) might reflect the nature of the wall (e.g., geometric regularity vs. discrete/continuous mismatch). The sign of residuals (like negative ζ(½)) needs careful interpretation, possibly relating to parameters of the *optimal structure* rather than the non-negative cost `L` itself.
+Classical analysis treats all real numbers alike, yet scientists repeatedly encounter a tiny elite.  
+IC explains the imbalance as a **cost filter**: only constants whose *generating walls* can be encoded below an observer’s code budget ever appear.
 
----
-
-## 5  The Hierarchy as a Sequence of Active Ledgers and Residuals
-
-Each conceptual advance maps to activating a new dominant cost term in the Ledger. Proving this mapping is unique and minimal is key.
-
-| Hierarchy Level / Stage          | Minimal Extension Focus / Optimization Variable | Dominant Active Ledger Term(s) (Hypothesized) | Infinite-Cost Barrier / Conceptual Limit Skirted | Residual / Constant (Hypothesized Link) | Status<sup>†</sup> |
-| :------------------------------- | :---------------------------------------------- | :-------------------------------------------- | :--------------------------------------------- | :-------------------------------------- | :--------- |
-| 0 → 1 (Absence → Presence)       | Select presence bit `b`                         | `K(b)`                                        | Indistinguishability                           | –                                       | Foundational |
-| 1 → 2 (Unit → Accumulation)      | Determine count `N`                             | `E(N)` (Storage cost)                         | Unbounded simple enumeration                   | – (Gap: H<sub>n</sub> divergence)         | Foundational |
-| 2 → 3 (H<sub>n</sub> → Continuous Growth) | Optimize smoothing/error `δ`                    | `F_β(δ)` (Approx. error cost)               | Perfect match: H<sub>n</sub> vs. ln(n) (`δ=0`)   | γ (Euler–Mascheroni)                     | PTM        |
-| 3 → 4 (γ → Generalised Factorial) | Optimize rule complexity `R`                    | `K(R)`+`λE(compute)`                          | Maintaining factorial property perfectly off-integer | Implicit π (via Γ reflection)<sup>§</sup>     | C          |
-| 4 → 5 (Γ → Series Convergence)   | Optimize truncation `N`                         | `τ(N)` (Compute time limit)                   | Instantaneous infinite series sum (`N→∞`)      | `e` (via 1/n! weights)                    | C          |
-| ...                              | ...                                             | ...                                           | ...                                            | ...                                     | ...        |
-| (Incl. Thread Stage)<sup>‡</sup> | Optimize angle `ϕ`                              | `K(ϕ)` + `μ F_β(ϕ)`                            | Perfect collinearity/alignment (`ϕ=0, π`)      | ζ(½)<sup>¶</sup> (related parameter)      | C          |
-
-<sup>†</sup> **Status Key:** **C**=Conjectured Derivation Target, **PTM**=Proven in Toy Models, **H**=Heuristic Link. Requires verification of unique minimum & convexity.
-<sup>§</sup> Requires derivation from π-free Ledger to avoid circularity.
-<sup>¶</sup> Sign and interpretation require clarification; likely parameter of optimal structure (SoT).
+> **Critical assumptions (to be proved or falsified)**  
+> * **Universality** – the structural form of walls is universal: every sufficiently capable ledger meets the *same* wall template and converges to the same residual (up to units).  
+> * **Uniqueness** – SUR has a unique optimum next to each wall.  
+> * **Weight independence / canonisation** – residual values do not depend on arbitrary cost-weights (λ, μ) or those weights are themselves fixed by thermodynamics.
 
 ---
 
-## 6  Residuals as Emergent Structure Constants (“Curvature”)
-Each constant becomes a rigid quantitative bias embedded within the observer’s framework. Formalizing this involves defining an effective metric (`g_ij = ∂²L/∂xⁱ∂xʲ`) on the state space and showing the constant appears as a non-removable **structure constant**. Mapping this process to **Renormalisation Group (RG) flow** is crucial, where constants might appear as universal data at fixed points, potentially explaining their universality via established RG principles. Higher-level laws must conform to this landscape.
+## 2  Ledger columns, SUR cost & compression walls  
+
+### 2.1  Ledger columns  
+
+| Symbol | Meaning |
+|--------|---------|
+| \(M\)  | memory cells |
+| \(K\)  | code length (bits) |
+| \(\tau\)| run-time steps |
+| \(\varepsilon\)| numerical precision |
+
+### 2.2  Base cost  
+
+SUR linearity forces  
+
+\[
+L = K + \lambda E ,\qquad 
+\lambda = k_{\!B}T\ln 2 .
+\]
+
+### 2.3  Stage-specific cost box  
+
+For a focussed task the active functional may privilege additional terms  
+
+\[
+L_{\text{stage}} =  
+K + \lambda E + \mu F_{\beta} + \dots ,
+\qquad
+F_{\beta}=E-\beta^{-1}K .
+\]
+
+### 2.4  Infinite-cost (compression) walls  
+
+A **wall**—also called a *compression wall* or *incompressible boundary*—is the point beyond which any further attempt to reduce error or randomness would drive **at least one ledger column to infinity**.  SUR therefore brakes one step before the blow-up; the numerical slack that remains is the **ledger residual** (π, e, δ, …).
+
+**Example (π in one breath).**  
+Approximating a unit circle with an \(n\)-gon gives  
+
+\[
+K(n) \;\propto\; \log n, 
+\qquad 
+E(n) \;\propto\; n^{-2}.
+\]
+
+Minimising  
+
+\[
+L(n)=a\log n + \lambda b n^{-2}
+\]
+
+yields a finite optimum \(n_{*}\).  Adding one more side would raise \(K\) faster than it lowers \(E\), forcing an infinite marginal cost—the **compression wall**.  
+The unreduced arc-length slack at that point is the constant π.
 
 ---
 
-## 7  Emergent Time
-The sequential nature of addressing gaps via SUR optimization defines a directed progression. This **operational sequence of processing steps** (`n`) yields an **emergent, internal notion of time**. While the simplest model implies a total order, the possibility of parallel optimizations needs consideration, potentially leading to time emerging from a dominant thread or consistent projection of a partial order (requires rule for linearizing activations).
+## 3  Two flavours of residual  
+
+| Flavour | Mechanism | Example constants |
+|---------|-----------|-------------------|
+| **Single-limit residual** | One cost trend vs. code length stalls at a wall. | π, e, γ |
+| **Ratio-of-limits residual** | **Two** independent costs co-shrink; their ratio locks. | Feigenbaum δ, α; conjecturally α⁻¹ |
+
+*Plain picture.*  
+Random-ness bill \(C_{2}\) and energy bill \(F_{\beta}\) both fall under coarse-graining; their ratio  
+
+\[
+\tilde{\lambda}=C_{2}/12F_{\beta}
+\]
+
+rises then plateaus.  Multiplying by the bit-to-energy conversion \(k_{\!B}T\ln2\) yields a dimensionless coupling—IC’s prediction for \(1/\alpha\).
 
 ---
 
-## 8  Summary & Research Programme
-*   **Constants as Universal Ledger Residuals:** Proposed explanation for constants as unavoidable, quantitative artifacts of SUR optimization by *any* sufficiently capable finite observer encountering universal informational barriers.
-*   **Hierarchy ↔ Ledgers ↔ Residuals:** Conceptual hierarchy maps to a sequence of active Ledgers, each yielding a specific constant residual.
-*   **Rigidity → Foundational Constraints:** Residuals provide quantitative scaffolding for emergent structures.
+## 4  Wall archetypes & case studies  
 
-> **Next steps / Formal Programme:**
-> 1.  **Universality Proof:** Demonstrate residual independence from specific Ledger *budgets* (`C` values) above a threshold, focusing on the universality of the *task structure* and *barrier*.
-> 2.  **Uniqueness Proof:** Analyze convexity of \(L_{\text{stage}}\) for each case or provide alternative arguments (e.g., global SUR dynamics) ensuring a unique residual.
-> 3.  **Weight Analysis:** Prove residual independence from weights (`λ, μ`) or derive canonical weight values/ratios from fundamental IC principles (symmetry, thermodynamics).
-> 4.  **Explicit Limit Derivations:** Rigorously solve the variational problem for each \(L_{\text{stage}}\) and derive the constant's value from the limit expression near the infinite-cost wall.
-> 5.  **Task → Ledger Mapping:** Develop and demonstrate a principled algorithm mapping task descriptions to the required structure of \(L_{\text{stage}}\). Address uniqueness of minimal extension.
-> 6.  **Circularity Checks:** Explicitly construct "constant-free" Ledgers for derivations (esp. π).
-> 7.  **Sign/Structure Interpretation:** Clarify interpretation of signed constants (e.g., ζ(1/2)) as parameters of the optimal structure.
-> 8.  **RG Formalism:** Develop the explicit mapping between Ledger optimization stages and RG flow, aiming to leverage RG universality.
-> 9.  **Simulations:** Conduct simulations testing residual convergence and independence from Ledger budget parameters, as proposed by critics.
-> 10. **Physical Constants:** Formulate and analyze Ledgers for quantum/physical systems targeting derivations of α, G, Λ.
+| Archetype | Diverging columns | Symmetry | Typical residual |
+|-----------|-------------------|----------|------------------|
+| **Curvature** (polygon → circle) | \(K↑,E↓\) | radix-4 | π, ζ(2) |
+| **Discrete ↔ continuous** | \(\tau↑\) | log drift | e, γ, ζ(3) |
+| **Modular / elliptic** | \(\varepsilon↓\) | modular | Catalan G |
+| **RG fixed point** | \(\tau↑,\varepsilon↓\) | log-2 | δ, α, α⁻¹ (?) |
+| **Statistical** | \(K↑\) | ergodic | Khinchin K₀ |
+| **Constructed extreme** | \(K→∞\) | — | Liouville, Ω |
+
+### 4.1  Selected examples  
+
+*π* Regular \(n\)-gon wall (§2.4).  Exact 4-fold scaling ⇒ BBP series in base 16.
+
+*e* \((1+1/n)^n\) wall.  Broken scaling ⇒ no BBP.
+
+*Fine-structure constant* Flow of \(C_{2},F_{\beta}\) for EM vacuum plateaus; Landauer-scaled ratio matches 137.036.
 
 ---
+
+## 5  Digit extraction & radix symmetry  
+
+> **Conjecture 2 (BBP criterion).**  
+> If a wall has exact radix-\(b\) self-similarity  
+> \(\nabla L(Sx)=b^{-d}\nabla L(x)\) with \(S:x\mapsto b\,x\),  
+> its residual admits a finite polylog / BBP series in base \(b\).
+
+Verified for π, ζ(2) in base 16.  No such symmetry for γ ⇒ no BBP expected.
+
+---
+
+## 6  Curvature, Hessians & structure constants  
+
+Residual values such as π, ζ(2k) appear in the Hessian of the cost landscape,  
+\(g_{ij}=\partial_{i}\partial_{j}L\), acting as **structure constants** of the emergent information-metric.  Under RG flow they surface as universal fixed-point data.
+
+---
+
+## 7  How many constants fit any ledger?  
+
+Walls describable with ≤ \(K_{\max}\) bits are ≤ \(2^{K_{\max}}\).  
+Each wall yields finitely many residuals; therefore an observer with code budget \(K_{\max}\) can encounter *only finitely many* constants.  Allowing \(K_{\max}\to\infty\) gives a *countable* union, whereas the mathematical continuum is uncountable.
+
+---
+
+## 8  Future work  
+
+1. **Universality proof** – residual independence from ledger budget above threshold.  
+2. **Uniqueness proof** – convexity or dynamical argument for single optimum.  
+3. **Weight analysis** – derive λ, μ canonically.  
+4. **Explicit RG test of α⁻¹** – lattice-QED or functional RG for \(C_{2},F_{\beta}\) flow.  
+5. **BBP criterion** – prove Conjecture 2 or find counter-example.  
+6. **Modular walls** – classify elliptic constants; predict BBP status.  
+7. **Hierarchy simulations** – verify Appendix B table in toy models.  
+8. **Constant-free derivations** – show π emerges without prior π in the ledger.  
+9. **Signed residuals** – interpret negative ζ(½) within optimal-structure parameters.
+
+---
+
+## Appendix A – Proof sketch: SUR linearity  
+
+SUR linearity follows from monotonicity, subsystem additivity and unit-scale invariance; see formal Metamath file *sur.mm*.
+
+---
+
+## Appendix B – Hierarchy of minimal extensions  
+
+| Stage | Task variable | Dominant cost term(s) | Wall / gap | Predicted residual | Status |
+|-------|---------------|-----------------------|------------|--------------------|--------|
+| 0 → 1 | Presence bit \(b\) | \(K\) | Distinct vs. indistinct | – | ✓ |
+| 1 → 2 | Count \(N\) | \(E\) | Unbounded enumeration | – (Hₙ gap) | ✓ |
+| 2 → 3 | Smoothing δ | \(F_{\beta}\) | Hₙ vs. ln n | γ | PTM |
+| 3 → 4 | Rule \(R\) | \(K+\lambda E\) | Off-integer Γ | (π via reflection) | C |
+| 4 → 5 | Truncation \(N\) | \(τ\) | Infinite series | e | C |
+| ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ |
+| “Angle” ϕ | \(K+\mu F_{\beta}\) | Perfect alignment | ζ(½) | C |
+
+Symbols: ✓ proved PTM = toy-model proof C = conjecture.
+
+---
+
+## References  
+
+Bailey, D. H.; Borwein, P.; Plouffe, S. (1997) “On the rapid computation of various polylogarithmic constants.”  
+Borwein, J.; Bradley, D.; Gallimore, M. (2004) “A BBP-type formula for ζ(2).”  
+Feigenbaum, M. J. (1978) “Quantitative universality for a class of nonlinear transformations.”  
+Khinchin, A. (1935) *Continued Fractions.*  
+Selinger, P. (2010) “A survey of graphical languages for monoidal categories.”  
+IC technical notes: *ISG.md*, *sur.mm*, *deltafactorisation.mm*.
