@@ -1,13 +1,18 @@
+Thought for 5 seconds
+
 # Constants as Ledger-Residuals  
 *A Simplicity-Under-Resource account of transcendental numbers*  
- 
+
+
+---
+
 ## 1  Introduction & Critical Assumptions  
 
-Informational Constructivism (IC) proposes that **fundamental constants** arise
-as *ledger residuals*: immutable slack left when a finite
-information-processing system minimises cost but halts in front of an
-**infinite-cost wall**.  This note refines the idea and flags what is proven,
-conjectured, or open.
+Informational Constructivism (IC) proposes that **fundamental constants**
+emerge as **ledger residuals**: the immutable slack left when a finite
+information-processing system minimises a cost functional yet halts at an
+**infinite-cost wall**. This document refines the idea and flags what is
+proven, conjectured or open.
 
 > **Key assumptions (under active investigation)**  
 > 1. **Universality** – wall templates are the same for all observers once
@@ -17,8 +22,8 @@ conjectured, or open.
 >    cost-weights (λ, μ) or those weights are themselves fixed
 >    thermodynamically.  
 
-A formal measure-theoretic definition of *wall* and *residual* is in
-preparation (see **To-Do 1**); present wording is illustrative.
+*A formal measure-theoretic definition of “wall” and “residual” is in
+preparation (see **To-Do 1**); present wording is illustrative.*
 
 ---
 
@@ -26,21 +31,18 @@ preparation (see **To-Do 1**); present wording is illustrative.
 
 A ledger  
 \(C=(M,K,\tau,\varepsilon)\)  
-is **incomplete**: pushing any column to infinity is prohibited.
-
-### 2.1  Illustrative wall archetypes  
+is **incomplete**: pushing any column to infinity is forbidden.
 
 | Diverging column(s) | Conceptual gap | Prototype wall |
 |---------------------|----------------|----------------|
 | \(K\!\to\!\infty\) | Polygon → circle | π |
 | \(\tau\!\to\!\infty\) | Discrete sum → integral | e, γ |
 | \(C_{2}\downarrow,F_{\beta}\downarrow\) | RG fixed point | Feigenbaum δ |
-| \(K\!\to\!\infty\) by fiat | Liouville digit rule | any real |
+| \(K\!\to\!\infty\) (by fiat) | Liouville digit rule | any real |
 
-> *Incompressible boundary.*  
-> A **compression wall** is the boundary of the region  
-> \(\{\,x : L(x)<\infty\}\)  
-> in ledger state-space.  **Formalisation is scheduled in *wall.mm* (\*To-Do 1\*).**
+> **Compression wall.** The *frontier*  
+> \(\partial\bigl(\bigcup_{L_0<\infty}\{x\mid L(x)\le L_0\}\bigr)\)  
+> of ledger state-space; formalisation is scheduled in *wall.mm*.
 
 ---
 
@@ -50,26 +52,20 @@ The base cost forced by monotonicity + additivity is
 
 \[
 L(K,E)=K+\lambda E,
-\qquad
-\lambda = k_{\!B}T\ln2 .
+\quad
+\lambda=k_{\!B}T\ln 2 .
 \]
 
-Near a wall either
+*Single-component stall* ⇒ π-type residual;  
+*co-shrinking components* ⇒ ratio residual (δ, candidate α⁻¹).
 
-* a *single* cost component stalls (π-type residual), or  
-* two independent components co-shrink and their **ratio** locks
-  (δ-type, candidate for α⁻¹).
+### Example (π without π)  
 
-### Example: π without sneaking π in  
-
-*Coding cost* \(K(n)=a\log_2 n\) – Kolmogorov bits to state
-“regular n-gon”.  
-*Error cost* \(E(n)=b\,n^{-2}\) – observer-chosen mean-square radius error.  
-Minimising \(L(n)=a\log n+\lambda b n^{-2}\) gives
-finite \(n_\star\); adding a side would raise \(K\) faster than it lowers
-\(E\).  The unreduced perimeter gap is **π**, produced with no prior mention
-of π.  Robustness under any \(E\!\sim\!n^{-p}(p\!>\!1)\) will be proved
-(\*To-Do 2\*).
+\(K(n)=a\log_2 n\) (Kolmogorov bits),  
+\(E(n)=b n^{-2}\) (RMS radius error).  
+Minimising \(L(n)\) gives finite \(n_\star\); the unreduced perimeter gap is
+π. Robustness for any \(E\!\sim\!n^{-p},\,p>1\) will be proved  
+(**To-Do 2**).
 
 ---
 
@@ -77,32 +73,26 @@ of π.  Robustness under any \(E\!\sim\!n^{-p}(p\!>\!1)\) will be proved
 
 | Step | Status |
 |------|--------|
-| \(C_{2}\) monotonic under Δ_proj | *open theorem* (\*To-Do 4\*) |
+| \(C_{2}\) monotone under Δ_proj | *open theorem* (**To-Do 4**) |
 | λ̃ flow converges to λ̃★ | *open theorem* |
-| Identify EM vacuum as unique rank-1 massless gauge field | *open argument* (\*To-Do 5\*) |
-| Dimensional analysis gives \(k_{\!B}T\ln2\,λ̃★ = α^{-1}\) | *conditional result* |
-
-All α⁻¹ claims are therefore **conditional** on these proofs.
+| EM vacuum identified as unique rank-1 gauge residue | *open argument* (**To-Do 5**) |
+| \(k_{\!B}T\ln2\,λ̃★ = α^{-1}\) | *conditional result* |
 
 ---
 
 ## 5  BBP digit-extraction criterion (conjecture)  
 
-> **Conjecture.**  
-> If a wall shows exact radix-\(b\) self-similarity then its residual admits a
-> finite polylog / BBP-type series in base \(b\).
->
-> Verified for π (base 16) and ζ(2); proof or counter-example is
-> outstanding (\*To-Do 9\*).
+If a wall has exact radix-\(b\) self-similarity, its residual admits a finite
+polylog/BBP series in base \(b\). Verified for π (base 16) and ζ(2); proof or
+counter-example outstanding (**To-Do 9**).
 
 ---
 
 ## 6  Falsifiability principle  
 
-*Protocol.*  The derivation forbids inserting the target constant into either
-\(L\) or wall specification.  Discovery of a ledger-independent constant that
-cannot be produced as a residual under any finite ledger would falsify IC’s
-claim about constants (\*To-Do 11\*).
+No derivation may insert the target constant into \(L\) or the wall.  A
+fundamental constant that provably eludes all finite-ledger residual
+constructions would falsify IC’s claim (**To-Do 11**).
 
 ---
 
@@ -113,8 +103,6 @@ claim about constants (\*To-Do 11\*).
 | Newton’s *G* | Curvature-Hessian wall (information metric → spacetime) |
 | Cosmological Λ | IR fixed point of \(F_{\beta}\) flow |
 | Yukawa masses | Symmetry-breaking compression walls |
-
-Details are future work (\*To-Do 8\*).
 
 ---
 
@@ -127,8 +115,65 @@ Details are future work (\*To-Do 8\*).
 5. **EM-vacuum uniqueness derivation.**  
 6. **Universality & uniqueness theorems; non-linear-L renormalisation.**  
 7. **Extension to G, Λ, Yukawa masses.**  
-8. **BBP criterion proof or demotion to open conjecture.**  
+8. **BBP criterion proof or downgrade.**  
 9. **Explicit falsifiability protocol.**
+
+---
+
+## Appendix A  Mathematical programme roadmap  
+
+### A.1  Formalising walls  
+
+*Definition.* Let \(L:\mathbb R_{\ge0}^{4}\to\mathbb R_{\ge0}\) be
+\(C^\infty\), monotone and coercive.  
+Admissible region  
+\(\mathcal R_{L_0}=\{x\mid L(x)\le L_0\}\).  
+A **compression wall** is  
+\(\displaystyle \partial\bigcup_{L_0<\infty}\mathcal R_{L_0}\).
+
+*Lyapunov property.* For the gradient flow \(\dot x=-\nabla L\) every
+trajectory either satisfies \(L\!\to\!\infty\) or converges to the wall
+with \(\nabla L\) tangent there. (*Proof to appear in *wall.mm*.)
+
+### A.2  Cost scaling without hidden constants  
+
+*Kolmogorov term* \(\log n\) is unavoidable coding cost.  
+*Error term* \(n^{-p},\,p>1\): changing \(p\) rescales the optimal
+\(n_\star\) but cancels in the limit  
+\(\lim_{n\to\infty} n\sin(\pi/n)=\pi\). Robustness proof forthcoming.
+
+### A.3  Why \(C_{2}\) should decrease under Δ_proj  
+
+Conjecture: any Δ_proj = unitary ∘ block-erasure, and block-erasure strictly
+contracts  
+\(C_{2}(\rho)=\mathrm{Var}_{\rho}(\log\rho)\).  
+Tools: operator Jensen, Petz recovery, Lieb concavity.
+
+### A.4  Fixed-point ratios and universality  
+
+Both \(C_{2}\) and \(F_{\beta}\) shrink under coarse-graining but
+\(F_{\beta}\) does so faster; beyond a scale the ratio  
+\(\tilde\lambda=C_{2}/(12F_{\beta})\) tends to the leading eigenvalue ratio
+of the RG transfer operator → a universal number (δ, α).
+
+### A.5  What is “stuff” in IC?  
+
+*Mode_R* = space of potential distinctions.  
+*Ledger columns* = currencies (bits, energy, time, precision).  
+*Walls* = universal bottlenecks in cost landscape.  
+*Residuals* = numbers left when optimisation stops.  
+Fine-structure α is the exchange-rate at the RG fixed point in the
+\(C_{2}\) vs. \(F_{\beta}\) race; a gravitational constant might be the
+exchange-rate between information curvature and code-surface cost.
+
+### A.6  Near-term milestones  
+
+| Task | Difficulty | Pay-off |
+|------|------------|---------|
+| Formal wall proof | low | eliminates hand-waving |
+| π robustness lemma | low | secures flagship example |
+| \(C_{2}\) monotonicity proof | medium | unlocks α programme |
+| λ̃ flow numerics (Ising) | low | empirical evidence of plateau |
 
 ---
 
@@ -140,3 +185,4 @@ Feigenbaum M. (1978) *Quantitative universality for nonlinear transformations*.
 Khinchin A. (1935) *Continued Fractions*.  
 Selinger P. (2010) *Graphical languages for monoidal categories*.  
 IC technical files: *sur.mm*, *wall.mm* (in preparation).
+```
