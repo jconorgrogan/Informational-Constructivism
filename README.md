@@ -6,7 +6,7 @@
 
 ### **Summary**
 
-This argument proposes that key features of reality are logical necessities, derived without assuming complex physics, starting from minimal assumptions about analysis and operational capacity.
+This argument proposes that key features of reality are logical necessities starting from minimal assumptions 
 
 1.  **Finite Structure Required for Stable Operation:** We start by considering the absolute conceptual extremes: "Absolute Nothing" (no distinctions) and "Absolute Everything" (infinite simultaneous distinctions). **Assumption: Finite Capacity** - Any system capable of analysis or processing information operates with finite resources, describable by at most `C` bits (where `C` is some finite number). Based on this, we find both extremes unworkable:
     *   *Absolute Nothing* is sterile (cannot support expressible propositions or distinctions).
