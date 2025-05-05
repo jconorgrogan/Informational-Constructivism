@@ -1,99 +1,139 @@
+# The Integer Structure Grid (ISG) and Related Representations
+
 1.  **Introduction and Purpose**
-    This document describes the Integer Structure Grid (ISG), a derived conceptual tool for visualizing structural complexity within the framework of Informational Constructivism (IC). It is not an additional axiom but arises naturally when representing the compositional structure of information built from irreducible primitives (`Δ_gen`), **specifically within a regime where composition is commutative and non-interacting, as justified by IC's SUR principle (see Section 2)**. The ISG provides a map to understand how structures balance novelty generation (`k` distinct prime factors) against self-reuse (`x`, maximal exponent), offering insights into their potential cost profile under IC's resource constraints (`C`). **Crucially, IC predicts that finite observers inevitably face descriptive limits (analogous to Gödelian incompleteness, but driven by resource constraints C). The ISG provides a language to classify *how* systems manifest complexity at this boundary, differentiating structures based on their dominant complexity strategy (depth vs. breadth) even when a full description is intractable.** Effectively, it maps the distinct features of the complexity boundary itself.
-    Understanding the ISG assumes familiarity with core IC concepts:
+    This document describes the Integer Structure Grid (ISG) and related conceptual tools derived within Informational Constructivism (IC) for visualizing structural complexity. These grids are not additional axioms but arise naturally when representing the compositional structure of information built from irreducible primitives (`Δ_gen`), **specifically within a regime where composition is commutative and non-interacting, as justified by IC's SUR principle (see Section 2)**. Different grid projections offer maps to understand how structures balance novelty generation (distinct component types) against self-reuse (repetition depth), offering insights into their potential cost profile under IC's resource constraints (`C`). **Crucially, IC predicts that finite observers inevitably face descriptive limits (analogous to Gödelian incompleteness, but driven by resource constraints C). These grids provide languages to classify *how* systems manifest complexity at this boundary, differentiating structures based on their dominant complexity strategy (e.g., depth vs. breadth, diversity vs. depth) even when a full description is intractable.** Effectively, they map the distinct features of the complexity boundary itself.
+    Understanding these concepts assumes familiarity with core IC concepts:
     *   Δ<sub>gen</sub>: Introduction of a novel, irreducible distinction (primitive generator).
     *   Δ<sub>self</sub>: Reuse or self-application of an existing represented structure/code, potentially increasing exponents.
-    *   Δ<sub>proj</sub>: Stabilization or efficient referencing of existing distinctions/codes, often by optimizing the internal representation (K) without generating new primitive instances or increasing maximal reuse depth (x, y). Operationally, this could involve finding shorter code descriptions, creating pointers/references, or eliminating redundancy between existing structures. Δ<sub>proj</sub> **typically does not change (x,y) because its goal is compression/stabilization; however, complex refactoring operations enacted via `Δ_proj` could correspond to movement.** Acts as the coarse-graining operation in RG analysis.
+    *   Δ<sub>proj</sub>: Stabilization or efficient referencing of existing distinctions/codes, often by optimizing the internal representation (K) without generating new primitive instances or increasing maximal reuse depth (`x`). Operationally, this could involve finding shorter code descriptions, creating pointers/references, or eliminating redundancy between existing structures. Δ<sub>proj</sub> **typically does not change grid coordinates defined by exponents or factor counts; however, complex refactoring operations enacted via `Δ_proj` could correspond to movement.** Acts as the coarse-graining operation in RG analysis.
     *   SUR Cost Ledger (L = K + λE): Balancing description length/complexity (K) against error/processing cost (E). This represents the *base* cost; analysis across scales may involve related quantities like `F_β` and `C₂`.
     *   Resource Constraints (C): Finite limits on memory, time, energy, precision.
 
 2.  **Foundational Justification: Emergence of the Integer Representation**
-    The use of integers and their prime factorization for the ISG is not just an analogy. It emerges as the **SUR-optimal, canonical representation** for structures built via commutative, non-interacting composition of irreducible distinctions within IC.
+    The use of integers and their prime factorization for these grids is not just an analogy. It emerges as the **SUR-optimal, canonical representation** for structures built via commutative, non-interacting composition of irreducible distinctions within IC.
 
     *   **Projection Residues:** In IC, persistent structures arise as **stabilized projection residues** – the results of complex `Δ`-operation paths (`δ`) being collapsed into the observer's finite memory (`M_O`) by the projection operator (`Δ_proj`) under constraints (`C`).
     *   **Irreducibles and Primes:** Certain `Δ`-paths are *irreducible* under projection; they cannot be represented as the composition of simpler projected paths. These correspond to the **prime** residues. *(Cross-ref: This irreducibility is linked to the uniqueness established by the Δ-factorisation theorem)*.
     *   **Basic Composition & Isomorphism:** At its simplest level (commutative, non-interacting composition), IC generates structures equivalent to the free commutative monoid on the set of these irreducible generators. Assuming countability, this monoid is isomorphic to `(ℕ_{>1}, ×)`. Each irreducible generator maps bijectively (up to relabeling) to a prime `pᵢ`, and composition maps to multiplication.
-    *   **SUR Selects Prime Coding:** Within this commutative/non-interacting regime, the primary challenge under SUR is efficiently tracking the *multiplicity* of each irreducible generator used. Mapping generators to primes and representing multisets by their prime factorization (`n = p₁^e₁...`) is the **minimal description length (MDL)** encoding. Therefore, **SUR selects this canonical Gödelisation** as the most cost-effective representation (`K`-cost is minimized) when order and interactions are negligible. The ISG visualizes structures using this SUR-selected optimal code.
+    *   **SUR Selects Prime Coding:** Within this commutative/non-interacting regime, the primary challenge under SUR is efficiently tracking the *multiplicity* of each irreducible generator used. Mapping generators to primes and representing multisets by their prime factorization (`n = p₁^e₁...`) is the **minimal description length (MDL)** encoding. Therefore, **SUR selects this canonical Gödelisation** as the most cost-effective representation (`K`-cost is minimized) when order and interactions are negligible. The grids visualize structures using this SUR-selected optimal code.
     *(Note: While the `RH.md` memo may offer independent IC-based arguments favouring ℕ, the algebraic isomorphism and SUR selection suffice to establish the legitimacy of using integers/primes for representing this compositional structure.)*
 
-3.  **Defining the Integer Structure Grid (ISG)**
-    We associate these representable structures (**projection residues** built via commutative composition) with integers `n > 1`. Domain is ℕ_{>1}; `n=1` (empty multiset) represents ‘no structure’ and is omitted, aligning with the idea that structure begins with the first registered distinction. Given the Fundamental Theorem of Arithmetic, any such integer has a unique prime factorization:
+3.  **Defining Grid Coordinates from Prime Factorization**
+    We associate representable structures (**projection residues** built via commutative composition) with integers `n > 1`. Domain is ℕ_{>1}; `n=1` (empty multiset) represents ‘no structure’ and is omitted. Given the Fundamental Theorem of Arithmetic, any such integer has a unique prime factorization:
     `n = p₁^e₁ * p₂^e₂ * ... * pₖ^eₖ`
     where `pᵢ` are distinct prime numbers (representing distinct irreducible generators) and `eᵢ ≥ 1` are their exponents.
-    From this factorization, we define two coordinates for the ISG:
-    *   **x = max{e₁, e₂, ..., eₖ}: Maximal Reuse Depth.** The largest exponent among all prime factors in the factorization of `n`. This quantifies the deepest reuse of any single generator type. **x ≥ 1.**
-    *   **y = Σ eᵢ = e₁ + e₂ + ... + eₖ (Ω(n)): Total Primitive Instances.** The sum of all exponents, equivalent to the total number of prime factors counted with multiplicity. This quantifies the total structural "volume". **y ≥ 1.**
-    The **Integer Structure Grid (ISG)** is the set of all points `(x, y)` obtained from integers `n > 1`, plotted on a 2D lattice. Note that `y ≥ x` and **`y ≥ k`** (where `k` is the number of distinct primes). The first row of the grid (`x=1`) consists of points representing structures where no single generator type is reused more than once (square-free integers, excluding powers of single primes).
+    From this factorization, we define three key structural parameters:
+    *   **x = max{e₁, e₂, ..., eₖ}: Maximal Reuse Depth.** The largest exponent. Quantifies the deepest reuse/repetition of any single generator type. **x ≥ 1.**
+    *   **y = Σ eᵢ = Ω(n): Total Primitive Instances.** The sum of all exponents. Quantifies the total structural "volume" or count of primitive instances, including repetitions. **y ≥ 1.**
+    *   **k = |{p₁, ..., pₖ}|: Number of Distinct Prime Factors (ω(n)).** The count of unique generator types used. Quantifies structural **diversity**. **k ≥ 1.**
 
-4.  **The Nature of the (x, y) Projection: Mapping Complexity Profiles**
-    The mapping from a full structural description (represented by the exponent vector `(e₁, e₂, ...)` for primes `p₁, p₂, ...`) to the single point `(x, y)` is an **intentional coarse-graining**. It discards information about:
-    *   Which specific generators (primes) are used.
-    *   The detailed distribution of exponents, beyond the maximum (`x`) and the sum (`y`).
-    *   The number of distinct prime factors `k = |{p₁, ..., pₖ}|`.
+    Note the relationships: `y ≥ x`, `y ≥ k`, and `x=1` implies `y=k`.
 
-    This projection is valid and useful **within the commutative regime** where the SUR cost (`L` or related `F_β`, `C₂`) is primarily sensitive to maximal reuse depth (`x`) and total primitive instances (`y`). This coarse-graining is particularly relevant for understanding systems operating near the descriptive boundary imposed by the observer's Ledger C. Perfect, complete descriptions are often unattainable or disfavored by SUR dynamics due to potentially infinite cost (in K, E, τ, or ε⁻¹ terms). Instead of merely stating this limit exists, the ISG provides a *taxonomy of the limit itself*. While the full description of such systems might be too costly (high `K` or `E`) or computationally intractable (`τ` limit), the ISG profile `(x, y)` still provides a crucial structural signature. It allows the observer to classify *how* a system's complexity manifests at this boundary – differentiating structures dominated by deep reuse (high `x`) from those dominated by sheer breadth or component count (high `y`). **The ISG maps the distinct 'shapes' or 'flavors' of complexity that emerge precisely because perfect description is precluded.** It uses the distinct structural ways this boundary is manifested as its descriptive language.
+4.  **Grid Representations: ISG (x, y) vs. k-x Grid**
 
-    If the ledger cost `L` (or effective cost in RG) also significantly depends on the number of distinct generators `k` (diversity cost), the projection should be extended to `(x, y, k)`, or this dependence noted explicitly. Think of the ISG as a coarse phase diagram summarizing complexity profiles based on the fundamental dimensions of depth (`x`) vs. breadth (`y`). When the identity of specific generators matters or when interactions introduce costs not captured by `x` and `y` alone, the full exponent vector or other richer descriptions must be employed.
+    Two primary 2D grid projections are useful:
 
-5.  **Interpretation of Coordinates: Dimensions of Structural Constraint**
-    The `(x, y)` coordinates capture aggregate properties relevant to IC operations and potentially the base SUR cost ledger (`L = K + λE`, where **λ is the cost-weighting parameter**) or components of the state relevant for **RG flow (primarily `K`, `C₂`, `F_β`)**. They represent fundamental dimensions characterising **the nature of the descriptive challenge** a structure poses to an observer's finite resources (Ledger `C`):
+    **4.1 The Integer Structure Grid (ISG): Coordinates (x, y)**
+    *   The ISG maps `n` to the point `(x, y)` on a 2D lattice.
+    *   **Vertical Axis:** Maximal Reuse Depth (`x`).
+    *   **Horizontal Axis:** Total Primitive Instances (`y`).
+    *   **Focus:** This grid emphasizes the trade-off between **depth of reuse (`x`)** and **total structural volume (`y`)**. It aligns well with cost models where `K` scales with total instances and `E` scales with repetition depth.
+    *   The first populated row is `x=1`, containing points `(1, k)` representing square-free integers.
 
-    *   **x (Maximal Reuse Depth):** Represents the deepest level of self-application (`Δ_self`) applied sequentially to any single irreducible generator (`pᵢ`) within the structure `n`. Reuse depth here means multiplicity of an irreducible generator in the factor multiset, not necessarily the depth of a run‑time call stack (**e.g. in a pointer-rich data structure K may rise with `x` faster than `E`**). If an implementation penalises algorithmic depth directly, consider adding another coordinate or tag. A high `x` indicates significant reuse/iteration of at least one component. This dimension characterizes complexity arising from **depth**. High `x` structures might strain the `τ` (runtime) or `ε` (precision/stability) components of the Ledger, or incur high `E` costs (affecting base `L` and potentially the RG variables `F_β`, `C₂`) under specific physical models where deep repetition is energetically expensive or error-prone.
-        *   *Processing/Energetic Cost:* May correlate strongly with `λE` (part of base `L`) or `F_β`, especially for iterative operations (e.g., `E` might scale non-linearly with `x`).
-        *   *Descriptive Overhead:* May increase `K` due to the need to manage deep repetition efficiently.
-        *   **Caveat:** If the cost (`λE`, `F_β`) is insensitive to repetition depth in the chosen physical model, the `x` coordinate becomes less predictive of the total SUR cost or RG flow dynamics.
-        *   **Handling Ties:** When several generators share the same maximum exponent `x`, the current model treats them as equivalent. If distinguishing them is necessary, introduce `x₂` = second‑largest exponent or use a full ordered exponent vector.
+    **4.2 The k-x Grid: Coordinates (k, x)**
+    *   This alternative grid maps `n` to the point `(k, x)`. (This matches the structure shown in the user-provided image).
+    *   **Vertical Axis:** Maximal Reuse Depth (`x`).
+    *   **Horizontal Axis:** Number of Distinct Prime Factors (`k`).
+    *   **Focus:** This grid emphasizes the trade-off between **diversity of components (`k`)** and **depth of reuse (`x`)**. It is relevant if SUR costs or system constraints depend explicitly on the number of distinct generator types being managed.
+    *   The first populated column is `k=1`, containing points `(1, x)` representing prime powers `p^x`.
 
-    *   **y (Total Primitive Instances):** Counts the total number of primitive building blocks used in the structure `n`, including the initial introduction of each distinct generator type (`Δ_gen`) plus every subsequent reuse (`Δ_self`) that contributes to the exponents. This dimension characterizes complexity arising from **breadth** or sheer size. High `y` structures might strain the `M` (memory capacity) or `K` (code complexity) components of the Ledger. High `y` directly impacts `K` and likely influences `F_β` and `C₂`.
-        *   *Baseline Description Length:* Often directly reflects the baseline `K` required to list the primitive constituents (e.g., `K` might have a term proportional to `y`).
+5.  **The Nature of the Projections: Mapping Complexity Profiles**
+    Both the `(x, y)` and `(k, x)` mappings are **intentional coarse-grainings** of the full structural description (the exponent vector). They discard different information to highlight specific aspects of complexity.
+    *   The `(x, y)` ISG projection discards `k` (diversity) and details of exponent distribution.
+    *   The `(k, x)` k-x grid projection discards `y` (total volume) and details of exponent distribution beyond the maximum `x`.
 
-    Therefore, the `(x, y)` coordinates provide a profile of a structure's assembly strategy in terms of depth (`x`) vs. breadth (`y`). This profile indicates its general position within the SUR cost landscape (governed locally by `L=K+λE` and globally/dynamically by **flow on the `(K, C₂, F_β)` manifold via `λ̃`**) and classifies **the specific way** a structure resists full internal description due to resource limits. The ISG uses these structural constraints (`x`, `y`) as its coordinate system. A deeper analysis might involve mapping ISG regions to regions in the `(K, C₂, F_β)` state space.
+    These projections are valid and useful **within the commutative regime** where the SUR cost (`L` or related `F_β`, `C₂`) is primarily sensitive to the captured coordinates (`x`, `y` for ISG; `k`, `x` for k-x grid). They provide complementary **taxonomies of the descriptive limit** imposed by Ledger `C`. While a full description might be intractable, the grid profile provides a structural signature classifying *how* complexity manifests at this boundary.
+    *   ISG `(x, y)` differentiates high `x` (deep reuse) from high `y` (large volume).
+    *   k-x grid `(k, x)` differentiates high `x` (deep reuse) from high `k` (high diversity).
 
-6.  **Mapping IC Operations to Grid Movements**
+    **The ISG maps the distinct 'shapes' or 'flavors' of complexity that emerge precisely because perfect description is precluded.** It uses the distinct structural ways this boundary is manifested as its descriptive language. If cost depends significantly on all three (`x, y, k`), a 3D representation or explicit notation is needed.
+
+6.  **Interpretation of Coordinates: Dimensions of Structural Constraint**
+    The coordinates (`x`, `y`, `k`) capture aggregate properties relevant to IC operations and the challenge a structure poses to finite resources (Ledger `C`), potentially influencing the base SUR cost (`L = K + λE`) or RG flow variables (`K`, `C₂`, `F_β`).
+
+    *   **x (Maximal Reuse Depth):** [Interpretation unchanged - relates to depth, potential `τ`, `ε`, `E`, `F_β`, `C₂` costs].
+    *   **y (Total Primitive Instances):** [Interpretation unchanged - relates to breadth/volume, potential `M`, baseline `K` costs].
+    *   **k (Number of Distinct Factors):** Represents **diversity** of irreducible components. High `k` might strain `K` if managing many different types is complex, or `M` if each type requires separate resources. Relevant for the k-x grid analysis.
+
+    The chosen grid (`(x, y)` or `(k, x)`) provides a profile of a structure's assembly strategy relevant to its position in the SUR cost landscape and the specific way it resists full description.
+
+7.  **Mapping IC Operations to Grid Movements**
+    *(Focusing on the ISG (x, y) perspective, comments on k-x grid added)*
     Assuming distinct primes map to distinct irreducible `Δ_gen` events:
-    *   **Primes (Point (1, 1)):** Represent structures created by a single `Δ_gen` event (`n = p`). Here `x=1`, `y=1`. These are the foundational points post-'no structure'.
-    *   **Adding a Distinct Prime (`Δ_gen` Composition):** Composing (`n -> n * p'`) with a new, distinct prime `p'` corresponds to the move `(x, y) -> (x, y+1)`. This increases total primitive instances `y` without changing maximal reuse depth `x`, representing pure novelty addition.
-    *   **Applying `Δ_self` to a Generator:** Increasing the exponent of an existing prime factor `pᵢ` (`eᵢ -> eᵢ + 1`) corresponds to the move `(x, y) -> (x', y+1)`, where `x'` is the new maximum exponent (`x' = max(x, eᵢ+1)`). This increases `y` by one and may increase `x` (moving up/right), representing reuse/repetition¹, **and can raise or lower `K` depending on representation efficiency.**
-    *   **Projection and Refactoring (`Δ_proj`):** By definition, `Δ_proj` aims to optimize the representation (reduce `K`) or stabilize existing structures, typically *without* adding new primitive instances or increasing the maximal reuse depth. Therefore, `Δ_proj` itself does not typically correspond to a move that increments `x` or `y` on the ISG. Instead, its effect might be modelled as:
-        *   Reducing the underlying `K` cost associated with a point `(x, y)`.
-        *   Potentially altering `C₂` or `F_β` associated with the state.
-        *   Increasing the *probability weight* or *relevance* (changing the count `N_n(x, y)` in the observer's distribution, see Section 9) associated with an existing point `(x, y)`.
-        *   Facilitating complex **refactorings** that correspond to a path across the grid ultimately leading to a lower `L` (or effective RG cost) state.
-        *   Acting as the **coarse-graining step** in RG analysis.
-    **Inverse Mapping:** The mapping `n -> (x, y)` is unique. However, the inverse mapping from `(x, y)` to `n` is **many-to-one**. A single point `(x, y)` represents an exponent profile, which can be realized by multiple integers using different prime labels (e.g., `12 = 2²3¹` and `18 = 2¹3²` both map to `(x=2, y=3)`). The ISG visualizes the *profile*, not the fully specified structure.
+    *   **Primes (ISG Point (1, 1); k-x Point (1, 1)):** Represent `n = p`. `x=1`, `y=1`, `k=1`. Foundational points.
+    *   **Adding a Distinct Prime (`Δ_gen` Composition):** `n -> n * p'`.
+        *   ISG: `(x, y) -> (x, y+1)`. Increases total volume `y`, `x` unchanged.
+        *   k-x: `(k, x) -> (k+1, x)`. Increases diversity `k`, `x` unchanged.
+    *   **Applying `Δ_self` to a Generator:** `eᵢ -> eᵢ + 1`.
+        *   ISG: `(x, y) -> (x', y+1)`, where `x' = max(x, eᵢ+1)`. Increases total volume `y`, may increase depth `x`.
+        *   k-x: `(k, x) -> (k, x')`. Diversity `k` unchanged, may increase depth `x`.
+    *   **Projection and Refactoring (`Δ_proj`):** [Interpretation unchanged - Optimizes cost without typically changing grid coordinates `x, y, k`. Affects underlying `K`, `E`, `F_β`, `C₂` or distribution weights `N(...)`].
+    **Inverse Mapping:** Mappings `n -> (x, y)` and `n -> (k, x)` are many-to-one. Grids visualize profiles, not specific structures.
 
-    ¹*Footnote: Results like Zsigmondy's theorem suggest that sufficiently deep recursive application of `Δ_self` (increasing `x`) within a constrained system can eventually force the generation (`Δ_gen`) of new irreducible complexity not representable by existing primes, illustrating a mechanism for grid expansion.*
+    ¹*Footnote: Results like Zsigmondy's theorem suggest that sufficiently deep recursive application of `Δ_self` (increasing `x`) within a constrained system can eventually force the generation (`Δ_gen`) of new irreducible complexity not representable by existing primes, illustrating a mechanism for grid expansion (increasing `k` and `y`).*
 
-7.  **Composition: Baseline vs. Richer Structures**
-    Integer multiplication `n₁ * n₂` corresponds to concatenating the prime multisets of `n₁` and `n₂`. If `n₁` and `n₂` share a prime factor `p`, their exponents simply add in the product, `e_{n₁*n₂}(p) = e_{n₁}(p) + e_{n₂}(p)`; this is still order-independent. In IC terms, multiplication represents the simplest, **minimal form of composition**:
-    *   Commutative and Associative: The order of composition doesn't matter.
-    *   Non-Interacting: Assumes the components of `n₁` and `n₂` simply co-exist in the resulting structure without introducing new interactions or dependencies that would alter the cost beyond the sum of parts. **If the factor sets are identical, composition is equivalent to a batch `Δ_self` on those generators.**
-    This multiplication model captures the **baseline substrate** of structure building. When real systems involve:
-    *   Ordered Composition: Use sequences, words, or tuples instead of multisets (requiring additional representational structure).
-    *   Interactions/Dependencies: Add specific coupling terms to the SUR cost `L` (or `F_β`), or represent links/relations with additional factors or annotations.
-    Richer structures are built by adding constraints or information **on top** of the fundamental integer monoid backbone. **Crucially, this compositional structure captured by the ISG (analogous to multiplication) differs from how *addition* emerges within IC, which relies on cost-based ordering (`≺`) and memory reinforcement (`Δ_self`) rather than direct compositional rules.**
+8.  **Composition: Baseline vs. Richer Structures**
+    [Section unchanged - Integer multiplication represents minimal commutative, non-interacting composition.]
 
-8.  **Example: Reading an Integer on the Grid**
+9.  **Example: Reading an Integer on the Grids**
     Consider `n = 72 = 2³ * 3²`.
-    *   `x = max(3, 2) = 3` (Maximal Reuse Depth)
-    *   `y = 3 + 2 = 5` (Total Primitive Instances)
-    The point on the ISG is `(3, 5)`.
-    **IC Interpretation:** This structure's profile involves a maximal reuse depth of 3 and a total of 5 primitive instances. The coordinate `(3, 5)` encapsulates this trade-off between depth (`x`, potentially affecting `E`, `F_β`, `C₂`, `τ`) and breadth (`y`, affecting `K`, `M`), relevant to its SUR cost (`L` locally, `F_β` globally) and position relative to Ledger `C` limits.
+    *   `x = max(3, 2) = 3`
+    *   `y = 3 + 2 = 5`
+    *   `k = 2` (Distinct factors are 2 and 3)
+    *   **ISG Point: (3, 5).** Profile: Depth 3, Volume 5.
+    *   **k-x Grid Point: (2, 3).** Profile: Diversity 2, Depth 3.
+    **IC Interpretation:** The coordinates encapsulate the structural trade-offs relevant to SUR cost and Ledger `C` limits, viewed through the lens of either (Depth vs. Volume) or (Diversity vs. Depth).
 
-9.  **Observers as Distributions on the ISG**
-    An observer's memory state `Sₙ` at a given time can be visualized as a distribution `Nₙ(x, y)` over the ISG, where `Nₙ(x, y)` counts the number of structures (or their total weight/relevance) in memory that map to the point `(x, y)`. **All formulas hold if `N` stores real weights instead of integer counts.** This distribution reveals the **observer's** current structural complexity profile.
+10. **Observers as Distributions on Grids**
+    An observer's memory state `Sₙ` can be visualized as a distribution over either grid, e.g., `Nₙ(x, y)` or `Nₙ(k, x)`, revealing the observer's complexity profile. **All formulas hold if `N` stores real weights instead of integer counts.**
     *   **Evolution:** The sequence `N₀, N₁, N₂, ...` depicts the evolution of the observer's internal complexity landscape.
-    *   **SUR Dynamics:** Tend to pull the distribution towards regions of lower cost. Locally, this means minimizing `L = K + λE`. Globally, the dynamics are more accurately described as **Renormalization Group (RG) flow on the `(K, C₂, F_β)` manifold**, governed by the running coupling `λ̃`, seeking stable regions (fixed points). The optimal region depends on the specific cost model parameters and the dynamics of `λ̃`.
-    *   **Ledger Constraints:** The accessible region for the distribution `Nₙ(x, y)` is constrained by the Ledger `C` limits.
-    *   **Concrete Cost Example (Local):** Let `K = αy` and `E = βx²`. Then the local cost is `L = αy + λβx²`. Iso-cost contours are parabolas. Observers locally tend towards lower `L` contours. Understanding the *flow* across scales requires mapping this to the `(K, C₂, F_β)` space and analyzing the `λ̃` dynamics.
-    *   **Inputs/Processing:** External inputs (`Δ_gen`) or internal processing (`Δ_self`, `Δ_proj`) shift the distribution, potentially pushing it towards higher complexity regions (challenging `C`) or refining weights/structure within existing regions (optimizing cost `L` locally or **moving along RG flow trajectories**).
+    *   **SUR Dynamics:** [Interpretation unchanged - pull towards lower cost regions, locally `L=K+λE`, globally RG flow on `(K, C₂, F_β)` via `λ̃`].
+    *   **Ledger Constraints:** The accessible region for the distribution is constrained by `C`.
+    *   **Concrete Cost Example (Local):** If `K = α y + γ k` and `E = β x²`, then `L = α y + γ k + λβ x²`. Iso-cost surfaces depend on the chosen grid coordinates. Understanding *flow* requires mapping to `(K, C₂, F_β)` space.
+    *   **Inputs/Processing:** [Interpretation unchanged - `Δ_gen`, `Δ_self`, `Δ_proj` shift the distribution].
 
-10. **Summary and Key Takeaways**
-    *   **Canonical Basis & SUR Selection:** The ISG uses integers/primes because `(ℕ_{>1}, ×)` represents the free commutative monoid of irreducibles, and prime factorization is the **SUR-optimal (MDL) encoding** for generator multiplicities in the commutative, non-interacting regime.
-    *   **Projection Residues:** Points represent stabilized **projection residues** of `Δ`-operation paths.
-    *   **SUR Profile / Dimensions of Constraint:** Coordinates `x` and `y` capture depth vs. breadth, relevant to base cost `L` and the **RG state `(K, C₂, F_β)`**.
-    *   **Intentional Projection:** The map to `(x, y)` is a deliberate coarse-graining, valid when analysis focuses primarily on depth vs. breadth, potentially needing extension to `(x, y, k)`.
+11. **Quantifying Structural Abundance via Asymptotic Density**
+    The grid representations allow us to precisely compare the relative abundance of different structural classes based on their repetition depth (`x`). We can quantify this using **asymptotic density**: the proportion of integers belonging to a specific class within the set of all integers `n > 1`.
+
+    *   **Structural Classes by Max Exponent (`x`):**
+        *   `x=1`: **Square-free** integers (`n = p₁...pₖ`). Structures with "0 repeats" or no reuse of any single generator type. Occupy the `x=1` row on both grids.
+        *   `x≤m`: **(m+1)-power-free** integers. Structures where the maximum reuse depth is at most `m`. Occupy rows `1` through `m` on both grids.
+        *   `x=m`: Integers whose maximum exponent is *exactly* `m`. Structures where the deepest reuse level is precisely `m`. Occupy only the `x=m` row.
+
+    *   **Density Formulas (from Number Theory):**
+        *   Density of `x=1` (Square-free): `D(x=1) = 1 / ζ(2)` ≈ 60.8%
+        *   Density of `x≤m` ((m+1)-power-free): `D(x≤m) = 1 / ζ(m+1)`
+        *   Density of `x=m` (Max exponent is `m`, for `m ≥ 2`): `D(x=m) = D(x≤m) - D(x≤m-1) = 1/ζ(m+1) - 1/ζ(m)`
+
+    *   **Interpretation & Comparison:** This framework allows quantitative comparison of structural prevalence:
+        *   The proportion of structures with "0 repeats" (`x=1`) is `1/ζ(2)`.
+        *   The proportion of structures with "max 1 repeat" (`x=2`) is `D(x=2) = 1/ζ(3) - 1/ζ(2)` ≈ 22.4%.
+        *   The proportion of structures with "max 2 repeats" (`x=3`) is `D(x=3) = 1/ζ(4) - 1/ζ(3)` ≈ 7.1%.
+        *   ...and so on. We can precisely compare the relative abundance of structures based on their maximal repetition depth (`x`).
+
+    *   **Relation to Totality:** These densities compare specific classes (`x=1`, `x=2`, etc.) against the whole set of integers `n > 1` (representing "all possible combinations of all possible combinations" allowing repeats, populating the entire grid).
+    *   **IC Context Note:** While providing a clear measure of structural abundance, this density interpretation is distinct from the specific role suggested for `ζ(3)` in `ISGInsights.md` related to compression dynamics/phase transitions in IC.
+
+12. **Summary and Key Takeaways**
+    *   **Canonical Basis & SUR Selection:** Integer/prime representation arises from SUR-optimal (MDL) encoding in the commutative, non-interacting regime.
+    *   **Projection Residues:** Points represent stabilized projection residues.
+    *   **Grid Projections:**
+        *   **ISG (x, y):** Maps Depth (`x`) vs. Volume (`y`). Relevant for costs tied to total instances.
+        *   **k-x Grid (k, x):** Maps Diversity (`k`) vs. Depth (`x`). Relevant for costs tied to distinct types.
+    *   **SUR Profile / Dimensions of Constraint:** Coordinates capture structural profiles relevant to base cost `L` and **RG state `(K, C₂, F_β)`**.
+    *   **Intentional Projections:** Maps are deliberate coarse-grainings, valid when analysis focuses on the captured dimensions.
     *   **Baseline Composition (vs. Addition):** Integer multiplication represents minimal composition. **Addition emerges differently via ordering and memory.**
-    *   **Visualization Tool:** The ISG visualizes complexity profiles, compares structures, and aids understanding of observer state evolution under SUR dynamics (**local `L` minimization and global `λ̃` flow on `(K, C₂, F_β)` space**).
-    *   **Taxonomy of Limits:** **The ISG provides a quantitative map classifying the *different ways* systems manifest complexity when hitting the descriptive boundaries imposed by resource constraints (Ledger C), distinguishing between depth-driven (high x) and breadth-driven (high y) complexity profiles.**
-    *   **Limitations:** ISG (in this basic form) fails when **ordering or interactions dominate cost**; richer representations are then needed. It provides a **coarse view** compared to the full `(K, C₂, F_β)` state space needed for detailed RG analysis.
+    *   **Visualization Tool:** Grids visualize complexity profiles, compare structures, and aid understanding of observer state evolution under SUR dynamics (**local `L` minimization and global `λ̃` flow on `(K, C₂, F_β)` space**).
+    *   **Taxonomy of Limits:** **Grids provide quantitative maps classifying the *different ways* systems manifest complexity when hitting descriptive boundaries imposed by resource constraints (Ledger C).**
+    *   **Quantifying Abundance:** Asymptotic densities (related to `1/ζ(s)`) quantify the relative prevalence of structures based on maximal reuse depth (`x`).
+    *   **Limitations:** Basic grids fail when **ordering or interactions dominate cost**. They provide **coarse views** compared to the full `(K, C₂, F_β)` state space.
