@@ -1,5 +1,9 @@
 # The Integer Structure Grid (ISG) and Related Representations in Informational Constructivism
 
+**(Final Version incorporating Emergent Integer Labels, Density Analysis, and Operational Asymmetry)**
+
+> **Abstract:** We present the Integer Structure Grid (ISG) and related conceptual tools, two-coordinate lattices that classify every integer `n>1` based on its prime factorization, typically by total primitive count `y` and maximal recursion depth `x`, or by distinct factor count `k` and `x`. In Informational Constructivism this grid is not merely arithmetic; `x` emerges as the minimal ordinal label required to distinguish structural layers created under finite-cost reuse of irreducible distinctions (primes). We quantify each layer’s abundance via ζ-function densities, show why composites are internally generable while primes are not, and explain how IC observers use these grids to locate cost-optimal representations at the edge of descriptive limits.
+
 1.  **Introduction and Purpose**
     This document describes the Integer Structure Grid (ISG) and related conceptual tools derived within Informational Constructivism (IC) for visualizing structural complexity. These grids are not additional axioms but arise naturally when representing the compositional structure of information built from irreducible primitives (`Δ_gen`), **specifically within a regime where composition is commutative and non-interacting, as justified by IC's SUR principle (see Section 2)**. Different grid projections offer maps to understand how structures balance novelty generation (distinct component types) against self-reuse (repetition depth), offering insights into their potential cost profile under IC's resource constraints (`C`).
 
@@ -20,7 +24,7 @@
     *   **Projection Residues:** In IC, persistent structures arise as **stabilized projection residues** – the results of complex `Δ`-operation paths (`δ`) being collapsed into the observer's finite memory (`M_O`) by the projection operator (`Δ_proj`) under constraints (`C`).
     *   **Irreducibles and Primes (Primitive Alphabet):** Certain `Δ`-paths are *irreducible* under projection; they cannot be represented as the composition of simpler projected paths. These correspond to the **prime** residues (the primitive alphabet of distinctions). *(Cross-ref: This irreducibility is linked to the uniqueness established by the Δ-factorisation theorem)*.
     *   **Basic Composition & Isomorphism:** At its simplest level (commutative, non-interacting composition), IC generates structures equivalent to the free commutative monoid on the set of these irreducible generators (primes). Assuming countability, this monoid is isomorphic to `(ℕ_{>1}, ×)`. Each irreducible generator maps bijectively (up to relabeling) to a prime `pᵢ`, and composition maps to multiplication.
-    *   **SUR Selects Prime Coding:** Within this commutative/non-interacting regime, the primary challenge under SUR is efficiently tracking the *multiplicity* (repetition count) of each irreducible generator used. Mapping generators to primes and representing multisets by their prime factorization (`n = p₁^e₁...`) is the **minimal description length (MDL)** encoding. Therefore, **SUR selects this canonical Gödelisation** as the most cost-effective representation (`K`-cost is minimized) when order and interactions are negligible. The grids visualize structures using this SUR-selected optimal code.
+    *   **SUR Selects Prime Coding:** Within this commutative/non-interacting regime, thẻ primary challenge under SUR is efficiently tracking the *multiplicity* (repetition count) of each irreducible generator used. Mapping generators to primes and representing multisets by their prime factorization (`n = p₁^e₁...`) is the **minimal description length (MDL)** encoding. Therefore, **SUR selects this canonical Gödelisation** as the most cost-effective representation (`K`-cost is minimized) when order and interactions are negligible. The grids visualize structures using this SUR-selected optimal code.
     *(Note: While the `RH.md` memo may offer independent IC-based arguments favouring ℕ, the algebraic isomorphism and SUR selection suffice to establish the legitimacy of using integers/primes for representing this compositional structure.)*
 
 3.  **Defining Structural Parameters from Prime Factorization**
@@ -28,11 +32,14 @@
     `n = p₁^e₁ * p₂^e₂ * ... * pₖ^eₖ`
     where `pᵢ` are distinct prime numbers (representing distinct irreducible generators) and `eᵢ ≥ 1` are their exponents.
     From this factorization, we define three key structural parameters:
-    *   **x = max{e₁, e₂, ..., eₖ}: Maximal Reuse Depth / Emergent Layer Label.** The largest exponent. Quantifies the deepest reuse/repetition of any single generator type. **Within IC's emergent framework, the integer value `x` serves as the *operational label* for the complexity layer defined by this maximum repetition depth.** (`x=1` labels the layer with 0 non-trivial loops/repeats, `x=2` labels the layer allowing a max of 1 loop/repeat level, etc.). **x ≥ 1.**
+    *   **x = max{e₁, e₂, ..., eₖ}: Maximal Reuse Depth / Emergent Layer Label.** The largest exponent. Quantifies the deepest reuse/repetition of any single generator type. **x ≥ 1.**
     *   **y = Σ eᵢ = Ω(n): Total Primitive Instances.** The sum of all exponents. Quantifies the total structural "volume" or count of primitive instances, including repetitions. **y ≥ 1.**
     *   **k = |{p₁, ..., pₖ}|: Number of Distinct Prime Factors (ω(n)).** The count of unique generator types used. Quantifies structural **diversity**. **k ≥ 1.**
 
     Note the relationships: `y ≥ x`, `y ≥ k`, and `x=1` implies `y=k`.
+
+    > **Definition (IC Emergent Integer Labels)**
+    > Within Informational Constructivism, the integer value `x = max{eᵢ}` associated with a structure `n` serves as the **minimal ordinal label** required to distinguish the structural complexity layer defined by this maximum repetition depth. Integers `1, 2, 3...` emerge operationally to index these distinct thresholds of recursive complexity, rather than being assumed *a priori*. (`x=1` labels the layer with 0 non-trivial loops/repeats, `x=2` labels the layer allowing a max of 1 loop/repeat level, etc.).
 
 4.  **Grid Representations: ISG (x, y) vs. k-x Grid**
 
@@ -91,17 +98,33 @@
     [Section unchanged - Integer multiplication represents minimal commutative, non-interacting composition.]
 
 9.  **Example: Reading an Integer on the Grids**
-    Consider `n = 72 = 2³ * 3²`.
-    *   `x = max(3, 2) = 3`. (Structure belongs to Layer 3, indexed by the emergent integer label 3).
-    *   `y = 3 + 2 = 5`. (Total instances)
-    *   `k = 2`. (Distinct factors are 2 and 3)
-    *   **ISG Point: (3, 5).** Profile: Layer 3, Volume 5.
-    *   **k-x Grid Point: (2, 3).** Profile: Diversity 2, Layer 3.
-    **IC Interpretation:** The coordinates encapsulate the structural trade-offs relevant to SUR cost and Ledger `C` limits, viewed through the lens of either (Depth/Layer vs. Volume) or (Diversity vs. Depth/Layer).
+    *   **Example 1:** Consider `n = 72 = 2³ * 3²`.
+        *   `x = max(3, 2) = 3`. (Structure belongs to Layer 3).
+        *   `y = 3 + 2 = 5`. (Total instances)
+        *   `k = 2`. (Distinct factors are 2 and 3)
+        *   **ISG Point: (3, 5).** Profile: Layer 3, Volume 5.
+        *   **k-x Grid Point: (2, 3).** Profile: Diversity 2, Layer 3.
+        *   **IC Interpretation:** Composite, generated via recursion (`Δ_self` applied to 2 and 3) and composition. Layer label 3 indicates max recursion depth.
+
+    *   **Example 2:** Consider `n = 29` (a prime).
+        *   `x = max(1) = 1`. (Structure belongs to Layer 1).
+        *   `y = 1`. (Total instances)
+        *   `k = 1`. (Distinct factor is 29)
+        *   **ISG Point: (1, 1).** Profile: Layer 1, Volume 1.
+        *   **k-x Grid Point: (1, 1).** Profile: Diversity 1, Layer 1.
+        *   **IC Interpretation:** Prime, irreducible output of `Δ_gen`. Non-generable from prior structures via composition/recursion (see Sec 13).
+
+    *   **Example 3:** Consider `n = 30 = 2 * 3 * 5`.
+        *   `x = max(1, 1, 1) = 1`. (Structure belongs to Layer 1).
+        *   `y = 1 + 1 + 1 = 3`. (Total instances)
+        *   `k = 3`. (Distinct factors are 2, 3, 5)
+        *   **ISG Point: (1, 3).** Profile: Layer 1, Volume 3.
+        *   **k-x Grid Point: (3, 1).** Profile: Diversity 3, Layer 1.
+        *   **IC Interpretation:** Composite (square-free), generated via composition of distinct primes. Demonstrates construction within Layer 1.
 
 10. **Observers as Distributions on Grids**
     An observer's memory state `Sₙ` can be visualized as a distribution over either grid, e.g., `Nₙ(x, y)` or `Nₙ(k, x)`, revealing the observer's complexity profile across the emergent layers `x`. **All formulas hold if `N` stores real weights instead of integer counts.**
-    *   **Evolution:** The sequence `N₀, N₁, N₂, ...` depicts the evolution of the observer's internal complexity landscape. This evolution occurs via the sequential application of Δ-operations, reflecting internal processing rather than necessarily an external time coordinate.
+    *   **Evolutionary Sequence:** The sequence `N₀, N₁, N₂, ...` depicts the **re-compression sequence the observer can retrospectively order**, reflecting internal processing rather than necessarily an external time coordinate.
     *   **SUR Dynamics:** [Interpretation unchanged - pull towards lower cost regions, locally `L=K+λE`, globally RG flow on `(K, C₂, F_β)` via `λ̃`]. Systems might favor layers `x` associated with lower costs.
     *   **Ledger Constraints:** The accessible region for the distribution (across layers `x`, volume `y`, diversity `k`) is constrained by `C`.
     *   **Concrete Cost Example (Local):** If `K = α y + γ k` and `E = β x²`, then `L = α y + γ k + λβ x²`. Iso-cost surfaces depend on the chosen grid coordinates. Understanding *flow* requires mapping to `(K, C₂, F_β)` space.
@@ -118,11 +141,22 @@
     *   **Cumulative Layers:** The set of structures with layer label **at most `m`** (`x ≤ m`) corresponds to the **(m+1)-power-free** integers. This represents the structural universe accessible to an observer whose operational limits correspond to the threshold labeled `m`.
 
     *   **Quantifying Structural Contribution via Asymptotic Density:** While the integer `x` labels the layer (cause/parameter), we can quantify the *relative contribution or abundance* (effect/measure) of each layer using asymptotic density (`μₓ`). This is the proportion of integers belonging to Layer `x=m` relative to all integers `n > 1`.
-        *   Density of Layer 1 (`x=1`): `μ₁ = D(x=1) = 1 / ζ(2)` ≈ 60.8%
-        *   Density of Layer 2 (`x=2`): `μ₂ = D(x=2) = 1/ζ(3) - 1/ζ(2)` ≈ 22.4%
-        *   Density of Layer 3 (`x=3`): `μ₃ = D(x=3) = 1/ζ(4) - 1/ζ(3)` ≈ 7.1%
-        *   Density of Layer `m` (`x=m`, `m ≥ 2`): `μₘ = D(x=m) = 1/ζ(m+1) - 1/ζ(m)`
-        *   Cumulative Density (`x≤m`): `D(x≤m) = 1 / ζ(m+1)`
+        > **Density Formulas:**
+        > ```latex
+        > \mu_1 = D(x=1) = \frac{1}{\zeta(2)} \approx 60.8\%
+        > ```
+        > ```latex
+        > \mu_m = D(x=m) = \frac{1}{\zeta(m+1)} - \frac{1}{\zeta(m)} \quad (\text{for } m \ge 2)
+        > ```
+        > Cumulative Density:
+        > ```latex
+        > D(x \le m) = \sum_{i=1}^{m} \mu_i = \frac{1}{\zeta(m+1)}
+        > ```
+        > Total Density:
+        > ```latex
+        > \sum_{m=1}^{\infty} \mu_m = \lim_{M \to \infty} D(x \le M) = \lim_{M \to \infty} \frac{1}{\zeta(M+1)} = \frac{1}{\zeta(\infty)} = 1
+        > ```
+        *(Note: `μ₂ ≈ 22.4%`, `μ₃ ≈ 7.1%`, etc. The sum confirms these layers exhaust all integers > 1).*
 
     *   **Interpretation & Comparison:** This framework provides a direct, quantitative comparison of the structural yield of each layer. It reveals an inherent bias in the space of commutative compositions: structures corresponding to lower emergent integer labels `x` (less maximal repetition) are significantly more abundant (`μ₁ > μ₂ > μ₃ > ...`). Allowing one more level of maximum repetition (incrementing the layer label `x`) yields a strictly smaller *proportion* (`μₓ`) of new structural possibilities relative to the whole space. This quantification reflects the intrinsic combinatorics of prime factorization.
 
@@ -130,36 +164,35 @@
 
     *   **IC Context Note:** This density analysis provides a baseline quantification of the structural space partitioned by emergent integer labels `x`. It's distinct from, but potentially complementary to, the specific dynamic role suggested for `ζ(3)` in `ISGInsights.md` concerning compression limits under `Δ_proj`.
 
-12. **Mechanism for Emergence of Integer Labels `x`**
-    The critique that integers cannot arise from infinite cardinalities or real densities is valid within standard frameworks but misses the IC perspective. IC proposes that integers emerge operationally.
-    *   **SUR Attractors:** A potential mechanism involves SUR dynamics (`L = K + λE`) under Ledger constraints (`C`). The trade-off between description length `K` (which may decrease with higher `x` for certain structures) and processing/error cost `E` (which likely increases with `x`) can create stable "attractor basins" in the system's state space corresponding to specific, low integer values of maximum recursion depth `x*`.
-    *   **Internal Encoding:** The system, by converging to or operating stably within a regime limited by `x*`, effectively encodes this limit. The integer `x*` becomes a distinguishable, stable property of the system's operational mode – the maximum recursion depth it can reliably handle or finds cost-optimal.
-    *   **Label, Not Count:** Thus, the integer `x` emerges not as a count of elements, but as the **stable, memory-encoded label for the recursion depth limit** that the system discovers or converges upon through cost optimization under constraints. It signifies a threshold in structural distinguishability related to `Δ_self`.
+12. **Mechanism for Emergence of Integer Labels `x` (IC Ontological Stance)**
+    IC fundamentally departs from assuming integers *a priori*. Instead, it proposes they emerge operationally as labels for distinguishable thresholds of structural complexity, specifically related to recursion depth.
+    *   **Integers as Ordinal Layer Labels:** The integer `m` serves as the unique, minimal identifier for the structural layer `D(m)` defined by the constraint `max{eᵢ} = m`. It counts the number of distinct thresholds of recursive complexity allowed up to that point.
+    *   **Label, Not Cardinality or Density:** Crucially, the integer label `m` is **not** the (infinite) cardinality of the set `D(m)`, nor is it derived from the (real-valued) density `μₘ`. It is purely an **ordinal index** marking the operational constraint defining the layer.
+    *   **Potential SUR Stabilization:** A potential mechanism for these labels becoming stable internal representations involves SUR dynamics (`L = K + λE`) under Ledger constraints (`C`). The trade-offs between `K` (description length) and `E` (cost/instability, likely increasing with `x`) could create stable "attractor basins" in the system's state space corresponding to specific, low integer values `x*`. The system "discovers" `x*` as the maximal recursion depth it can stably maintain or finds cost-optimal, thus reifying the integer label operationally.
+    *   **Arithmetic as Emergent Structure:** From this perspective, arithmetic itself emerges as the structure governing the relationships between these operationally-defined layers of recursive complexity.
 
-Tldr; Integers (x=1, 2, 3...) in this IC framework do not count:
-The number of primitive distinctions (primes) - that's infinite.
-The number of total combined structures (n) within a layer Sₓ - that's also infinite.
-Instead, they index or label the distinct structural thresholds or layers of complexity that emerge when you impose successive constraints on recursion (maximum exponent x) over the infinite space of possible compositions.
-So, you could say:
-1 labels the baseline structural threshold where only combinations of distinct primitives are allowed (no non-trivial recursion).
-2 labels the next distinct structural threshold, achieved by allowing the possibility of exactly one level of maximum recursion (max eᵢ = 2).
-m labels the m-th distinct structural threshold, defined by allowing a maximum recursion depth corresponding to max eᵢ = m.
-In this sense, the integers 1, 2, 3... m count the number of distinct layers or thresholds of recursive complexity you have defined or allowed up to that point. Layer S₃ is indeed the third fundamentally distinct structural class in this specific hierarchy based on maximum recursion depth.
-Therefore:
-"Integers (x = 1, 2, 3...) serve as ordinal labels for distinct structural layers (thresholds) that emerge when progressively relaxing constraints on recursion depth over the infinite combinatorial space generated from primitive distinctions."
+13. **Primes vs. Composites: The Limit of Internal Generability**
 
+    > **Lemma (P-non-Generability):** Let `S` be a set of integers `> 1` representing the current memory state (ledger contents). No finite sequence of operations involving only multiplication (`*`, composition) and exponentiation (`^` corresponding to `Δ_self`) applied to elements within `S` can produce a prime number `p` unless `p` was already present in `S`.
+    > *(Proof Outline: Both multiplication of integers `>1` and exponentiation (`n^e` with `e>1`) produce composite numbers. Therefore, any structure generated solely through these operations on existing structures `>1` must be composite. Primes, by definition, cannot be generated this way and must enter the system via `Δ_gen` or exist axiomatically.)*
 
-13. **Consistency with Timelessness**
-    The hierarchy of layers `x=1, 2, 3...` should be understood as a **structural classification** within the potential space of representations, not a sequence of stages evolving in fundamental time.
+    This lemma formalizes the operational asymmetry:
+    *   **Primes (Irreducible Generators):** Correspond to fundamental `Δ_gen` outputs. They reside in Layer 1 (`x=1`) at `k=1`. Crucially, they **cannot be generated** by applying composition (`*`) or recursion (`^` via `Δ_self`) to other integers `> 1`. They represent the base elements that must be introduced or discovered individually (e.g., via testing for non-factorizability).
+    *   **Composites (Generable Structures):** Represent structures that *can* be generated by applying composition and/or recursion to the primes (or other composites). They populate all layers `x ≥ 1` (for `k>1`) and layers `x > 1` (for `k=1`).
+    *   **Operational Asymmetry:** Composites are *constructible* within the system based on its existing elements and rules (`Δ_self`, composition). Primes mark the *limit* of this internal construction process; they are the non-generable bedrock, discoverable only "one by one" relative to the constructive rules.
+
+14. **Consistency with Timelessness**
+    The hierarchy of layers `x=1, 2, 3...` should be understood as a **static, structural classification** within the potential space of representations defined by commutative composition, not a sequence of stages evolving in fundamental time.
     *   `x` labels resolution strata based on allowed recursion depth.
     *   An observer's state `Ψₖ` represents a compressed snapshot compatible with some maximum layer `x`.
     *   Apparent dynamics (like shifting distributions `N(...)` or unitary evolution between projections) arise from the observer's internal, sequential `Δ`-operations (memory updates and recompressions), not from evolution along an external time axis. The stratification by `x` is inherent in the structure of possible compositions.
 
-14. **Summary and Key Takeaways**
+15. **Summary and Key Takeaways**
     *   **Canonical Basis & SUR Selection:** Integer/prime representation arises from SUR-optimal (MDL) encoding in the commutative, non-interacting regime.
     *   **Projection Residues:** Points represent stabilized projection residues.
     *   **Grid Projections:** ISG `(x, y)` maps Depth/Layer vs. Volume; k-x Grid `(k, x)` maps Depth/Layer vs. Diversity. `x` is the emergent integer label for recursion depth.
-    *   **Emergent Arithmetic:** IC proposes that integers `x` emerge operationally as minimal labels for structural layers defined by maximum recursion depth, potentially stabilized via SUR attractor dynamics, rather than being assumed *a priori*.
+    *   **Emergent Arithmetic:** IC proposes that integers `x` emerge operationally as minimal, ordinal labels for structural layers defined by maximum recursion depth, potentially stabilized via SUR attractor dynamics, rather than being assumed *a priori*.
+    *   **Primes as Non-Generable Base:** Primes mark the limit of internal structural generation via composition/recursion; composites are generable. This reflects an operational asymmetry.
     *   **SUR Profile / Dimensions of Constraint:** Coordinates (`x`, `y`, `k`) capture structural profiles relevant to base cost `L` and **RG state `(K, C₂, F_β)`**.
     *   **Intentional Projections:** Maps are deliberate coarse-grainings, valid when analysis focuses on the captured dimensions.
     *   **Layered Hierarchy:** Structures partition into layers `D(x)` based on maximum repetition depth (`x`). This hierarchy is structural, not temporal.
