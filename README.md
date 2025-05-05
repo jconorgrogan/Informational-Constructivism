@@ -181,125 +181,62 @@ We used standard logical analysis (requiring clear distinctions, consistency, pa
 
 - **Next step:** Explore concrete structural manifestations driven by the Structure Dynamic (conservation laws, symmetries, codes, computation) as efficient strategies for managing consequences within Finite States, potentially exploring connections to observed physical limits and constraints on artificial intelligence, and make Appendix C more rigorous. 
 
-## Appendix C: Foundational Premises
+## Appendix C: Foundational Logic Chain (and current status)
 
-**P1. Possibility of Distinction**  
-The act of distinguishing—differentiating A from ¬A—is possible.  
-- Absolute non-distinction (the Null) is operationally sterile: it permits no reference, comparison, or analysis.
+**Legend for Status/Confidence:**
 
-**P2. Finite Operational Capacity**  
-All observers/processors operate under finite resources.  
-- Modeled by a **Ledger**: \(C = (M, K_{\max}, \tau_{\text{ord}}, \varepsilon)\), which bounds memory, description length, ordering precision, and numerical resolution.  
-- Every operation (Δ) incurs cost \(L = K + \lambda E\) (Theorem 1), with \(\lambda > 0\).
-
-**P3. Stability for Process**  
-Non-trivial dynamics (multiple Δ-steps) require a substrate capable of storing states and referencing prior outputs.  
-- A system must preserve some Δ-results to enable continuation and coherence.
-
-**P4. Persistence Under Constraint**  
-Finite systems that do not halt must persist by adapting:  
-- They restructure, recompress, or generalize representations to remain within ledger \(C\).
+*   **Axiom:** A foundational premise explicitly stated as an assumption in the framework.
+*   **Proven (IC):** Derived via standard math/logic *within the IC framework* and presented as a proven result (e.g., Theorem 1, 2, 3B link) or a direct mathematical necessity (Pigeonhole).
+*   **Strongly Argued (IC):** Follows logically from prior steps/axioms based on compelling arguments presented within the repo, even if not a formal numbered theorem. Represents core conceptual deductions.
+*   **Conjectural/Proposed (IC):** Presented as a hypothesis, interpretation, or requiring further proof/justification *within* the IC framework itself (e.g., the specific *physical* meaning of RH criticality, specific paths to constants/EFE).
+*   **Definitional (IC):** Establishes a term based on preceding steps.
 
 ---
 
-## Phase I: Necessity of Finite Distinguishable States
-
-**Step 1. Exclusion of Trivial Extremes**  
-- P1 excludes the Null (absolute indistinction).  
-- P2 excludes total accessibility to the All (infinite distinction).  
-⇒ Any operational system must act within a **finite structured subset** of possible distinctions.
-
-**Step 2. Finite State Space**  
-- With ledger \(C\), the number of simultaneously distinguishable states is bounded: \(|\mathcal{S}| \leq 2^C\).  
-- Infinite distinctions must be coarse-grained or encoded relative to the system's current capacity.
-
----
-
-## Phase II: Label Reuse and Emergence of Structure
-
-**Step 3. Label Reuse is Inevitable**  
-- For any sequence of Δ-events longer than \(|\mathcal{S}|\), some prior label or representation must be reused (Pigeonhole Principle).  
-- This reuse enables recurrence, recursion, and structural abstraction.
-
-**Step 4. Irreversibility of State Transitions**  
-- Most Δ-paths are not injective: information is lost or compressed.  
-- Irreversible transitions create path dependence and operational asymmetry.
-
----
-
-## Phase III: SUR Optimization and Integer Structure Grid
-
-**Step 5. Cost Pressure Enforces Optimization (P4)**  
-- Persistent systems under resource constraints must minimize cost \(L = K + \lambda E\).  
-- This defines the **Structure Under Resource-constraint** (SUR) dynamic.
-
-**Step 6. Commutative Encoding Selects Prime Factor Code**  
-- In any regime where Δ-composition is commutative and non-interacting, SUR selects prime-exponent codes (Theorem 2).  
-  - Primes = irreducibles (Δ_gen)  
-  - Exponents = recursion (Δ_self)  
-⇒ The **Integer Structure Grid (ISG)** arises naturally. It classifies structures via resolution depth \(x = \max e_i\), total volume \(y = \sum e_i\), and diversity \(k = \#\{p_i\}\).
+| Phase | Step | Core Claim/Deduction                                  | Supporting Evidence/Reference (Repo Files/Concepts)                         | Status/Confidence            | Notes/Dependencies/To-Dos                                                                                                |
+| :---- | :--- | :---------------------------------------------------- | :-------------------------------------------------------------------------- | :--------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| **PRE** | P1   | Distinction is possible; Null excluded.               | `README.md` (reject S₀), `LogicEmergence` (need distinction)              | **Axiom**                    | Foundational starting point.                                                                                             |
+| **PRE** | P2   | Finite Operational Capacity (Ledger C); Cost L=K+λE. | `OpConstr` (Box 2), `InProgress`, `SUR linearity proof.md` (Th 1)            | **Axiom** (Capacity) + **Proven (IC)** (Cost L form) | Capacity is assumed; linear cost form derived from additivity/monotonicity axioms. `λ` link to thermo in `OpConstr` (Box 5). |
+| **PRE** | P3   | Stability needed for process/sequences.             | `README.md` (Stable Carrier)                                                | **Axiom**                    | Necessary background for dynamics.                                                                                       |
+| **PRE** | P4   | Persistence under constraint requires adaptation.     | `README.md` (Persistence), `LogicEmergence` (PO)                            | **Axiom**                    | Focuses analysis on non-halting systems.                                                                               |
+| **I** | 1    | Extremes (Null/All) excluded; Finite Structure needed. | `README.md` (Stage 1), `LogicEmergence` (EFR); Deduction from P1/P2       | **Strongly Argued (IC)**     | Core deduction based on operational unworkability of extremes for finite systems.                                        |
+| **I** | 2    | Finite State Space bounded by Ledger C.               | `README.md` (Lemma 3 impl.), `OpConstr` (Ledger C); Consequence of P2/Step 1 | **Strongly Argued (IC)**     | Finite capacity directly limits distinguishable states per cycle.                                                      |
+| **II** | 3    | Label Reuse inevitable via Pigeonhole Principle.      | `README.md` (Stage 2), `Flowchart.mmd` (C-3a); Math necessity from Step 2+P3 | **Proven (IC)** (Math)       | Direct mathematical consequence of finite states + dynamics.                                                             |
+| **II** | 4    | State Transitions are Informationally Irreversible.   | `README.md` (Stage 2), `OpConstr` (T6); Info theory on Step 2              | **Proven (IC)** (Info Theory)| Consequence of non-injective mappings in finite state systems.                                                         |
+| **III** | 5    | Cost pressure + Persistence (P4) forces SUR optimization. | `README.md` (Structure Dynamic), `LogicEmergence`, `OpConstr`; From P2/P4/Steps 1-4 | **Strongly Argued (IC)**     | Emergence of the optimization dynamic as the necessary response to saturation/cost.                                        |
+| **III** | 6    | Commutative regime + SUR selects Prime Factor code -> ISG. | `ISG.MD` (Sec 2, Box 1 - MDL); Δ op map (`ISG.MD` Sec 0, 7)               | **Assumption** (Commutativity) + **Strongly Argued (IC)** (MDL selection -> ISG) | Assumes a regime; ISG structure follows from SUR optimizing description length (MDL) in that regime.                 |
+| **IV** | 7    | Irreducible novelty (Δ_gen/primes) has noise properties. | `ISG.MD`, `FAQ.md` (Δ_gen noise link)                                       | **Strongly Argued (IC)**     | Descriptive claim about the nature of input. Link to thermodynamics via noise (`FAQ.md`).                                |
+| **IV** | 8    | RH = Critical Noise Balance for SUR stability.        | `ISG.MD` (Sec 15), `RH.md` (Th 3B)                                          | **Proven Link (IC) / Conjectural Premise** | Theorem 3B proves *link* between RH and SUR stability *criterion*. Criterion itself (O(x^½)) is a premise about stable finite processing. |
+| **V** | 9    | Memory Graph forms from stabilized Δ results.        | `OpConstr` (Box 4), `ISG.MD`                                                | **Definitional (IC)**        | Defines the structure of observer memory.                                                                                |
+| **V** | 10   | Ledger C forces Sequential processing (Serialization). | `ISG.MD` (Sec 14), `OpConstr` (T6); Consequence of P2 (Finite Capacity)    | **Strongly Argued (IC)**     | Finite resources prevent simultaneous processing of all relevant distinctions.                                           |
+| **V** | 11   | Serialization induces Irreversible Partial Order.     | `ISG.MD` (Sec 14, `preceq_C`), `OpConstr` (T6); Consequence of Step 10 + dependencies | **Strongly Argued (IC)**     | Order arises from processing dependencies under serialization.                                                         |
+| **V** | 12   | Local Time = Observer's irreversible processed sequence. | `ISG.MD` (Sec 14), `OpConstr` (T6)                                          | **Definitional (IC)**        | Defines local time operationally based on Step 11.                                                                     |
+| **VI** | 13   | Shared framework enables Partial Synchronization.     | `ISG.MD`; Consequence of Steps 6, 8, shared physics                     | **Strongly Argued (IC)**     | If observers share ISG/RH constraints, interaction allows correlation.                                                 |
+| **VI** | 14   | Timelines local but overlap on shared structures.     | `ISG.MD`                                                                    | **Strongly Argued (IC)**     | Clarifies Step 13; synchronization is partial.                                                                         |
+| **VII** | 15   | Universal Resolution Failures (Horizons).           | `ISG.MD` (Sec 17, Box 2); Extension of `x*(C)` concept                      | **Proposed Interpretation (IC)** | Interprets physical phenomena (BH) as instances of universal `x*(C)` failure. Needs physical validation.                |
+| **VII** | 16   | Horizon events are irreversible for all observers.  | `ISG.MD` (Sec 17); Consequence of Step 15                                   | **Strongly Argued (IC)**     | Follows logically if Step 15 holds.                                                                                      |
+| **VII** | 17   | Global Anchors from shared irreversible events.     | `ISG.MD` (Sec 17); Interpretation based on Steps 15/16                    | **Proposed Interpretation (IC)** | Interprets Step 16 events as providing a minimal global ordering scaffold.                                               |
+| **Conc.** | -- | Time emerges necessarily from finite processing.    | Synthesis of Steps 1-17                                                     | **Derived Conclusion (IC)**  | The logical outcome of the preceding chain within the IC framework.                                                    |
 
 ---
 
-## Phase IV: Constraint on Novelty — RH Criticality
+**Summary of Locked vs. To-Do:**
 
-**Step 7. Irreducible Novelty Arrives with Noise**  
-- New Δ_gen events (primes) arrive unpredictably.  
-- Their distribution defines the system's input novelty rate.
+*   **Locked (Axioms/Proven/Strongly Argued/Definitional):**
+    *   Foundational Premises (P1-P4, though cost form is derived).
+    *   Necessity of Finite States (Steps 1-2).
+    *   Label Reuse & Irreversibility (Steps 3-4).
+    *   Emergence of SUR dynamic (Step 5).
+    *   ISG structure *given* commutative regime & MDL (Step 6).
+    *   Serialization & Local Time Emergence (Steps 9-12).
+    *   Partial Synchronization Concept (Steps 13-14).
+*   **Conjectural / Proposed / Needs More Work:**
+    *   Assumption of Commutative Regime for ISG (Step 6). While plausible via SUR, needs regime justification.
+    *   RH as the *precise* critical balance (Step 8). Th 3B shows the equivalence to a stability criterion, but that criterion's fundamental necessity is the core premise here. Needs deeper justification/testing (e.g., `ToDos.md` #8 EEG).
+    *   Interpretation of physical horizons as universal resolution failures (Steps 15-17). Plausible within IC, but requires bridging to established physics (part of EFE derivation path - `InProgress.md` #4, `ToDos.md` #4, #5).
+    *   Derivation of specific constants (e.g., α), full EFE, QFT details remain target proofs/derivations (`InProgress.md`, `ToDos.md`, `LedgerToddBridge.md`).
 
-**Step 8. RH = Critical Noise Balance**  
-- RH constrains prime unpredictability to the critical bound \(O(x^{1/2 + \varepsilon})\).  
-- If noise is:
-  - **too smooth** ⇒ over-compression ⇒ indistinction.  
-  - **too chaotic** ⇒ ledger overload ⇒ instability.  
-⇒ Only RH-level noise permits SUR-stable structure for finite \(C\) (Theorem 3).
 
----
-
-## Phase V: Memory, Serialization, and Time Emergence
-
-**Step 9. Stabilized Δs Form Memory Graph**  
-- Observer stores Δ-results in directed graph \(M_O\), where nodes = states, edges = Δ-paths.
-
-**Step 10. Ledger Constraint Forces Serialization**  
-- Because \(C\) is finite, distinctions must be processed **sequentially**, not simultaneously.
-
-**Step 11. Serialization Induces Irreversible Order**  
-- If Δ₂ requires Δ₁, then Δ₁ ≺ Δ₂ in the observer's memory graph.  
-- This yields a **partial order** internal to the observer.
-
-**Step 12. Definition: Local Arrow of Time**  
-- The irreversibly ordered sequence of stabilized distinctions constitutes the observer’s **local time**.  
-- It reflects processing order, not external chronology.
-
----
-
-## Phase VI: Shared Structure and Synchronization
-
-**Step 13. Common Framework ⇒ Partial Alignment**  
-- All observers operate over the same distinction substrate (e.g. primes, ISG, RH-critical noise).  
-- Shared ISG layers (e.g. agreeing on factorization of n, or on \(x^*(C)\)) allow **partial synchronization**.
-
-**Step 14. Alignment Without Uniformity**  
-- Timelines remain local and resolution-dependent, but overlap on **stable shared structures**.
-
----
-
-## Phase VII: Global Ordering Anchors
-
-**Step 15. Universal Resolution Failures Define Horizons**  
-- Some structures exceed the resolution of **all** finite systems (e.g. x > x*(C) ∀ C).  
-- Example: black hole event horizons where Δ_proj fails universally.
-
-**Step 16. Irreversibility for All Observers**  
-- All finite observers agree: a structure past the horizon is unresolvable.  
-- Events like horizon crossings or area increase are **globally monotonic**.
-
-**Step 17. Global Anchors from Shared Collapse**  
-- These events act as **universal "ticks"**: everyone agrees on their irreversible ordering.  
-- They create a **shared scaffold** for inter-observer timeline comparison.
-
----
 
 ## Final Conclusion: Time Must Emerge
 
