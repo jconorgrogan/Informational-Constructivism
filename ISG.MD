@@ -146,7 +146,7 @@ So, you could say:
 m labels the m-th distinct structural threshold, defined by allowing a maximum recursion depth corresponding to max eᵢ = m.
 In this sense, the integers 1, 2, 3... m count the number of distinct layers or thresholds of recursive complexity you have defined or allowed up to that point. Layer S₃ is indeed the third fundamentally distinct structural class in this specific hierarchy based on maximum recursion depth.
 Therefore:
-"Integers (x = 1, 2, 3...) count the ordinal number of distinct structural layers (thresholds) that emerge when progressively relaxing constraints on recursion depth over the infinite combinatorial space generated from primitive distinctions."
+"Integers (x = 1, 2, 3...) serve as ordinal labels for distinct structural layers (thresholds) that emerge when progressively relaxing constraints on recursion depth over the infinite combinatorial space generated from primitive distinctions."
 
 
 13. **Consistency with Timelessness**
