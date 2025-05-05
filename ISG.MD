@@ -1,6 +1,5 @@
 # The Integer Structure Grid (ISG) and Related Representations in Informational Constructivism
 
-**(Final Version incorporating Emergent Integer Labels, Density Analysis, and Operational Asymmetry)**
 
 > **Abstract:** We present the Integer Structure Grid (ISG) and related conceptual tools, two-coordinate lattices that classify every integer `n>1` based on its prime factorization, typically by total primitive count `y` and maximal recursion depth `x`, or by distinct factor count `k` and `x`. In Informational Constructivism this grid is not merely arithmetic; `x` emerges as the minimal ordinal label required to distinguish structural layers created under finite-cost reuse of irreducible distinctions (primes). We quantify each layer’s abundance via ζ-function densities, show why composites are internally generable while primes are not, and explain how IC observers use these grids to locate cost-optimal representations at the edge of descriptive limits.
 
