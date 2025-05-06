@@ -1,13 +1,12 @@
 # The Necessary Emergence of Ordered Sequential Processing, Structure, and Effective Irreversibility in Viable Finite Informational Processes
 
 —Or: Why Realities Amenable to Sustained, Bounded-Cost Information Processing Cannot Be Featureless
-
-> **Abstract:** Any process that maintains a bounded long-run operational cost within a sufficiently complex environment statistically develops ordered memory, effective irreversibility, and an emergent arrow of time.
-
 ---
 
 ## TLDR: The Full Logical Chain: From a Single Distinction to Time, Structure, and SUR
 
+> **Abstract:** Any process that maintains a bounded long-run operational cost within a sufficiently complex environment statistically develops ordered memory, effective irreversibility, and an emergent arrow of time.
+> 
 The core argument of Informational Constructivism (IC) posits that if a reality supports finite, describable processes that must keep operational costs bounded, then—statistically and unavoidably—any process that persists will exhibit characteristics like ordered history, irreversible state updates, and increasingly complex internal structure. This emergent behavior is described by the principle of Simplicity Under Resource-constraint (SUR).
 
 Below is the “zoom‑ed‑out” backbone of the argument, stripped of side‑paths and technical proofs. Each arrow (→) implies "logically / statistically forces."
