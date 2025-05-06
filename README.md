@@ -35,12 +35,12 @@ This framework proposes that fundamental characteristics of structured, sequenti
 **Result 2: Sequential Ordering & Memory are Statistical Consequences of Viability within an FSP.**
 *   Within an FSP, ongoing state transitions (P3) over extended sequences inevitably lead to **Label Reuse** (Pigeonhole Principle), where effective state labels are repeated.
 *   For a process to remain Viable (V), the ambiguity arising from such reused state labels must be managed to prevent unbounded growth in the error or cost component (`E`) of its average Ledger Cost `L`. This makes necessary the statistical emergence of internal mechanisms that differentiate instances of reused labels, often by their surrounding contextual ledger state. Such differentiation forms the basis for an **ordered memory trace** and a sequential history.
-    *   The tendency towards local `L`-minimization is a statistical consequence of the global Viability Condition; paths that frequently incur large increases in `L` are unsustainable and thus non-viable over time.
+    *   The apparent tendency towards local `L`-minimization is best understood statistically: among the vast set of possible processing histories, only those whose local operational choices, whatever their internal implementation, consistently sample from distributions that keep the long-run average `L` below `L_max` will survive indefinitely. Describing this survivor-ensemble in aggregate often resembles an explicit minimization of `L = K + λE`. Paths that frequently incur large increases in `L` are unsustainable and thus non-viable over time.
 
 **Result 3: Effective Irreversibility & Structure Emerge from Viability and Efficient Encoding.**
 *   **Intrinsic Irreversibility of K-Efficient Encoding:** K-efficient (descriptively simple) representations are statistically favored by processes maintaining Viability, as high `K` contributes to high `L`. Such encodings, as detailed in "[The Core Logic for Emergent Time-Like Order](link-to-TimeAndOrder.md)," often involve abstraction or compression which is not uniquely invertible from an information-theoretic standpoint. This means the exact precursor state cannot always be uniquely determined from the K-efficient representation alone.
-*   **Statistical Selection by Viability:** Processes whose operational trajectories predominantly include costly, perfectly reversible operations (which typically require high representational fidelity, thus high `K`, and are also less common transformations) are less likely to remain viable under finite resource constraints compared to those that predominantly utilize more K-efficient, effectively irreversible operations.
-*   **Consequence: Emergence of Structure:** This leads to the emergence of rules, complexity, and structural optimization as processes adapt to manage the consequences of effective irreversibility and potential **saturation** (when incoming information or processing demands exceed the current FSP's representational capacity) while remaining viable. The pressure to maintain a bounded average `L` (and thus manage `K`) statistically guides viable processes along pathways of intrinsic K-efficiency.
+*   **Statistical Selection by Viability:** Processes whose operational trajectories predominantly include costly, perfectly reversible operations (which typically require high representational fidelity, thus high `K`, and are also less common transformations) are less likely to remain viable under finite resource constraints compared to those that predominantly utilize more K-efficient, effectively irreversible operations. This selection favors pathways that, in aggregate, appear to optimize for cost-efficiency.
+*   **Consequence: Emergence of Structure:** This leads to the emergence of rules, complexity, and structural optimization as processes adapt to manage the consequences of effective irreversibility and potential **saturation** (when incoming information or processing demands exceed the current FSP's representational capacity) while remaining viable. The pressure to maintain a bounded average `L` (and thus manage `K`) statistically guides viable processes along pathways of intrinsic K-efficiency and apparent cost optimization.
 
 ---
 
@@ -52,7 +52,7 @@ For any reality amenable to description and capable of supporting finite, sustai
 *   Sequential operations within this FSP, under the statistical pressures of the **Viability Condition**, make highly probable the emergence of:
     *   **Ordered memory** (to manage label reuse and maintain informational coherence).
     *   The dominance of **effective irreversibility** in state transitions (due to the costs of perfect reversibility and the information-theoretic nature of K-efficient encoding favored by Viability).
-    *   **Complex internal structure** (rules, models, hierarchies) to manage information efficiently and maintain stability in the face of saturation.
+    *   **Complex internal structure** (rules, models, hierarchies) to manage information efficiently and maintain stability in the face of saturation, driven by the statistical imperative to maintain a viable (bounded) Ledger Cost.
 
 Thus, an **emergent, local arrow of time** – the ordered trace of the process's effectively irreversible, structured, and often self-referential processing – is a necessary characteristic of such sustained information processing. This emergent arrow of time aligns with, and is an operational traversal of, an intrinsic time-like order already present in the atemporal, K-efficient structure of informational dependencies.
 
@@ -60,7 +60,7 @@ Realities not supporting such processes (e.g., those that are perfectly static, 
 
 ---
 **Footnotes:**
-<sup>[1]</sup> The linear form `L = K + λE` is derived from basic assumptions of monotonicity, additivity, and scale-invariance for a cost functional (see `Theory Formalization/SUR linearity proof.md`). The term `λ` is often linked to thermodynamic factors, such as `k_B T ln 2` via Landauer's principle, when considering physical instantiations of information erasure and processing.
+<sup>[1]</sup> The linear form `L = K + λE` is derived from basic assumptions of monotonicity, additivity, and scale-invariance for a cost functional (see `Theory Formalization/SUR linearity proof.md`). The term `λ` is often linked to thermodynamic factors, such as `k_B T ln 2` via Landauer's principle, when considering physical instantiations of information erasure and processing. The principle of Ledger Cost minimization (often referred to as Simplicity Under Resource-constraint or SUR) is understood as a statistical outcome: processes that persist are those whose operational choices effectively keep this average cost bounded.
 
 ---
 *(Further details, including the formal deduction of the Core Logic from atemporal principles, specific mathematical derivations of emergent structures, and potential applications to complex physical or cognitive systems, are explored in other documents within this repository.)*
@@ -76,7 +76,7 @@ Realities not supporting such processes (e.g., those that are perfectly static, 
 *   **Premise P1: Minimal Distinction Lemma** (derived from Axiom A and rejection of S₀'s incoherence).
 *   **Premise P2: Finite Operational Capacity** (e.g., Ledger `C` with `K` contributing to a bounded average `L`).
 *   **Premise P3: Stable Carrier** (assumption of state representation and primitive succession for sequential operations).
-*   **Premise V (Viability Condition):** Process maintains bounded average Ledger Cost `L` over its operational history. (This replaces the old P4).
+*   **Premise V (Viability Condition):** Process maintains bounded average Ledger Cost `L` over its operational history.
 
 **Core Argument Chain:**
 
@@ -102,7 +102,7 @@ Allows for sequences of state changes within the FSP.
 Mathematical necessity (Pigeonhole Principle) of Label Reuse in sequences of length `≥ m+1` within the FSP. Challenge for Viable (V) processes.
 
 ### Section 8: Emergence of Ordered Memory from Viability Managing Label Reuse
-The Viability Condition (V), to maintain a bounded average `L=K+λE` (e.g., by minimizing predictive error from ambiguity), statistically forces differentiation of reused labels by ledger context, creating ordered memory.
+The Viability Condition (V), to maintain a bounded average `L=K+λE` (e.g., by minimizing predictive error from ambiguity), statistically forces differentiation of reused labels by ledger context, creating ordered memory. (The minimization of L is understood as a statistical property of viable, persistent processes).
 
 ### Section 9: Effective Irreversibility Statistically Selected by Viability
 Informationally, K-efficient encodings (favored by Viability's pressure on `K` cost to manage P2 and saturation) are often not uniquely invertible (large `K(precursor|encoding)`), with Landauer cost for erased specificity. Operationally, Viability disfavors high cost of perfect reversibility under noise and typicality.
@@ -114,7 +114,7 @@ Path dependence in state history, active information management (compression/dis
 Defines Saturation (`I_t` > capacity of current FSP state representation). Inevitable challenge for Viable processes.
 
 ### Section 12: Resolution via Viability (V) Leading to Emergent Structure Dynamic
-Viable processes (V) *must* adapt to resolve Saturation while keeping average `L` bounded. This statistically drives sequences of operations that optimize average `L = K + λE`, selecting K-efficient (often irreversible) operations, implementing stable self-reference, and leading to complex internal structure (rules, models, hierarchies). This effectively selects paths through the K-efficient dependency network described by the atemporal "Core Logic."
+Viable processes (V) *must* adapt to resolve Saturation while keeping average `L` bounded. This statistically drives sequences of operations that *appear to* optimize average `L = K + λE` by selecting K-efficient (often irreversible) operations, implementing stable self-reference, and leading to complex internal structure (rules, models, hierarchies). This effectively selects paths through the K-efficient dependency network described by the atemporal "Core Logic."
 
 ---
 
@@ -128,7 +128,7 @@ Viable processes (V) *must* adapt to resolve Saturation while keeping average `L
     *   The Viability Condition inherently favors processes that achieve:
         *   *Clearly distinguishable effective states* (foundational to FSP, avoiding Operational Limit ambiguity).
         *   *Manageable consequences* from their operations (i.e., operations that are controlled, K-efficient, effectively irreversible, and keep average L bounded).
-        *   *Efficient information handling* (statistically leading to optimization of `L=K+λE`, building K-efficient models).
+        *   *Efficient information handling* (statistically leading to trajectories that appear to optimize `L=K+λE`, building K-efficient models).
     *   These operational efficiencies, statistically forced by the requirement to remain viable under finite constraints, are essential for maintaining stable self-reference (if applicable to the process type) and effective interaction with the informational environment.
 4.  **Internal Justification:** The use of standard logic in this analysis is justified *internally* because the derived statistical behavior of a viable, finite process (i.e., the emergent Structure Dynamic leading to stable and optimized information processing within an FSP) necessarily selects for, and operates via, principles that mirror those of logic. The process is statistically forced to "behave logically" (in an information-processing sense, by forming consistent and efficient representations and transformations) to remain viable. This justification begins with the base requirement of Describability (Axiom A) and the possibility of Minimal Distinction (P1).
 
@@ -148,11 +148,11 @@ Viable processes (V) *must* adapt to resolve Saturation while keeping average `L
 | II    | Result 2a     | Label Reuse inevitable in FSP for extended sequences.                                                                 | Mathematical necessity from Result 1a + P3                                                         | `Mathematically Proven`  |
 | II    | Result 2b     | Ordered Memory emerges from Viability managing Label Reuse.                                                           | Statistical deduction from V acting on Result 2a conditions.                                       | `Argued (Statistical)`<sup>[a]</sup> |
 | II    | Result 3a     | Effective Irreversibility is statistically selected by Viable processes.                                              | Justified by Viability favoring K-efficiency (intrinsic irreversibility) & cost of reversibility.  | `Strongly Argued`        |
-| III   | Result 3b     | Bounded cost pressure (average `L=K+λE` ≤ `L_max` via V) statistically forces optimization dynamics (Emergent Structure Dynamic). | Deduction from P2, V, Results 1-3a; `L` form axiomatically justified.                              | `Strongly Argued`<sup>[b]</sup> |
+| III   | Result 3b     | Bounded cost pressure (average `L=K+λE` ≤ `L_max` via V) statistically forces optimization dynamics (Emergent Structure Dynamic). | Deduction from P2, V, Results 1-3a; `L` form axiomatically justified. (Optimization is statistical). | `Strongly Argued`<sup>[b]</sup> |
 | Conc. | Overall Result | An ordered sequential progression (arrow of time) and complex structure emerge necessarily for Viable processes.    | Synthesis of all steps.                                                                            | `Derived Conclusion`     |
 
 **Notes on Status Table:**
 <sup>[a]</sup> *Further Work: Develop formal lemma/toy model for the statistical emergence of ordered memory from Viability managing label reuse.*
-<sup>[b]</sup> *Supporting Material: See `Theory Formalization/SUR linearity proof.md` for axiomatic justification of the `L = K + λE` form.*
+<sup>[b]</sup> *Supporting Material: See `Theory Formalization/SUR linearity proof.md` for axiomatic justification of the `L = K + λE` form. The dynamic of L-optimization is understood as a statistical property of persistent systems.*
 
 *(This table simplifies the status for README purposes; detailed proofs, arguments, and supporting mathematical derivations reside in specific documents within the repository. Ongoing research focuses on rigorously establishing all linkages and exploring further consequences, such as the emergence of Hilbert Space structures, connections to number theory (e.g., RH), and the derivation of physical constants as residuals of these informational processes.)*
