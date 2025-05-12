@@ -1,9 +1,9 @@
-# The Necessary Emergence of Ordered Sequential Processing, Structure, and Effective Irreversibility in Viable Finite Informational Processes
+# The Necessary Emergence of Ordered Sequential Processing, Structure, and Effective Irreversibility 
 
-—Or: Why Realities Amenable to Sustained, Bounded-Cost Information Processing Cannot Be Featureless
+—Or: Why there is "something" and not "nothing" and "causality" 
 ---
 
-## TLDR: The Full Logical Chain: From a Single Distinction to Time, Structure, and SUR
+## TLDR
 
 > **Abstract:** Any process that maintains a bounded long-run operational cost within a sufficiently complex environment statistically develops ordered memory, effective irreversibility, and an emergent arrow of time.
 > 
