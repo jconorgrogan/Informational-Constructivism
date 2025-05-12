@@ -7,9 +7,9 @@
 
 > **Abstract:** Any process that maintains a bounded long-run operational cost within a sufficiently complex environment statistically develops ordered memory, effective irreversibility, and an emergent arrow of time.
 > 
-The core argument of Informational Constructivism (IC) posits that if a reality supports finite, describable processes that must keep operational costs bounded, then—statistically and unavoidably—any process that persists will exhibit characteristics like ordered history, irreversible state updates, and increasingly complex internal structure. This emergent behavior is described by the principle of Simplicity Under Resource-constraint (SUR).
+The core argument here posits that if a reality supports finite, describable processes that must keep operational costs bounded, then—statistically and unavoidably—any process that persists will exhibit characteristics like ordered history, irreversible state updates, and increasingly complex internal structure. 
 
-Below is the “zoom‑ed‑out” backbone of the argument, stripped of side‑paths and technical proofs. Each arrow (→) implies "logically / statistically forces."
+Below is the “zoom‑ed‑out” backbone of the argument:
 
 **1. Distinction Exists**
 > Absolute Nothing (no distinctions) is incoherent once one attempts to describe it → at least one stable difference must obtain.
