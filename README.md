@@ -9,7 +9,7 @@
 > 
 The core argument here posits that if a reality supports finite, describable processes that must keep operational costs bounded, then—statistically and unavoidably—any process that persists will exhibit characteristics like ordered history, irreversible state updates, and increasingly complex internal structure. 
 
-Below is the “zoom‑ed‑out” backbone of the argument:
+Below is the “zoom‑ed‑out” backbone of the argument that the rest of this repo will review in depth:
 
 **1. Distinction Exists**
 > Absolute Nothing (no distinctions) is incoherent once one attempts to describe it → at least one stable difference must obtain.
