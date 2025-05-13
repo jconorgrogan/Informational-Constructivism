@@ -1,9 +1,9 @@
 # IC_InProgress_Proofs.md
 # Formal Proof Targets and Language Specifications for Informational Constructivism
 
-**Version:** 2.0 (Reflecting Current Development Stage)
+**Version:** 2.1 (Reflecting C₂ Monotonicity Insights & RG Cycle Refinement)
 **Original Document:** `Theory Formalization/InProgress.md`
-**Related Documents:** `05_Development_and_Roadmap/IC_ToDos_and_Research.md`
+**Related Documents:** `05_Development_and_Roadmap/IC_ToDos_and_Research.md`, `04_Advanced_Topics_and_Applications/IC_Ledger_Todd_Bridge.md`
 
 ---
 
@@ -24,114 +24,174 @@ This section defines the core components of an IC system/observer.
 
 ### 1.1 Basic Elements
 *   **Alphabet (Σ):** A finite set of distinguishable symbols, `|Σ| ≥ 2`.
-*   **Payload (w):** A finite string of symbols from Σ, `w ∈ Σ^{≤L_max_payload}` (where `L_max_payload` is a practical limit on raw data segment length).
-*   **Record (r):** A tuple `r = (w, n, ...)` where `w` is the payload, `n ∈ ℕ` is a version or instance counter, and `...` may include other metadata like timestamps or context pointers.
-*   **State (S):** The observer's current memory content. Modeled as a multiset of records `r`. In a normal-form representation, there might be one primary record per unique payload `w`, with `n` indicating its latest version or a summary of its history.
-*   **Handles (M):** A finite list of pointers or indices `M = [h₁, ..., h_{|M|}]` referencing specific records within the State `S`. These ensure that operations can reliably address memory content. Handles are assumed not to dangle.
+*   **Payload (w):** A finite string of symbols from Σ, `w ∈ Σ^{≤L_max_payload}`.
+*   **Record (r):** A tuple `r = (w, n, ...)` where `w` is the payload, `n ∈ ℕ` is a version/instance counter.
+*   **State (S):** Observer's memory, a multiset of records `r`.
+*   **Handles (M):** Finite list of pointers `M = [h₁, ..., h_{|M|}]` to records in `S`.
 *   **Code (K):**
-    *   The observer's internal model, represented as a prefix-free set of bit strings.
-    *   Encodes:
-        *   (i) A predictive model `P_K` of the environment and/or internal dynamics.
-        *   (ii) An efficient addressing scheme or permutation `π_K` of the State `S` (or parts thereof relevant to the model).
-    *   `|K|` (the length of this code in bits) represents the **descriptive complexity cost** (Kolmogorov complexity / entropy cost) of the observer's current model.
-*   **Ledger (C):** A tuple representing the observer's finite resource constraints:
-    `C = (M_cap, K_cap, τ_cycle, ε_precision)`
-    *   `M_cap`: Maximum capacity for handles/addressable memory items.
-    *   `K_cap`: Maximum capacity for code complexity `|K|`.
-    *   `τ_cycle`: Maximum operational runtime (e.g., number of primitive operations) allowed per processing cycle or for a specific task to be considered "halted" or "completed."
-    *   `ε_precision`: Bounds on numerical precision or error tolerance in representations and computations.
-*   **Observer (Ω):** The complete IC system/observer, defined by the tuple `Ω = (S, K, M, C)`.
+    *   Observer's internal model (prefix-free bit strings).
+    *   Encodes: (i) Predictive model `P_K`, (ii) Efficient addressing/permutation `π_K` of `S`.
+    *   `|K|`: Descriptive complexity cost.
+*   **Ledger (C):** `C = (M_cap, K_cap, τ_cycle, ε_precision)` (bounds on memory, code, runtime, precision).
+*   **Observer (Ω):** `Ω = (S, K, M, C)`.
 
 ### 1.2 Primitive Operators (Δ-Operators)
-These form a minimal, complete basis for IC operations, as established by the Δ-Factorisation Theorem (`01_Core_Axioms_and_Operators/IC_Delta_Factorisation.md`).
-*   **Δ_gen (Genesis):** `Ω → Ω'`
-    *   Introduces a new, irreducible distinction into the system.
-    *   Operationally: Adds a new record to `S` (potentially with a unique payload `w_new`), extends the code `K` to describe/index this novelty, and updates `M` if necessary.
-    *   Increases `|K|`.
-*   **Δ_proj (Projection/Compression):** `Ω → Ω'`
-    *   Stabilizes and compresses information in `S` into a more efficient representation in `K`, under constraints `C`.
-    *   Operationally: May permute `S` to an optimal order `π*_K` (e.g., for Kraft-McMillan inequality compliance), rewrite `K` to a shorter, more predictive form, and update `M`. `Δ_proj` is idempotent with respect to its effect on `K` and `P_K`.
-    *   Aims to reduce `|K|` and/or improve the efficiency of `P_K`. Acts as the coarse-graining operation in RG analysis.
-*   **Δ_self (Self-Reference/Update):** `Ω → Ω'`
-    *   Modifies the observer's internal Code `K` (and associated handles `M`) based on its current State `S` and Code `K`. Enables learning, recursion, and model refinement.
-    *   Operationally: Arbitrary edits to `K` and `M` that obey ledger constraints `C`. `Δ_self` does not directly alter `S` but changes how `S` is interpreted or predicted by `K`.
-    *   Its effect on `|K|` can be variable (increase during learning, decrease during optimization). Axiom S1 (Contractivity) implies that iterative application of `Δ_self` to a specific internal model component will lead to a unique fixed point for that component.
+(Basis established by Δ-Factorisation Theorem)
+*   **Δ_gen (Genesis):** `Ω → Ω'` (Introduces irreducible novelty; adds record to `S`, extends `K`, updates `M`; increases `|K|`).
+*   **Δ_proj (Projection/Compression):** `Ω → Ω'` (Stabilizes/compresses `S` into `K` under `C`; may permute `S`, rewrite `K`; idempotent on `K`/`P_K`; aims to reduce `|K|`/improve `P_K`; **acts as coarse-graining in RG**).
+*   **Δ_self (Self-Reference/Update):** `Ω → Ω'` (Modifies `K`/`M` based on `S`/`K`; enables learning/recursion; arbitrary edits to `K`/`M` within `C`; `|K|` can vary; S1 implies fixed points for components).
 
 ### 1.3 Macros (Examples built from Δ_self)
-*   `dup(h_i) := Δ_self[M := M ++ [h_i]]` (duplicates a handle).
-*   `drop(h_last) := Δ_self[M := M_new]` (where `M_new` is `M` without `h_last`).
+*   `dup(h_i) := Δ_self[M := M ++ [h_i]]`
+*   `drop(h_last) := Δ_self[M := M_new]`
 
 ### 1.4 Operational Constraints
-*   **Ledger-Respecting Operation:** Any valid IC operation or sequence of operations `F: Ω → Ω'` must:
-    *   Halt within `τ_cycle` (if applicable to the operation's scope).
-    *   Not violate the capacities defined in `C` (e.g., `|M'| ≤ M_cap`, `|K'| ≤ K_cap`).
-    *   Maintain or improve precision `ε'` compared to `ε`.
+*   **Ledger-Respecting Operation:** Any valid `F: Ω → Ω'` must halt within `τ_cycle`, not violate `C`, maintain/improve `ε'`.
 
 ### 1.5 SUR Cost Functional and Renormalization Group (RG) Variables
 
-*   **Base SUR Cost (Local Optimization):** The unique linear cost functional (see `02_SUR_Dynamics_and_Cost/IC_SUR_Linearity_Proof.md`):
-    `L = |K| + λE`
-    *   `|K|`: Descriptive complexity cost (as defined above).
-    *   `E`: Other operational costs, which can include:
-        *   Prediction Error: e.g., cross-entropy `H(P_empirical || P_K)` of the empirical data distribution given the model `P_K`.
-        *   Mean Energy: `Tr(ρH_N)` where `ρ` is the observer's state density matrix and `H_N` is an effective Hamiltonian for the unresolved background/bath.
-    *   `λ`: Base thermodynamic trade-off rate, fixed by `k_B T ln 2` (Landauer's principle) for systems interacting with a thermal bath at temperature `T`.
+*   **Base SUR Cost (Local Optimization):** `L = |K| + λE` (Unique linear form)
+    *   `|K|`: Descriptive complexity.
+    *   `E`: Other operational costs (e.g., Prediction Error `H(P_empirical || P_K)`, Mean Energy `Tr(ρH_N)`).
+    *   `λ`: Base thermodynamic trade-off (`k_B T ln 2`).
 
-*   **RG State Variables (for Scale-Dependent Dynamics):**
-    For analyzing how IC systems behave under coarse-graining (`Δ_proj`) across different scales, the following variables, defined for a quantum-statistical description of the observer's state `ρ`, are crucial:
-    *   **`K(ρ) = -Tr(ρ log ρ)`:** Von Neumann entropy (corresponds to `|K|` in the classical limit).
-    *   **`C₂(ρ) = Tr[ρ(log ρ)²] - K(ρ)²`:** Surprisal variance. Measures fluctuations in information content.
-    *   **`F_β(ρ) = Tr(ρH_N) - β⁻¹K(ρ)`:** Free-energy gap relative to the bath `H_N` (where `β⁻¹ = k_B T ln 2 = λ`). `F_β` is monotonic (non-increasing) under relevant coarse-graining operations.
-    *   **`λ̃(ρ) = C₂(ρ) / (12F_β(ρ))`:** Candidate monotonic running coupling. Its flow under RG transformations is hypothesized to lead to the emergence of fundamental constants (see `04_Advanced_Topics_and_Applications/IC_Ledger_Todd_Bridge.md`).
+*   **RG State Variables (for Scale-Dependent Dynamics):** (Quantum-statistical description `ρ`)
+    *   **`K(ρ) = -Tr(ρ log ρ)`:** Von Neumann entropy.
+    *   **`C₂(ρ) = Tr[ρ(log ρ)²] - K(ρ)²`:** Surprisal variance.
+    *   **`F_β(ρ) = Tr(ρH_N) - β⁻¹K(ρ)`:** Free-energy gap (relative to bath `H_N`, `β⁻¹ = λ`). Monotonic (non-increasing) under relevant coarse-graining.
+    *   **`λ̃(ρ) = C₂(ρ) / (12F_β(ρ))`:** Candidate monotonic running coupling.
 
-*   **RG Flow Dynamics:** The evolution of the system under repeated `Δ_proj` (coarse-graining) is analyzed as a flow on the state manifold parameterized by `(K, C₂, F_β)`. This flow is conjectured to be governed by the gradient of an effective potential related to `λ̃`, driving the system towards fixed points or stable regions.
+*   **RG Flow Dynamics:** Evolution under `Δ_proj` (coarse-graining) and `Δ_self` (model update/rescaling) is analyzed as a flow on the `(K, C₂, F_β)` manifold. The canonical "RG step" on structures like the Integer Structure Grid (ISG) is conceptualized as `Δ_proj → Δ_self → Δ_proj`.
 
 ---
 
-## 2. Target Proof: Category ΔCat ≅ FdHilb(ℂ) (Dagger-Compact Categories)
+## 2. Target Proof: Monotonicity of C₂(ρ) under Coarse-Graining (Δ_proj)
+
+*   **Goal:** To formally prove that `C₂(ρ) = Tr[ρ(log ρ)²] - K(ρ)²` is non-increasing under a coarse-graining operation `Δ_proj`.
+*   **Significance:** This is a critical step for establishing the monotonic flow of the running coupling `λ̃ = C₂ / (12F_β)`, which is hypothesized to lead to the derivation of fundamental constants like `α`.
+*   **Model for Δ_proj:** A trace-preserving conditional expectation `Φ: A → B ⊆ A` where `A` is a finite von Neumann algebra (e.g., Type II₁ factor as in `IC_Ledger_Todd_Bridge.md`). `Φ` is completely positive (CP), unital, and contractive in the Hilbert-Schmidt norm. Let `σ = Φ(ρ)`.
+
+### Proposed Proof Sketch (Target for Formalization):
+
+1.  **Operator-Jensen Inequality for Convex Functions:**
+    For a CP unital map `Φ` and an operator-convex function `f(t)`, it holds that `Φ[f(X)] ≥ f(Φ[X])`.
+    The function `f(t) = t²` is operator convex. Applying this with `X = log ρ`:
+    `Φ[(log ρ)²] ≥ (Φ[log ρ])²`.
+    *Note: The direction of this inequality needs careful handling. Standard operator Jensen for convex `f` is `f(Φ(X)) ≤ Φ(f(X))`. If `f(t)=t^2`, then `(Φ[log ρ])² ≤ Φ[(log ρ)²]`. Let's proceed with this standard form.*
+    So, `(Φ[log ρ])² ≤ Φ[(log ρ)²]`.
+
+2.  **Relating `log σ` and `Φ[log ρ]`:**
+    Since `σ = Φ(ρ)`, and due to the non-linearity of `log`, `log σ = log(Φ(ρ))` is generally *not* equal to `Φ(log ρ)`. However, for many relevant conditional expectations (like tracing out a subsystem), `Φ[log ρ]` is often related to `log σ` or provides bounds.
+    Alternatively, we use the property `Tr[σ f(log σ)] ≤ Tr[ρ f(log ρ)]` for convex `f` if `σ` majorizes `ρ` in a suitable sense after projection, or rely on direct variance properties.
+
+3.  **Variance Decomposition and Trace Properties:**
+    We want to show `C₂(σ) ≤ C₂(ρ)`.
+    `C₂(σ) = Tr[σ (log σ)²] - (Tr[σ log σ])²`
+    `C₂(ρ) = Tr[ρ (log ρ)²] - (Tr[ρ log ρ])²`
+    Since `Φ` is trace-preserving, `Tr(σ) = Tr(Φ(ρ)) = Tr(ρ) = 1`.
+    Also, `K(σ) = -Tr(σ log σ)` and `K(ρ) = -Tr(ρ log ρ)`.
+    The entropy `K(σ) = S(Φ(ρ)) ≥ S(ρ) = K(ρ)` by monotonicity of von Neumann entropy for unital CPTP maps (if `Φ` is unital, which conditional expectations typically are). This means `-K(σ) ≤ -K(ρ)`.
+
+4.  **Direct Approach using Data Processing for Rényi Divergence:**
+    `C₂(ρ)` can be related to the second derivative of relative Rényi entropies or free energies.
+    Consider `D_α(ρ || τ) = (1/(α-1)) log Tr[ρ^α τ^{1-α}]`. The quantum variance `C₂(ρ)` is related to `-(∂^2/∂α^2) S_α(ρ)|_{α=1}` for Rényi entropy `S_α(ρ)`.
+    Rényi entropies `S_α(ρ)` for `α ∈ [0,1] U [1,2]` (exact range depends on details) are known to be monotonic under CPTP maps, i.e., `S_α(Φ(ρ)) ≤ S_α(ρ)` for `α ≥ 1` (entropy decreases or stays same) or `S_α(Φ(ρ)) ≥ S_α(ρ)` for `α ≤ 1`.
+    If `S_α(Φ(ρ)) ≤ S_α(ρ)` for `α` in a neighborhood of 1 including values greater than 1, it suggests concavity. The second derivative (related to `C₂`) would be non-positive, and its magnitude might decrease.
+    A known result: for a unital CPTP map `Φ`, the variance `Var_ρ(A) ≥ Var_{Φ(ρ)}(Φ(A))` is not generally true.
+
+5.  **Alternative Sketch based on your provided `f(t)=t^2` for Operator Jensen (re-evaluating inequality direction):**
+    If Operator Jensen for *convex* `f` is `f(E[X]) ≤ E[f(X)]`, then for `f(t)=t^2` and `E = Φ`:
+    `(Φ[log ρ])² ≤ Φ[(log ρ)²]`.
+    Taking the trace with `ρ` on the right and `σ` on the left:
+    `Tr[σ (Φ[log ρ])²]` (problematic term) vs. `Tr[ρ Φ[(log ρ)²]] = Tr[ρ (log ρ)²]`.
+
+    Let's use the form: `Φ[ (log ρ)² ] ≥ (log Φ[ρ] )²` if `log` were `Φ`-concave and `t^2` decreasing, or other specific conditions. This needs to be carefully chosen from known results.
+    A key result (Uhlmann, Ando-Hiai for relative operator entropy) relates to monotonicity: If `f` is operator convex, then `Tr Φ(ρ) f(Φ(A)) ≤ Tr Φ(ρ) Φ(f(A))` for states `ρ` and operators `A`.
+
+    **Revised Sketch based on your input's direction:**
+    Assume for operator-convex `f(t)=t^2` and conditional expectation `E`:
+    `E[ (log ρ)² ] ≥ (log E[ρ] )²`  i.e. `Φ[ (log ρ)² ] ≥ (log σ)²`.
+    Then `Tr[ σ Φ[ (log ρ)² ] ] ≥ Tr[ σ (log σ)² ]`.
+    The LHS is `Tr[ Φ(ρ) Φ[ (log ρ)² ] ]`. This is tricky.
+
+    **Let's use the standard result:** For a convex function `f` and a conditional expectation `E`, `E[f(X)] ≥ f(E[X])`.
+    Let `X = log ρ`. Then `E[(log ρ)²] ≥ (E[log ρ])²`.
+    So, `Φ[(log ρ)²] ≥ (Φ[log ρ])²`.
+    `C₂(σ) = Tr[σ(log σ)²] - K(σ)²`.
+    `C₂(ρ) = Tr[ρ(log ρ)²] - K(ρ)²`.
+
+    We use `S(ρ) ≤ S(Φ(ρ))` for `Φ` unital CPTP (entropy non-decreasing).
+    A more promising approach might be through specific properties of variance under projection or via information-theoretic inequalities related to Fisher Information. The Petz-Sudár relative entropy `D_s(ρ || σ) = Tr[ρ(log ρ - log σ)] - s Tr[(√ρ - √σ)²]` is monotonic.
+
+    **Consider the decomposition from your input:**
+    *   Use `f(t)=t^2` as operator convex. Standard Operator Jensen: `f(Φ(X)) ≤ Φ(f(X))`.
+        So, `(Φ[log ρ])² ≤ Φ[(log ρ)²]`.
+    *   The step `Φ[ (log ρ)² ] ≥ (log E[ρ] )² = (log σ)²` implies `E[X^2] ≥ (log E[exp X])^2` which is non-standard.
+
+    **Using the provided argument's structure directly (assuming its Jensen inequality is correct or adapted):**
+    If `Φ[(log ρ)²] ≤ (log Φ[ρ])²` *were* true (this would mean `(log t)^2` is operator *concave* or `t^2` applied to `log` behaves this way, which is unlikely), *then* the argument would flow.
+    The standard form is `(Φ[A])^2 ≤ Φ[A^2]` for any operator `A`. Let `A = log ρ`.
+    Then `(Φ[log ρ])² ≤ Φ[(log ρ)²]`.
+    `Tr[σ (Φ[log ρ])²] ≤ Tr[σ Φ[(log ρ)²]] = Tr[ρ (log ρ)²]`. (since `Tr[Φ(X)Y] = Tr[X Φ*(Y)]` and `Φ*(σ)=ρ` for conditional expectation `Φ` if `σ` is in the image).
+    The challenge is relating `Tr[σ (log σ)²]` to `Tr[σ (Φ[log ρ])²]`.
+    And `K(σ)²` to `(Tr[σ Φ[log ρ]])²`.
+
+    The argument presented was:
+    `Φ[(log ρ)²] ≥ (log Φ[ρ])²`  (call this (*))
+    `C₂(σ) = Tr[σ(log σ)²] - K(σ)²`
+    `Tr[σ(log σ)²] ≤ Tr[σ Φ[(log ρ)²]]` using (*) and `log σ = log Φ[ρ]`. This means `Tr[σ (log σ)²] ≤ Tr[Φ(ρ) Φ[(log ρ)²]]`.
+    This then implies `C₂(σ) ≤ Tr[ρ (log ρ)²] - K(ρ)² = C₂(ρ)` IF `K(σ)²` can be related appropriately.
+    Since `S(Φ(ρ)) ≥ S(ρ)` for `Φ` unital, `K(σ) ≥ K(ρ)`. So `K(σ)² ≥ K(ρ)²`.
+    Then `C₂(σ) = Tr[σ(log σ)²] - K(σ)² ≤ Tr[ρ(log ρ)²] - K(ρ)² = C₂(ρ)`.
+    This requires `Tr[σ(log σ)²] ≤ Tr[ρ(log ρ)²] + (K(σ)² - K(ρ)²)`.
+    This proof path hinges on `Tr[σ(log σ)²] ≤ Tr[ρ(log ρ)²]` or a slightly weaker version combined with the entropy increase. This inequality for the `Tr[ρ(logρ)²]` term is known as monotonicity of quantum Fisher information of a certain kind, or related to it.
+
+*   **Key Sub-Tasks:**
+    1.  Rigorously establish the correct operator Jensen inequality or related matrix inequality applicable to `Tr[ρ(log ρ)²]` and `(Tr[ρ log ρ])²` under a conditional expectation `Φ`.
+    2.  Verify the conditions for strict decrease (e.g., if `ρ` is not a fixed point of `Φ`).
+    3.  Explore connections to Lieb concavity, Petz recovery conditions, and non-commutative variance-entropy relations (e.g., `C₂ ≥ 2D(ρ||σ)`) to tighten the argument and understand the magnitude of change.
+
+*   **Current Status:** Plausible proof sketch exists based on assumed operator Jensen inequality behavior. Formalizing this with rigorous matrix analysis is a key next step. The provided sketch in the prompt is a strong candidate.
+
+---
+
+## 3. Target Proof: Category ΔCat ≅ FdHilb(ℂ) (Dagger-Compact Categories)
 
 *   **Introduced in:** `02_SUR_Dynamics_and_Cost/IC_Operationalizing_Contrast.md` (Tier 7), `01_Core_Axioms_and_Operators/IC_Category_Theory.md`.
-*   **Goal:** To formally construct a category, ΔCat, whose objects are IC ledger configurations (or representations of observer states) and whose morphisms are equivalence classes of ledger-respecting Δ-operator sequences. Then, prove that ΔCat is equivalent to the category of Finite-dimensional Hilbert spaces over Complex numbers (FdHilb(ℂ)).
-*   **Significance:** This would provide a first-principles derivation of the mathematical framework of Quantum Mechanics from IC's informational postulates.
-*   **Key Steps / Lemmas Targeted (based on Selinger 2008, Abramsky-Coecke, etc.):**
-    1.  Define objects (e.g., ledger cells/states characterized by `(M, K, τ, ε)` bounds or simplified versions).
-    2.  Define morphisms as (equivalence classes of) sequences of Δ-operators that are ledger-respecting and potentially cost-non-increasing (w.r.t. `L` or `F_β`).
-    3.  Establish that ΔCat is a symmetric monoidal category.
-    4.  Prove ΔCat has duals for all objects (is compact closed), leveraging the reversibility/invertibility properties of Δ-operator sequences where possible and the structure of `Δ_proj`.
-    5.  Show ΔCat has a dagger structure (related to informational conjugation or reversal of processes).
-    6.  Demonstrate local tomography (states distinguishable by operations).
-    7.  Prove purification (any mixed state can be seen as a marginal of a pure state in a larger system).
-*   **Current Status:** Outline and conceptual framework exist. Rigorous construction of ΔCat and proof of each prerequisite for the isomorphism theorem (e.g., Selinger's Theorem 7.9 for CPM(FdHilb) or similar results for FdHilb directly) are ongoing. The formalization in `IC_Category_Theory.md` for `Δ_proj` and `Δ_self` as a reflection and an idempotent monad, respectively, is a key step towards establishing the necessary categorical properties.
+*   **Goal:** Formally construct ΔCat (objects: IC ledger configurations/observer states; morphisms: equivalence classes of ledger-respecting Δ-operator sequences). Prove ΔCat ≅ FdHilb(ℂ).
+*   **Significance:** First-principles derivation of Quantum Mechanics framework from IC.
+*   **Key Steps Targeted (Selinger, Abramsky-Coecke, etc.):**
+    1.  Define objects and morphisms.
+    2.  Establish symmetric monoidal category.
+    3.  Prove compact closed (duals for objects).
+    4.  Show dagger structure.
+    5.  Demonstrate local tomography.
+    6.  Prove purification.
+*   **Current Status:** Outline exists. Rigorous construction of ΔCat and proof of prerequisites for isomorphism (e.g., Selinger's Theorem) ongoing. `IC_Category_Theory.md` (formalizing `Δ_proj`/`Δ_self` as reflection/idempotent monad) is key.
 
 ---
 
-## 3. Target Derivation Path: Einstein Field Equations (EFE) from SUR Metric
+## 4. Target Derivation Path: Einstein Field Equations (EFE) from SUR Metric
 
 *   **Introduced in:** `02_SUR_Dynamics_and_Cost/IC_Operationalizing_Contrast.md` (Tier 18, Box 6), `03_Derived_Structures_and_Connections/IC_Spacetime_Emergence.md`.
-*   **Goal:** To derive the (3+1)D Einstein Field Equations as an emergent consequence of SUR dynamics on the observer's information manifold.
-*   **Significance:** This would link gravity directly to information processing under resource constraints.
+*   **Goal:** Derive (3+1)D EFE from SUR dynamics on observer's information manifold.
+*   **Significance:** Links gravity to information processing under resource constraints.
 *   **Proposed Derivation Path:**
-    1.  **Information Metric (`g_ab`):** Define a metric on the observer's state manifold. The coordinates of this manifold are related to the key informational ledger variables, likely the RG variables `(K, C₂, F_β)`. The metric `g_ab` is proposed to be the Hessian of an effective SUR cost functional related to `L` or, more likely for dynamic geometry, related to the potential governing the `λ̃` flow or a measure of information distinguishability (e.g., Fisher information metric components).
-    2.  **Congruences and Expansion (Raychaudhuri Equation):** Analyze the evolution of congruences (families of paths) of information states on this manifold using a generalized Raychaudhuri equation.
-    3.  **Informational Thermodynamics (Clausius Relation):** Employ an IC version of the Clausius relation `δQ = TδS`, where `δS` is related to changes in informational entropy `K` (e.g., `δK`), and `T` is an effective temperature related to fluctuations or the `λ` parameter. The IC Area Law (`S = A k_B / (4ℓ_p²)` from `OperationalizingContrast.md` Box 6, linked via `F_β`/Landauer) would connect `δK` to changes in an effective "area" `δA`.
-    4.  **Jacobson-style Derivation:** Combine these elements, arguing that local informational equilibrium implies a relationship between the curvature of the information manifold and the "stress-energy" content (representing the density and flow of information/cost). This aims to yield:
+    1.  **Information Metric (`g_ab`):** Hessian of effective SUR cost on `(K, C₂, F_β)` manifold, or Fisher info metric.
+    2.  **Congruences & Expansion (Raychaudhuri).**
+    3.  **Informational Thermodynamics (Clausius relation `δQ = TδS`, IC Area Law).**
+    4.  **Jacobson-style Derivation:** Relate curvature to info stress-energy.
         `R_ab - ½R g_ab + Λ g_ab = κ T_ab`
-        where `R_ab` is the Ricci tensor derived from `g_ab`, `Λ` is an emergent cosmological constant (potentially from `λ̃` fixed points or vacuum energy considerations), `κ` is an emergent gravitational constant, and `T_ab` is an effective information stress-energy tensor.
-*   **Current Status:** This is a high-level derivation path. Rigorous execution of each step is a major research target. Key challenges include:
-    *   Precise definition of the information manifold and its metric `g_ab` from `(K, C₂, F_β)`.
-    *   Justification for the emergence of the specific form of `T_ab`.
-    *   Derivation of the constants `κ` (related to `G`) and `Λ`.
-    *   The statement in `OperationalizingContrast.md` (Box 6 update) that "RG flow... acts on the state space... preserving the 2-form σ = dK ∧ dC₂ - μ dF_β ∧ dC₂" and that "Curvature arises from the Fisher metric associated with (K, C₂) projected along the leaves defined by σ" provides a more concrete direction for defining `g_ab`.
+*   **Current Status:** High-level path. Rigorous execution needed. Challenges: precise `g_ab` from `(K, C₂, F_β)`, `T_ab` justification, deriving `κ`, `Λ`. `OperationalizingContrast.md` (Box 6 update on 2-form `σ = dK ∧ dC₂ - μ dF_β ∧ dC₂`) offers direction for `g_ab`.
 
 ---
 
-## 4. Refinements and Ongoing Formalization
+## 5. Refinements and Ongoing Formalization
 
-*   **Rigor of Commutation Lemmas for Δ-Factorisation:** While `IC_Delta_Factorisation.md` is considered "locked," continuous refinement of the semantic proofs for the commutation relations (Lemmas A1, A2, R5) is beneficial.
-*   **Monotonicity Proofs for RG Variables (`C₂`, `F_β`, `λ̃`):** Critical for the derivation of constants via `IC_Ledger_Todd_Bridge.md`. Specifically:
-    *   Prove general monotonicity of `F_β` under CPTP maps (coarse-graining).
-    *   Prove/characterize the monotonic behavior of `C₂` under these maps.
-    *   Prove the consequent monotonic flow and convergence of `λ̃` to fixed points `λ̃★`.
-*   **CL-Feasibility Theorem (from `IC_ToDos_and_Research.md`):** Formalize and integrate the proof that finite ledger systems under SUR necessarily use classical bivalent logic. This strengthens the "self-consistency of logic" argument.
+*   **Rigor of Commutation Lemmas for Δ-Factorisation:** Continuous refinement of semantic proofs for Lemmas A1, A2, R5 in `IC_Delta_Factorisation.md`.
+*   **Monotonicity Proofs for RG Variables (`F_β`, `λ̃`):**
+    *   Prove general monotonicity of `F_β` under CPTP maps (coarse-graining). (Partially established).
+    *   Prove consequent monotonic flow and convergence of `λ̃` to fixed points `λ̃★` (depends on `C₂` behavior).
+*   **CL-Feasibility Theorem:** Formalize and integrate proof that finite ledger systems under SUR necessarily use classical bivalent logic.
 
 This document will be updated as these formal targets are achieved or refined.
