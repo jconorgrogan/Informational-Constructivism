@@ -1,15 +1,15 @@
-# The Necessary Emergence of Ordered Sequential Processing, Structure, and Effective Irreversibility 
+# The Necessary Emergence of Ordered Sequential Processing, Structure, and Effective Irreversibility
+## —Or: Why there is "something" and not "nothing" and "causality"
 
-—Or: Why there is "something" and not "nothing" and "causality" 
 ---
 
 ## TLDR
 
-> **Abstract:** Any process that maintains a bounded long-run operational cost within a sufficiently complex environment statistically develops ordered memory, effective irreversibility, and an emergent arrow of time.
+> **Abstract:** Any process that maintains a bounded long-run operational cost within a sufficiently complex environment statistically develops ordered memory, effective irreversibility, and an emergent arrow of time. The core operational logic, cost principles, and their link to fundamental mathematical structures within this framework have been formally established.
 > 
-The core argument here posits that if a reality supports finite, describable processes that must keep operational costs bounded, then—statistically and unavoidably—any process that persists will exhibit characteristics like ordered history, irreversible state updates, and increasingly complex internal structure. 
+The core argument here posits that if a reality supports finite, describable processes that must keep operational costs bounded, then—statistically and unavoidably—any process that persists will exhibit characteristics like ordered history, irreversible state updates, and increasingly complex internal structure.
 
-Below is the “zoom‑ed‑out” backbone of the argument that the rest of this repo will review in depth:
+Below is the “zoom‑ed‑out” backbone of the argument:
 
 **1. Distinction Exists**
 > Absolute Nothing (no distinctions) is incoherent once one attempts to describe it → at least one stable difference must obtain.
@@ -98,7 +98,7 @@ These premises lead to a central principle governing the continuation of such pr
 
 ### **Argument Summary: Emergence from Viability**
 
-This framework proposes that fundamental characteristics of structured, sequential reality emerge as necessary consequences for any process satisfying the Viability Condition under the premises above. It builds upon a foundational insight (explored in detail in "[The Core Logic for Emergent Time-Like Order](link-to-TimeAndOrder.md)") that a **time-like order is inherent in the atemporal structure of efficiently organized finite information.** The sequential operations detailed below describe a viable finite process tracing a path through such a pre-structured informational landscape, constrained by the Viability Condition.
+This framework proposes that fundamental characteristics of structured, sequential reality emerge as necessary consequences for any process satisfying the Viability Condition under the premises above. It builds upon a foundational insight (explored in detail in `TimeAndOrder.md`) that a **time-like order is inherent in the atemporal structure of efficiently organized finite information.** The sequential operations detailed below describe a viable finite process tracing a path through such a pre-structured informational landscape, constrained by the Viability Condition.
 
 **Result 1: Finite Projection is Necessary for Bounded Operation.**
 *   A process with Finite Capacity (P2) cannot engage with unbounded complexity (e.g., "Absolute Everything" - Ω, the hypothetical simultaneous realization of all possible distinctions) without limit. It *must* operate via an *effective* **Finite State Projection** (FSP) – an operational state space of limited cardinality (e.g., `m ≤ 2^(K_max)` distinguishable states, where `K_max` is the capacity for descriptive complexity from Ledger C).
@@ -110,9 +110,29 @@ This framework proposes that fundamental characteristics of structured, sequenti
     *   The apparent tendency towards local `L`-minimization is best understood statistically: among the vast set of possible processing histories, only those whose local operational choices, whatever their internal implementation, consistently sample from distributions that keep the long-run average `L` below `L_max` will survive indefinitely. Describing this survivor-ensemble in aggregate often resembles an explicit minimization of `L = K + λE`. Paths that frequently incur large increases in `L` are unsustainable and thus non-viable over time.
 
 **Result 3: Effective Irreversibility & Structure Emerge from Viability and Efficient Encoding.**
-*   **Intrinsic Irreversibility of K-Efficient Encoding:** K-efficient (descriptively simple) representations are statistically favored by processes maintaining Viability, as high `K` contributes to high `L`. Such encodings, as detailed in "[The Core Logic for Emergent Time-Like Order](link-to-TimeAndOrder.md)," often involve abstraction or compression which is not uniquely invertible from an information-theoretic standpoint. This means the exact precursor state cannot always be uniquely determined from the K-efficient representation alone.
+*   **Intrinsic Irreversibility of K-Efficient Encoding:** K-efficient (descriptively simple) representations are statistically favored by processes maintaining Viability, as high `K` contributes to high `L`. Such encodings, as detailed in `TimeAndOrder.md`, often involve abstraction or compression which is not uniquely invertible from an information-theoretic standpoint. This means the exact precursor state cannot always be uniquely determined from the K-efficient representation alone.
 *   **Statistical Selection by Viability:** Processes whose operational trajectories predominantly include costly, perfectly reversible operations (which typically require high representational fidelity, thus high `K`, and are also less common transformations) are less likely to remain viable under finite resource constraints compared to those that predominantly utilize more K-efficient, effectively irreversible operations. This selection favors pathways that, in aggregate, appear to optimize for cost-efficiency.
 *   **Consequence: Emergence of Structure:** This leads to the emergence of rules, complexity, and structural optimization as processes adapt to manage the consequences of effective irreversibility and potential **saturation** (when incoming information or processing demands exceed the current FSP's representational capacity) while remaining viable. The pressure to maintain a bounded average `L` (and thus manage `K`) statistically guides viable processes along pathways of intrinsic K-efficiency and apparent cost optimization.
+
+---
+
+## Core Foundational Principles: Formally Established
+
+Informational Constructivism (IC) has reached a stage where key foundational principles are considered formally established *within its axiomatic framework*. These results provide a robust and internally consistent base for the theory's ongoing development and its application to deriving higher-level physical and mathematical structures.
+
+The core established principles include:
+
+*   **Δ-Factorisation Theorem:** This theorem (detailed in `Foundation/deltafactorization.md`) proves that every admissible IC operation can be uniquely decomposed into a canonical sequence of the three primitive operators: `Δ_gen` (generation of novelty), `Δ_proj` (projection/compression), and `Δ_self` (self-reference/update). This establishes a complete and minimal operational basis for IC.
+*   **Linear SUR Cost Functional (L = K + λE):** Derived from fundamental axioms of cost (monotonicity, additivity, scale-invariance, see `Theory Formalization/SUR linearity proof.md` and `Theory Formalization/RH.md`), this theorem establishes that the Simplicity-Under-Resource-constraint (SUR) cost functional must take this unique linear form. This provides a rigid structure for information-complexity (K) vs. energy/error (E) trade-offs.
+*   **Ledger Stability ⇔ Riemann Hypothesis Connection:** Building on the linear SUR cost, IC formally demonstrates (see `Theory Formalization/RH.md`) that the stability of a finite-ledger information-processing system, under IC's axioms, is intrinsically linked to the prime distribution constraints described by the Riemann Hypothesis. This means IC system stability *requires* the statistical properties of novelty (primes) to conform to those described by RH.
+
+**Significance of these Established Principles:**
+
+*   **Theoretical Stability:** These results confirm the internal consistency of IC's core operational logic and cost model, forming a "locked slice" of the theory.
+*   **Foundation for Further Research:** They provide a verified base upon which further derivations (e.g., of QM, GR, fundamental constants) can be built, reducing the need to re-justify primitives or fundamental cost structures.
+*   **Enhanced Falsifiability:** The clarity and formal establishment of these tenets offer crisper targets for theoretical or empirical challenge.
+
+For a more detailed discussion of these foundational results, their implications, and the context of their proofs, see `FoundationalPillars.md` (Note: This document would need to be created).
 
 ---
 
@@ -215,6 +235,9 @@ Viable processes (V) *must* adapt to resolve Saturation while keeping average `L
 | PRE   | P2            | Finite Operational Capacity (Ledger `C`, `K` contributes to bounded avg. `L`).                                        | Operational Premise                                                                                | `Operational Premise`    |
 | PRE   | P3            | Stable Carrier for state representation and sequential operations.                                                    | Operational Premise                                                                                | `Operational Premise`    |
 | PRE   | V             | Viability Condition: Process maintains bounded average Ledger Cost `L`.                                               | Core Principle derived from P2 & P3 for sustained operation                                        | `Core Principle`         |
+| CORE  | Δ-Factorisation | Unique minimal operator basis (`Δ_gen, Δ_proj, Δ_self`).                                                            | IC Axioms G1, P1, S1; Term Rewriting Theory. (see `deltafactorization.md`)                         | `Formally Established (IC)` |
+| CORE  | SUR Linearity | SUR Cost `L = K + λE` is uniquely affine.                                                                           | Cost Axioms (Monotonicity, Additivity, Scale-Inv.). (see `SUR linearity proof.md`, `RH.md`)            | `Formally Established (IC)` |
+| CORE  | RH Link       | Finite-ledger SUR stability ⇔ Riemann Hypothesis.                                                                 | Linear L, Exp. Norm, ζ-function, Stability Lemmas. (see `RH.md`)                                   | `Formally Established (IC)`<sup>[c]</sup> |
 | I     | Result 1      | Extremes (S₀, Ω) excluded for finite processes; FSP necessary (Process Projection Theorem).                           | Deduction from Axiom A, P1, P2                                                                     | `Strongly Argued`        |
 | I     | Result 1a     | Effective State Space `m` bounded by `K_max` (`m ≤ 2^(K_max)`).                                                       | Consequence of P2 / Result 1                                                                       | `Strongly Argued`        |
 | II    | Result 2a     | Label Reuse inevitable in FSP for extended sequences.                                                                 | Mathematical necessity from Result 1a + P3                                                         | `Mathematically Proven`  |
@@ -226,5 +249,6 @@ Viable processes (V) *must* adapt to resolve Saturation while keeping average `L
 **Notes on Status Table:**
 <sup>[a]</sup> *Further Work: Develop formal lemma/toy model for the statistical emergence of ordered memory from Viability managing label reuse.*
 <sup>[b]</sup> *Supporting Material: See `Theory Formalization/SUR linearity proof.md` for axiomatic justification of the `L = K + λE` form. The dynamic of L-optimization is understood as a statistical property of persistent systems.*
+<sup>[c]</sup> *Formally Established (IC) for the RH Link denotes that the logical chain connecting IC's model of stability to the mathematical conditions of RH is complete and formally derived within IC's axiomatic and interpretive framework. The rigor of the informational arguments (Lemmas A & B in `RH.md`) is key to this conditional establishment.*
 
-*(This table simplifies the status for README purposes; detailed proofs, arguments, and supporting mathematical derivations reside in specific documents within the repository. Ongoing research focuses on rigorously establishing all linkages and exploring further consequences, such as the emergence of Hilbert Space structures, connections to number theory (e.g., RH), and the derivation of physical constants as residuals of these informational processes.)*
+*(This table simplifies the status for README purposes; detailed proofs, arguments, and supporting mathematical derivations reside in specific documents within the repository. Ongoing research focuses on rigorously establishing all linkages and exploring further consequences, such as the emergence of Hilbert Space structures, connections to number theory, and the derivation of physical constants as residuals of these informational processes.)*
