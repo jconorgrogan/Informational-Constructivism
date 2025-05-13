@@ -1,23 +1,22 @@
 # Foundational Pillars of Informational Constructivism
 
-**Version:** 1.0
-**Status:** Core Foundational Document
+**Version:** 1.1 
 
 ## 1. Introduction
 
 Informational Constructivism (IC) is a theoretical framework aiming to derive the fundamental structures of reality from first principles of information processing under resource constraints. A significant milestone has been reached where key foundational theorems of IC are considered formally established *within its specific axiomatic framework*. These theorems provide a robust and internally consistent "locked slice" upon which further theoretical development and derivations (such as those targeting Quantum Mechanics, General Relativity, and fundamental physical constants) can securely build.
 
-This document elaborates on these foundational pillars:
+This document elaborates on these foundational pillars and their logical interdependencies:
 
 1.  **The Δ-Factorisation Theorem:** Establishing a unique, minimal basis for all IC operations.
 2.  **The Uniqueness of the Linear SUR Cost Functional (L = K + λE):** Defining the fundamental trade-off in resource-constrained information processing.
 3.  **The Equivalence of Ledger Stability and the Riemann Hypothesis:** Linking the stability of finite-ledger information processing systems to deep structures in number theory.
 
-Understanding these pillars is crucial for grasping the core logic, internal consistency, and predictive power of IC.
+Understanding these pillars and their precise logical connections is crucial for grasping the core logic, internal consistency, and predictive power of IC.
 
 ## 2. The Δ-Factorisation Theorem
 
-*   **Core Document:** `Foundation/deltafactorization.md`
+*   **Core Document:** `01_Core_Axioms_and_Operators/IC_Delta_Factorisation.md`
 *   **Theorem Statement (Informal):** Every admissible operation within IC can be uniquely decomposed into a canonical sequence involving at most one application each of the three primitive operators: `Δ_gen` (generation of novelty), `Δ_proj` (projection/compression to memory), and `Δ_self` (self-reference/internal model update), in a specific order.
 *   **Formal Statement:** Every admissible IC operation `f` factors uniquely as `f = Δ_gen^g ∘ Δ_proj^p ∘ Δ_self^s`, where `g,p,s ∈ {0,1}`.
 
@@ -31,7 +30,7 @@ Understanding these pillars is crucial for grasping the core logic, internal con
 
 ### Context of Rigor:
 
-The proof detailed in `deltafactorization.md` relies on:
+The proof detailed in `01_Core_Axioms_and_Operators/IC_Delta_Factorisation.md` relies on:
 1.  The specific axiomatic definitions of `Δ_gen` (Axiom G1: Irreducibility), `Δ_proj` (Axiom P1: Idempotence), and `Δ_self` (Axiom S1: Contractivity leading to a unique fixed point).
 2.  Standard term rewriting theory, demonstrating the existence of a factorization via well-founded induction, and uniqueness via the proof that the defined rewrite system is terminating and globally confluent (Church-Rosser property).
 3.  The plausibility and formal correctness of commutation lemmas between the operators.
@@ -40,7 +39,7 @@ The status "locked foundation block" indicates that, given these IC-specific axi
 
 ## 3. The Uniqueness of the Linear SUR Cost Functional (L = K + λE)
 
-*   **Core Documents:** `Theory Formalization/SUR linearity proof.md`, `Theory Formalization/RH.md` (Theorem 1)
+*   **Core Documents:** `02_SUR_Dynamics_and_Cost/IC_SUR_Linearity_Proof.md`, `03_Derived_Structures_and_Connections/IC_RH_Connection.md` (Theorem 1)
 *   **Theorem Statement:** Given a set of fundamental axioms for a cost functional `L(K,E)` (where `K` is descriptive/informational complexity and `E` represents other operational costs like energy or error), `L` must uniquely take the affine linear form `L = K + λE`, where `λ` is a positive constant.
 
 ### Axioms for Derivation:
@@ -63,14 +62,14 @@ The proof is a standard mathematical derivation for functions satisfying Cauchy'
 
 ## 4. The Equivalence of Ledger Stability and the Riemann Hypothesis
 
-*   **Core Document:** `Theory Formalization/RH.md` (Theorems 3A and 3B)
+*   **Core Document:** `03_Derived_Structures_and_Connections/IC_RH_Connection.md` (Theorems 3A and 3B)
 *   **Theorem Statement (Informal):** Within the framework of Informational Constructivism, the conditions required for a finite-ledger information-processing system to remain stable while processing irreducible novelty are mathematically equivalent to the conditions described by the Riemann Hypothesis (RH) concerning the distribution of prime numbers.
 *   **Formal Statement:** Finite-ledger SUR stability ⇔ Riemann Hypothesis true.
 
 ### Logical Chain Summary:
 1.  **Linear SUR Cost (L = K + λE):** This is the starting point (established above).
 2.  **Unique Exponential Norm:** An additive cost `L(m)` for a structure `m` uniquely maps to a multiplicative norm `|m| := exp[L(m)]`.
-3.  **Partition Function as ζ(s):** The partition function over all composite structures formed from irreducible distinctions (identified with prime numbers, `p`, whose costs `L(p)` are related to `log p`) naturally takes the form of the Riemann zeta function `ζ(s) = Π_p (1 - |p|⁻ˢ)⁻¹`.
+3.  **Partition Function as ζ(s):** The partition function over all composite structures formed from irreducible distinctions (identified with prime numbers, `p`, whose costs `L(p)` are related to `log p` or `p^c`) naturally takes the form of the Riemann zeta function `ζ(s) = Π_p (1 - |p|⁻ˢ)⁻¹`.
 4.  **Finite-Ledger Stability Conditions:** A finite-ledger observer (constrained by capacity `C`) must be able to stably represent these irreducible distinctions (primes).
     *   **Lemma A (Over-compression/Irreducibility Violation):** If primes were *more regular* than RH predicts (i.e., the error term `π(x) - Li(x)` is significantly smaller than `O(x^(1/2))`), the observer could compress them beyond their presumed irreducibility. This would violate a core IC tenet that `Δ_gen` introduces *truly irreducible* distinctions (Axiom G1).
     *   **Lemma B (Ledger Blow-up/Resolution Failure):** If primes were *more chaotic/erratic* than RH predicts (i.e., the error term is significantly larger than `O(x^(1/2))`), the descriptive complexity `K` required to track and distinguish these primes would grow too rapidly, eventually exceeding the finite ledger capacity `C`.
@@ -94,13 +93,29 @@ The rigor of this equivalence rests on several points:
 
 This makes the equivalence a powerful *conditional* result: *if* IC's model of a stable, finite-resource information-processing system grappling with irreducible novelty is a correct description of aspects of reality, *then* the statistical nature of that novelty must conform to what RH describes.
 
-## 5. Overall Significance for Informational Constructivism
+## 5. Logical Interdependencies of the Foundational Pillars
 
-The formal establishment of these foundational pillars—the Δ-Factorisation, the linear SUR cost, and the Ledger Stability ⇔ RH equivalence—within IC's axiomatic system is of paramount importance:
+The three locked theorems—Δ-Factorisation, SUR linearity, and ledger-stability⇔RH—are not isolated results but form a logically interconnected structure.
 
-*   **Theoretical Stability and Internal Closure:** They demonstrate that the core tenets of IC are not arbitrary but are derived and internally consistent. The foundational "language" and "rules of economics" for information processing in IC are now fixed.
-*   **Reduced Proof Burden for Downstream Derivations:** Subsequent research within IC aiming to derive more complex structures (like those of Quantum Mechanics, General Relativity, or specific physical constants) can build upon this verified "locked slice" without needing to re-justify the nature of primitive operations or the fundamental cost functional.
-*   **Enhanced Falsifiability:** With these core principles clearly defined and their derivations laid out, IC presents sharper, more formally grounded targets for theoretical scrutiny or empirical challenge. For instance, demonstrating a system that meets IC's cost axioms but has a non-linear fundamental cost would challenge IC at its root.
-*   **Guidance for Future Research and Interpretation:** These results clarify what IC considers established versus what remains an active area of research and derivation. For example, while the *form* of the base SUR cost `L=K+λE` is locked, the derivation of specific values for constants from the dynamics of related quantities like `λ̃` (the running coupling in RG analysis) is an ongoing research target.
+```mermaid
+graph TD
+    subgraph Core_IC_Axioms_and_Premises["Core IC Axioms & Premises"]
+        OpAxioms["Operator Axioms (G1, P1, S1)"]
+        CostAxioms["Cost Axioms (Monotonicity, Additivity, Scale-Inv.)"]
+        SysPremises["System Premises (Finite Ledger C, Novelty as Primes)"]
+    end
 
-In essence, these foundational pillars transform IC from a conceptual sketch into a formal theoretical framework with a solid, mathematically described core, ready to be extended and tested against the complexities of observed reality.
+    DeltaFactorisation["(Locked) Δ-Factorisation Theorem"]
+    SUR_Linearity["(Locked) SUR Linearity Theorem (L=K+λE)"]
+    RH_Equivalence["(Locked) Ledger Stability ⇔ RH Theorem"]
+
+    OpAxioms --> DeltaFactorisation
+    CostAxioms --> SUR_Linearity
+
+    DeltaFactorisation -- "Provides 'Independent Subsystem' concept" --> SUR_Linearity
+    DeltaFactorisation -- "Defines Δ_gen for 'Irreducible Novelty'" --> RH_Equivalence
+    SUR_Linearity -- "Provides 'Affine Cost' for norm & error bound" --> RH_Equivalence
+    SysPremises --> RH_Equivalence
+
+    classDef locked fill:#d4f8d4,stroke:#333,stroke-width:2px;
+    class DeltaFactorisation,SUR_Linearity,RH_Equivalence locked;
