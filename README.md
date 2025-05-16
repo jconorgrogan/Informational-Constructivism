@@ -365,6 +365,24 @@ If we were to plot `L_total(α_cand)` against `α_cand`, we would expect a curve
 *   For very high `α_cand`, `L_total` is also high, due to instabilities reflected in `K(StableContext)` or perhaps excessive `E(Interactions)`.
 *   Somewhere between these extremes, a value `α_optimal` would exist where `L_total(α_cand)` reaches a minimum. This `α_optimal` would be the statistically favored value for the fine-structure constant in such a toy universe, as patterns characterized by this value have the lowest overall Static Cost and would thus be the most prevalent according to Principle 1.2 (`μ(G) ∝ exp(-βL(G))`).
 
+
+**Speculative (needs additional work): Quantum Non-locality and Entanglement**
+This framework offers a promising approach to quantum non-locality: if reality is fundamentally non-spatial information patterns, then "action at a distance" ceases to be problematic. Specifically:
+
+Entanglement as Pattern Inseparability: Entangled systems could be understood as single patterns where K(AB) < K(A) + K(B) - their description is simpler as a unified whole than as separate parts. The Static Cost L(G) is minimized when treating separated components as a unified pattern.
+Non-locality as an Artifact: The apparent faster-than-light correlation would simply reflect the projection of a non-spatial reality onto a spatial framework. In Mode_R, there is no "distance" to overcome - entangled particles represent access points to the same underlying pattern.
+Quantum Correlations: The statistical correlations observed in entanglement experiments would emerge naturally from the μ(G) ∝ e^(-βL(G)) distribution, as patterns that maintain consistent internal relationships have lower Static Cost.
+
+A Novel Approach to the Measurement Problem
+This framework could resolve the measurement problem by reframing it as a structural relationship between patterns:
+
+Measurement as Pattern Integration: When an observer-shape incorporates information about another pattern, this creates a new composite pattern governed by the observer's internal ranking function (f).
+Collapse as Perspective Shift: "Collapse" would represent a transition from describing an independent pattern (with multiple potential configurations) to describing that pattern as integrated within an observer's f-ordered sequence.
+Born Rule from Cost Statistics: The probability distribution given by the Born rule might be derivable from the statistical prevalence law μ(G) ∝ e^(-βL(G)), potentially providing a deeper explanation for quantum probabilities than conventional interpretations.
+Observer Dependence without Subjectivity: This framework could explain why measurement results depend on the observer without invoking consciousness. Different observer-shapes would integrate external patterns differently based on their internal structure, yet this would be an objective feature of the information landscape.
+
+This approach aligns with certain aspects of QBism and relational interpretations of quantum mechanics, but grounds them in a more fundamental informational ontology that potentially resolves the measurement problem by eliminating the artificial separation between observer and observed at the fundamental level of reality.
+
 **Illustrative Mathematical Form (Not a Physical Model):**
 
 To make this concrete purely for illustration, imagine the cost contributions related to observer context stability behave something like:
