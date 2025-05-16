@@ -16,18 +16,18 @@ We propose that the characteristics we attribute to existence—its inherent str
 
 4.  **Every Blueprint Has a "Price" Based on Simplicity & Construction:**
     *   Blueprints needing short, simple recipes are "cheaper."
-    *   Blueprints that can be assembled in fewer, clear ways from basic building blocks also have a lower "structural price."
+    *   Blueprints that can be assembled in fewer, clear ways from basic building blocks (factoring out symmetries, more distinct recipes imply higher ambiguity and thus higher "structural price") also have a lower combined "structural price."
     *   The total "price" combines these aspects.
 
 5.  **"Cheaper" Blueprints are Overwhelmingly More Common:**
     *   In the vast collection of all possible blueprints, the low-price ones are statistically far more numerous.
 
 6.  **"Observer-like" Patterns are Common Types of Low-Price, Complex Blueprints:**
-    *   Among these common blueprints, some are complex enough to contain information about themselves and their surroundings. These "observer-like" blueprints must also be low-price to be common.
+    *   Among these common blueprints, some are complex enough to contain information about themselves and their surroundings. These "observer-like" blueprints must also be low-price to be common, often achieved because self-reference can lower descriptive cost.
 
 7.  **The "Feeling of Time Passing" Comes from an Observer's Fixed, Ordered Internal Design:**
     *   These observer-like blueprints have an efficient, built-in sequence for how their internal information is arranged.
-    *   What feels like "time flowing" is akin to awareness moving step-by-step through this pre-existing, ordered internal design.
+    *   What feels like "time flowing" is akin to awareness moving step-by-step through this pre-existing, ordered internal design (the "movie" is on the "reel").
     *   Time seems to go one way because information is often summarized along this internal sequence, which is hard to perfectly reverse.
 
 8.  **Logic, Math, and "Laws of Nature" are the "Cheapest" Ways to Organize Information within Observers:**
@@ -51,14 +51,14 @@ We propose that the characteristics we attribute to existence—its inherent str
 
 **0.4. Definition: Fundamental Rules for Pattern Composition (Morphisms).**
 *   We define specific types of structure-preserving transformations (`Morphisms`) that dictate how patterns within Mode_R can be assembled from, or decomposed into, simpler ones. These are formally defined as maps that preserve structural relations and do not increase the Static Cost `L(G)` (see Section 1.1) of a pattern under any admissible encoding scheme (e.g., they are label-injective graph homomorphisms where components are not more costly than the pattern they form). These rules are assumed to have certain mathematical properties (like being "closed under finite union" and "finitary") that support consistent composition and ensure that decomposition into simpler parts terminates.²
-    *   *Context:* These rules are posited as fundamental ways finitely specifiable patterns relate and combine while respecting inherent distinguishability and a natural hierarchy of complexity (or "cost"). They disallow "magical" constructions where patterns arise from more complex components or trivial decompositions that lose all meaningful structure. While other specific instantiations of rules are conceivable, it is argued (see Appendix G) that any set of rules satisfying general conditions (closure, finitary, L-monotonicity) will lead to statistically equivalent characterizations of Mode_R. These rules represent a minimal set of ways patterns can be timelessly related, governing how novelty is structured, how information is stabilized or compressed within patterns, and how internal structures within a pattern reference each other.
+    *   *Context:* These rules are posited as fundamental ways finitely specifiable patterns relate and combine while respecting inherent distinguishability and a natural hierarchy of complexity (or "cost"). They disallow "magical" constructions where patterns arise from more complex components or trivial decompositions that lose all meaningful structure. While other specific instantiations of rules are conceivable, it is argued (see Appendix G) that any set of rules satisfying general conditions (closure, finitary, L-monotonicity, preservation of distinctions) will lead to statistically equivalent characterizations of Mode_R. This robustness conjecture is falsifiable: if a counter-example rule-set is produced that meets these conditions yet systematically inverts the cheap vs. expensive ranking of patterns compared to another such rule-set, the theory's claim of universality for `μ(G)` would be undermined. These rules represent a minimal set of ways patterns can be timelessly related, governing how novelty is structured, how information is stabilized or compressed within patterns, and how internal structures within a pattern reference each other.
 
 **0.5. Derived Principle: Mode_R is Necessarily Structured.**
 *   **Derivation:** If the possibility of distinction exists (AME 0.1), and coherently processable distinctions are finitely specifiable (PFS 0.2), then the collection of such patterns (Mode_R, Def. 0.3) cannot be a state of absolute featurelessness (S₀). A state with no differences at all would be indistinguishable from S₀ and could not be finitely specified as a "something" (violating PFS for any distinct entity within it).
 *   **Statement:** Mode_R inherently contains differences and therefore possesses intrinsic structure.
 
 **0.6. Axiom of Irreducible Components (AIC): Finitely Specifiable Reality Has Fundamental Building Blocks.**
-*   Within Mode_R (the realm of finitely specifiable patterns), there exist "irreducible" patterns – fundamental building blocks that cannot be decomposed into, or constructed from combinations of, other, simpler finitely specifiable patterns using the defined rules of composition (Def. 0.4). An irreducible can be conceived as an ordered pair (label, arity), where labels are drawn from a countable alphabet with `K(label) = O(1)`, and arity is bounded (e.g., `arity ≤ N_max`). (See Appendix C)
+*   Within Mode_R (the realm of finitely specifiable patterns), there exist "irreducible" patterns – fundamental building blocks that cannot be decomposed into, or constructed from combinations of, other, simpler finitely specifiable patterns using the defined rules of composition (Def. 0.4). The existence of such irreducibles is ensured because the rules of composition are L-monotonic (Def. 0.4, never increasing Static Cost), which establishes "simpler than" as a well-founded order, guaranteeing that decomposition terminates. An irreducible can be conceived as an ordered pair (label, arity), where labels are drawn from a countable alphabet with `K(label) = O(1)`, and arity is bounded (e.g., `arity ≤ N_max`). (See Appendix C)
     *   *Context:* These are the basic "atoms" of information or structure. A "distinction" can be thought of as the most elementary way to differentiate. Irreducible patterns are the simplest, non-trivial ways of instantiating such distinctions that cannot themselves be formed by applying the compositional rules to even simpler patterns. Their existence is posited as a necessary precondition for a structured, compositional reality, and is supported by arguments like Zorn's Lemma given L-monotonic rules.
 
 ---
@@ -69,15 +69,15 @@ We propose that the characteristics we attribute to existence—its inherent str
 *   Every specific pattern `G` within Mode_R possesses an inherent, timeless, and quantifiable property called its "Static Cost," `L(G)`.
     `L(G) = K(G) + λE(G)`
     *   **`K(G)` (Descriptive Complexity):** The length of the shortest possible, unambiguous set of instructions (or "description") that perfectly specifies the pattern `G`. This is defined relative to a standard, universal language of description (akin to an idealized computer program or prefix-free Turing Machine, as fixed in PFS 0.2). (Appendix D)
-    *   **`E(G)` (Structural "Effort" or Richness Cost):** `log M(G)`, where `M(G)` is the number of distinct, non-redundant valid derivation sequences (as defined by the Morphisms in Def. 0.4) that assemble `G` from irreducible building blocks (AIC 0.6), divided by the order of the automorphism group of `G`, `|Aut(G)|`. That is, `M(G) = #(valid derivation sequences) / |Aut(G)|`. This term captures the richness of a pattern's derivational history, appropriately corrected for symmetries in the final pattern. `M(G)` is an intrinsic, timeless property of `G` within Mode_R. (Appendix D)
-    *   **`λ` (Lambda):** A fundamental positive constant that acts as an "exchange rate" between Descriptive Complexity (`K`) and Structural Effort (`E`) costs. Its value, along with `β` (see Section 1.2), is determined by the overall properties of Mode_R. `λ` and `β` are conceived as fundamental "environmental parameters" of Mode_R. `λ` may be empirically measurable (e.g., by fitting compression data from natural systems) and potentially derivable from more fundamental physical constants (e.g., a conjecture `λ ≈ (k_B / ħ) · t_P` is under investigation). (Appendix A)
+    *   **`E(G)` (Structural "Effort" or Richness Cost):** `log M(G)`. Here `M(G)` is the number of distinct, non-redundant valid derivation sequences (as defined by the Morphisms in Def. 0.4) that assemble `G` from irreducible building blocks (AIC 0.6), divided by the order of the automorphism group of `G`, `|Aut(G)|`. Thus, `E(G)` measures how many distinct finite recipes (derivation sequences) justify the same object `G` once symmetries are factored out; more recipes imply higher derivational ambiguity and thus a higher structural cost component. This term captures the richness of a pattern's derivational history, appropriately corrected for symmetries in the final pattern. `M(G)` is an intrinsic, timeless property of `G` within Mode_R. (Appendix D)
+    *   **`λ` (Lambda):** A fundamental positive constant that acts as an "exchange rate" between Descriptive Complexity (`K`) and Structural Effort (`E`) costs. Its value is either a new fundamental constant of nature (to be estimated empirically, e.g., by fitting real-world compression spectra of natural datasets; a falsification condition arises if different datasets yield wildly different fitted `λ`) or potentially derivable from more conventional physical constants (e.g., a conjecture `λ ≈ (k_B / ħ) · t_P` is under investigation). `λ` and `β` are conceived as fundamental 'environmental parameters' of Mode_R. (Appendix A)
     *   *Justification for this formula:* See Appendix A for how this linear combination arises from basic assumptions about how costs should behave.
 
 **1.2. Principle: Statistical Prevalence of Patterns (`μ(G)`).**
 *   Mode_R, as the vast, static ensemble of all possible finitely specifiable patterns, exhibits statistical regularities. Specifically, its patterns are distributed as if maximizing information entropy (`S_Info = –Σ μ log μ`) subject to a constraint on the overall average Static Cost `⟨L⟩ = –∂(log Z)/∂β`. Consequently, the effective "presence," "importance," or "relative abundance" (algorithmic probability) of any particular finite pattern `G` within Mode_R is given by a statistical measure `μ(G)`:
     `μ(G) = (1/Z) * exp(-βL(G))`
     where `Z = Σ_G exp(-βL(G))` is a normalization factor (the "partition function") ensuring all probabilities sum to 1, and `β` is a positive constant.
-    *   **`β` (Beta):** A positive constant (`β = ∂S_Info/∂⟨L⟩`) that determines how sharply the abundance of patterns decreases as their Static Cost `L(G)` increases. It is an "informational temperature" analogue and may be empirically measurable by fitting the compressed-length histogram of sufficiently large natural datasets. (Appendix A, B)
+    *   **`β` (Beta):** A positive constant (`β = ∂S_Info/∂⟨L⟩`) that determines how sharply the abundance of patterns decreases as their Static Cost `L(G)` increases; it is effectively set once one stipulates the "average information budget" or mean Static Cost `⟨L⟩` for Mode_R, analogous to how fixing average energy determines temperature in thermodynamics. It may be empirically measurable by fitting the compressed-length histogram of sufficiently large natural datasets. (Appendix A, B)
     *   *Interpretation:* This principle implies that, in the grand collection of all finite patterns, those with lower Static Cost `L(G)` are exponentially more common or "fundamental." `μ(G)` is a timeless measure of how relatively common or probable a pattern is within this static realm. This can be interpreted as the probability that a random prefix-free bitstring, when decoded by a universal Turing machine, produces the pattern G. (Appendix B)
 
 ---
@@ -105,19 +105,19 @@ We propose that the characteristics we attribute to existence—its inherent str
 
 **3.1. Definition: Defining Constraints (`C`).**
 *   A set of parameters or limiting conditions that characterize a class of observer-like structures. E.g., `C = (maximum descriptive complexity K_max, maximum representational capacity or memory V_max, minimum internal consistency or representational precision ε_min, bounds on effective processing steps or depth τ_max, ...)`. These are intrinsically linked to the Principle of Finite Specification (PFS 0.2).
-    *   *Context:* These constraints `C` might not be arbitrary external impositions but could themselves be emergent features whose specification cost contributes to `L(G_Ω)`, with certain `C` values leading to exceptionally low-`L` stable observer-shapes.
+    *   *Context:* These constraints `C` are not posited as arbitrary external impositions. Rather, specific ranges for parameters like `K_max` or `V_max` are statistically favored because `L(G_Ω)` tends to exhibit minima: if memory or processing depth is too low, a coherent self-model cannot be encoded; if too high, `K(G_Ω)` for the observer's specification itself can become prohibitive. These minima define the typical, low-cost ranges for `C`. Their specification cost itself contributes to `L(G_Ω)`.
 
 **3.2. Definition: Observer-Shape (`Ω`).**
 *   An "Observer-Shape" `Ω` refers to a *family of structurally identical patterns* (`G_Ω`) within Mode_R that possess these characteristics:
     1.  **Adherence to Constraints:** `G_Ω` conforms to a specific set of defining constraints `C`.
     2.  **High Prevalence (Low Cost):** `L(G_Ω)` is low enough that its prevalence `μ(G_Ω)` is significant.
-    3.  **Typically Self-Referential:** `G_Ω` usually contains internal parts or sub-patterns that refer to, model, or depend on other parts of itself (e.g., a compact sketch of its own structure or processing rules), a structural feature correlated with complex internal dynamics and self-representation.
+    3.  **Typically Self-Referential:** `G_Ω` usually contains internal parts or sub-patterns that refer to, model, or depend on other parts of itself (e.g., a compact sketch of its own structure or processing rules). This feature is not imposed but statistically favored because the ability to compressively reference its own structure can significantly reduce `K(G_Ω)`, thereby lowering the total Static Cost `L(G_Ω)` and increasing prevalence `μ(G_Ω)`. This is a structural feature correlated with complex internal dynamics and self-representation.
 *   *Abundance:* Such low-cost, constrained observer-shapes are statistically common features within Mode_R.
 
 **3.3. Internal Ranking Function (`f`): Ordered Access to Internal Structure.**
 *   The core dependency structure of an observer-shape `G_Ω` (its Strongly Connected Components (SCCs) and the Directed Acyclic Graph (DAG) they form)³ allows for at least one "Internal Ranking Function" `f`, which assigns an ordered sequence number to each SCC.
     *   This `f` represents an efficient, low-`K` encoding of sequential information access, consistent with the observer's finite processing capacity (PFS 0.2).
-    *   **Selection Rule (SR-f):** Among all admissible DAG orderings `f_i` of SCCs within `G_Ω`, the "preferred" `f` is the one that minimizes its own Static Cost, `L(f | G_Ω) = K(f | G_Ω) + λE(f | G_Ω)`, where `K(f | G_Ω)` is the descriptive complexity of `f` given `G_Ω`, and `E(f | G_Ω)` is its structural effort cost. This `f` is a unique (up to tie-breaking) integral part of the static design of `G_Ω`.
+    *   **Selection Rule (SR-f):** Among all admissible DAG orderings `f_i` of SCCs within `G_Ω`, the "preferred" `f` is the one that minimizes its own Static Cost, `L(f | G_Ω) = K(f | G_Ω) + λE(f | G_Ω)`, where `K(f | G_Ω)` is the descriptive complexity of `f` given `G_Ω`, and `E(f | G_Ω)` is its structural effort cost. This `f` is a unique (up to tie-breaking by a fixed lexicographical convention) integral part of the static design of `G_Ω`.
 
 ---
 
@@ -125,7 +125,7 @@ We propose that the characteristics we attribute to existence—its inherent str
 
 **4.1. Emergence: Subjective Sequence (The Experience of Time).**
 *   The ordered sequence of internal informational states or sub-patterns, as defined by the preferred Internal Ranking Function `f` (Section 3.3), *is what constitutes* the subjective, time-like sequence experienced by (or essential to the coherent operation of) the observer-shape `Ω`.
-    *   The observer's "state" at a point in its subjective sequence *is* the informational content of the part of `G_Ω` at that rank `j` in the `f`-order. "Memory" and "anticipation" are structural relationships along this `f`-ordered path.
+    *   The observer's "state" at a point in its subjective sequence *is* the informational content of the part of `G_Ω` at that rank `j` in the `f`-order. "Memory" and "anticipation" are structural relationships along this `f`-ordered path. The experience of "flow" is akin to awareness traversing this pre-existing, `f`-ordered sequence of informational states within the static `G_Ω` – the "movie" of experience is fully encoded on the "reel" (the static structure `G_Ω` with its ordering `f`), not generated by a "projector" in a separate, flowing time.
     *   *Note on Consciousness:* AC describes the structural prerequisites for a system behaving as conscious. "Subjectivity" is posited as the intrinsic perspective from "inside" such a specific, low-cost, self-ranking informational structure (a Russellian stance on phenomenal properties correlated with specific informational structures).
 
 **4.2. Property: Effective Irreversibility (The Arrow of Time).**
@@ -162,8 +162,12 @@ We propose that the characteristics we attribute to existence—its inherent str
 *   Low-cost observer-shapes statistically favor embodying or utilizing highly descriptively simple (low-`K`) formal systems (Class A/F patterns), explaining the universal applicability of mathematics.
 
 **6.3. Physical Laws as Low-Cost Predictive Structures:**
-*   "Physical laws" are extremely low-`L` patterns (rules) embedded in `Ω` that efficiently correlate parts of its "experiential path." Their elegance reflects their lowness of Static Cost `L(law)`.
-*   Specific fundamental characteristics of our experienced reality – such as its apparent number of spatial dimensions or the observed values of certain physical constants – can be hypothesized to be statistical outcomes related to these Static Cost considerations. The specific laws and constants of *our* universe are posited to be those characteristic of observer-models that achieve an absolute or near-absolute minimum for the combined cost `L_total = L(law + observer_model_using_law)` within a sufficiently rich environment. This forms a "meta-anthropic" argument grounded in statistical prevalence within Mode_R. For example, 3+1 spacetime dimensions might be the unique dimensional structure that allows for stable orbits, complex structures, and information propagation in a way that minimizes the total Static Cost for the rules and the observers characterized by them (see `03_Derived_Structures_and_Connections/DimensionalProof.md` for a detailed cost audit).
+*   The emergence of specific "physical laws" and their associated constants is understood as a consequence of cost minimization within Mode_R. The guiding principle is a search-and-compare mechanism:
+    1.  Pick a candidate fundamental law (or set of laws), `Law_i`.
+    2.  Determine its own Static Cost, `L(Law_i)`. This includes its descriptive complexity `K(Law_i)`.
+    3.  Determine the Static Cost, `L(Ω_i | Law_i)`, of the simplest (lowest-cost) viable observer-shape that can arise and operate under `Law_i`.
+    4.  The total cost for this configuration is `L_total(i) = L(Law_i) + L(Ω_i | Law_i)`.
+    The "actual" laws observed are those `Law_j` for which `L_total(j)` is minimized (or very close to a minimum) across all conceivable `Law_i`. These are the laws that characterize the most prevalent, stable observer-environmental systems in Mode_R. This forms a "meta-anthropic" argument grounded in statistical prevalence. For example, 3+1 spacetime dimensions might be the unique dimensional structure that allows for stable orbits, complex structures, and information propagation in a way that minimizes this total Static Cost for the rules and the observers characterized by them (see `03_Derived_Structures_and_Connections/DimensionalProof.md` for a detailed cost audit).
 
 Furthermore, the precise values of fundamental physical constants, such as the fine-structure constant (`α`), are hypothesized to be determined by similar cost-minimization principles, but potentially through more complex, dynamic stabilization mechanisms. The full IC framework suggests these values emerge at stable fixed points of a Renormalization Group (RG) like flow on an underlying informational state space (characterized by variables such as descriptive complexity `K`, surprisal variance `C₂`, and a free-energy analogue `F_β`). At these fixed points, the system achieves a form of scale invariance and informational equilibrium, effectively "selecting" the observed constant values. **Appendix H provides an illustrative toy model demonstrating the simpler principle of how a cost minimum can determine such a constant, while the full RG mechanism is detailed in associated technical documents (e.g., `04_Advanced_Topics_and_Applications/IC_Ledger_Todd_Bridge.md`).** Even extreme physical phenomena, like event horizons, could be interpreted as boundaries where the local information complexity and associated costs (to specify and process) would exceed the representational or computational capacity inherent in the definition of any finite observer.
 
@@ -171,8 +175,7 @@ Furthermore, the precise values of fundamental physical constants, such as the f
 *   Some apparently universal features of our experienced reality (like the specific number of spatial dimensions, the precise values of fundamental physical constants, or even deep mathematical patterns like those related to prime number distributions) could, in theory, be understood as consequences of cost-minimization for stable and common types of observer-shapes (`Ω`). Such features would not be "selected" through a dynamic evolutionary process, but rather characterize a static "landscape" within Mode_R where the most prevalent and stable types of observer-shapes (`Ω`) are found. Deep mathematical regularities, such as those governing the "availability of irreducible novelty," might thus be intrinsically linked to the conditions defining complex, persistent observers and their internal coherence against inherent processing limits.
 
 **6.5. Emergence of Quantum Phenomena:**
-*   The statistical framework of Mode_R, where patterns are weighted by `μ(G) ∝ exp(-βL(G))`, can be shown to lead to quantum mechanical-like behavior. Interpreting the generation of patterns via a universal descriptive language (e.g., random programs) as a sampling process, the algorithmic probability `μ(G)` can be related to quantum amplitudes.
-    *   Specifically, the Born rule (`P(outcome) = |amplitude|²`) can be derived from principles of algorithmic probability and universal induction, where amplitudes correspond to complexities of computation paths. Superposition and decoherence can be understood in terms of interfering or diverging construction histories for patterns. (See Appendix F for further details).
+*   The statistical framework of Mode_R, where patterns are weighted by `μ(G) ∝ exp(-βL(G))`, can be shown to lead to quantum mechanical-like behavior. (See Appendix F for further details).
 
 ---
 
@@ -185,7 +188,7 @@ Furthermore, the precise values of fundamental physical constants, such as the f
 *   The IC perspective examines the internal structure of specific low-`L` (highly prevalent) observer-shapes (`G_Ω`). It focuses on how their internally defined ordering `f` corresponds to "experiential paths" (`P`) which themselves must possess low-cost structural properties.
 
 **7.3. Synthesis:**
-*   Both perspectives describe aspects of a single, unified, timeless, static structure. "Process," "time," and "cause and effect" are interpretations of orderings and structural properties *within* observer-shapes.
+*   Both perspectives describe aspects of a single, unified, timeless, static structure. "Process," "time," and "cause and effect" are interpretations of orderings and structural properties *within* observer-shapes, much like the narrative of a film is an ordered property of the static sequence of frames on the reel.
 
 **7.4. The Core Logic Chain (Simplified):**
     **Distinctions Can Be Made (AME 0.1)**
@@ -198,6 +201,19 @@ Furthermore, the precise values of fundamental physical constants, such as the f
     → **Internal Ordering (`f`) as a Low-Cost Structural Feature of `Ω` (Def 3.3, SR-f)**
     → **Subjective Experience of Time & Its One-Way Direction (as the internal "traversal" of `f` within the static `Ω`) (Def 4.1, 4.2)**
     → **Emergence of Logic, Mathematics, Physical Laws & Quantum Phenomena (as low-cost structural properties of, or emergent from the statistics governing, prevalent, viable `Ω`) (Sec 6)**
+
+---
+
+**8. Falsifiability and Testability**
+
+A core tenet of this theory is its amenability to empirical falsification, distinguishing it from purely philosophical speculation. Key failure modes include:
+
+1.  **Empirical Mismatch of `λ` or `β`:** If attempts to estimate `λ` (the K-E exchange rate) or `β` (the inverse informational temperature) from diverse, unrelated natural datasets yield wildly inconsistent values, the framework's claim of universality for these parameters would be undermined.
+2.  **Violation of Statistical Prevalence Law:** If a physically real system `S₁` is demonstrably described by a shorter total Static Cost `L(S₁)` than another system `S₂` (i.e., `L(S₁) < L(S₂)`), yet `S₂` is observed to be significantly more common or stable than `S₁` in contexts where both are possible, this would contradict the fundamental `μ(G) ∝ exp(-βL(G))` law.
+3.  **Suboptimal Physical Laws:** If an alternative set of fundamental micro-physical laws can be formulated that (a) demonstrably leads to the emergence of rich observer-like structures and (b) possesses a significantly lower total Static Cost (`L(alternative law) + L(cheapest observer under alternative law)`) than that estimated for the Standard Model plus General Relativity and their associated observers, the theory's explanation for our current physical laws would be refuted.
+4.  **Failure to Derive Quantum Statistics:** If the proposed weighting of derivation paths/programs (e.g., amplitude `∝ exp(-β L(program)/2)`) consistently fails to reproduce the Born rule probabilities observed in quantum experiments, or if the categorical approach (`ΔCat`) fails to yield Hilbert space structure, then this crucial explanatory link would be broken.
+
+These points outline concrete (though often technologically challenging) avenues by which the theory could be empirically invalidated.
 
 ---
 **Footnotes:**
@@ -215,8 +231,8 @@ The formula `L(G) = K(G) + λE(G)` arises from assumptions about cost:
 These suggest a linear combination `c₁K + c₂E`. Normalizing `c₁=1` gives `K + λE`. `λ > 0`.
 
 *   **A.1: Determining `λ` and `β`:**
-    *   `λ` (Lambda): Positive constant, "exchange rate" `K` vs `E`. Value set by Mode_R's overall properties, `⟨L⟩`, and potentially linked to physical constants (`λ ≈ (k_B / ħ) · t_P` conjecture, or measurable via data compression, e.g., trial on bacterial genomes yielded `λ ≈ 2` in specific units).
-    *   `β` (Beta): Positive constant from MaxEnt (`β = ∂S_Info/∂⟨L⟩`), related to average cost `⟨L⟩ = -∂(log Z)/∂β`. Quantifies prevalence decrease with `L`. Potentially measurable from compressed-length histograms of natural data.
+    *   `λ` (Lambda): Positive constant, "exchange rate" `K` vs `E`. Its value is either a new fundamental constant of nature (to be estimated empirically, e.g., by fitting real-world compression spectra of natural datasets; a falsification condition arises if different datasets yield wildly different fitted `λ`) or potentially derivable from more conventional physical constants (e.g., `λ ≈ (k_B / ħ) · t_P` conjecture). Value set by Mode_R's overall properties, `⟨L⟩`.
+    *   `β` (Beta): Positive constant from MaxEnt (`β = ∂S_Info/∂⟨L⟩`), related to average cost `⟨L⟩ = -∂(log Z)/∂β`. Quantifies prevalence decrease with `L`. It is effectively set once one stipulates the "average information budget" or mean Static Cost `⟨L⟩` for Mode_R. Potentially measurable from compressed-length histograms of natural data.
     *   Changing the universal description method for `K(G)` adds `c_K` to `K(G)`, `exp(-βc_K)` absorbed into `Z`, relative abundances `μ(G₁)/μ(G₂)` unchanged.
 
 ---
@@ -231,7 +247,7 @@ Yields `p(Gᵢ) = (1/Z) exp(-βL(Gᵢ))`, with `Z = Σᵢ exp(-βL(Gᵢ))` (part
 
 **Appendix C: Formal Definition of Irreducible Patterns**
 
-An "irreducible pattern" `G_irr` in Mode_R is a non-trivial pattern not decomposable into simpler finitely specifiable patterns via the defined Morphisms (Def. 0.4). "Simpler" means lower `L(G)`.
+An "irreducible pattern" `G_irr` in Mode_R is a non-trivial pattern not decomposable into simpler finitely specifiable patterns via the defined Morphisms (Def. 0.4). "Simpler" means lower `L(G)`. The existence of such irreducibles is ensured because the rules of composition are L-monotonic (Def. 0.4), establishing 'simpler than' as a well-founded order, guaranteeing that decomposition terminates.
 *   **Objects:** Labeled graphs.
 *   **Morphisms:** Structure-preserving, L-non-increasing maps (Def. 0.4).
 *   **Existence:** Argued via L-ordering and Zorn's Lemma, given L-monotonic, finitary rules operating on finitely specifiable patterns.
@@ -247,13 +263,13 @@ An "irreducible pattern" `G_irr` in Mode_R is a non-trivial pattern not decompos
 *   **`G` (Pattern/Graph):** A specific, finite labeled graph in Mode_R.
 *   **`L(G)` (Static Cost):** `K(G) + λE(G)`.
 *   **`K(G)` (Descriptive Complexity):** Shortest prefix-free program length to specify `G` (relative to fixed universal language).
-*   **`E(G)` (Structural "Effort"/Richness Cost):** `log M(G)`, where `M(G) = #(valid derivation sequences) / |Aut(G)|`.
-*   **`λ` (Lambda):** Exchange rate constant between `K` and `E`.
-*   **Irreducible Pattern (Irreducible):** Basic, non-decomposable pattern in Mode_R.
+*   **`E(G)` (Structural "Effort"/Richness Cost):** `log M(G)`, where `M(G) = #(valid derivation sequences) / |Aut(G)|`. `E(G)` measures how many distinct finite recipes (derivation sequences) justify the same object `G` once symmetries are factored out; more recipes imply higher derivational ambiguity and thus contribute to a higher Static Cost `L(G)`. This is a timeless property, not a temporal process.
+*   **`λ` (Lambda):** Exchange rate constant between `K` and `E`. See Appendix A.
+*   **Irreducible Pattern (Irreducible):** Basic, non-decomposable pattern in Mode_R. See Appendix C.
 *   **`μ(G)` (Statistical Prevalence/Weight):** `(1/Z)exp(-βL(G))`. Algorithmic probability of `G`.
-*   **`β` (Beta):** Constant related to `⟨L⟩`, inverse "informational temperature."
+*   **`β` (Beta):** Constant related to `⟨L⟩`, inverse "informational temperature." See Appendix A.
 *   **`Ω` (Observer-Shape):** Low-`L`, constrained, self-referential information-processing pattern family in Mode_R.
-*   **`C` (Constraint Tuple):** Parameters defining a class of `Ω`, linked to PFS.
+*   **`C` (Constraint Tuple):** Parameters defining a class of `Ω`, linked to PFS and favored by `L(G)` minimization.
 *   **`f` (Internal Ranking Function):** Preferred `L`-minimized ordering of `Ω`'s internal SCCs.
 *   **S₀:** Hypothetical featureless void (informationally void, operationally indistinguishable from non-existence).
 *   **UTM (Universal Turing Machine):** Idealized computational model for defining `K(G)`.
@@ -286,16 +302,18 @@ This classifies patterns `G` in Mode_R (the realm of patterns satisfying PFS) by
 
 **Appendix F: Emergence of Quantum Formalism from Algorithmic Probability in Mode_R**
 
-The statistical measure `μ(G) = (1/Z)exp(-βL(G))` in Mode_R, representing the algorithmic probability of a pattern `G`, provides a foundation for deriving quantum-like phenomenology. This approach aligns with AIT-based interpretations and categorical constructions of quantum mechanics.
+The statistical framework of Mode_R, where patterns are weighted by `μ(G) ∝ exp(-βL(G))`, can be shown to lead to quantum mechanical-like behavior. A key insight from algorithmic probability suggests that if each distinct program or derivation path `π` that generates a pattern `G` contributes an amplitude proportional to `exp(-β L(π)/2)`, where `L(π)` is the Static Cost of the program/path itself, and if the phase of this amplitude depends only on the fine structure of the program/path, then summing these amplitudes over all (or a dominant set of near-minimal) programs/paths leading to `G` can recover quantum probabilities.
+Specifically, the Born rule (`P(outcome) = |amplitude|²`) is conjectured to emerge if this algorithmic probability weighting holds; this is a testable claim, as any other weighting scheme is predicted to fail to recover the Born rule universally. Superposition and decoherence can then be understood in terms of interfering or diverging construction histories for patterns when considered from the perspective of an observer-shape.
 
+The derivation path involves:
 1.  **Universal Semi-Measures and Solomonoff Induction:** `μ(G)` is equivalent to Solomonoff's universal prior over outputs of a universal Turing machine, where `L(G)` is `-log μ(G)` (up to constants and `β` scaling).
-2.  **From Algorithmic Probability to Amplitudes (Conceptual Sketch):**
-    The core idea is that the "probability" `μ(G)` of observing a pattern `G` can be decomposed into contributions from all possible "derivation paths" or "programs" that generate `G`.
-    *   **Path Contribution:** Each distinct derivation path `π_i` leading to `G` has an associated descriptive complexity `K(π_i | G_description_language)`.
-    *   **Phase Assignment:** A complex phase can be assigned to each path, e.g., `exp(i θ(π_i))`, where `θ(π_i)` could be proportional to `K(π_i)` modulo some normalization, or related to other structural properties of the path. For example, one might consider `θ(π_i) = 2π K(π_i) / N_K` where `N_K` is a characteristic complexity scale.
-    *   **Amplitude as Sum Over Paths:** The "amplitude" `ψ(G)` for pattern `G` is formed by summing these complex contributions: `ψ(G) = Σ_i exp(i θ(π_i)) exp(-β L(π_i)/2)`, where `L(π_i)` is the cost associated with path `π_i` (related to `K(π_i)` and potentially `E(π_i)` components). The `exp(-β L(π_i)/2)` term ensures that lower-cost paths contribute more significantly.
-    *   **Born Rule:** The probability of observing `G` is then `P(G) = |ψ(G)|²`, which, when appropriately normalized (e.g., by `Z`), should recover `μ(G)`. The squaring naturally arises from the complex sum representing interfering alternatives.
-    This sketch aligns with AIT-based reasoning. The primary derivation pathway for the full quantum formalism within IC, however, is anticipated to proceed via a categorical construction (`ΔCat`), as detailed in associated technical documents (e.g., `05_Development_and_Roadmap/IC_InProgress_Proofs.md`). The `ΔCat` approach aims to derive Hilbert space structure from IC's operational primitives, with probabilities then arising via Gleason's theorem or similar arguments. These two perspectives (AIT path sums and categorical structure) are expected to be complementary and ultimately consistent.
+2.  **From Algorithmic Probability to Amplitudes:**
+    *   **Path Contribution:** Each distinct derivation path `π_i` leading to `G` has an associated Static Cost `L(π_i)`.
+    *   **Amplitude Assignment:** The amplitude `ψ(π_i)` associated with path `π_i` is `A_0 exp(i θ(π_i)) exp(-β L(π_i)/2)`, where `A_0` is a normalization factor and `θ(π_i)` is a phase determined by the fine structure of `π_i`.
+    *   **Total Amplitude:** The total amplitude for pattern `G` is `Ψ(G) = Σ_i ψ(π_i)`.
+    *   **Born Rule:** The probability of observing `G` is then `P(G) = |Ψ(G)|² / Z'`, where `Z'` is a normalization ensuring probabilities sum to 1. If this specific exponential weighting `exp(-β L(π_i)/2)` for the magnitude of path amplitudes is correct, the Born rule is recovered. This is a falsifiable assertion: if observed quantum probabilities do not conform to this weighting (e.g., if all low-cost paths contribute equally, or with a different exponential factor), this derivation path is incorrect.
+
+This sketch aligns with AIT-based reasoning. The primary derivation pathway for the full quantum formalism within IC, however, is anticipated to proceed via a categorical construction (`ΔCat`), as detailed in associated technical documents (e.g., `05_Development_and_Roadmap/IC_InProgress_Proofs.md`). The `ΔCat` approach aims to derive Hilbert space structure from IC's operational primitives, with probabilities then arising via Gleason's theorem or similar arguments. These two perspectives (AIT path sums and categorical structure) are expected to be complementary and ultimately consistent.
 
 3.  **Superposition and Decoherence:**
     *   **Superposition:** A pattern `G` that could result from multiple, qualitatively different low-cost construction pathways (high `M(G)`) can be thought of as existing in a "superposition" of those potential formative histories until further constraints (akin to measurement) select a specific context.
@@ -309,12 +327,12 @@ This appendix indicates that quantum mechanics might not be an ad-hoc addition b
 
 **Appendix G: Robustness of Statistical Prevalence to Choice of Morphism Rules**
 
-A critical aspect of this theory is whether the statistical landscape of Mode_R, particularly the prevalence measure `μ(G)`, is overly sensitive to the specific choice of "Fundamental Rules for Pattern Composition (Morphisms)" (Def. 0.4). It is conjectured, with supporting arguments (details in preparation), that `μ(G)` is robust under certain general conditions for these rules.
+A critical aspect of this theory is whether the statistical landscape of Mode_R, particularly the prevalence measure `μ(G)`, is overly sensitive to the specific choice of "Fundamental Rules for Pattern Composition (Morphisms)" (Def. 0.4). It is conjectured, with supporting arguments (details in preparation), that `μ(G)` is robust under certain general conditions for these rules. This robustness conjecture is falsifiable: if a counter-example rule-set is produced that meets the general conditions (see below) yet systematically inverts the cheap vs. expensive ranking of patterns compared to another such rule-set, the theory's claim of universality for `μ(G)` would be undermined.
 
 1.  **General Conditions for Morphism Rules:**
     *   **Closure:** Combining valid patterns according to the rules produces valid patterns within Mode_R.
     *   **Finitary:** Rules operate on a finite number of input patterns to produce an output pattern.
-    *   **L-Monotonicity (or L-non-increasing):** The application of a composition rule to form a pattern `G` from components `G_i` does not result in `L(G)` being less than the sum of `L(G_i)` (or, more strictly, components are not more costly than the pattern they form, as stated in Def. 0.4). Decomposition leads to simpler (lower `L` or fewer constituent) parts.
+    *   **L-Monotonicity (or L-non-increasing):** The application of a composition rule to form a pattern `G` from components `G_i` does not result in `L(G)` being less than the sum of `L(G_i)` (or, more strictly, components are not more costly than the pattern they form, as stated in Def. 0.4). Decomposition leads to simpler (lower `L` or fewer constituent) parts; this L-monotonicity also establishes 'simpler than' as a well-founded order, ensuring irreducibles exist.
     *   **Termination of Decomposition:** Any pattern can be decomposed into irreducibles in a finite number of steps.
     *   **Preservation of Distinctions (e.g., Label-Injectivity):** Fundamental distinctions are maintained during composition, preventing arbitrary information loss.
 
@@ -338,7 +356,7 @@ Detailed mathematical proof of this robustness is a subject of ongoing research.
 
 The derivation of fundamental physical constants, such as the fine-structure constant (`α ≈ 1/137`), within Informational Constructivism (IC) is proposed to occur via sophisticated mechanisms involving Renormalization Group (RG) like flows and the identification of stable fixed points in an informational state space (see Section 6.3 and technical documents like `04_Advanced_Topics_and_Applications/IC_Ledger_Todd_Bridge.md`).
 
-However, to illustrate the core *principle* that such constants can be determined by the minimization of a total informational cost, this appendix presents a highly simplified toy model. **This model is purely conceptual and does not represent the full IC derivation pathway for `α` but serves to demonstrate how a balance of costs can lead to a specific, non-arbitrary value for a physical parameter.**
+However, to illustrate the core *principle* that such constants can be determined by the minimization of a total informational cost (`L_total = L(law) + L(observer_model_using_law)` as per Section 6.3), this appendix presents a highly simplified toy model. **This model is purely conceptual and does not represent the full IC derivation pathway for `α` but serves to demonstrate how a balance of costs can lead to a specific, non-arbitrary value for a physical parameter.**
 
 **Conceptual Setup:**
 
