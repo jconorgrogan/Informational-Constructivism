@@ -1,9 +1,7 @@
-# The Necessary Emergence of Ordered Sequential Processing, Structure, and Effective Irreversibility
-## —Or: Why there is "something" and not "nothing" and "causality"
-## Atemporal Constructivism (AC): A Foundational Theory of Reality as Timeless, Structured Information (Version 3.3 - Rigorous Atemporality & Statistical Emphasis)
+**A Foundational Theory of Reality as Timeless, Structured Information**
 
 **Preamble:**
-Atemporal Constructivism (AC) proposes that existence itself, its inherent structure, the appearance of cause and effect, and the subjective experience of time are all necessary features that statistically characterize a fundamental, timeless, and static realm of information. This theory argues that if such a realm exists and possesses certain basic properties, then complex, observer-like structures and their unique experiences are not only possible but are statistically typical components of its very make-up.
+We propose that existence itself, its inherent structure, the appearance of cause and effect, and the subjective experience of time are all necessary features that statistically characterize a fundamental, timeless, and static realm of information. This theory argues that if such a realm exists and possesses certain basic properties, then complex, observer-like structures and their unique experiences are not only possible but are statistically typical components of its very make-up.
 
 ---
 
