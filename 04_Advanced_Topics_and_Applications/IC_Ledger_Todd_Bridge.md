@@ -64,7 +64,7 @@ Using Bernoulli expansion `Φ_Todd(x) = 1 + x/2 + B₂x²/2! + ...`:
 
 **5. The IC Renormalization Group (RG) Cycle and `λ̃`**
 
-The ISG saturation example illustrates an RG-like step: `Δ_proj → Δ_self → Δ_proj`.
+The ISG saturation example (typically understood through the lens of the Prime-Factorization ISG, where x represents reuse depth of prime factors) illustrates an RG-like step: `Δ_proj → Δ_self → Δ_proj`. (For a broader discussion of ISG levels, see 03_Derived_Structures_and_Connections/IC_ISG_Levels_and_Algorithmic_Interpretations.md)
 *   **Δ_proj (Coarse-Graining):** `C₂` and `F_β` are expected to be non-increasing.
 *   **Δ_self (Model Update/Rescaling):** The observer updates its internal model `K` (e.g., to allow a higher resolution threshold `x*`). This costs `ΔK_model`. This step effectively "resets" the system to operate under a new set of rules or a new scale. The impact on `C₂` and `F_β` for the system (now with an updated `K_model`) before it processes new data needs to be analyzed.
 *   **Objective:** Prove that the running coupling `λ̃` flows predictably (e.g., decreases or converges) through this complete `Δ_proj – Δ_self` RG cycle.
