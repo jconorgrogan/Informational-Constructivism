@@ -2,7 +2,7 @@ Why Δ_gen can be treated as ordinary noise using only IC premises
 
 Finite resources force finite barriers
 
-IC’s ledger 
+IC's ledger 
 𝐶
 =
 (
@@ -27,7 +27,7 @@ The registrar is not isolated. All unresolved micro‑degrees of freedom—whate
 
 Because the observer cannot track those micro states within its ledger limits, their effect enters the Mode_L dynamics as an unmodelled fluctuation term.
 
-This is exactly what statistical mechanics calls “noise”. No extra physics is imported; it is a direct consequence of limited resolution.
+This is exactly what statistical mechanics calls "noise". No extra physics is imported; it is a direct consequence of limited resolution.
 
 Fluctuation–dissipation falls out of SUR bookkeeping
 
@@ -98,6 +98,6 @@ No extra generator is needed
 
 The environment is already there once the system is not described at infinite resolution.
 
-Random kicks are simply the residual influence of that underspecified environment on the coarse two‑state model.
+Random kicks are simply the residual influence of that underspecified environment (which can be conceptualized as the vast, unmodeled regions of the total Generative Path Space (GPS) in Mode_R) on the coarse two‑state model.
 
 Therefore Δ_gen is not an extra postulate but the minimal, inevitable by‑product of finite resolution plus finite barriers.

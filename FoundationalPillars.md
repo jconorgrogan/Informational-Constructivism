@@ -14,6 +14,18 @@ This document elaborates on these foundational pillars and their logical interde
 
 Understanding these pillars and their precise logical connections is crucial for grasping the core logic, internal consistency, and predictive power of IC.
 
+This document outlines the foundational pillars of Informational Constructivism (IC). It focuses on locked results that form a stable basis for further development, as well as critical empirical dependencies that shape the framework's falsifiability structure. The term "locked" indicates a result or statement that has achieved a sufficient degree of formalism and verification that it can be cited and built upon without re-checking the supporting details each time.
+
+This document complements the `README.md` roadmap and the more exploratory/cutting-edge proposals in other IC files. It serves as an important reference for understanding and contributing to IC development.
+
+## 1.5 On the Nature of Axioms in IC
+
+It is important to distinguish between two uses of 'axiom' within the Informational Constructivism framework:
+1.  **Mathematical Axioms for Specific Proofs:** For foundational proofs like the Δ-Factorisation Theorem or SUR Cost Linearity, certain properties of operators (e.g., G1, P1, S1) or cost functions are taken as given mathematical axioms. The "locked" status of these theorems indicates their deductive validity *assuming these operator/cost properties*.
+2.  **Emergent Necessities as Foundational Principles:** The broader IC argument (e.g., in `00_Introduction_and_Overview/LogicEmergence.md`, `05_Development_and_Roadmap/IC_FAQ.md`) aims to demonstrate *why* operators with such properties, and cost functions with such characteristics, are themselves necessary emergents or functionally indispensable for any finite, resource-constrained system that persists and processes information.
+
+Thus, the mathematical axioms used in specific "locked" proofs are themselves hypothesized to be grounded in these deeper, emergent functional necessities of information processing in a constrained reality. The overall consistency of IC relies on the coherence between these mathematically defined axiomatic properties and their proposed emergent origins.
+
 ## 2. The Δ-Factorisation Theorem
 
 *   **Core Document:** `01_Core_Axioms_and_Operators/IC_Delta_Factorisation.md`

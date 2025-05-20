@@ -12,7 +12,7 @@ This document provides a rigorous mathematical formalization for two core operat
 2.  Rigorously prove key properties often associated with these operators, namely the **idempotence** of the stabilized self-modeling process and its **compositionality**.
 3.  Demonstrate that the chosen categorical structure (reflective subcategories and idempotent monads) is the **minimal** standard structure required to capture these properties.
 
-This formalization aims to place these IC concepts on a solid mathematical foundation, enabling deeper analysis and integration with other formal systems.
+This formalization aims to place these IC concepts on a solid mathematical foundation, enabling deeper analysis and integration with other formal systems. Future work aims to extend this to a full category ΔCat encompassing all three Δ-operators and their role in transforming observer states, potentially with Δ_gen introducing new structural capabilities or dimensions within the Generative Path Space. This full ΔCat is the target for isomorphism with FdHilb(ℂ).
 
 ## 2. Prerequisites & IC Context
 

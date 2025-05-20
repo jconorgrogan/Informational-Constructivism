@@ -32,6 +32,8 @@ This document explores the connection, focusing on how the candidate running cou
     *   `F_β(ρ) = E(ρ) - β⁻¹K(ρ) = Tr(ρH_N) + β⁻¹Tr(ρ log ρ)` (Free-Energy Gap)
     *   `λ̃(ρ) = C₂(ρ) / (12F_β(ρ))` (Candidate Monotonic Running Coupling)
 
+*   **(Bridging Assumption Note):** The mapping from an IC observer's explicit state Ω = (S, K, M, C) (where |K| is a specific descriptive complexity of its code, a bit string) to a quantum-statistical density matrix ρ (where K(ρ) = -Tr(ρ log ρ) is von Neumann entropy, used in RG analysis) is a non-trivial conceptual step. For the purposes of this RG exploration, we assume that either (a) the observer's internal code K and memory S can be used to define a probabilistic belief state ρ about relevant external degrees of freedom (e.g., the bath H_N), or (b) the observer's internal configuration itself, possibly considered as an ensemble due to finite precision ε, can be characterized by such a ρ. Formalizing this mapping rigorously is an important research task (see ToDo 4.8 in 05_Development_and_Roadmap/ToDos.md).
+
 **3. Mathematical Bridge: Decomposing Todd Functional & C₂ Monotonicity**
 
 Using Bernoulli expansion `Φ_Todd(x) = 1 + x/2 + B₂x²/2! + ...`:

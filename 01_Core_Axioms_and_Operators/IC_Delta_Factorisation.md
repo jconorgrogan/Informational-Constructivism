@@ -14,7 +14,7 @@
 
 | Primitive | Typing | Informal role | Formal axiom(s) |
 |-----------|--------|---------------|-----------------|
-| **Δ_gen** | 𝓡 → 𝓡 | Introduce one new irreducible distinction | **G1 Irreducibility**: if x ≠ y then no z has Δ_gen(z)=x and Δ_gen(z)=y. |
+| **Δ_gen** | 𝓡 → 𝓡 | Introduce one new irreducible distinction | **G1 Irreducibility**: if x ≠ y then no z has Δ_gen(z)=x and Δ_gen(z)=y. (Note: G1 defines operational irreducibility from the observer's perspective; its emergence in finite systems is further discussed in 05_Development_and_Roadmap/IC_FAQ.md and 00_Introduction_and_Overview/LogicEmergence.md.) |
 | **Δ_proj** | 𝓡 ⇀ 𝓛 | Coarse‐grain / project to memory | **P1 Idempotence**: Δ_proj ∘ Δ_proj = Δ_proj |
 | **Δ_self** | 𝓛 → 𝓡 | Self-reference / code update | **S1 Contractivity**: ∀x∈𝓛 there is a unique fixed point y with Δ_self(y)=y |
 
