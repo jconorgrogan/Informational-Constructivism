@@ -103,6 +103,9 @@ We propose that the characteristics we attribute to existence—its inherent str
 
 **3. Observer-Shapes (`Ω`): Coherent, Low-Cost Information-Processing Systems**
 
+_The highest form of knowledge is knowing not what you don’t know, but what you can’t know._
+Observer-like systems reach epistemic closure not by accumulating data, but by mapping the precise limits imposed by their own structure.
+
 **3.1. Definition: Defining Constraints (`C`).**
 *   A set of parameters or limiting conditions that characterize a class of observer-like structures. E.g., `C = (maximum descriptive complexity K_max, maximum representational capacity or memory V_max, minimum internal consistency or representational precision ε_min, bounds on effective processing steps or depth τ_max, ...)`. These are intrinsically linked to the Principle of Finite Specification (PFS 0.2).
     *   *Context:* These constraints `C` are not posited as arbitrary external impositions. Rather, specific ranges for parameters like `K_max` or `V_max` are statistically favored because `L(G_Ω)` (the Static Cost of the observer-shape pattern) tends to exhibit minima at intermediate values: if memory or processing depth is too low, a coherent self-model cannot be encoded; if too high, `K(G_Ω)` for the observer's own specification itself can become prohibitive. These minima define the typical, low-cost ranges for `C`. Their specification cost itself contributes to `L(G_Ω)`.
