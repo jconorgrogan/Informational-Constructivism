@@ -103,7 +103,7 @@ We propose that the characteristics we attribute to existence—its inherent str
 
 **3. Observer-Shapes (`Ω`): Coherent, Low-Cost Information-Processing Systems**
 
-_The highest form of knowledge is knowing not what you don’t know, but what you can’t know._
+_The highest form of knowledge is knowing not what you don't know, but what you can't know._
 Observer-like systems reach epistemic closure not by accumulating data, but by mapping the precise limits imposed by their own structure.
 
 **3.1. Definition: Defining Constraints (`C`).**
@@ -153,6 +153,7 @@ Observer-like systems reach epistemic closure not by accumulating data, but by m
     *   **`Δ_gen` (Generation/Novelty):** Introduction of new irreducible information.
     *   **`Δ_proj` (Projection/Compression):** Information-losing compression/abstraction.
     *   **`Δ_self` / `Δ_cycle` (Self-reference/Cycling):** Internal processing within an SCC.
+    *   **Generative Path Space (GPS):** The set of all possible sequences of these Δ-operations that could construct a given structure. The properties of this GPS (e.g., path length, cost, multiplicity) are integral to a structure's full informational identity. Observer-shapes navigate, compress, and model the GPS of their internal and external environment (see 00_Introduction_and_Overview/GenerativePathSpace.md).
 
 ---
 

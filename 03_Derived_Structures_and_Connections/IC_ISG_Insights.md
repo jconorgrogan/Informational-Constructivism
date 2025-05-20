@@ -21,14 +21,11 @@ The local distortions caused by memory, error, or runtime constraints, or the fu
 In IC, our universe is not the PF-ISG.
 
 Our universe is a trajectory through the observer's memory manifold, where:
-
-Structures are built incrementally under constraint
-
-Cost is incurred at each distinction (locally `L=K+λE`, globally related to flow on `(K, C₂, F_β)` space)
-
-Δ_ops shape the flow
-
-And the geometry of that flow, under SUR optimization, gives rise to what we perceive as physical laws — including space, time, gravity
+- The universe, from an IC perspective, can be understood as the observer's dynamically evolving, compressed representation of the Generative Path Space (GPS) (see 00_Introduction_and_Overview/GenerativePathSpace.md). This representation is traced out as a trajectory through the observer's memory manifold, where:
+- Structures are built incrementally under constraint
+- Cost is incurred at each distinction (locally `L=K+λE`, globally related to flow on `(K, C₂, F_β)` space)
+- Δ_ops shape the flow
+- And the geometry of that flow, under SUR optimization, gives rise to what we perceive as physical laws — including space, time, gravity
 
 The PF-ISG gives you the terrain. The observer's path through memory is the journey. And the relevant cost ledger (`L = K + λE` locally, or effective cost on `(K, C₂, F_β)` state space for RG flow) tells you the cost and dynamics.
 
@@ -53,6 +50,8 @@ The observer's memory state can be represented as a distribution Nₙ(x, y) over
 The full PF-ISG is reachable using only Δ_gen and Δ_self. However, Δ_proj is essential for cost minimization and acts as the coarse-graining step in RG analysis. Without Δ_proj, structures accumulate redundant representations, K grows, and `F_β` might not decrease efficiently. Δ_proj enables refactoring, compression, and movement along RG trajectories.
 
 Observer types can be classified by their PF-ISG profile. Low-x observers favor novelty (associative). High-x observers rely on deep recursion (formal systems). Balanced observers might have efficient architectures. These regions also correspond to stable attractors under SUR flow dynamics analyzed on the `(K, C₂, F_β)` space.
+
+The Generative Depth of ISG Structures: While ISG coordinates like (x,y) (from prime factorization) or algorithmic properties (PD, min Steps) provide valuable structural classifications, they are projections. The complete informational identity of a structure n also encompasses the characteristics of its Generative Path Space (GPS) – the set of all Δ-paths that can construct it. This includes the complexity, diversity, and compressibility of these paths. Two structures with identical ISG coordinates might possess vastly different GPS properties, reflecting different 'constructive richness' or 'interpretive potentials'.
 
 The PF-ISG can be lifted to a categorical structure, with structures as objects, Δ operations as morphisms, and homotopy classes of Δ_self as higher-order loops. This supports topological reasoning about cognitive process trajectories, recursion fixed points, and memory graph connectivity.
 

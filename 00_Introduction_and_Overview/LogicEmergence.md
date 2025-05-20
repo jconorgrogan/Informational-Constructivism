@@ -3,12 +3,16 @@
 **Executive Summary **
 
 What fundamental principles govern any reality capable of stable internal states and information processing, starting only from the concept of **distinction**?
-This paper argues that a chain of necessary consequences leads from basic distinctions to complex, statistically optimized systems.
+This paper argues that a chain of necessary consequences leads from basic distinctions to complex, statistically optimized systems. A key aspect of this emergence is how systems process and structure the Generative Path Space (GPS): the collection of all valid constructive processes that can produce a given state or structure. Logic and cost emerge as systems navigate and compress this GPS.
 
 1.  **Distinction & Constraint**
     A reality must contain distinctions to have structure (avoiding inert uniformity, S₀).
     Realizing *all* distinctions simultaneously (Ω) triggers operational collapse: Ω prevents **stable, selective reference**, activating paradoxes that violate **EFR (Explosion-Free Reference)**.
     Any stable information-bearing reality must therefore lie in **Category C** (Constrained Differences) satisfying EFR.
+
+### 1.5 The Generative Path Space (GPS)
+
+Beyond individual distinctions, IC considers the **Generative Path Space (GPS)** associated with any structure. The GPS for a structure `S` is the set of all valid sequences of Δ-operations (Δ-paths) that could, under the observer's constraints `C`, lead to the formation of `S`. The informational identity of `S` is intrinsically linked to the properties of its GPS (e.g., the number of paths, their lengths, their costs, their structural similarities). Observers effectively navigate, compress, and model this GPS to make sense of their inputs and internal states. The detailed definition and implications of the GPS are found in `00_Introduction_and_Overview/GenerativePathSpace.md`.
 
 2.  **Operational Finiteness**
     A Category C system cannot process infinite complexity in finite time; it needs a **Finite Reachable Set (FRS)** of states per operational cycle.
@@ -130,7 +134,7 @@ Under all preconditions (C + EFR + FRS + F0 + C1/RCR + L5 + PO), dynamic systems
 The observable characteristic of such persistent systems is **Simplicity Under Resource-constraint (SUR)**:
 They exhibit operational trajectories that maintain a bounded average cost (e.g., `L = K + λE` where `K` is descriptive complexity and `E` is other operational costs) and achieve reliable representation, often through generalization, pattern abstraction, and logical inference.
 
-“Simplicity” here means maximum cost-efficiency relative to saturation pressure—not minimal structure. This efficiency is understood as a statistical outcome: among all possible processing histories, those that survive indefinitely are the ones whose local operational choices, whatever their internal implementation, collectively keep the long-run average cost bounded. Describing this survivor-ensemble in aggregate often looks like an explicit minimization of a cost functional.
+"Simplicity" here means maximum cost-efficiency relative to saturation pressure—not minimal structure. This efficiency is understood as a statistical outcome: among all possible processing histories, those that survive indefinitely are the ones whose local operational choices, whatever their internal implementation, collectively keep the long-run average cost bounded. Describing this survivor-ensemble in aggregate often looks like an explicit minimization of a cost functional.
 
 Thus, **advanced Δ_gen modes** (pattern, composition, inference) emerge as strategies statistically favored in SUR-systems.
 

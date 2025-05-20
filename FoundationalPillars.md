@@ -119,3 +119,12 @@ graph TD
 
     classDef locked fill:#d4f8d4,stroke:#333,stroke-width:2px;
     class DeltaFactorisation,SUR_Linearity,RH_Equivalence locked;
+```
+
+These foundational pillars provide the framework for understanding how an IC observer processes information. The Generative Path Space (GPS) (see 00_Introduction_and_Overview/GenerativePathSpace.md) represents the multitude of constructive ways an observer might arrive at a given state or structure.
+
+The Δ-Factorisation Theorem defines the unique, primitive operational steps that constitute any path within the GPS.
+
+The SUR Linearity Theorem (L=K+λE) establishes the fundamental cost associated with traversing paths in the GPS, guiding the observer's selections and optimizations.
+
+The Ledger Stability ⇔ RH Theorem demonstrates how the ability to stably process the GPS of novel, irreducible inputs (modeled as primes) is linked to deep mathematical regularities, ensuring the GPS itself doesn't become unmanageably chaotic or trivially predictable.

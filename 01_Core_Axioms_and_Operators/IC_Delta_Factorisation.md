@@ -99,7 +99,7 @@ Rules (R3–R5) strictly decrease the well-founded pair ⟨|Ω|, max Ω⟩, whil
 All eight critical pairs converge in ≤ 2 steps ⇒ **R** is locally confluent; by Lemma B + Newman’s Lemma it is globally confluent.
 
 ### 2.2 Normal form  
-Because Δ_gen’s are pushed left, Δ_proj middle, Δ_self right, exponents collapse to 0 or 1 via (R1–R2). Unique normal form:
+Because Δ_gen's are pushed left, Δ_proj middle, Δ_self right, exponents collapse to 0 or 1 via (R1–R2). Unique normal form:
 
 \[
 Δ_{\text{gen}}^{\,g}\;∘\;Δ_{\text{proj}}^{\,p}\;∘\;Δ_{\text{self}}^{\,s},\qquad g,p,s\in\{0,1\}.
@@ -127,9 +127,9 @@ f \;=\; Δ_{\text{gen}}^{\,g}\;∘\;Δ_{\text{proj}}^{\,p}\;∘\;Δ_{\text{self}
 
 | Flag | Meaning |
 |------|---------|
-| g = 1 | At least one new irreducible distinction is generated. |
-| p = 1 | Some potential pattern is collapsed into memory (projection). |
-| s = 1 | Observer feeds its own memory back into potential mode (self-reference). |
+| g = 1 | At least one new irreducible distinction is generated. Δ_gen introduces irreducible distinctions, which serve as the foundational elements for constructing paths within a Generative Path Space (GPS). |
+| p = 1 | Some potential pattern is collapsed into memory (projection). Δ_proj acts to stabilize and compress information. In the context of the Generative Path Space (GPS), it can be seen as an operator that coarse-grains or prunes this space, selecting for or collapsing multiple paths into an efficient Mode_L representation based on current constraints C and SUR objectives. |
+| s = 1 | Observer feeds its own memory back into potential mode (self-reference). Δ_self facilitates internal model updates and recursion. It allows an observer to build and refine models of its state S and environment, which can be interpreted as constructing compressed representations or generative rules for navigating and understanding subsets of the Generative Path Space (GPS). |
 
 Exactly \(2^{3}=8\) canonical operation classes exist.
 

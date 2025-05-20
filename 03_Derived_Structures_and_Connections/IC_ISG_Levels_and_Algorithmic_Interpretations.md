@@ -16,6 +16,8 @@ The traditional "Prime-Factorization ISG" (detailed in `IC_ISG_Definition.md`), 
 
 ## 2. Level 0: The Observer-Fixed Algorithmic ISG
 
+Level 0 provides coordinates for a structure n that arise from an observer Ω_obs analyzing the Generative Path Space (GPS) associated with n (see 00_Introduction_and_Overview/GenerativePathSpace.md for a full definition of GPS). Key measures of this GPS for n relative to M_obs are:
+
 ### 2.1 Definition
 For a specific observer `Ω_obs` characterized by a fixed interpreter (or Universal Turing Machine implementing IC primitives) `M_obs` and a finite ledger `C_obs`:
 
@@ -30,10 +32,10 @@ The Level 0 ISG coordinates for an output `n` relative to `M_obs` are:
 
 1.  **`x_obs(n) = PD(n|M_obs)` (Projection Degeneracy):**
     *   `PD(n|M_obs) = |{p ∈ MinProgs(n|M_obs)}|`
-    *   This is the number of distinct minimal programs under `M_obs` that output `n`. It measures the ambiguity or generative multiplicity of `n` for that specific observer.
+    *   This represents the multiplicity or degeneracy within the Generative Path Space (GPS) of n, specifically counting the distinct minimal programs (Δ-paths) under M_obs that output n.
 
 2.  **`y_obs(n) = min_{p ∈ MinProgs(n|M_obs)} Steps(p|M_obs)` (Minimal Δ-Step Cost):**
-    *   This is the minimum number of primitive IC Δ-operations required by any minimal program to produce `n` using interpreter `M_obs`. It measures structural effort.
+    *   This is the minimum number of primitive IC Δ-operations found in any minimal program (Δ-path) within the Generative Path Space (GPS) of n, executed by M_obs.
 
 All costs associated with `M_obs` (its own description length `K(M_obs)`), program `p` (`len(p)`), working memory, and energy are accounted for within the observer's finite ledger `C_obs`.
 
@@ -43,7 +45,19 @@ All costs associated with `M_obs` (its own description length `K(M_obs)`), progr
 *   **Empirical Grounding:** For simple `M_obs` and small `n`, these quantities might be enumerable or estimable, useful for simulations and proofs-of-concept.
 *   **The Prime-Factorization ISG as an Instance:** The ISG detailed in `IC_ISG_Definition.md` (with `x = max_exponent`, `y = sum_exponents`) can be viewed as a highly relevant Level 0 grid where `M_obs` is implicitly an interpreter optimized for processing numbers via their prime factors. Its "Δ-steps" are analogous to the count of prime factors.
 
+### 2.3 Characterizing the GPS at Level 0
+
+Beyond just counting minimal programs (`PD`) or finding the shortest path (`min Steps`), an observer at Level 0 can further characterize the `GPS(n|M_obs)` by examining distinctions among its paths:
+*   **Path Length Distribution:** Not just the minimum, but the distribution of lengths of all programs in `MinProgs(n|M_obs)` or a broader set of considered paths.
+*   **Path Modularity:** Identifying common sub-programs or sub-sequences of Δ-operations that are reused across different paths in the GPS.
+*   **Path Abstraction:** Assessing the extent to which paths utilize generalized rules or higher-level macros (composed from primitive Δ-ops) versus explicit step-by-step constructions.
+*   **Path Cost Distribution:** Analyzing the distribution of SUR costs (`L = K + λE`) associated with the different paths in the GPS.
+
+The observer's `Δ_proj` and `Δ_self` operations effectively act to compress and model this GPS, selecting for or constructing efficient representations of it.
+
 ## 3. Level 1: The Interpreter-Sweeping Meta-Grid
+
+Level 1 aims to identify frame-invariant properties of a structure n by analyzing its Generative Path Space (GPS) not from the perspective of a single observer, but by considering a regularized sweep over a class of efficient interpreters M.
 
 ### 3.1 Definition
 Level 1 aims to identify properties of structures that are robust or characteristic across a wide range of possible observers (interpreters). It involves a conceptual "sweep" over a defined class of interpreters `M`, regularized by the descriptive complexity of the interpreter itself, `K(M)`.
