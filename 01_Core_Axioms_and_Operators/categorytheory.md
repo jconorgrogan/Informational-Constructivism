@@ -22,6 +22,7 @@ This document assumes familiarity with basic category theory concepts (categorie
 *   **Mode_L:** The space/category of memory-stable, observer-accessible structures; a constrained subset/view of Mode_R.
 *   **`Δ_proj`:** The IC operation that takes a structure from Mode_R and collapses/compresses it into its best representation within Mode_L under resource constraints (`C`).
 *   **`Δ_self`:** The IC operation representing the system applying its internal model to itself, updating its code/memory, often described as reaching a stabilized state or fixed point.
+*   **Generative Path Space (GPS):** It's understood in IC that 'potential information structures' (objects of `$\mathcal{C}$`) and 'memory-stable structures' (objects of `$\mathcal{M}$`) each have an associated, observer-relative **Generative Path Space (GPS)** (see `00_Introduction_and_Overview/GenerativePathSpace.md`). Morphisms can be seen as transformations that also act on or relate their respective GPSs. `Δ_proj` (`L`) and `Δ_self` (`T`) represent specific ways of processing or modeling these GPSs under constraints.
 
 ## 3. Categorical Setup: Reflection
 

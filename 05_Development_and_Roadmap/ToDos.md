@@ -82,4 +82,16 @@ This section incorporates the "Part A Clean findings" from the original `ToDos.m
 
 ---
 
+## 6. Generative Path Space (GPS) Research
+
+| #   | Task / Goal                                           | Significance                                                              | Key Sub-Tasks / Notes                                                                                                   | Related Docs                     |
+| :-- | :---------------------------------------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------- |
+| 6.1 | **Formalize Metrics/Topology on GPS**                 | Enables quantitative comparison of GPSs and path structures.            | • Define distance metrics between Δ-paths (e.g., edit distance, cost difference). <br>• Explore topological properties (e.g., connectivity, holes) of GPS for certain classes of structures.     | `00_Introduction_and_Overview/GenerativePathSpace.md`         |
+| 6.2 | **Develop GPS Complexity Measures**                     | Quantify the "richness," "density," or "difficulty" of a GPS.           | • Beyond PD and min_Steps, investigate measures for GPS structural complexity (e.g., using graph theory on path relationships, algorithmic entropy of the path set, or fractal dimension of the GPS). | `03_Derived_Structures_and_Connections/IC_ISG_Levels_and_Algorithmic_Interpretations.md`         |
+| 6.3 | **Model Dynamics of GPS Representation by Observer**  | Understand how an observer's internal model of a GPS evolves.           | • How does `Δ_self` update the internal representation (`K`) of a GPS? <br>• Can the observer's learning/adaptation be modeled as a flow or search on a meta-manifold of GPS models?      | `Δ_self` definitions, `02_SUR_Dynamics_and_Cost/IC_Operationalizing_Contrast.md`            |
+| 6.4 | **GPS for Abstract/Non-Numerical Structures**       | Extend applicability of GPS beyond ISG number-theoretic examples.       | • Explore the structure of GPS for logical propositions, scientific theories, linguistic structures, or even hypothesized qualia structures.                                                                | `04_Advanced_Topics_and_Applications/IC_Consciousness_Link.md`       |
+| 6.5 | **Relationship between GPS and `(K, C₂, F_β)` Space** | Connect the generative view with the RG state variable view.          | • How do properties of a structure's GPS map to or influence its coordinates `(K, C₂, F_β)` in the RG state space? <br>• Does SUR optimization over GPS lead to specific trajectories in the RG space? | `04_Advanced_Topics_and_Applications/IC_Ledger_Todd_Bridge.md`        |
+
+---
+
 This list will be updated as tasks are completed, new research questions emerge, or priorities shift.
