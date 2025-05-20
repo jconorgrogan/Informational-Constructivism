@@ -11,6 +11,8 @@ Formally, if `S` is a structure, then `GPS(S, C) = { path_i | path_i is a Δ-pat
 
 Each `path_i` is a sequence of `Δ_gen`, `Δ_proj`, and `Δ_self` operations.
 
+The 'distinguishable structure S' mentioned above can vary in scope. It might be a specific symbolic string in an observer's memory, a recognized pattern (like an integer `n` on an ISG), a complex data structure, the observer's entire internal code `K`, or even its complete memory state `S_Ω`. The GPS framework is versatile enough to consider the constructive history of any well-defined, memory-stabilized (Mode_L) informational entity.
+
 ## 2. Significance in IC
 
 The GPS is a foundational concept in IC because it shifts the definition of a structure's informational identity beyond its mere static form. In IC, a structure `S` is not just "what it is," but is more comprehensively defined by:
@@ -36,7 +38,7 @@ Observers can apply `Δ_ops` (especially `Δ_proj` and `Δ_self`) to distinguish
 *   **Δ-Operators:** These are the fundamental operations that define the edges and traversals within the GPS.
 *   **SUR (Simplicity Under Resource-constraint):** SUR acts as a selection pressure *on* the GPS. Observers statistically favor paths within the GPS that are cost-efficient, leading to the emergence of particular structures and processing strategies.
 *   **ISG (Integer Structure Grid):** Points on an ISG (like the Prime-Factorization ISG) represent projections of structures. Each such point `n` has an associated `GPS(n, C)`. The ISG coordinates offer one view, while the properties of `GPS(n, C)` offer a deeper, generative view.
-*   **Observer (Ω):** The observer navigates, models, and compresses regions of the vast potential GPS, with its internal state `K` representing a compressed model of its explored GPS.
+*   **Observer (Ω):** The observer navigates, models, and compresses regions of the vast potential GPS. Its internal state `K` (its code) not only represents predictive models of its environment but also implicitly or explicitly contains a compressed model of the GPS for relevant structures. `Δ_self` plays a crucial role in refining this internal GPS model, guided by SUR, enabling the observer to learn more efficient construction paths or generative rules.
 *   **Mode_R and Mode_L:** Mode_R can be seen as the ultimate, unconstrained potential GPS. Mode_L contains structures whose GPS has been sufficiently constrained and processed by the observer to become stable and referable.
 
 ## 5. Conclusion

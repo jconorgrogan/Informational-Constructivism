@@ -96,7 +96,7 @@ Rules (R3–R5) strictly decrease the well-founded pair ⟨|Ω|, max Ω⟩, whil
 | self ◦ self ◦ proj | collapse then swap | swap then collapse | self proj |
 | proj ◦ self ◦ gen | swap then lift | lift then swap | gen proj self |
 
-All eight critical pairs converge in ≤ 2 steps ⇒ **R** is locally confluent; by Lemma B + Newman’s Lemma it is globally confluent.
+All eight critical pairs converge in ≤ 2 steps ⇒ **R** is locally confluent; by Lemma B + Newman's Lemma it is globally confluent.
 
 ### 2.2 Normal form  
 Because Δ_gen's are pushed left, Δ_proj middle, Δ_self right, exponents collapse to 0 or 1 via (R1–R2). Unique normal form:
@@ -129,7 +129,7 @@ f \;=\; Δ_{\text{gen}}^{\,g}\;∘\;Δ_{\text{proj}}^{\,p}\;∘\;Δ_{\text{self}
 |------|---------|
 | g = 1 | At least one new irreducible distinction is generated. Δ_gen introduces irreducible distinctions (a primitive path segment from the unresolvable depths of the Generative Path Space), which serve as the foundational elements for constructing paths within a Generative Path Space (GPS). |
 | p = 1 | Some potential pattern is collapsed into memory (projection). Δ_proj acts to stabilize and compress information. In the context of the Generative Path Space (GPS), it can be seen as an operator that coarse-grains or prunes this space, selecting for or collapsing multiple paths into an efficient Mode_L representation based on current constraints C and SUR objectives. |
-| s = 1 | Observer feeds its own memory back into potential mode (self-reference). Δ_self facilitates internal processing where the observer assesses its own structure, potentially finding new patterns. In the context of the Generative Path Space (GPS), Δ_self enables the observer to navigate, model, and optimize within the GPS by applying its current constraints and models to itself recursively. |
+| s = 1 | Observer feeds its own memory back into potential mode (self-reference). Δ_self facilitates internal processing where the observer assesses its own structure and internal model K in light of its state S and the experienced SUR cost L (or related RG variables). This process can lead to modifications of K. In the context of the Generative Path Space (GPS), Δ_self enables the observer to navigate within its currently understood GPS, and critically, to *refine its internal model K which represents this GPS*, by applying its current constraints and models to itself recursively. This allows for learning more efficient generative rules or path selection strategies. |
 
 Exactly \(2^{3}=8\) canonical operation classes exist.
 

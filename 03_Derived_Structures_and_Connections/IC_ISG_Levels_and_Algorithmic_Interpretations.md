@@ -37,6 +37,8 @@ The Level 0 ISG coordinates for an output `n` relative to `M_obs` are:
 2.  **`y_obs(n) = min_{p ∈ MinProgs(n|M_obs)} Steps(p|M_obs)` (Minimal Δ-Step Cost):**
     *   This is the minimum number of primitive IC Δ-operations found in any minimal program (Δ-path) within the Generative Path Space (GPS) of n, executed by M_obs.
 
+These Level 0 ISG coordinates are fundamentally properties derived from the observer `Ω_obs`'s analysis of its Generative Path Space `GPS(n, M_obs, C_obs)`. `PD(n|M_obs)` reflects the degeneracy of minimal paths found within this GPS, while `y_obs(n)` (Minimal Δ-Step Cost) reflects the length of the shortest such path.
+
 All costs associated with `M_obs` (its own description length `K(M_obs)`), program `p` (`len(p)`), working memory, and energy are accounted for within the observer's finite ledger `C_obs`.
 
 ### 2.2 Role and Significance
@@ -47,7 +49,7 @@ All costs associated with `M_obs` (its own description length `K(M_obs)`), progr
 
 ### 2.3 Characterizing the GPS at Level 0
 
-Beyond just counting minimal programs (`PD`) or finding the shortest path (`min Steps`), an observer at Level 0 can further characterize the `GPS(n|M_obs)` by examining distinctions among its paths:
+The Level 0 ISG coordinates (`PD(n|M_obs)` and `y_obs(n)`) provide a coarse-grained summary of `GPS(n|M_obs)`. A deeper characterization involves examining distinctions among its paths:
 *   **Path Length Distribution:** Not just the minimum, but the distribution of lengths of all programs in `MinProgs(n|M_obs)` or a broader set of considered paths.
 *   **Path Modularity:** Identifying common sub-programs or sub-sequences of Δ-operations that are reused across different paths in the GPS.
 *   **Path Abstraction:** Assessing the extent to which paths utilize generalized rules or higher-level macros (composed from primitive Δ-ops) versus explicit step-by-step constructions.

@@ -42,6 +42,8 @@ But processing information isn't free. Any real system faces **Resource Constrai
 Crucially, these constraints aren't static. Systems adapt, and the environment fluctuates. IC models the co-evolution of the system and its constraints.
 
 **(Box 2: Constraints as a dynamical vector & RG State Space)**
+> Applying Renormalization Group (RG) style analysis, typically formulated using quantum-statistical states `ρ` and associated variables like von Neumann entropy `K(ρ)`, surprisal variance `C₂(ρ)`, and free-energy gap `F_β(ρ)`, to the IC observer `Ω = (S, K, M, C)` (with its explicit code `|K|`) involves a conceptual bridge. This assumes that the observer's state or its beliefs about an environment can be appropriately represented by such a `ρ`. Formalizing this mapping is an important ongoing research task (see ToDo 4.8 in `05_Development_and_Roadmap/ToDos.md`).
+> 
 > The ledger C(t) evolves. Dynamics relevant for Renormalization Group (RG) flow often occur on a state space parametrized by quantities like entropy (`K`), surprisal variance (`C₂`), and the free-energy gap (`F_β`) relative to the unresolved background.
 > The flow under coarse-graining (`Δ_proj`) might follow trajectories that appear to be governed by:
 > ```

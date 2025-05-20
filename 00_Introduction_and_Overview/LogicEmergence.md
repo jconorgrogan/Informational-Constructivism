@@ -37,6 +37,8 @@ Beyond individual distinctions, IC considers the **Generative Path Space (GPS)**
 
 *Result*: Logic (foundational and advanced Δ_gen modes) and the SUR trait (reflecting statistically favored efficient encoding) are internally derived, mutually reinforcing pillars for this class of persistent, information-processing systems, which we can term **SUR-systems**.
 
+While this document primarily outlines the emergence of logic and SUR for an individual observer, these principles extend to systems of multiple interacting observers. In such systems, SUR would also drive the co-evolution of communication protocols and shared models. A 'consensus reality' can be understood as emerging from the intersection of their efficiently constructed and inter-translatable representations of their shared Generative Path Spaces, constrained by their respective Ledgers C and the imperative for collective SUR-efficiency. This concept is further explored in Tier T10 of `02_SUR_Dynamics_and_Cost/IC_Operationalizing_Contrast.md` and is a subject of ongoing research (see ToDo Y.1 in `05_Development_and_Roadmap/ToDos.md`).
+
 ---
 
 ## Glossary of Key Terms & Preconditions
