@@ -3,37 +3,6 @@
 **Preamble:**
 We propose that the characteristics we attribute to existence—its inherent structure, the appearance of cause and effect, and the subjective experience of time—can be understood as necessary features that statistically distinguish typical observer-like structures. These structures, and the finitely specifiable patterns they process, are argued to emerge as typical components of a fundamental informational landscape, itself characterized by the operational necessities of distinction and finite processing. This theory argues that if such a landscape exists and possesses certain basic properties, then these complex observer-shapes, and their unique experiential perspectives, are not merely possible but are statistically favored components of its make-up.
 
-**TLDR**
-
-1.  **Differences MUST Exist:**
-    *   For anything to "be," it must be possible for things to be distinct or different from each other. Absolute sameness is like nothingness.
-
-2.  **To Register a Difference, It Needs a Finite "Recipe":**
-    *   Any system, however simple, that recognizes a pattern or a difference must do so using a limited, finite description or set of instructions.
-
-3.  **The Landscape of All Finitely "Drawable" Blueprints:**
-    *   All possible patterns that can be precisely described with a finite recipe make up a fundamental, timeless collection of potential structures.
-
-4.  **Every Blueprint Has a "Price" Based on Simplicity & Construction:**
-    *   Blueprints needing short, simple recipes are "cheaper."
-    *   Blueprints that can be assembled in fewer, clear ways from basic building blocks (factoring out symmetries; more distinct recipes for the *same structure* imply higher 'derivational ambiguity' and thus contribute to a higher structural price component) also have a lower combined "structural price."
-    *   The total "price" combines these aspects.
-
-5.  **"Cheaper" Blueprints are Overwhelmingly More Common:**
-    *   In the vast collection of all possible blueprints, the low-price ones are statistically far more numerous.
-
-6.  **"Observer-like" Patterns are Common Types of Low-Price, Complex Blueprints:**
-    *   Among these common blueprints, some are complex enough to contain information about themselves and their surroundings. These "observer-like" blueprints must also be low-price to be common, a characteristic often facilitated because the ability to compactly model or reference their own structure can reduce overall descriptive cost.
-
-7.  **The "Feeling of Time Passing" Comes from an Observer's Fixed, Ordered Internal Design:**
-    *   These observer-like blueprints have an efficient, built-in sequence for how their internal information is arranged.
-    *   What feels like "time flowing" is akin to awareness moving step-by-step through this pre-existing, ordered internal design (the "movie" is on the "reel").
-    *   Time seems to go one way because information is often summarized along this internal sequence, which is hard to perfectly reverse.
-
-8.  **Logic, Math, and "Laws of Nature" are the "Cheapest" Ways to Organize Information within Observers:**
-    *   These fundamental rules are incredibly efficient (low-price) ways for observer-like patterns to process information consistently and make sense of things. That's why they appear as common features of how such patterns operate.
----
-
 **0. Fundamental Basis: The Nature of Reality and Observation**
 
 **0.1. Axiom of Minimal Existence (AME): Distinctions Can Be Made.**
