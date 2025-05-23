@@ -6,7 +6,7 @@
 
 If any system is to successfully describe our universe (or indeed, any reality capable of being represented), what fundamental operational capacities must it possess? Informational Constructivism (IC) argues that logic, mathematics, and the very structure of observation are not arbitrary choices but are forced consequences of these minimal, unavoidable capacities. The definitive articulation of this pre-axiomatic foundation is presented in the manuscript. 
 
-**► [The Co-Necessitated Foundations of Mathematical Structure: From the Operational Quartet to Logic and Arithmetic]([./00_Foundational_Manuscript/CoNecessitatedFoundations.md](https://github.com/jconorgrogan/Informational-Constructivism/blob/main/The%20Co-Necessitated%20Foundations%20of%20Mathematical%20Structure.md))**
+**► [The Co-Necessitated Foundations of Mathematical Structure: From the Operational Quartet to Logic and Arithmetic]([https://github.com/jconorgrogan/Informational-Constructivism/blob/main/The%20Co-Necessitated%20Foundations%20of%20Mathematical%20Structure.md)**
 
 ---
 **Abstract of the Foundational Manuscript:**
