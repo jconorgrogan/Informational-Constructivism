@@ -1,11 +1,10 @@
 # A Foundational Theory of Reality as Timeless, Structured Information
-# Informational Constructivism (IC)
 
 **A Framework for Deriving Reality from First Principles of Information Processing under Resource Constraints**
 
 ## 1. The Core Foundational Argument of Informational Constructivism
 
-Informational Constructivism (IC) posits that logic, mathematics, and ultimately the structures of observable reality emerge not from arbitrarily chosen axioms but from **operationally necessary capacities** inherent in any system capable of representation. The definitive articulation of this pre-axiomatic foundation is presented in the manuscript:
+If any system is to successfully describe our universe (or indeed, any reality capable of being represented), what fundamental operational capacities must it possess? Informational Constructivism (IC) argues that logic, mathematics, and the very structure of observation are not arbitrary choices but are forced consequences of these minimal, unavoidable capacities. The definitive articulation of this pre-axiomatic foundation is presented in the manuscript. 
 
 **► [The Co-Necessitated Foundations of Mathematical Structure: From the Operational Quartet to Logic and Arithmetic](./00_Foundational_Manuscript/CoNecessitatedFoundations.md)**
 
