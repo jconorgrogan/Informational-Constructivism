@@ -1,6 +1,6 @@
 # A Foundational Theory of Reality as Timeless, Structured Information
 
-**TLDR: Reality as the closure of distinction**
+**TLDR**
 
 0. **Distinction (δ) is logically inescapable.**  
    → Any statement, system, or act of representation presupposes that something is distinct from something else.  
@@ -61,7 +61,7 @@
 > **Conclusion:**  
 > Once distinction is unavoidable, and once even two distinctions are registered and preserved,  
 > the structural machinery of time, identity, and space **follows necessarily**.  
-> Reality may not be built on axioms, it is the recursive closure of distinguishable structure.
+> Reality is what emerges when you apply the act of distinction recursively and retain its outcomes in a consistent structure..
 
 
 ## 1. The Core Foundational Argument of Informational Constructivism
