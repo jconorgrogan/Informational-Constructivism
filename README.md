@@ -3,46 +3,63 @@
 **A Framework for Deriving Reality from First Principles of Information Processing under Resource Constraints**
 
 TLDR:
+0. **Distinction (δ) is logically inescapable.**  
+   → Any statement, system, or act of representation presupposes that something is distinct from something else.  
+   → Even the claim “nothing is distinct” distinguishes itself from its negation.  
+   → Therefore, **distinction is the minimal structural prerequisite for being**.
 
-0. Distinction (D) is logically inescapable.  
-   → The concept of “no distinction” is self-defeating.  
-   → Any attempt to state, think, or represent “no distinctions” necessarily distinguishes that state from its negation.  
-   → Therefore, distinction is not optional—it is the precondition of being, representation, and structure.
-1. For any distinction to play a role, it must be recognized.  
-   → An unrecognized distinction is indistinguishable from none.  
-   → Recognition implies registration: the distinction must persist as a usable state.
-2. Recognition of difference requires comparing two states.  
-   → To detect change, the system must distinguish “now” from “before.”  
-   → This necessitates comparison.
-3. Comparison requires the prior state be preserved.  
-   → This implies memory: a capacity to hold distinctions over time.  
-   → A single registered distinction instantiates primitive Collection (C₀).
-4. When multiple distinctions are registered, they must remain individually addressable.  
-   → This requires Operational Ordering (O): a structure that maintains their separation.  
-   → Without ordering, multiple distinctions collapse into indistinct noise.
-5. The ordered sequence of registered distinctions defines time.  
-   → Time = the structured memory of successive differences.  
-   → It is not imposed; it emerges once ordered registration occurs.
-6. For comparisons to be meaningful, a reference frame must remain stable.  
-   → This stability defines the system’s identity.  
-   → Identity is necessary for persistence across changes.
-7. Identity implies contrast.  
-   → The system must determine whether a change affects itself (internal) or not (external).  
-   → This forces a binary classification of events.
-8. This internal/external split is structurally required.  
-   → Without it, identity is undefined and memory cannot be anchored.  
-   → The system cannot locate itself within change.
-9. Internal changes define the system’s own trajectory.  
-   → This is internal time: how the system changes with respect to itself.
-10. External changes that recur are grouped into persistent patterns.  
-    → Grouping stabilizes structure and reduces memory cost.  
-    → These structures are experienced as external and stable.
-11. The organized map of persistent external patterns is space.  
-    → Space = a structure imposed on non-self change across time.  
-    → Therefore, space emerges from time: space ⊂ time.
-12. Internal and external are co-defined.  
-    → A system cannot exist with only one.  
-    → The boundary is necessary for persistence, coherence, and structure.
+1. **A distinction plays a role only if it is registered.**  
+   → An unregistered distinction is functionally indistinct.  
+   → Registration = persistence of δ(x, y) = 1 as a usable structure.
+
+2. **Registration implies comparison between states.**  
+   → Recognition of “something changed” means δ(A, B) = 1 must be distinguishable from δ(A, B) = 0.  
+   → This defines meta-distinction: a distinction between distinction outcomes.
+
+3. **Comparison requires that prior outcomes remain structurally accessible.**  
+   → This necessitates a memory condition:  
+   → Not temporal memory, but **closure under re-application of δ** —  
+     i.e., past distinctions must remain distinguishable within the current structure.
+
+4. **Multiple distinguishable registrations require structural separability.**  
+   → If δ(D₁, D₂) = 1, then D₁ and D₂ must remain addressable as distinct.  
+   → This entails **Operational Ordering (O)**: distinguishable states induce a partial order.
+
+5. **The induced partial order over registered distinctions is time.**  
+   → **Time is not assumed**; it emerges as the directed structure of registered distinction-relations.  
+   → Time = the invariant order imposed by distinguishability among registered outcomes.
+
+6. **For comparisons to be coherent, a stable evaluative frame must exist.**  
+   → This is **identity**: the system’s structure that persists across distinctions.  
+   → Identity is not assumed; it is defined by fixed-point stability under δ.
+
+7. **Identity necessitates contrast.**  
+   → To preserve itself, the system must distinguish what alters its structure (internal)  
+     from what does not (external).
+
+8. **This induces the internal/external boundary.**  
+   → The distinction between self-modifying and non-self-modifying δ events is structurally entailed.  
+   → Without it, coherent self-persistence is impossible.
+
+9. **Internal change defines the system’s trajectory.**  
+   → This is **internal time**: the system’s path through distinguishable self-modifications.
+
+10. **External distinctions that recur are grouped into compressible patterns.**  
+    → This defines **Collection (C)** and enables reuse.  
+    → Repeated external patterns stabilize into persistent structures.
+
+11. **The stable map of externalized, organized distinctions is space.**  
+    → **Space = the structure imposed on non-self distinctions over the system’s internal time.**  
+    → Therefore, **space emerges from time**, and **space ⊂ time**.
+
+12. **Internal and external are co-defined through the boundary.**  
+    → The system cannot exist with only one side.  
+    → The self/not-self distinction is a necessary structural condition for persistence.
+
+> **Conclusion:**  
+> Once distinction is unavoidable, and once even two distinctions are registered and preserved,  
+> the structural machinery of time, identity, and space **follows necessarily**.  
+> Reality is not built on axioms—it is the recursive closure of distinguishable structure.
 
 
 ## 1. The Core Foundational Argument of Informational Constructivism
