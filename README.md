@@ -2,7 +2,8 @@
 
 **A Framework for Deriving Reality from First Principles of Information Processing under Resource Constraints**
 
-TLDR:
+**TLDR:**
+
 0. **Distinction (δ) is logically inescapable.**  
    → Any statement, system, or act of representation presupposes that something is distinct from something else.  
    → Even the claim “nothing is distinct” distinguishes itself from its negation.  
