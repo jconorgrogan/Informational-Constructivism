@@ -2,6 +2,49 @@
 
 **A Framework for Deriving Reality from First Principles of Information Processing under Resource Constraints**
 
+TLDR:
+
+0. Distinction (D) is logically inescapable.  
+   → The concept of “no distinction” is self-defeating.  
+   → Any attempt to state, think, or represent “no distinctions” necessarily distinguishes that state from its negation.  
+   → Therefore, distinction is not optional—it is the precondition of being, representation, and structure.
+1. For any distinction to play a role, it must be recognized.  
+   → An unrecognized distinction is indistinguishable from none.  
+   → Recognition implies registration: the distinction must persist as a usable state.
+2. Recognition of difference requires comparing two states.  
+   → To detect change, the system must distinguish “now” from “before.”  
+   → This necessitates comparison.
+3. Comparison requires the prior state be preserved.  
+   → This implies memory: a capacity to hold distinctions over time.  
+   → A single registered distinction instantiates primitive Collection (C₀).
+4. When multiple distinctions are registered, they must remain individually addressable.  
+   → This requires Operational Ordering (O): a structure that maintains their separation.  
+   → Without ordering, multiple distinctions collapse into indistinct noise.
+5. The ordered sequence of registered distinctions defines time.  
+   → Time = the structured memory of successive differences.  
+   → It is not imposed; it emerges once ordered registration occurs.
+6. For comparisons to be meaningful, a reference frame must remain stable.  
+   → This stability defines the system’s identity.  
+   → Identity is necessary for persistence across changes.
+7. Identity implies contrast.  
+   → The system must determine whether a change affects itself (internal) or not (external).  
+   → This forces a binary classification of events.
+8. This internal/external split is structurally required.  
+   → Without it, identity is undefined and memory cannot be anchored.  
+   → The system cannot locate itself within change.
+9. Internal changes define the system’s own trajectory.  
+   → This is internal time: how the system changes with respect to itself.
+10. External changes that recur are grouped into persistent patterns.  
+    → Grouping stabilizes structure and reduces memory cost.  
+    → These structures are experienced as external and stable.
+11. The organized map of persistent external patterns is space.  
+    → Space = a structure imposed on non-self change across time.  
+    → Therefore, space emerges from time: space ⊂ time.
+12. Internal and external are co-defined.  
+    → A system cannot exist with only one.  
+    → The boundary is necessary for persistence, coherence, and structure.
+
+
 ## 1. The Core Foundational Argument of Informational Constructivism
 
 If any system is to successfully describe our universe (or indeed, any reality capable of being represented), what fundamental operational capacities must it possess? Informational Constructivism (IC) argues that logic, mathematics, and the very structure of observation are not arbitrary choices but are forced consequences of these minimal, unavoidable capacities. The definitive articulation of this pre-axiomatic foundation is presented in the manuscript. 
