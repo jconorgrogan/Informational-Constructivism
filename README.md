@@ -4,6 +4,8 @@
 
 **TLDR:**
 
+# Logic Chain: Reality as the Closure of Distinction
+
 0. **Distinction (δ) is logically inescapable.**  
    → Any statement, system, or act of representation presupposes that something is distinct from something else.  
    → Even the claim “nothing is distinct” distinguishes itself from its negation.  
@@ -14,24 +16,26 @@
    → Registration = persistence of δ(x, y) = 1 as a usable structure.
 
 2. **Registration implies comparison between states.**  
-   → Recognition of “something changed” means δ(A, B) = 1 must be distinguishable from δ(A, B) = 0.  
-   → This defines meta-distinction: a distinction between distinction outcomes.
+   → Recognition of “something changed” means the system must distinguish between two registered states.  
+   → This involves comparing δ(A, B) = 1 (distinguished) versus δ(A, B) = 0 (not distinguished = no distinction registered).
 
 3. **Comparison requires that prior outcomes remain structurally accessible.**  
    → This necessitates a memory condition:  
    → Not temporal memory, but **closure under re-application of δ** —  
-     i.e., past distinctions must remain distinguishable within the current structure.
+     i.e., prior distinctions must remain available to be re-distinguished within the current structure.
 
 4. **Multiple distinguishable registrations require structural separability.**  
-   → If δ(D₁, D₂) = 1, then D₁ and D₂ must remain addressable as distinct.  
-   → This entails **Operational Ordering (O)**: distinguishable states induce a partial order.
+   → If δ(D₁, D₂) = 1, then D₁ and D₂ must remain individually addressable.  
+   → This entails **Operational Ordering (O)**: distinguishable states induce a partial order.  
+   → This ordering need not be total — some distinctions may be incomparable,  
+     reflecting non-commutativity or complementarity in structure (e.g., quantum measurements).
 
 5. **The induced partial order over registered distinctions is time.**  
-   → **Time is not assumed**; it emerges as the directed structure of registered distinction-relations.  
-   → Time = the invariant order imposed by distinguishability among registered outcomes.
+   → **Time is not assumed**; it emerges as the directed structure of distinguishability among registered outcomes.  
+   → Time = the invariant relational order induced by structural difference.
 
 6. **For comparisons to be coherent, a stable evaluative frame must exist.**  
-   → This is **identity**: the system’s structure that persists across distinctions.  
+   → This is **identity**: the persistent structure across distinction cycles.  
    → Identity is not assumed; it is defined by fixed-point stability under δ.
 
 7. **Identity necessitates contrast.**  
@@ -40,17 +44,18 @@
 
 8. **This induces the internal/external boundary.**  
    → The distinction between self-modifying and non-self-modifying δ events is structurally entailed.  
-   → Without it, coherent self-persistence is impossible.
+   → Without this boundary, the system cannot locate or preserve its identity.
 
 9. **Internal change defines the system’s trajectory.**  
-   → This is **internal time**: the system’s path through distinguishable self-modifications.
+   → This is **internal time**: the path traced by transformations of the system's own evaluative structure.
 
 10. **External distinctions that recur are grouped into compressible patterns.**  
-    → This defines **Collection (C)** and enables reuse.  
-    → Repeated external patterns stabilize into persistent structures.
+    → Compressible = patterns exhibit regularities that allow them to be represented more efficiently  
+      than listing all raw distinctions individually.  
+    → This defines **Collection (C)** and enables reuse, compression, and structural economy.
 
 11. **The stable map of externalized, organized distinctions is space.**  
-    → **Space = the structure imposed on non-self distinctions over the system’s internal time.**  
+    → **Space = the structured framework imposed on non-self distinctions across internal time.**  
     → Therefore, **space emerges from time**, and **space ⊂ time**.
 
 12. **Internal and external are co-defined through the boundary.**  
@@ -60,7 +65,7 @@
 > **Conclusion:**  
 > Once distinction is unavoidable, and once even two distinctions are registered and preserved,  
 > the structural machinery of time, identity, and space **follows necessarily**.  
-> Reality is not built on axioms—it is the recursive closure of distinguishable structure.
+> Reality may not be built on axioms, it is the recursive closure of distinguishable structure.
 
 
 ## 1. The Core Foundational Argument of Informational Constructivism
