@@ -1,7 +1,5 @@
 # A Foundational Theory of Reality as Timeless, Structured Information
 
-**A Framework for Deriving Reality from First Principles of Information Processing under Resource Constraints**
-
 **TLDR: Reality as the closure of distinction**
 
 0. **Distinction (δ) is logically inescapable.**  
