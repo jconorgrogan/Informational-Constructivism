@@ -3,9 +3,9 @@
 **0. Distinction (δ) can not be avoided in any possible universe.**
     → Any system engaging in representation or processing internally presupposes differentiation. Even states of "no internal distinction" (like a singularity) imply a meta-level backdrop of potential typological alternatives, upholding the primacy of (potential) distinction. 
 
-From this assertion, a logical chain of structure MUST emerge to support:
+**From this assertion, a logical chain of structure MUST emerge to support this truth**
    
-**1. Registration is Necessary, as without it, distinction can not "be."**
+**1. Registration is necessary in any posible universe, as without it, distinction can not "be"; since distinction has to occur, then registration has to occur in all possible universes**
     *   A distinction made by a system can only influence its subsequent operations or internal state if that distinction is **registered** – an internal structural correlate (an "imprint" or "trace") is formed and persists, at least temporarily.
     *   → An unregistered distinction has no further operational effect *within or by that system*; it is functionally non-existent *for the system's subsequent processing*.
     *   → Registration = the formation of a persistent, usable internal structure corresponding to δ(x, y) = 1.
