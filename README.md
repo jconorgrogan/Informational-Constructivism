@@ -36,16 +36,16 @@
     → The distinction between self-modifying and non-self-modifying δ events (from the system's viewpoint) is structurally entailed for its persistence.
     → Without this boundary, the system cannot locate or preserve its identity.
 
-10. **External distinctions that recur (and are registered by the system) must be grouped into compressible patterns.**
+8. **External distinctions that recur (and are registered by the system) must be grouped into compressible patterns.**
     → Compressible = patterns exhibit regularities that allow the system to represent them more efficiently
       than listing all raw distinctions individually.
     → This defines **Collection (C)** within the system and enables reuse, compression, and structural economy.
 
-11. **A stable map of externalized, organized distinctions (as modeled by the system) must arise in some systems. We can refer to this as  space.**
+9. **A stable map of externalized, organized distinctions (as modeled by the system) must arise in some systems. We can refer to this as space.**
     → **Space = the structured framework imposed by the system on non-self distinctions across its internal time.**
     → Therefore, **space emerges from time (for the system)**, and **space ⊂ time (within the system's constructive history)**.
 
-12. **Internal and external are co-defined through the system's boundary.**
+10. **Internal and external are co-defined through the system's boundary (Thus space-time emerges as intertwined but distinct concepts)**
     → The system cannot exist (as a distinct entity) with only one side.
     → The self/not-self distinction is a necessary structural condition for the system's persistence.
 
