@@ -1,6 +1,6 @@
 # The Necessary Emergence of Reality from Distinction
 
-## 0. Why Distinction (δ) is Operationally Primary
+## 0. Distinction (δ) is Operationally Primary
 **Core Claim:** In any possible universe, distinction (δ) is operationally primary for any system capable of representation.
 - **Logical Necessity:**  
   - Any representation or processing of information presupposes differentiation  
@@ -23,7 +23,8 @@
 
 ---
 
-## The Core Operational Chain: From Distinction to Systemic Spacetime
+## The Core Operational Chain: From Distinction to Systemic Spacetime.
+
 ### Step 1: Registration Co-Emerges with Distinction
 **Logical Necessity:** Unregistered distinctions have no operational consequences.  
 - A distinction must leave persistent structural imprint to affect subsequent operations  
