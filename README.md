@@ -1,6 +1,6 @@
 **TLDR**
 
-**0. Distinction (δ) can not be avoided in any possible construction of any possible universe**
+**0. Distinction (δ) can not be avoided in any possible universe**
     → Any system engaging in representation or processing internally presupposes differentiation. Even states of "no internal distinction" (like a singularity) imply a meta-level backdrop of potential typological alternatives, upholding the primacy of (potential) distinction. 
 
 From this assertion, a logical chain of structure MUST emerge to support:
