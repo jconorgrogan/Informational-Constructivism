@@ -7,10 +7,10 @@ A.  **Distinction (δ) is operationally primary and inescapable.**
     → Distinction is the minimal structural prerequisite for being and representation.
 
 B.  **Because distinction is primary, a chain of consequences for any system operating on this basis follows necessarily:**
-B.1.   **Registration:** A distinction MUST be registered by the system for it to be functional.
-B.5.   **System-Relative Time:** The induced partial order over registered distinctions is time *for that system*.
-B.8.   **System Boundary:** The system's internal/external boundary is induced to preserve its identity by differentiating self-modifying from non-self-modifying events.
-B.11.  **System-Relative Space:** The stable map of externalized, organized distinctions (as modeled by the system) is space, emerging from the system's processing of non-self distinctions across its internal time.
+    B.1.   **Registration:** A distinction MUST be registered by the system for it to be functional.
+    B.5.   **System-Relative Time:** The induced partial order over registered distinctions is time *for that system*.
+    B.8.   **System Boundary:** The system's internal/external boundary is induced to preserve its identity by differentiating self-modifying from non-self-modifying events.
+    B.11.  **System-Relative Space:** The stable map of externalized, organized distinctions (as modeled by the system) is space, emerging from the system's processing of non-self distinctions across its internal time.
 
 ---
 
@@ -127,6 +127,7 @@ If any system, *operating from its internal standpoint*, is to successfully desc
 **► [The Co-Necessitated Foundations of Mathematical Structure: From the Operational Quartet to Logic and Arithmetic](https://github.com/jconorgrogan/Informational-Constructivism/blob/main/The%20Co-Necessitated%20Foundations%20of%20Mathematical%20Structure.md)**
 
 ---
+
 **Abstract of the Foundational Manuscript:**
 
 This manuscript presents a foundational framework arguing that logic and mathematics emerge not from arbitrary axioms but from operationally necessary structures. We identify an irreducible quartet of co-necessitated capacities that any system capable of representation must possess: (1) **Distinction**—the primitive capacity to differentiate; (2) **Sequencing**—the capacity to order operational acts; (3) **Collection**—the capacity for co-presence of multiple outcomes; and (4) **Partitioning**—the capacity to group by equivalence. We demonstrate that distinction – *shown in our preamble to be operationally primary for any representing system* – is operationally self-necessitating (its denial requires its use), and that any system capable of iterated distinction-making necessarily implements all four capacities. From this minimal operational basis, we rigorously derive: (a) a recursive hierarchy of distinction-patterns; (b) Boolean logical structure as inherent pattern algebra; (c) natural numbers as measures of operational sequences; and (d) arithmetic as composition laws for these sequences. The framework addresses foundational circularity by carefully distinguishing object-level emergent structures from meta-level descriptions. By identifying what is operationally unavoidable rather than axiomatically chosen, we reveal the minimal architecture underlying mathematical thought.
