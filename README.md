@@ -1,11 +1,11 @@
 **TLDR**
 
 **0. Distinction (δ) can not be avoided in any possible construction of any possible universe**
-    → Any system engaging in representation or processing internally presupposes differentiation. Even states of "no internal distinction" (like a singularity) imply a meta-level backdrop of potential typological alternatives, upholding the primacy of (potential) distinction.
+    → Any system engaging in representation or processing internally presupposes differentiation. Even states of "no internal distinction" (like a singularity) imply a meta-level backdrop of potential typological alternatives, upholding the primacy of (potential) distinction. 
 
-From this assertion, a logical chain of structure MUST emerge:
+From this assertion, a logical chain of structure MUST emerge to support:
    
-**1. For a Distinction to be Operationally Consequential, Registration is Necessary.**
+**1. Registration is Necessary, as without it, distinction can not "be."**
     *   A distinction made by a system can only influence its subsequent operations or internal state if that distinction is **registered** – an internal structural correlate (an "imprint" or "trace") is formed and persists, at least temporarily.
     *   → An unregistered distinction has no further operational effect *within or by that system*; it is functionally non-existent *for the system's subsequent processing*.
     *   → Registration = the formation of a persistent, usable internal structure corresponding to δ(x, y) = 1.
@@ -44,7 +44,7 @@ From this assertion, a logical chain of structure MUST emerge:
     *   → This operational differentiation induces the system's **internal/external boundary**.
     *   → Without this, new information could arbitrarily corrupt the system's core identity, preventing persistent, coherent operation.
 
-**8. For a Finite System to Efficiently Manage Recurring "Not-Self" Distinctions, Collection & Further Compression of Patterns is Necessary (driven by SUR).**
+**8. For a Finite System to Efficiently Manage Recurring "Not-Self" Distinctions, Collection & Further Compression of Patterns is Necessary (driven by what we call SUR).**
     *   **Constraint:** The **finite system** (with limited Ledger C) aims for efficient persistence (Simplicity Under Resource-constraint - SUR). It encounters many "not-self" distinctions, some ofwhich recur.
     *   **Necessity:** To avoid resource saturation and operate efficiently, if "not-self" distinctions (already registered as abstracted memory traces) exhibit recurring patterns, the system *must* **Collect** (group) these patterns and represent them via **further compression**.
     *   → This second layer of compression minimizes overall informational cost (`L=K+λE`) by creating models of regularities in the "not-self."
@@ -72,6 +72,7 @@ From this assertion, a logical chain of structure MUST emerge:
 > 7.  The construction of a modeled **Space** as an organized map of these externalized patterns.
 >
 > Reality, for such a system, is the evolving, coherent structure built from these recursively applied, resource-constrained, representational processes.
+
 **Preamble: The Foundational Challenge – From "No Distinction" to a Universe of Information**
 
 Before asserting the operational primacy of "Distinction," Informational Constructivism (IC) rigorously examines its alternative: a state of absolute "no distinction." Could a reality truly be conceived or exist on such a basis? To analyze this, we consider the exhaustive logical frames of reference for such a state:
