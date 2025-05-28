@@ -90,7 +90,7 @@ We statistically see a higher frequency of finite systems that have the followin
 
 **Reality**, for such a system, is the coherent structure built from these recursively applied, resource-constrained processes.
 
-**Preamble: The Foundational Challenge – From "No Distinction" to a Universe of Information**
+#  Preamble: The Foundational Challenge – From "No Distinction" to a Universe of Information
 
 Before asserting the operational primacy of "Distinction," Informational Constructivism (IC) rigorously examines its alternative: a state of absolute "no distinction." Could a reality truly be conceived or exist on such a basis? To analyze this, we consider the exhaustive logical frames of reference for such a state:
 
