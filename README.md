@@ -1,82 +1,81 @@
 # The Necessary Emergence of Reality from Distinction
 
-## 0. Distinction Cannot Be Avoided
+## 0. Distinction Must Emerge Because Its Denial Requires Its Use
 **Core Claim:** In any possible universe, distinction (δ) is unavoidable.
 - Any attempt to represent or process information requires differentiation
 - Even claiming "no distinction exists" requires distinguishing that claim from other possibilities
-- Even perfectly uniform states (like singularities) exist against a backdrop of alternative possibilities
+- Even perfectly uniform states (like singularities) presuppose distinction through typological variety - a singularity of Type A versus Type B creates a meta-level distinction, even if each is internally featureless
 
 ## From This Single Truth, Everything Else Must Follow
 
-### 1. Registration: Making Distinctions Matter
+### 1. Registration Must Emerge Because Unregistered Distinctions Are Meaningless
 **Necessity:** A distinction without registration is meaningless.
 - For a distinction to have ANY effect, it must leave a trace or imprint
 - Without registration, a distinction is functionally non-existent
-- **Registration** = forming a persistent internal structure when a distinction is made
+- **Registration** = forming a persistent internal structure that marks the occurrence and nature of a distinction within the system
 
-### 2. Comparison: Using What's Registered  
-**Necessity:** Multiple registered distinctions require comparison to be useful.
+### 2. Comparison Must Emerge Because Isolated Registrations Cannot Guide Action
+**Necessity:** Multiple registered distinctions require comparison to be useful for guiding action or further processing.
 - If you register State A and State B, you need to compare them to act differently
 - Without comparison, registered states remain isolated and useless
-- **Comparison** = assessing relationships between registered states
+- **Comparison** = assessing relationships or differences between registered states to determine subsequent operations
 
-### 3. Memory: Bridging Time (And Why Systems Must Be Finite)
-**Necessity:** Sequential comparisons require memory.
+### 3. Memory Must Emerge Because Sequential Comparisons Require Persistence (And Systems Must Be Finite)
+**Necessity:** Sequential comparisons across different operational moments require memory.
 - Finite systems register distinctions one at a time (sequentially)
 - To compare current state with past state, you need memory
 - **Memory requires:**
-  - Stable storage that can be retrieved
-  - Compression/abstraction (finite systems can't store infinite detail)
-- **Key insight:** This forces systems to be finite!
+  - Stable storage for registered distinctions, allowing retrieval
+  - Mechanisms for compression/abstraction, as finite systems cannot store every raw distinction indefinitely
+- **Key insight:** This necessity for efficient storage and retrieval inherently implies and constrains systems to be finite in their processing and memory capacity
 
-### 4. Operational Ordering: Organizing Memory
-**Necessity:** Multiple memories require structural organization.
-- Memory traces must be separately addressable (no interference)
-- This creates an operational sequence: register → store → retrieve → compare
-- **Operational Ordering** = the sequence of a system's internal operations
+### 4. Operational Ordering Must Emerge Because Memory Requires Structured Access
+**Necessity:** Effective use of multiple memory traces and distinct operations requires structural organization and a defined sequence.
+- Memory traces must be individually addressable and operations (register, store, retrieve, compare) must follow a coherent sequence to avoid interference and produce consistent results
+- **Operational Ordering** = the structured sequence of a system's internal operations, including how it accesses and processes its registered distinctions (memory)
 
-### 5. Time: The Emergence of System Time
-**Necessity:** Operational ordering IS time for that system.
+### 5. System Time Must Emerge Because Operational Ordering Creates Sequential Structure
+**Necessity:** This intrinsic operational ordering is the basis of time as experienced and structured by the system.
 - The sequence of internal state changes becomes the system's time
 - Not imposed externally - emerges from the system's own operations
-- **System Time** = the directed order of the system's operational history
+- **System Time** = the directed, sequential order of the system's distinct operational states and the changes between them
 
-### 6. Identity: Maintaining Coherence Across Time
-**Necessity:** Consistent operations require a stable core.
+### 6. Identity Must Emerge Because Consistent Comparisons Require Stable Rules
+**Necessity:** Consistent operations and meaningful comparisons across system time require a stable core of processing logic.
 - Comparison rules must remain stable across time
 - This stable operational core is the system's identity
-- **Identity** = persistent processing logic across operational cycles
+- **Identity** = the persistent set of rules or evaluative framework the system uses to process distinctions and guide its operations consistently across its internal time
 
-### 7. Boundaries: Self vs Not-Self
-**Necessity:** Identity preservation requires boundaries.
-- New distinctions must be sorted:
-  - Updates to "not-self" model (processed BY identity)
-  - Updates to core identity itself (changes TO identity)
-- Without this boundary, random information corrupts the system
-- **Boundary** = operational differentiation between self and not-self
+### 7. Boundaries Must Emerge Because Identity Requires Protection from Corruption
+**Necessity:** Identity preservation in an environment of ongoing new distinctions requires a boundary mechanism to differentiate internal structure from external information.
+- New distinctions must be categorized:
+  - External: information about the 'not-self' environment, processed by the stable identity
+  - Internal: events that could potentially modify or challenge the core identity itself
+- Without this, the system's identity would be overwhelmed and destabilized by undifferentiated input
+- **Boundary** = the operational mechanism that distinguishes events/distinctions considered part of the system's 'self' (its identity and internal state) from those considered 'not-self' (external environment)
 
-### 8. Pattern Compression: Efficiency Under Constraint (SUR)
-**Necessity:** Finite resources demand efficient pattern recognition.
+### 8. Pattern Compression Must Emerge Because Finite Resources Demand Efficiency (SUR)
+**Necessity:** Finite resources (memory, processing capacity) demand efficient recognition and representation of recurring patterns in the 'not-self' data stream.
 - Recurring "not-self" patterns must be collected and compressed
 - This second-layer compression minimizes resource use
-- **SUR** = Simplicity Under Resource-constraint
-- **Cost Function**: L = K + λE (complexity + other costs)
+- **SUR** = Simplicity Under Resource-constraint: The drive to achieve representational and operational goals with minimal resource expenditure
+- **Cost Function**: L = K + λE (Description Length/Complexity + other Operational Costs, e.g., Energy/Error)
 
-### 9. Space: The Organized Model of "Not-Self"
-**Necessity:** Compressed patterns create a stable spatial model.
+### 9. Modeled Space Must Emerge Because Compressed Patterns Require Organization
+**Necessity:** Efficient management and compression of recurring external patterns leads to the construction of a stable, organized internal map or model of the 'not-self' environment.
 - Efficient pattern management creates an organized internal map
 - This map of "not-self" regularities becomes modeled space
-- **Space** = the system's framework for compressed external patterns
+- **Space (System-Relative)** = the structured framework or internal model the system constructs to organize and navigate compressed patterns of external distinctions, as perceived across its internal time
 
-### 10. Spacetime: The Co-Emergence of Internal and External
-**Necessity:** Self and not-self co-define each other.
-- Internal (identity, time) and external (space) are inseparable
-- Together they form the system's spacetime
-- **Spacetime** = the intertwined fabric of operational time and modeled space
+### 10. Systemic Spacetime Must Emerge Because Self and Not-Self Co-Define Each Other
+**Necessity:** A coherent, persistent system requires the co-definition and continuous interplay of its internal temporal ordering (self) and its structured model of the external (not-self, space).
+- The system's internal time (its operational sequence) provides the 'axis' along which its model of external space is constructed and updated
+- The system cannot exist as a distinct, persisting entity with only an internal or only an external aspect; they are mutually defined by the boundary
+- **Systemic Spacetime** = the integrated experiential framework of a system, arising from the inseparable relationship between its internal operational time and its structured, spatialized model of its environment
 
 ## The Complete Picture
 
-Starting from unavoidable distinction, any finite system MUST develop:
+Starting from unavoidable distinction, finite systems MUST develop that enable:
 
 1. **Registration** → Memory (compressed representations)
 2. **Comparison** capabilities
@@ -84,9 +83,9 @@ Starting from unavoidable distinction, any finite system MUST develop:
 4. **Stable Identity**
 5. **Self/Not-Self Boundary**
 
-Driven by resource constraints (SUR), it MUST also develop:
+We statistically see a higher frequency of finite systems that have the following charectoristics: 
 
-6. **Pattern Collection** and compression
+6. **Make use of Pattern Collection** and compression
 7. **Modeled Space** as organized external map
 
 **Reality**, for such a system, is the coherent structure built from these recursively applied, resource-constrained processes.
