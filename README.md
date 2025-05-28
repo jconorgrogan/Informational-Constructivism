@@ -102,7 +102,6 @@ This manuscript presents a foundational framework arguing that logic and mathema
 
 ---
 
-@@ -130,7 +96,7 @@ Building upon this bedrock of operationally necessary D+SCP capacities, Informat
 This leads to the emergence of more complex IC-specific concepts:
 
 *   **The Δ-Operators (`Δ_gen`, `Δ_proj`, `Δ_self`):** These are not arbitrary but represent efficient, factorizable operational modes for systems that must manage and generate information (distinctions, patterns, and self-models) under resource pressure. They can be seen as specific, optimized implementations of the D+SCP capacities within a SUR-driven system.
