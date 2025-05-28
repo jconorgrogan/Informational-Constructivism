@@ -1,59 +1,77 @@
 **TLDR**
 
-0.  **Distinction (δ) is operationally primary and inescapable.**
-    → What we find when we exhaust all possibilities is distinction MUST arise in any and all "universe"; Any statement, system, or act of representation, from an internal standpoint, presupposes that something is distinct from something else OR (as in the case of a singularity, which is a situation where no distinction is possible to be lodged), there are distinct possibilities that the singularity could emerge in)
+**0. Distinction (δ) can not be avoided in any possible construction of any possible universe**
+    → Any system engaging in representation or processing internally presupposes differentiation. Even states of "no internal distinction" (like a singularity) imply a meta-level backdrop of potential typological alternatives, upholding the primacy of (potential) distinction.
+
+From this assertion, a logical chain of structure MUST emerge:
    
-1. **From the proof that distinction is unavoidable, it neccessitates the following truths must arise to support this. First, a distinction plays a role only if it is registered. Thus, registration is a neccesary construct**
-    → An unregistered distinction (one a system cannot differentiate) is functionally indistinct.
-    → Registration = persistence of δ(x, y) = 1 as a usable structure *for a system*.
+**1. For a Distinction to be Operationally Consequential, Registration is Necessary.**
+    *   A distinction made by a system can only influence its subsequent operations or internal state if that distinction is **registered** – an internal structural correlate (an "imprint" or "trace") is formed and persists, at least temporarily.
+    *   → An unregistered distinction has no further operational effect *within or by that system*; it is functionally non-existent *for the system's subsequent processing*.
+    *   → Registration = the formation of a persistent, usable internal structure corresponding to δ(x, y) = 1.
 
-2.  **Registration implies comparison between states *by a system*. Thus, comparison is a neccesary construct**
-    → Recognition of “something changed” means the system must distinguish between two registered states.
-    → This involves comparing δ(A, B) = 1 (distinguished by the system) versus δ(A, B) = 0 (not distinguished by the system).
+**2. For Registered Distinctions to Inform Differential Action, Comparison is Necessary.**
+    *   Once multiple distinctions are registered (resulting in distinct internal states like Registered State A [RSA] and Registered State B [RSB]), for the system to act differentially based on these states (e.g., "if A then X, if B then Y," or "A is not B"), it must be able to **compare** them.
+    *   → Comparison = an internal operation that assesses a relationship (e.g., identity, difference, order) between two or more registered internal states.
+    *   → Without comparison, multiple registered states remain isolated facts, unable to guide sequence-dependent or relational behavior.
 
-3. **Comparison requires that prior outcomes remain structurally accessible to the system, thus requiring a memory condition**
-    → This necessitates a memory condition: Not temporal memory, but **closure under re-application of δ** —
-      i.e., prior distinctions must remain available to be re-distinguished within the system's current structure.
+**3. For Comparison of Sequentially Registered Distinctions memory (as Abstracted/Compressed Representations) is Necessary. This also implies that finite systems are neccesary**
+    *   **Constraint:** A **finite system** (limited processing window, finite representational capacity) typically registers distinctions sequentially.
+    *   **Necessity:** To compare a currently registered state with one registered at a prior operational step, the system requires **memory** to make the representation of the prior state accessible.
+    *   → Memory involves:
+        1.  **Stable Storage & Retrievability:** Internal traces representing prior registered states must persist reliably and be re-accessible for current operations.
+        2.  **Inherent Abstraction/Compression:** Due to the system's **finite representational capacity**, these memory traces are necessarily **abstractions or "compressions"** of the original distinguished phenomena, encoded to fit the system's limits. They are representations, not the phenomena themselves.
+    *   → Without such memory, a finite system cannot learn from sequences or relate events across its operational time.
 
-4.  **A memory system requires multiple distinguishable registrations. As such, this requires structural separability within a system that makes the distinction**
-    → If δ(D₁, D₂) = 1 is registered, then D₁ and D₂ must remain individually addressable by the system.
-    → This entails **Operational Ordering (O)**: distinguishable states induce a partial order *for that system*.
-    → This ordering need not be total — some distinctions may be incomparable,
-      reflecting non-commutativity or complementarity in structure (e.g., quantum measurements from the system's perspective).
+**4. For a Memory System to Hold Multiple, Usable Representations, Structural Separability & Operational Ordering (O) are Necessary.**
+    *   A finite memory system holding multiple distinguishable memory traces (which are abstracted/compressed representations) requires these internal representations to be **structurally separable** (to avoid interference) and individually manageable.
+    *   → If abstracted representations R₁ and R₂ are held in memory, they must be individually addressable for retrieval and use.
+    *   → This entails **Operational Ordering (O):** the finite system's sequence of operations (e.g., registration, memory encoding, retrieval, comparison) induces a partial order *for that system* over its internal states and actions.
 
-5.  **"Clocks" are thus required; The induced partial order over registered distinctions is time *for that system*.**
-    → **Time is not assumed**; it emerges as the directed structure of distinguishability among registered outcomes within the system.
-    → Time = the invariant relational order induced by structural difference as processed by the system.
+**5. For a Finite, Sequentially Operating System, Emergent System Time is Necessary.**
+    *   The induced partial order over the finite system's operational history (its sequence of internal state changes and actions) *is* **time** *for that system*.
+    *   → System Time = the directed, relational structure of the system's own ordered processing of its (abstracted/compressed) internal states and operations. It is not an external imposition.
 
-6.  **For comparisons to be coherent, a stable evaluative frame must exist *within the system* which neccesary seperates the memory from the processing unit.**
-    → This is **identity** *as maintained by the system*: the persistent structure across its distinction cycles.
-    → Identity is not assumed; it is defined by fixed-point stability under the system's application of δ.
+**6. For Coherent Processing Over System Time, a Stable Evaluative Frame (Identity) is Necessary.**
+    *   For comparisons and other operations to yield consistent and meaningful results across the system's emergent time, the core logic or "rules" of these operations (the evaluative frame) must exhibit stability.
+    *   → This stable operational core is the system's **identity**: the relatively persistent structure of its processing logic across its operational cycles.
+    *   → Identity is defined by this operational stability or fixed-point characteristics relative to the system's core functions.
 
-7.  **Identity necessitates contrast *as perceived by the system*.**
-    → To preserve itself, the system must distinguish what alters its structure (internal events)
-      from what does not (external events, relative to its model).
-    → This induces the system's internal/external boundary.**
-    → The distinction between self-modifying and non-self-modifying δ events (from the system's viewpoint) is structurally entailed for its persistence.
-    → Without this boundary, the system cannot locate or preserve its identity.
+**7. For an Identity to Persist While Interacting, a Self/Not-Self Boundary (via Contrast) is Necessary.**
+    *   To maintain its stable identity while processing new distinctions, the system must differentiate the *impact* of these new distinctions:
+        *   Those that primarily update its *model of the "not-self"* (data processed *by* the existing identity).
+        *   Those that necessitate a change in its *own core evaluative frame/identity* (self-modification, learning at a meta-level).
+    *   → This operational differentiation induces the system's **internal/external boundary**.
+    *   → Without this, new information could arbitrarily corrupt the system's core identity, preventing persistent, coherent operation.
 
-8. **External distinctions that recur (and are registered by the system) must be grouped into compressible patterns.**
-    → Compressible = patterns exhibit regularities that allow the system to represent them more efficiently
-      than listing all raw distinctions individually.
-    → This defines **Collection (C)** within the system and enables reuse, compression, and structural economy.
+**8. For a Finite System to Efficiently Manage Recurring "Not-Self" Distinctions, Collection & Further Compression of Patterns is Necessary (driven by SUR).**
+    *   **Constraint:** The **finite system** (with limited Ledger C) aims for efficient persistence (Simplicity Under Resource-constraint - SUR). It encounters many "not-self" distinctions, some ofwhich recur.
+    *   **Necessity:** To avoid resource saturation and operate efficiently, if "not-self" distinctions (already registered as abstracted memory traces) exhibit recurring patterns, the system *must* **Collect** (group) these patterns and represent them via **further compression**.
+    *   → This second layer of compression minimizes overall informational cost (`L=K+λE`) by creating models of regularities in the "not-self."
 
-9. **A stable map of externalized, organized distinctions (as modeled by the system) must arise in some systems. We can refer to this as space.**
-    → **Space = the structured framework imposed by the system on non-self distinctions across its internal time.**
-    → Therefore, **space emerges from time (for the system)**, and **space ⊂ time (within the system's constructive history)**.
+**9. For Effective Interaction by a Finite System, a Stable Modeled "Space" is Necessary (driven by SUR).**
+    *   A finite system effectively managing a complex "not-self" (via collection and the further compression of patterns over its internal time) develops a stable, organized internal map of these externalized (modeled) distinctions.
+    *   → This structured internal model of the organized "not-self" is the system's modeled **space.**
+    *   → Modeled space = the framework constructed by the system for its compressed representations of "not-self" regularities, structured by its internal operational time.
 
-10. **Internal and external are co-defined through the system's boundary (Thus space-time emerges as intertwined but distinct concepts)**
-    → The system cannot exist (as a distinct entity) with only one side.
-    → The self/not-self distinction is a necessary structural condition for the system's persistence.
+**10. Internal & External are Co-Defined, Leading to System-Relative Spacetime.**
+    *   The system's "self" (identity, internal processing over its system time) and its modeled "external" (space, constructed over its system time) are co-defined through its operational boundary and its SUR-driven processing of (multiply compressed) information.
+    *   → The self/not-self distinction is a necessary structural condition for the system's persistence as an entity that models and interacts with an environment.
+    *   → "Spacetime," for the system, is this intertwined, constructed fabric of its internal operational time and its modeled external space.
 
 > **Conclusion:**
-> Once distinction is operationally primary for a system, and once even two distinctions are registered and preserved *by that system*,
-> the structural machinery of time, identity, and space (as constructed and experienced by that system) **follows necessarily**.
-> Reality, for such a system, is what emerges when it applies the act of distinction recursively and retains its outcomes in a consistent structure.
-
+> Once **Distinction** is operationally primary for a **finite system**, a cascade of structural and operational necessities unfolds for that system to coherently process information and persist. It *must* develop:
+> 1.  **Registration** of distinctions into **Memory** (which, due to finiteness, consists of inherently **abstracted/compressed representations**).
+> 2.  The capacity for **Comparison** of these internal representations.
+> 3.  An **Operational Ordering** of its processing acts, leading to an emergent, system-relative **Time**.
+> 4.  A stable **Identity** (evaluative frame).
+> 5.  An **Internal/External Boundary** to differentiate self from not-self.
+>
+> Furthermore, driven by efficiency pressures (SUR) due to its finite resources, such a system will necessarily engage in:
+> 6.  **Collection and further Compression** of recurring "not-self" patterns.
+> 7.  The construction of a modeled **Space** as an organized map of these externalized patterns.
+>
+> Reality, for such a system, is the evolving, coherent structure built from these recursively applied, resource-constrained, representational processes.
 **Preamble: The Foundational Challenge – From "No Distinction" to a Universe of Information**
 
 Before asserting the operational primacy of "Distinction," Informational Constructivism (IC) rigorously examines its alternative: a state of absolute "no distinction." Could a reality truly be conceived or exist on such a basis? To analyze this, we consider the exhaustive logical frames of reference for such a state:
