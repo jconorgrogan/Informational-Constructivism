@@ -6,21 +6,21 @@
 - The claim "no distinction exists" itself requires distinguishing that claim from alternatives
 - Even perfectly uniform states (like singularities) exist within a space of typological possibilities (eg ADE) - Type A versus Type B creates meta-level distinction despite internal featurelessness 
 
-## From This Single Truth, Everything Else Must Follow
+## Given this emergence, a chain of concepts MUST arise to support
 
-### 1. Registration Co-Emerges With Distinction: Unregistered Distinctions Are Meaningless
+### 1. "Registration" is a requirement to have Distinction: Unregistered Distinctions Are Meaningless
 **Logical Necessity:** Distinction without registration has no operational reality.
 - A distinction with no trace or imprint cannot affect subsequent operations
 - Functional existence requires persistence beyond the momentary
 - **Registration** = persistent internal structure marking the occurrence and nature of a distinction within the system
 
-### 2. Comparison Co-Emerges With Multiple Registrations: Isolated States Cannot Guide Differential Operations
+### 2. "Comparison" Co-Emerges With Multiple Registrations: Isolated States Cannot Guide Differential Operations
 **Logical Necessity:** Multiple registered distinctions require comparison for operational utility.
 - Registered State A and State B remain inert without relational assessment
 - Differential action requires relational structure between states
 - **Comparison** = assessment of relationships between registered states enabling differential operations
 
-### 3. Memory Co-Emerges With Sequential Processing: Finite Systems Require Persistent Compression
+### 3. "Memory" Co-Emerges With Sequential Processing: Finite Systems Require Persistent Compression
 **Logical Necessity:** Sequential processing of distinctions requires memory structures.
 - Finite systems process distinctions sequentially
 - Comparing non-simultaneous states requires persistent representation
