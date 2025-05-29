@@ -20,9 +20,7 @@
    As such, *there is something rather than nothing because no other possibility can be registered*.
 
 
-**Level-Below Chain that this repo details in depth**
-
-## 0. Distinction (δ) is Operationally Primary
+## 0. Why Distinction (δ) is Operationally Primary
 **Core Claim:** In any possible universe, distinction (δ) is operationally primary for any system capable of representation.
 - **Logical Necessity:**  
   - Any representation or processing of information presupposes differentiation  
