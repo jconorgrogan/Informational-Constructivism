@@ -6,9 +6,6 @@
 **1. Introduction**
 
 This document establishes the explicit links between the presented framework on consciousness (hereafter "Consciousness Text") and the formal structure of **Informational Constructivism (IC)** as detailed in this repository. The Consciousness Text offers a compelling phenomenological and neurobiologically-inspired account of subjective experience. IC, in turn, provides a minimal-assumption, first-principles derivation of the necessary structures and dynamics for any persistent, information-processing system operating under finite resource constraints.
-
-The core finding is that the Consciousness Text aligns **remarkably well** with IC, effectively serving as a high-level narrative interpretation and potential biological instantiation of core IC principles and derived tiers. IC provides the formal grounding and generative mechanism for the phenomena described in the text.
-
 **2. Mapping Key Concepts**
 
 We can map the core components of the Consciousness Text directly onto concepts within the IC framework:
