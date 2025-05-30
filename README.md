@@ -175,7 +175,7 @@ Informational Constructivism explores several interconnected themes:
 
 * "Nothing" requires distinction to define
 * Distinction is operational (finite)
-* Finite operations must create the D-S-C-P structure
+* Finite operations MUST create the D-S-C-P structure (Distinction (D): ability to differentiate, Sequencing (S): ability to order operations, Collection (C): ability to have multiple outcomes co-present, Partitioning (P): ability to group by equivalence)
 * This structure IS "something"
 
 Why is there something and not nothing? The system that asks the question contains its own answer.
