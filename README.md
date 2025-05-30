@@ -169,3 +169,13 @@ Informational Constructivism explores several interconnected themes:
 *   **Constrained Dynamics:** Analyzing how resource limitations (Ledger C) and efficiency drives (SUR) shape information processing.
 *   **Emergence of Structure:** Deriving mathematical, logical, and physical structures from these first principles.
 *   **Connections to Physics:** Aiming to provide an information-theoretic basis for spacetime, quantum mechanics, and fundamental constants.
+
+
+## 4. Closing
+
+* "Nothing" requires distinction to define
+* Distinction is operational (finite)
+* Finite operations must create the D-S-C-P structure
+* This structure IS "something"
+
+Why is there something and not nothing? The system that asks the question contains its own answer.
