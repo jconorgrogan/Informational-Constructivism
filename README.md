@@ -1,4 +1,7 @@
 # The Necessary Emergence of Reality from Distinction
+<img width="867" alt="image" src="https://github.com/user-attachments/assets/7b11b996-4837-4f95-b789-118519f327fb" />
+<img width="1096" alt="image" src="https://github.com/user-attachments/assets/485b6b56-c18a-40a5-95a3-425fbe7200d8" />
+
 
 **TLDR:**
 
