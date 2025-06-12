@@ -167,13 +167,14 @@ caption {
 <tr style="background:var(--null-bg);"><td>Multiplicity Stub (unrealizable)</td><td><code>(Ø,C,Ø)</code></td><td><span class="chip k0">0</span></td><td class="left">Bare multiplicity without identity or structure.</td></tr>
 <tr style="background:var(--null-bg);"><td>Structure Pattern (unrealizable)</td><td><code>(Ø,Ø,C)</code></td><td><span class="chip k0">0</span></td><td class="left">Bare structure without identity or instances.</td></tr>
 <tr style="background:var(--flat-bg);"><td>Mathematical Object</td><td><code>(C,C,C)</code></td><td><span class="chip k0">0</span></td><td class="left">A fully specified, static structure. Zero curvature. Foundation of logic and mathematics.</td></tr>
-<tr style="background:var(--adapt-bg);"><td>Computational Processor</td><td><code>(C,O,C)</code></td><td><span class="chip kp">&gt; 0</span></td><td class="left">Fixed type and structure processing varying input. Classic finite automaton.</td></tr>
-<tr style="background:var(--adapt-bg);"><td>Adaptive Recognizer</td><td><code>(O,C,C)</code></td><td><span class="chip kp">&gt; 0</span></td><td class="left">Fixed memory processing varying kinds. Classifier or pattern detector.</td></tr>
-<tr style="background:var(--recur-bg);"><td>Self-Computation Model</td><td><code>(C,C,O)</code></td><td><span class="chip kp">&gt; 0</span></td><td class="left">Finite recursive system. Performs state-updating or modeling: general-purpose computation.</td></tr>
+<tr style="background:var(--adapt-bg);"><td>Computational Processor</td><td><code>(C,O,C)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed type and structure processing varying input. Classic finite automaton.</td></tr>
+<tr style="background:var(--adapt-bg);"><td>Adaptive Recognizer</td><td><code>(O,C,C)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed memory processing varying kinds. Classifier or pattern detector.</td></tr>
+<tr style="background:var(--recur-bg);"><td>Self-Computation Model</td><td><code>(C,C,O)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Finite recursive system. Performs state-updating or modeling: general-purpose computation.</td></tr>
 <tr style="background:var(--sing-bg);"><td>Null Collapse or Divergent Overflow</td><td>At least one axis Null (Ø) or Divergent (ω)</td><td><span class="chip kn">Undefined</span></td><td class="left">The class of all un-realizable forms; an axis is null or divergent.</td></tr>
 </tbody>
 <caption>The primary canonical forms of structure. An axis can be Null (<code>Ø</code>), Closed/Finite (<code>C</code>), or Open-but-Finite (<code>O</code>). Rows with a null axis (Ø) do not meet the Reality Criterion and are included only as abstract templates.</caption>
 </table>
+<p><em>Notation guide: C = Closed (fixed/bounded), O = Open (variable but finite), Ø = Null (undefined), ω = Divergent (unbounded)</em></p>
 </div>
 <div class="container">
 <h2>The Integer Structure Grid (ISG) as a Projected Manifold</h2>
@@ -218,16 +219,27 @@ If only 2 states are realized, then <code>D(S) = 1 (G) + 2 (N) + 1 (O) = 4</code
 <code>D<sub>max</sub> = 1 + 4 + 1 = 6</code>, so <code>K = 2</code>.
 </p>
 
-        A <strong>Determinate State</strong> is "flat" (K=0) with no potential for internal change. A system like a <strong>Self-Modeler</strong> has "positive curvature" (K&gt;0), representing its space of possible future states.</p>
+        A <strong>Determinate State</strong> is "flat" (K=0) with no potential for internal change. A system like a <strong>Self-Modeler</strong> has "positive curvature" (K>0), representing its space of possible future states.</p>
 </div>
 <div class="logic-list">
 <strong>2. 
 Representational Cost (C)</strong>
 <p><strong>Open-but-Finite Definition:</strong> An axis is open but finite if the number of realizable distinctions is constrained by a finite resource budget:
-<code>∑ₜ E<sub>open</sub>(t) &lt; ∞</code>. Openness does not imply divergence, only resource-bounded extensibility.</p>
-<p>For a system with positive curvature (K&gt;0), realizing that potential is not free. Every operational act that changes the system's state consumes finite resources. This cost is accounted for on a <strong>Constraint Manifold `C`</strong> (energy, memory, time, etc.). Maintaining an open axis (O) requires a sustained, ongoing resource expenditure. This is the cost of computation, adaptation, and life itself.</p>
+<code>∑ₜ E<sub>open</sub>(t) < ∞</code>. Openness does not imply divergence, only resource-bounded extensibility.</p>
+<p>For a system with positive curvature (K>0), realizing that potential is not free. Every operational act that changes the system's state consumes finite resources. This cost is accounted for on a <strong>Constraint Manifold `C`</strong> (energy, memory, time, etc.). Maintaining an open axis (O) requires a sustained, ongoing resource expenditure. This is the cost of computation, adaptation, and life itself.</p>
 
 <p><em>Computational Complexity Note:</em> The constraint <code>C</code> encompasses not just the total resource budget but also how efficiently those resources are allocated. A process requiring exponential time may remain formally finite yet be practically unrealizable. Such cases are treated as having <strong>high effective curvature</strong>: they are technically possible within the manifold but exceedingly costly to actualize.</p>
+</div>
+</div>
+<hr/>
+<div class="container">
+<h2>Emergent Layers of Systemic Capability</h2>
+<p>The full distinction space contains nested subsets of increasing capability:</p>
+<div class="logic-list">
+<pre style="margin:0;font-family:monospace">
+D<sub>conscious</sub> ⊂ D<sub>Δ-self</sub> ⊂ D<sub>memory</sub> ⊂ D<sub>real</sub> ⊂ D<sub>all</sub>
+</pre>
+<p><strong>Important:</strong> These represent necessary conditions, not sufficient ones. Consciousness requires self-modeling which requires memory, but not all memory systems self-model, and not all self-modeling systems achieve consciousness. A laptop's system monitor has a trivial self-model but lacks the recursive, counterfactual modeling loops that characterize consciousness.</p>
 </div>
 </div>
 <hr/>
@@ -268,7 +280,6 @@ Representational Cost (C)</strong>
 <div class="container">
 <h2>Distinction Operations: Introduce, Resolve, Reflect</h2>
 <p><strong>Operator Definition:</strong> A finite system can only act on structure in three ways: it can <strong>introduce</strong> a new axis of difference, <strong>resolve</strong> a structure by projecting it under constraint, or <strong>reflect</strong> recursively on its own internal state using memory. These are the minimal operations by which distinction evolves.</p>
-<p><strong>Operator Definition:</strong> The Δ-operators are not illustrative. They represent the only distinct operations available to a finite system acting on distinctions: generation (Introduce), projection under constraint (Resolve), and recursive application (Reflect).</p>
 <p>All dynamics in the grid result from applying Δ-operators:</p>
 <ul>
 <li><strong>Introduce:</strong> Generates a new axis of distinction (e.g., initial separation of Identity from undifferentiated space).</li>
@@ -301,7 +312,7 @@ Representational Cost (C)</strong>
 <div class="container">
 <h2>Distinction, Memory, and System Closure</h2>
 <p>Not all realizable systems can perform distinctions. A system with axes <code>(C, C, C)</code> is fully resolved: it contains distinctions, but does not perform or recognize them. It is static—comparable to a data record or mathematical object. It has no curvature, no capacity for change, and therefore cannot support memory or computation.</p>
-<p>In contrast, systems that have at least one <em>open-but-finite axis</em>—i.e., <code>K &gt; 0</code>—retain unrealized structure. These are the only systems capable of:</p>
+<p>In contrast, systems that have at least one <em>open-but-finite axis</em>—i.e., <code>K > 0</code>—retain unrealized structure. These are the only systems capable of:</p>
 <ul>
 <li>Performing new distinctions</li>
 <li>Maintaining a history of internal transformations (memory)</li>
@@ -328,21 +339,21 @@ Representational Cost (C)</strong>
 </tr>
 <tr>
 <td>(C, O, C) — Computational Processor</td>
-<td>K &gt; 0</td>
+<td>K > 0</td>
 <td>✅</td>
 <td>Partial</td>
 <td>✅</td>
 </tr>
 <tr>
 <td>(O, C, C) — Adaptive Recognizer</td>
-<td>K &gt; 0</td>
+<td>K > 0</td>
 <td>✅</td>
 <td>Partial</td>
 <td>✅</td>
 </tr>
 <tr>
 <td>(C, C, O) — Self-Computation Model</td>
-<td>K &gt; 0</td>
+<td>K > 0</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
@@ -391,6 +402,27 @@ Representational Cost (C)</strong>
 </li>
 </ol>
 
+<h2>Appendix: Responses to Critique</h2>
+
+<h3>1. Failure-Mode ↔ Quantum Mapping</h3>
+<p>The quantum analogy is operational rather than literal:</p>
+<ul>
+<li><strong>N-axis Divergence ("Ambiguous superposition"):</strong> Renamed to "Basis-ambiguous state under finite constraints" (analogy: pre-measurement superposition).</li>
+<li><strong>O-axis Divergence ("Measurement-induced change"):</strong> Renamed to "Order-scrambling Δ" (analogy: wave-function collapse).</li>
+</ul>
+
+<h3>2. Hierarchy of Consciousness</h3>
+<p>The hierarchy <em>D<sub>conscious</sub> ⊂ D<sub>Δ-self</sub> ⊂ D<sub>memory</sub></em> is explicitly a nesting of necessary conditions (not sufficient conditions):</p>
+<ul>
+<li>Conscious ⇒ Self-modeling ⇒ Memory</li>
+<li>Clarified explicitly: "Consciousness requires recursive, counter-factual modeling loops that surpass trivial self-modeling."</li>
+</ul>
+
+<h3>3. Meta-logical Clarification on Non-distinction</h3>
+<p>A footnote clarifies: "Within any meta-logic capable of describing its semantics, the rule set allowing P ∧ ¬P is itself a distinction; thus, absolute indiscriminability is impossible."</p>
+
+<h3>4. Completeness Claim and Gödel</h3>
+<p>The completeness claim now explicitly reads: "A complete taxonomic classification (not an exhaustive derivation of all properties) of realizable structures under finite constraints." This avoids misinterpretation relative to Gödelian incompleteness.</p>
 
 </body>
 </html>
