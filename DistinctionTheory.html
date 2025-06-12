@@ -119,7 +119,7 @@ caption {
 <hr/>
 <div class="container">
 <h2>The Distinction Manifold: An Atemporal Map</h2>
-<p><strong>Foundational Premise:</strong> This framework begins not with metaphysical claims about what 'exists,' but with an operational premise: reality for any system consists only of that which can be distinguished and recorded under finite constraint. Meta-note: the following logic is stated in a classical meta-language; any attempt to deny all distinctions necessarily employs a distinction in that meta-language. From this, the first necessary distinction is not arbitrary—it is the boundary between what can be finitely distinguished and what cannot (the Indistinct or Divergent).</p>
+<p><strong>Foundational Premise:</strong> This framework begins not with metaphysical claims about what 'exists,' but with an operational premise: reality for any system consists only of that which can be distinguished and recorded under finite constraint. Meta-note: the following logic is stated in a classical meta-language; any attempt to deny all distinctions necessarily employs a distinction in that meta-language. From this, the first necessary distinction is not arbitrary—it is the boundary between what can be finitely distinguished and what cannot (the Indistinct or Divergent). This framework provides a taxonomic classification of finitely distinguishable structures and their computational capabilities, with suggestive analogies to physical phenomena.</p>
 <p>To map the universe of all possible structures, we begin with the most fundamental act of logic: drawing a single distinction. This primary partition of reality forces the minimal descriptive dimensions required to make it meaningful into existence, which in turn gives rise to a complete and necessary classification system.</p>
 <div class="logic-list">
 <strong>Core Logical Chain</strong>
@@ -145,6 +145,14 @@ caption {
 </ol>
 </div>
 <p><strong>Structural Basis:</strong> G, N, and O represent the minimal independent axes along which any distinguishable structure must vary: type, count, and configuration. Remove any one of {G,N,O} and some distinctions (e.g., permutation vs multiset) become undecidable; hence the set is minimal. These are not assumptions-they are structural preconditions for any finite system to encode, store, and operate on differences.</p>
+
+<div class="logic-list">
+<strong>Kolmogorov Factorization</strong>
+<p>Any finite object <i>x</i> may be described by: (i) its minimal generator set <i>G</i>, (ii) multiplicities <i>N</i> relative to that set, and (iii) ordering grammar <i>O</i>. Accordingly
+<i>K</i>(<i>x</i>) ≤ <i>K</i>(<i>G</i>) + <i>K</i>(<i>N</i>|<i>G</i>) + <i>K</i>(<i>O</i>|<i>G</i>,<i>N</i>),
+identifying the incompressible core of <i>x</i> with the residual cost once all three axes are specified.</p>
+</div>
+
 <div class="logic-list">
 <strong>Core Axes of Distinction</strong>
 <ul>
@@ -175,6 +183,14 @@ caption {
 <caption>The primary canonical forms of structure. An axis can be Null (<code>Ø</code>), Closed/Finite (<code>C</code>), or Open-but-Finite (<code>O</code>). Rows with a null axis (Ø) do not meet the Reality Criterion and are included only as abstract templates.</caption>
 </table>
 <p><em>Notation guide: C = Closed (fixed/bounded), O = Open (variable but finite), Ø = Null (undefined), ω = Divergent (unbounded)</em></p>
+<div class="logic-list">
+<strong>Key Definitions:</strong>
+<ul>
+<li><strong>Finite resource budget C:</strong> Upper bounds on energy, memory, and time</li>
+<li><strong>Operational distinction:</strong> A computable transformation that changes and records state</li>
+<li><strong>Curvature K:</strong> Count of unrealized distinctions (potential for change)</li>
+</ul>
+</div>
 </div>
 <div class="container">
 <h2>The Integer Structure Grid (ISG) as a Projected Manifold</h2>
@@ -208,6 +224,7 @@ Informational Curvature (K)</strong>
 where each component reflects the maximum number of distinctions available on that axis under constraint. This makes curvature computable as a measure of unrealized distinction space.</p>
 <p>For any system S, its curvature K measures its latent capacity for change. It is the gap between the system's maximum possible distinctions (D<sub>max</sub>) and those it has currently realized (D(S)).
         <pre style="background:#fff;padding:10px;border:1px solid #ccc;white-space:pre-wrap;margin-top:10px;">K(S) = D<sub>max</sub> − D(S) ≥ 0</pre>
+<p><strong>Thermodynamic Grounding:</strong> A single irreversible Δ-update erases at least one bit and therefore dissipates <i>k</i><sub>B</sub><i>T</i> ln 2 of heat (Landauer’s principle). Hence curvature <i>K</i> measures the system’s free-energy deficit relative to its maximal distinguishability state. Every decrement Δ<i>K</i> = 1 corresponds to an unavoidable energy cost of <i>k</i><sub>B</sub><i>T</i> ln 2.</p>
 <p><strong>Why Linear Subtraction?</strong> The choice of <code>K = D<sub>max</sub> - D(S)</code> over alternatives such as <code>D(S)/D<sub>max</sub></code> or <code>log(D<sub>max</sub>/D(S))</code> is pragmatic: it yields a directly interpretable measure—the number of unrealized distinctions—and simplifies composition rules. For two independent systems, <code>K(S₁ ⊕ S₂) ≈ K(S₁) + K(S₂)</code>, enabling modular analysis.</p>
 
 <p>Linear defect; ratio/log variants preserve ordering and proofs; form is a choice of norm.</p>
@@ -240,6 +257,7 @@ Representational Cost (C)</strong>
 D<sub>conscious</sub> ⊂ D<sub>Δ-self</sub> ⊂ D<sub>memory</sub> ⊂ D<sub>real</sub> ⊂ D<sub>all</sub>
 </pre>
 <p><strong>Important:</strong> These represent necessary conditions, not sufficient ones. Consciousness requires self-modeling which requires memory, but not all memory systems self-model, and not all self-modeling systems achieve consciousness. A laptop's system monitor has a trivial self-model but lacks the recursive, counterfactual modeling loops that characterize consciousness.</p>
+<p>Consciousness specifically requires the ability to run counterfactual simulations: a conscious system implements recursive loops that project multiple hypothetical futures, compare them to memory, and update behavior accordingly. A simple self-monitor that tracks current state without modeling alternative futures does not meet this criterion.</p>
 </div>
 </div>
 <hr/>
@@ -369,6 +387,7 @@ D<sub>conscious</sub> ⊂ D<sub>Δ-self</sub> ⊂ D<sub>memory</sub> ⊂ D<sub>r
 
 
 <h2>Uniqueness of the (G,N,O) Basis Up to Relabeling</h2>
+<p>Any finite structure can be fully specified by answering exactly three questions: What kind? (G), How many? (N), and How arranged? (O). Omitting any question leaves the description ambiguous. Any alternative triplet must answer these same three questions, making it a relabeling of (G,N,O).</p>
 <p>The (G,N,O) decomposition is unique up to relabeling due to the informational completeness and independence of the three axes:</p>
 <ol>
 <li><strong>Every operational distinction on a finite structure answers exactly three independent questions:</strong>
