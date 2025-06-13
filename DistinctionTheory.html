@@ -1,49 +1,50 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Distinction Theory: A Taxonomic Framework for Finitely Distinguishable Structures</title>
+<title>Distinction Theory: A Framework for Finitely Distinguishable Structures</title>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <style>
 :root {
-    --text-color: #2c3e50;
-    --bg-color: #fcfcfc;
-    --primary-accent: #2980b9;
-    --secondary-accent: #c0392b;
-    --subtle-bg: #f5f7f9;
-    --border-color: #e0e0e0;
-    --header-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --body-font: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "Georgia", serif;
-    --null-bg: #e0e0e0;
-    --det-bg: #e8f6f3;
-    --flat-bg: #d7f7d7;
-    --adapt-bg: #fef9e7;
-    --recur-bg: #eaf2f8;
-    --sing-bg: #fdedec;
-    --chip0-bg: #a8e6a1;
-    --chipP-bg: #fde3a7;
-    --chipN-bg: #f5b7b1;
+--text-color: #2c3e50;
+--bg-color: #fcfcfc;
+--primary-accent: #2980b9;
+--secondary-accent: #c0392b;
+--subtle-bg: #f5f7f9;
+--border-color: #e0e0e0;
+--header-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+--body-font: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "Georgia", serif;
+--null-bg: #e0e0e0;
+--det-bg: #e8f6f3;
+--flat-bg: #d7f7d7;
+--adapt-bg: #fef9e7;
+--recur-bg: #eaf2f8;
+--sing-bg: #fdedec;
+--chip0-bg: #a8e6a1;
+--chipP-bg: #fde3a7;
+--chipN-bg: #f5b7b1;
 }
 body {
-    margin: 0;
-    padding: 0 1em 6em;
-    font: 400 1.1em/1.7 var(--body-font);
-    background: var(--bg-color);
-    color: var(--text-color);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+margin: 0;
+padding: 0 1em 6em;
+font: 400 1.1em/1.7 var(--body-font);
+background: var(--bg-color);
+color: var(--text-color);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+max-width: 800px;
+margin: 0 auto;
 }
 h1, h2 {
-    text-align: center;
-    font-family: var(--header-font);
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.5px;
-    color: #2c3e50;
+text-align: center;
+font-family: var(--header-font);
+font-weight: 700;
+line-height: 1.25;
+letter-spacing: -0.5px;
+color: #2c3e50;
 }
 h1 { font-size: 2.6em; margin: 1.5em 0; }
 h1 span { display: block; font-size: 0.5em; font-weight: 600; color: #7f8c8d; margin-top: 0.5rem; letter-spacing: 0px; }
@@ -51,52 +52,63 @@ h2 { font-size: 1.8em; margin: 2em 0 1.5em; border-bottom: 1px solid var(--borde
 p { margin: 1em 0; }
 p > strong { font-family: var(--header-font); font-weight: 600; }
 code {
-    font-family: "SF Mono", "Consolas", "Menlo", monospace;
-    background: rgba(44, 62, 80, 0.05);
-    padding: 3px 7px;
-    border-radius: 4px;
-    font-size: 0.85em;
+font-family: "SF Mono", "Consolas", "Menlo", monospace;
+background: rgba(44, 62, 80, 0.05);
+padding: 3px 7px;
+border-radius: 4px;
+font-size: 0.85em;
 }
 hr {
-    border: 0;
-    height: 1px;
-    background: var(--border-color);
-    margin: 4em auto;
+border: 0;
+height: 1px;
+background: var(--border-color);
+margin: 4em auto;
 }
 .logic-list {
-    background: var(--subtle-bg);
-    border-left: 4px solid var(--primary-accent);
-    padding: 1.5em 1.8em;
-    margin: 2em 0;
-    font-family: var(--header-font);
-    font-size: 1rem;
-    line-height: 1.6;
-    border-radius: 0 4px 4px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+background: var(--subtle-bg);
+border-left: 4px solid var(--primary-accent);
+padding: 1.5em 1.8em;
+margin: 2em 0;
+font-family: var(--header-font);
+font-size: 1rem;
+line-height: 1.6;
+border-radius: 0 4px 4px 0;
+box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.provisional-note { /* Style for the call-out box */
+background: var(--subtle-bg);
+border-left: 4px solid var(--primary-accent); /* Using primary accent for a note, not a warning */
+padding: 1em 1.5em;
+margin: 2em 0 1em; /* Margin before Appendix E starts */
+font-family: var(--header-font);
+font-size: 0.95rem;
+line-height: 1.6;
+border-radius: 0 4px 4px 0;
+box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 table {
-    border-collapse: collapse;
-    margin: 2.5em auto;
-    width: 100%;
-    font-family: var(--header-font);
-    font-size: 0.9em;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+border-collapse: collapse;
+margin: 2.5em auto;
+width: 100%;
+font-family: var(--header-font);
+font-size: 0.9em;
+box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 th, td {
-    border: 1px solid var(--border-color);
-    padding: 10px 14px;
-    text-align: center;
-    vertical-align: middle;
+border: 1px solid var(--border-color);
+padding: 10px 14px;
+text-align: center;
+vertical-align: middle;
 }
 th { background-color: var(--subtle-bg); font-weight: 700; }
 td.left { text-align: left; }
 caption {
-    caption-side: bottom;
-    font-style: italic;
-    font-size: 0.9em;
-    color: #7f8c8d;
-    margin-top: 1em;
-    text-align: center;
+caption-side: bottom;
+font-style: italic;
+font-size: 0.9em;
+color: #7f8c8d;
+margin-top: 1em;
+text-align: center;
 }
 .chip { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75em; font-weight: 700; }
 .k0 { background: var(--chip0-bg); }
@@ -108,81 +120,96 @@ caption {
 .svg-node-text { font-size: 14px; font-weight: bold; font-family: var(--header-font); text-anchor: middle; }
 .edge { stroke: #333; stroke-width: 1.5; fill: none; }
 @media(max-width: 600px) {
-    body { font-size: 1em; }
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.5em; }
+body { font-size: 1em; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
 }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <h1 style="font-size: 2.2em; margin-bottom: 0.5em;">Distinction Theory</h1>
-    <p style="text-align:center; font-size: 1.2em; color: #7f8c8d; margin-top:0;">A Taxonomic Framework from First Principles</p>
+<h1 style="font-size: 2.2em; margin-bottom: 0.5em;">Distinction Theory</h1>
+<p style="text-align:center; font-size: 1.2em; color: #7f8c8d; margin-top:0;">A Framework for Finitely Distinguishable Structures</p>
 
-    <div class="logic-list" style="margin-top: 2em; margin-bottom: 2.5em; border-left-color: var(--secondary-accent); font-size: 0.95rem;">
-        <strong>Abstract:</strong> This framework develops an operational taxonomy for structures by starting from the fundamental necessity of distinction. It posits that reality for any system consists of what it can distinguish and record under finite constraints. A foundational axiom formalizes the act of making a distinction. From this, core descriptive axes (Identity, Multiplicity, Structure) are shown to be necessary. Their states define canonical forms, potential for change (informational curvature), and representational cost. The framework then explores how system dynamics, memory, and operational time emerge, leading to a classification of realizable structures and their limits.
-    </div>
+<div class="logic-list" style="margin-top: 2em; margin-bottom: 2.5em; border-left-color: var(--secondary-accent); font-size: 0.95rem;">
+<strong>Abstract:</strong> This work presents an operational way to classify structures, starting from the basic necessity of making distinctions. It proposes that what is "real" for any system is what it can distinguish and record within its finite memory under finite limitations, offering a unified lens for understanding complexity from physics to computation. A core principle formalizes how distinctions are made. From this, fundamental descriptive categories, Identity, Multiplicity, and Structure, emerge as essential for characterizing patterns within this memory. The states of these categories define standard structural forms, their potential for change (termed informational curvature), and the resources needed to represent them. The framework then explores how the perception or generation of system dynamics, memory, and an operational sense of time can arise for systems capable of ordered processing and recording, leading to a classification of achievable structures and their inherent limits.
+</div>
+
 </div>
 <hr/>
 
 <div class="container">
 <h2>1. The Foundational Act: Distinction Itself</h2>
-<p>This framework begins not with metaphysical claims about what 'exists,' but with an operational premise: any meaningful description or interaction presupposes distinction. The claim "no distinctions exist" is self-refuting in a manner analogous to Gödel's diagonal argument. To express this claim (e.g., "all is one" or "nothing is different") requires instantiating symbols or concepts that are distinct from their background or from each other. This is not circular reasoning but a performative consistency constraint: any attempt to deny distinction generates distinction as a precondition of its own expression.</p>
-<p>This operational necessity is formalized as the foundational axiom of this framework:</p>
-<p><strong>Axiom 0 (Finite Executability):</strong> A finite state-transition that makes and records at least one difference is ontologically admissible. The first such transition (e.g., (S₀,M₀) →Δ₁ (S₁,M₁=M₀∪{d₁})) co-generates the first recorded difference (d₁) and the minimal system state (S₁,M₁) capable of referencing it, without requiring a pre-existing meta-distinguisher. All subsequent constructions derive from this primitive act of distinction-making and recording.</p>
-<p><em>Note on Temporality and Memory for Axiom 0:</em> At this axiomatic level, 'state-transition' refers to a formal, ordered mapping establishing a logical sequence (an S₀ "before" an S₁). 'Records a difference' (colloquially, 'writes to memory') signifies that the distinction (d₁) results in an observable, recordable change in the system's state (M'∖M ≠ ∅). This initial "memory" is simply the record of that first difference. These concepts do not presuppose a pre-existing physical or temporal manifold. The emergence of more complex memory systems and measurable, physical time from such elementary logical sequences will be detailed later.</p>
+<p>This framework's premise is operational, focusing on what can be done (e.g., how a simple sensory system distinguishes a shape from its background) rather than metaphysical claims about 'existence.' Any meaningful description or interaction inherently presupposes the ability to distinguish. The assertion "no distinctions exist" refutes itself; to express it (e.g., "all is one") requires using distinct symbols or concepts. This need for internal consistency means that any attempt to deny distinction must first employ distinction to be expressed.</p>
+<p>This operational necessity is formalized as the foundational principle:</p>
+<p><strong>Axiom 0 (Finite Executability):</strong> A finite change of state that creates and records at least one difference is fundamentally permissible. The first such change (e.g., from an initial state (S₀,M₀) to a new state (S₁,M₁) where M₁ now includes a new difference d₁) simultaneously generates this first recorded difference (d₁) and the minimal system state (S₁,M₁) capable of referencing it. This process does not require a pre-existing "master distinguisher." The primitive ordering implied by `S₀ → S₁` is a precursor to the system-internal construction of a temporal perspective, distinct from any assumed external, universal time. All subsequent constructions build upon this primitive act of making and recording distinctions.</p>
+<p><em>Note on Temporality and Memory for Axiom 0:</em> Axiomatically, 'state-transition' implies a formal, ordered mapping (S₀ comes "before" S₁). 'Records a difference' means the distinction (d₁) causes an observable change in state (the new memory M' is not identical to the old memory M). This initial "memory" (M₁) is the primordial medium, co-generated with d₁ and where d₁ is marked, not a pre-existing complex system. More complex memory and physical time emerge later from such logical sequences and the progressive structuring of this medium. This co-generation also implicitly establishes primitive viewpoints: a boundary creates a 'this side' (the distinguished part), an 'other side' (the remainder), and the 'boundary itself' as distinct locations within this emerging memory space.</p>
 
 <h2>2. The First Consequence: The Primary Partition</h2>
-<p>Axiom 0 asserts the admissibility of a recorded distinction. The first and most fundamental distinction that arises from this is the partition between what *can* be finitely distinguished and recorded, and what *cannot*. This establishes a boundary:</p>
+<p>Axiom 0 allows for a recorded distinction. The first and most fundamental distinction that arises is the division between what *can* be finitely distinguished and recorded <strong>within the system's memory medium</strong> and what *cannot*. This establishes a primary boundary:</p>
 <div class="logic-list">
 <ol>
-<li><strong>The Necessity of Distinction.</strong> (As established above) Distinction is the inescapable starting point.</li>
-<li><strong>The Primary Partition.</strong> The first distinction necessarily made is that between the <strong>Finite</strong> (what can be described or enacted by a system satisfying Axiom 0) and the <strong>Infinite/Void/Indistinct</strong> (what lies beyond such finite description or enactment).</li>
+<li><strong>The Necessity of Distinction.</strong> As established, distinction is the unavoidable starting point.</li>
+<li><strong>The Primary Partition.</strong> The first necessary distinction is between the <strong>Finite</strong> (what a system satisfying Axiom 0 can describe or enact <strong>by patterning its memory</strong>) and the <strong>Infinite/Void/Indistinct</strong> (what lies beyond such finite description or action).</li>
 </ol>
 </div>
-<p>To map the universe of all possible structures, we begin with this fundamental act of partitioning. This act itself defines a "thing" (the Finite/Distinguishable) in contrast to "not-that-thing" (the Indistinct).</p>
+<p>To map the universe of all possible structures, we begin with this act of partitioning. This act itself defines a "thing" (the Finite/Distinguishable) in contrast to "not-that-thing" (the Indistinct). This Primary Partition (D₁) between the Finite (X) and the Infinite/Void/Indistinct (¬X) creates three irreducible points of focus, or fundamental observational perspectives, concerning this distinction:
+<ol style='font-family: var(--header-font); font-size: 0.95rem; margin-top: 0.5em; margin-bottom: 0.5em; padding-left: 2em;'>
+<li>A perspective on <strong>X itself</strong> (the 'figure' or distinguished entity).</li>
+<li>A perspective on <strong>¬X</strong> (the 'ground' or remainder).</li>
+<li>A perspective on the <strong>relation or boundary (D₁)</strong> between X and ¬X.</li>
+</ol>
+These three elemental perspectives, on the object, its complement, and their interface, are inherent in the act of distinction. More advanced, higher-order perspectives require additional system capabilities like memory and reflective processing (discussed in Sections 8-10).
+</p>
 
 <h2>3. Describing What is Distinguished: Emergence of I, N, S</h2>
-<p>Once a domain of the "Finite" or "Distinguishable" is established by the primary partition, any specific entity or structure within this domain must be further characterizable. To describe <em>how</em> one finitely distinguishable structure differs from another, or from the undifferentiated void, a minimal set of descriptive dimensions becomes necessary. These are Identity (I), Multiplicity (N), and Structure (S).</p>
+<p>Once the primary partition establishes the "Finite" domain (with its perspectives on entity, complement, and boundary), any specific structure encountered requires further characterization. Describing *how* such structures differ from the void or each other necessitates a minimal set of descriptive dimensions: Identity (I), Multiplicity (N), and Structure (S). <strong>These three axes represent the fundamental ways the system's memory medium is patterned or "cut" by the act of distinction.</strong></p>
 <div class="logic-list">
 <strong>Core Axes of Distinction</strong>
 <ul>
-<li><strong>Identity (I):</strong> What invariant pattern, type, or quality is distinguished? (e.g., "a circle," "the color red," "an electron").</li>
-<li><strong>Multiplicity (N):</strong> How many distinguishable instances of that identity exist? (e.g., "three circles," "a specific shade of red," "a pair of electrons").</li>
-<li><strong>Structure (S):</strong> How are those instances arranged, related, or connected? (e.g., "circles arranged concentrically," "red next to blue," "electrons in an orbital").</li>
+<li><strong>Identity (I):</strong> What fundamental pattern, type, or quality is distinguished? (e.g., "a circle," "the color red," "an electron").</li>
+<li><strong>Multiplicity (N):</strong> How many distinct instances of that identity exist? (e.g., "three circles," "a specific shade of red," "a pair of electrons").</li>
+<li><strong>Structure (S):</strong> How are these instances arranged, related, or connected? (e.g., "circles arranged concentrically," "red next to blue," "electrons in an orbital"). This capacity for representing or enacting order is particularly crucial, as it will form the basis for how certain systems construct a perspective of change and temporal sequence.</li>
 </ul>
 </div>
-<p><strong>Structural Basis for I, N, S:</strong> These three axes represent the minimal independent dimensions along which any distinguishable structure must be specifiable.
-    Removing Identity leaves one unable to state *what* is being counted or arranged.
-    Removing Multiplicity prevents counting or distinguishing between one and many.
-    Removing Structure collapses arrangements into mere collections (multisets) and prevents describing order or relationships.
-Hence, the set {I,N,S} is minimal and sufficient for characterizing finite distinctions. They are structural preconditions for any system to encode, store, and operate on differences beyond the primitive d₁ of Axiom 0.</p>
+<p><strong>While these axes are distinct for description, a structure's full operational meaning often arises from their combined specification.</strong></p>
+<p><strong>Structural Basis for I, N, S:</strong> Any distinguishable structure <strong>recorded in memory</strong> must be specifiable along these three minimal, independent dimensions.
+Without Identity, one cannot state *what* is being counted or arranged.
+Without Multiplicity, one cannot count or distinguish between one and many.
+Without Structure, arrangements become mere collections, and order or relationships cannot be described.
+</p>
+<p>A structure's 'Identity' (I) is relative to its descriptive layer. An 'electron', a primitive Identity at one level, could be an (I,N,S) combination (e.g., of field modes) at a finer level of detail. The framework allows this recursive decomposition. Such <strong>redefinition of identity across layers is often structurally necessary to prevent the potential for change (K) and representational cost (C<sub>R</sub>) from becoming unmanageable during scaling or complexification.</strong> This frequently involves reflective operations (Sec. 7) that elevate recurring patterns to new, coarser-grained Identity types. At any given observational layer, distinctions use the I,N,S axes relevant to that level of resolution.</p>
+<p>Thus, {I,N,S} forms a minimal and sufficient set for characterizing finite distinctions from a particular observational standpoint. These axes are preconditions for encoding, <strong>inscribing (storing)</strong>, and operating on differences within the memory medium beyond Axiom 0's initial difference, and are vital for articulating observations from the fundamental viewpoints that a distinction establishes.</p>
 
 <h2>4. Operationalizing Distinction: The Reality Criterion and Finitude</h2>
-<p>For a structure described by (I,N,S) to be considered operationally real or realizable by a system, its description and any operations upon it must be achievable within finite constraints. This leads to the Reality Criterion and Finitude Condition:</p>
+<p>For an (I,N,S)-described structure to be operationally real or achievable, its description and related operations must be manageable within finite limits. This leads to the Reality Criterion and Finitude Condition:</p>
 <div class="logic-list">
-<strong>Core Logical Chain (continued)</strong>
+<strong>Core Logical Sequence (continued)</strong>
 <ol start="3">
-<li><strong>Emergence of Descriptive Axes.</strong> The primary partition necessitates the emergence of I, N, and S to describe <em>how</em> a finite structure differs from the infinite void or other finite structures.</li>
-<li><strong>The Reality Criterion.</strong> A finite structure is realizable only if its distinguishing features (its I, N, S state) can be specified and it can participate in at least one operational distinction whose result can be recorded by a finite system. An unrecordable distinction is operationally null.</li>
-<li><strong>The Finitude Condition.</strong> To remain within the realizable domain, all active descriptive axes (I,N,S) for a given structure or system must remain finite under some resource budget C. Null (Ø) or divergent (ω) values on any of these dimensions lead to structures outside operational realizability.</li>
-<li><strong>Modes of Internal Distinction.</strong> Internal complexity within a distinguished finite region must itself be differentiable along these same three irreducible axes: I, N, and S.</li>
+<li><strong>Emergence of Descriptive Axes.</strong> The primary partition and its viewpoints necessitate Identity (I), Multiplicity (N), and Structure (S) to characterize finite structures (patterns in memory) relative to the void or other structures.</li>
+<li><strong>The Reality Criterion.</strong> A finite structure is achievable only if its distinguishing features (its I, N, S state) can be specified *from at least one coherent perspective* and it can participate in at least one operational distinction whose result can be recorded by a finite system. An unrecordable distinction is, operationally, no distinction at all.</li>
+<li><strong>The Finitude Condition.</strong> To remain within the achievable domain, all active descriptive axes (I,N,S) for a given structure or system must stay finite under some resource budget C. Null (Ø, signifying the axis is undefined, non-existent, or not applicable for that structure) or divergent (ω, or unbounded) values on any axis lead to structures that are operationally unachievable.</li>
+<li><strong>Modes of Internal Distinction.</strong> Internal complexity within a distinguished finite region <strong>of memory</strong> must itself be differentiable along these same three irreducible axes: I, N, and S.</li>
 </ol>
 </div>
 <div class="logic-list">
-<strong>Operational Definitions for a System under Constraint</strong>
+<strong>Operational Definitions for a System under Constraints</strong>
 <ul>
-<li><strong>Distinction (generalized):</strong> A computable map Δ:(Sys,M)→(Sys',M') where M'∖M ≠ ∅ (an observable state change reflecting a change in I, N, or S).</li>
-<li><strong>Resource Budget C:</strong> A triple (E,M,T) representing finite energy, memory capacity, and time (or operational steps) available for realizing and processing distinctions.</li>
-<li><strong>|I|_max:</strong> The maximum number of distinct identity types a system can represent or process, e.g., related to E/ε (energy per symbol) or available unique identifiers.</li>
-<li><strong>|N|_max:</strong> The maximum number of instances a system can track for a given identity, e.g., related to M (available memory cells or counters).</li>
-<li><strong>|S|_max:</strong> The maximum number of distinct configurations or arrangements the system can realize or distinguish, often related to T or combinatorial limits imposed by M and processing capacity.</li>
+<li><strong>Distinction (generalized):</strong> A computable process Δ that transforms a system and its current memory state (Sys,M_current) to a new state (Sys',M'_new) where M'_new is observably different from M_current, reflecting a change in I, N, or S within the system's memory.</li>
+<li><strong>Resource Budget C:</strong> A triple (E,M,T) representing finite energy, memory capacity, and time (or operational steps) available. These resources can often be traded off against each other, subject to fundamental physical limits (e.g., Landauer's principle for memory erasure,<sup id="ref1"><a href="#fn1">1</a></sup> quantum bounds on computation speed per energy unit<sup id="ref2"><a href="#fn2">2</a></sup>). A system effectively chooses an operating point based on these trade-offs.
+<div style="font-size:0.9em; margin-top:0.5em; padding-left:1em; border-left: 2px solid var(--primary-accent); margin-left:-1em;">
+<em>Note on Memory (M within C):</em> The memory capacity (M) in budget C is the finite <strong>distinguishable space or medium</strong> available. (I,N,S)-characterized distinctions are inscribed, maintained, and operated upon within this space. The axes (I,N,S) thus define fundamental ways this memory space can be patterned by distinction-making operations (Δ).
+</div>
+</li>
+<li><strong>|I|_max:</strong> The maximum number of distinct identity types a system can represent <strong>within its memory</strong>, possibly related to energy per symbol or available unique identifiers. This limit can be dynamic (Sec. 7).</li>
+<li><strong>|N|_max:</strong> The maximum number of instances a system can track <strong>(instantiate in memory)</strong> for a given identity, possibly related to available memory units.</li>
+<li><strong>|S|_max:</strong> The maximum number of distinct configurations the system can realize or distinguish <strong>within its memory</strong>, often related to time or combinatorial limits imposed by memory and processing. For some aspects (e.g., structural configurations where S is Open), M<sub>S</sub> (the number of states for Structure) may be an adaptive upper limit (Sec. 6).</li>
 </ul>
 </div>
 
 <h2>5. Classifying Static Structures: Canonical Forms</h2>
-<p>With the axes (I, N, S) and their possible states (Null (Ø), Closed/Finite (C), Open-but-Finite (O), or Divergent (ω)) defined under a resource budget C, we can create a taxonomy of all formally definable structural types. The following table presents primary canonical forms. A subset of these satisfies the Finitude Condition and Reality Criterion, thus being operationally realizable. Forms with Null or Divergent axes are formally defined boundary cases, essential for theoretical completeness.</p>
+<p>Using the axes (I,N,S), their possible states (Ø, C, O, ω), and the resource budget C, we can create a taxonomy of formally definable structural types. The table below outlines primary standard forms. A subset, satisfying the Finitude Condition and Reality Criterion, is operationally achievable. Forms with Null or Divergent axes are formal boundary cases, included for theoretical completeness.</p>
 <table>
 <thead>
 <tr>
@@ -193,53 +220,51 @@ Hence, the set {I,N,S} is minimal and sufficient for characterizing finite disti
 </tr>
 </thead>
 <tbody>
-<tr style="background:var(--null-bg);"><td>Abstract Form Shell<br>(C, Ø, Ø)</td><td><code>(C,Ø,Ø)</code></td><td><span class="chip k0">0</span></td><td class="left">An abstract identity without instances or structure. (Not realizable if Ø implies non-existence for N.)</td></tr>
-<tr style="background:var(--null-bg);"><td>Multiplicity Stub<br>(Ø, C, Ø)</td><td><code>(Ø,C,Ø)</code></td><td><span class="chip k0">0</span></td><td class="left">Bare multiplicity without specific identity or structure. (Not realizable.)</td></tr>
-<tr style="background:var(--null-bg);"><td>Structure Pattern<br>(Ø, Ø, C)</td><td><code>(Ø,Ø,C)</code></td><td><span class="chip k0">0</span></td><td class="left">A bare structural template without specific identity or instances. (Not realizable.)</td></tr>
-<tr style="background:var(--flat-bg);"><td>Determinate Object<br>(C, C, C)</td><td><code>(C,C,C)</code></td><td><span class="chip k0">0</span></td><td class="left">A fully specified, static structure. Zero curvature. Foundation of data, logic, and mathematics.</td></tr>
-<tr style="background:var(--adapt-bg);"><td>Computational Processor<br>(C, O, C)</td><td><code>(C,O,C)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed identity and structure, processing varying multiplicity (e.g., finite automaton processing input strings).</td></tr>
-<tr style="background:var(--adapt-bg);"><td>Adaptive Recognizer<br>(O, C, C)</td><td><code>(O,C,C)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed multiplicity and structure, processing varying kinds/identity (e.g., a pattern detector learning new patterns).</td></tr>
-<tr style="background:var(--recur-bg);"><td>Self-Computation Model<br>(C, C, O)</td><td><code>(C,C,O)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed identity and multiplicity of components, with varying internal structure or sequence (e.g., general-purpose computation, self-modification).</td></tr>
-<tr style="background:var(--sing-bg);"><td>Null Collapse or Divergent Overflow<br>(Ø/ω present)</td><td>At least one axis is Null (Ø) or Divergent (ω)</td><td><span class="chip kn">Undefined</span></td><td class="left">The class of all forms un-realizable due to a null or divergent axis.</td></tr>
+<tr style="background:var(--null-bg);"><td>Abstract Form Shell<br>(C, Ø, Ø)</td><td><code>(C,Ø,Ø)</code></td><td><span class="chip k0">0</span></td><td class="left">An abstract identity (e.g., a type definition) where multiplicity or structure are not specified. Its operational role becomes clearer when combined with N and S. (Not achievable if N being Ø means it lacks existence.)</td></tr>
+<tr style="background:var(--null-bg);"><td>Multiplicity Stub<br>(Ø, C, Ø)</td><td><code>(Ø,C,Ø)</code></td><td><span class="chip k0">0</span></td><td class="left">Bare quantity where specific identity or structure is not applicable/defined. (Not achievable.)</td></tr>
+<tr style="background:var(--null-bg);"><td>Structure Pattern<br>(Ø, Ø, C)</td><td><code>(Ø,Ø,C)</code></td><td><span class="chip k0">0</span></td><td class="left">A bare structural template where specific identity or instances are not applicable/defined. (Not achievable.)</td></tr>
+<tr style="background:var(--flat-bg);"><td>Determinate Object<br>(C, C, C)</td><td><code>(C,C,C)</code></td><td><span class="chip k0">0</span></td><td class="left">A fully specified, static structure. Zero potential for internal change. Foundation of data, logic, mathematics.</td></tr>
+<tr style="background:var(--adapt-bg);"><td>Computational Processor<br>(C, O, C)</td><td><code>(C,O,C)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed identity and structure, processing varying quantity (e.g., a simple counter, a finite automaton processing input strings).</td></tr>
+<tr style="background:var(--adapt-bg);"><td>Adaptive Recognizer<br>(O, C, C)</td><td><code>(O,C,C)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed quantity and structure, processing varying kinds/identities. I=O means its set of recognizable identities can grow (Sec. 7); its current list of types is finite but extensible (e.g., learning new patterns and labeling them). It expands the set of types it processes, not the fundamental nature of 'type'.</td></tr>
+<tr style="background:var(--recur-bg);"><td>Self-Computation Model<br>(C, C, O)</td><td><code>(C,C,O)</code></td><td><span class="chip kp">> 0</span></td><td class="left">Fixed identity and quantity of components, with varying internal structure or sequence (e.g., general-purpose computation, self-modification). The range of structural variations (M<sub>S</sub>) may be an adaptive limit (Sec. 6).</td></tr>
+<tr style="background:var(--sing-bg);"><td>Null Collapse or Divergent Overflow<br>(Ø/ω present)</td><td>At least one axis is Null (Ø) or Divergent (ω)</td><td><span class="chip kn">Undefined</span></td><td class="left">The class of all forms unachievable due to a null (undefined/non-applicable) or divergent axis.</td></tr>
 </tbody>
-<caption>The primary canonical forms of structure. Axis states: Null (<code>Ø</code>), Closed/Finite (<code>C</code>), Open-but-Finite (<code>O</code>), or Divergent (<code>ω</code>). Forms with a <code>Ø</code> or <code>ω</code> axis generally do not meet the Reality Criterion for direct instantiation as operational systems. The tuples (X,Y,Z) in the 'Axes' column denote the state of (Identity, Multiplicity, Structure) respectively.</caption>
+<caption>Primary standard forms of structure. Axis states: Null (<code>Ø</code>: undefined, non-existent, or not applicable for that aspect), Closed/Finite (<code>C</code>), Open-but-Finite (<code>O</code>), or Divergent (<code>ω</code>). Forms with a <code>Ø</code> or <code>ω</code> axis generally don't meet the Reality Criterion for direct implementation. Forms where an axis is Null (Ø) typically represent abstract components; concrete operational structures usually require non-Null states across I, N, and S. Tuples (X,Y,Z) in 'Axes' denote (Identity, Multiplicity, Structure) states. <strong>Crucially, for axes in an 'Open' (O) state, the system's memory (M, part of budget C) is the dynamic medium recording and maintaining that axis's current state and potential for change.</strong></caption>
 </table>
-<p><em>Notation guide for axis states: C = Closed (fixed/bounded, determinate), O = Open (variable but finite, possesses potential for change), Ø = Null (undefined/non-existent for that aspect), ω = Divergent (unbounded, exceeds finite constraints)</em></p>
+<p><em>Notation guide for axis states: C = Closed (fixed/bounded, definite), O = Open (variable but finite, potential for change), Ø = Null (undefined, non-existent, or not applicable for that aspect), ω = Divergent (unbounded, exceeds finite limits)</em></p>
 
 <hr/>
 
 <h2>6. Introducing Dynamics: The Potential for Change</h2>
-<p>The canonical forms describe structures primarily in a static sense or indicate their potential based on axis states. Dynamics arise when systems possess the *potential* for internal change, meaning they are not fully determinate (Closed) along all axes. This potential and the cost of realizing it are foundational to all processing and change.</p>
+<p>Standard forms describe static structures or, crucially, indicate a *potential for varied configurations* via their axis states. The *experience or generation of dynamics* becomes possible for systems that not only possess this potential for internal change (i.e., not all axes are Closed) but can also *process these changes in an ordered way*. This potential for change, and the cost to realize and order it, are fundamental to such processing.</p>
 <div class="logic-list">
 <strong>1. Informational Curvature (K)</strong>
-<p>An axis is 'Closed' (C) if its value is fixed and determinate; it contributes 0 to K. An axis is 'Open' (O) if its value can vary over a set of <code>M</code> possible states or values under constraint C. If such an axis currently occupies one specific state out of M possibilities (where M ≥ 1), it has <code>M-1</code> potential other states it could transition to. This <code>M-1</code> is its contribution to K. (If M=0 for an axis, it's effectively Null, contributing 0 or being undefined for K).</p>
-<p><strong>Informational Curvature (K)</strong> is the sum of these contributions from all Open axes: <code>K = Σ (M<sub>axis</sub> - 1)</code> for all Open axes, where M<sub>axis</sub> is the number of distinct states that axis can take. A system with all axes Closed (e.g., a Determinate Object (C,C,C)) has K=0 and is considered "flat". A system with at least one Open axis has K>0, indicating "positive curvature" and a space of possible future states or configurations.</p>
-<p><strong>Example:</strong> Consider a 2-bit register. Its Identity (type: 2-bit register) and Structure (arrangement of 2 bits) are typically fixed (I=C, S=C), so K<sub>I</sub>=0 and K<sub>S</sub>=0. Its Multiplicity (N) axis can represent <code>M<sub>N</sub> = 2<sup>2</sup> = 4</code> distinct bit patterns. If N is Open (meaning the register's value can change), its contribution to curvature is K<sub>N</sub> = M<sub>N</sub> - 1 = 4 - 1 = 3. The total curvature for this system is K = K<sub>I</sub> + K<sub>N</sub> + K<sub>S</sub> = 0 + 3 + 0 = 3. This represents the three other states the register *could* transition to.</p>
+<p>A 'Closed' (C) axis, fixed and definite, contributes 0 to K. An 'Open' (O) axis can vary over <code>M</code> (≥1) states within budget C; its K contribution is <code>M-1</code>. (M=0 implies Null). An 'O' axis has a finite number of states <code>M<sub>axis</sub></code> under C. For some axes (e.g., S=O configurations), <code>M<sub>axis</sub></code> might be an adaptive upper limit (e.g., <code>M<sub>S</sub>(τ)</code> at time τ), updated as new states are recorded <strong>within the memory medium</strong> via distinction operations (Sec. 7-8) with manageable costs. While K itself is a structural property (a measure of this potential space of configurations), it is only when a system can sequentially navigate and record its transitions through these potential states that a 'dynamic' perspective emerges for that system.</p>
+<p><strong>Informational Curvature (K)</strong> is the sum <code>Σ (M<sub>axis</sub> - 1)</code> for all Open axes. <strong>K measures the system's available free operational distinctions, its 'capacity for future distinguishability', independent of specific descriptive codes.</strong> A system with all axes Closed (e.g., Determinate Object (C,C,C)) has K=0 (is "flat," an <strong>informational dead-end for internal distinction operations from its own perspective</strong>). K>0 indicates "positive curvature" and a space of possible future states <strong>within its memory</strong>.</p>
+<p><strong>Example:</strong> A 2-bit register (Identity and Structure are Closed) has Multiplicity Open with <code>M<sub>N</sub> = 2<sup>2</sup> = 4</code> distinct patterns. Its K<sub>N</sub> = M<sub>N</sub> - 1 = 3. Total K = 3, representing the three other states it *could* adopt.</p>
 </div>
 <div class="logic-list">
 <strong>2. Representational Cost (C<sub>R</sub>)</strong>
-<p><strong>Open-but-Finite (O) Definition:</strong> An axis is 'Open' if its state can vary within a finite range of possibilities, bounded by the system's overall resource budget C. Openness implies resource-bounded extensibility, not divergence (ω).</p>
-<p>For a system with K>0, realizing its potential (i.e., changing its state along an open axis) or simply maintaining the openness (the potential for change) consumes finite resources from the budget C (energy, memory, time/steps). This is the representational or operational cost. Maintaining an open axis (I=O, N=O, or S=O) requires sustained resource availability for potential state changes, which is the cost of computation, adaptation, or persistence of potential itself.</p>
+<p><strong>Open-but-Finite (O) Definition:</strong> An axis is 'Open' if its state can vary within a finite range, bounded by the system's overall resource budget C. Openness implies resource-limited extensibility, not unboundedness (ω).</p>
+<p>For a K>0 system, realizing its potential (i.e., changing its state along an open axis) or simply maintaining its openness consumes finite resources from C. This is its representational or operational cost. Maintaining an open axis (I=O, N=O, or S=O) requires sustained resource availability for potential state changes <strong>(i.e., modifying the memory medium)</strong>, which is the cost of computation, adaptation, or the persistence of potential itself.</p>
 </div>
 
 <h2>7. Mechanisms of Change: Distinction Operations</h2>
-<p>For a system to exhibit dynamics (i.e., change its state with respect to I, N, or S), it must perform operations that alter distinctions. There are three fundamental ways a finite system can act on structure by manipulating distinctions:</p>
+<p>For a system to exhibit dynamics (change its I,N,S state), it must perform operations that alter distinctions <strong>recorded in its memory medium</strong>. A finite system can act on structure by manipulating distinctions in three fundamental ways (termed Δ-operators, for change):</p>
 <ul>
-<li><strong>Introduce:</strong> Generates a new distinction, a new type of entity, or a new axis of distinction (e.g., resolving an undifferentiated item into sub-components, each with new identities, or forming a new type of connection). This often increases K or changes the M<sub>axis</sub> values.</li>
-<li><strong>Resolve:</strong> Projects potential structure into realized form, or reduces ambiguity along an Open axis (e.g., a measurement selecting one state from M possibilities, an operation fixing a variable to a specific value). This typically reduces K along the resolved dimension while potentially enabling new distinctions or operations elsewhere.</li>
-<li><strong>Reflect:</strong> Applies distinction recursively to the system's own internal states, memory, or prior distinctions (e.g., learning by comparing current input to stored patterns, self-modeling, error correction). This is key for systems that adapt, learn, or exhibit complex internal dynamics.</li>
+<li><strong>Introduce:</strong> Generates a new distinction, a new type of entity, or a new category of distinction (e.g., resolving an undifferentiated item into sub-components, each with new identities, or forming a new type of connection). This often increases K or changes the number of possible states M<sub>axis</sub>.</li>
+<li><strong>Resolve:</strong> Makes potential structure actual, or reduces ambiguity along an Open axis (e.g., a measurement selecting one state from many possibilities, an operation fixing a variable to a specific value). This typically reduces K along the resolved dimension while potentially enabling new distinctions or operations elsewhere.</li>
+<li><strong>Reflect:</strong> Recursively applies distinction to patterns within its memory medium, including records of its own internal states or prior distinctions (e.g., learning by comparing current input to stored patterns, self-modeling, error correction). This is key for systems that adapt, learn, or exhibit complex internal dynamics. For instance, a Reflect operation can identify recurring structural or behavioral regularities and promote them to the status of new, recognized 'Identities' (I'), thus adapting the system's maximum number of identity types dynamically and forming hierarchical representations. The representational cost (C<sub>R</sub>) of such reflective operations can be significant. A system would typically engage in reflection if the expected benefits (e.g., reduced future processing costs or increased K via more potent abstractions) outweigh this cost. Reflective operations also enable modeling or switching between the fundamental perspectives (figure, ground, boundary) inherent in prior distinctions.</li>
 </ul>
-<p>These Δ-operators (delta-operators, signifying change) are the minimal set by which distinctions are actively modified. All dynamics within the framework result from sequences of their application, consuming resources from C.</p>
+<p>These Δ-operators are the minimal set for actively modifying distinctions. All experienced dynamics, from a system's perspective, result from sequences of their application, consuming resources from C.</p>
 
 <hr/>
 
 <h2>8. The Emergence of Memory (as History) and Operational Time</h2>
-<p>While Axiom 0 introduced "memory" as the minimal record of a single distinction, a more robust concept of memory, as a historical record enabling complex dynamics, emerges from systems capable of sequential self-reference.
-Systems with K>0, particularly the <strong>Self-Computation Model (C,C,O)</strong>, possess fixed Identity and Multiplicity of components but can vary their internal Structure (S) or sequence of operations. Each application of a distinction operation (Δ) changes the system's internal state (specifically its S-configuration or other Open axes).</p>
-<p>If these state changes are recorded sequentially, the system generates an ordered sequence of its own past configurations: (S₀, M₀) →Δ₁ (S₁, M₁) →Δ₂ (S₂, M₂) ...
-This ordered sequence of recorded internal states, (M₀ ⊂ M₁ ⊂ M₂ ...), constitutes the system's **memory as a historical trace**. From the system's internal perspective, operating (accessing its memory of prior states to determine its next state via Δ-operations) necessarily creates this ordered logical sequence. This internal, well-founded ordering of memory writes is distinct from, and prerequisite to, the emergence of external, physical clock time.</p>
-<p>This sequence defines an **operational time** specific to the system. Each Δ transition is an elementary "tick" of its internal clock. This "time" is typically irreversible because state updates (Δ-operations like Resolve or certain Introductions) often involve choices, information compression, or thermodynamically irreversible physical processes, making exact reversal computationally infeasible or prohibitively costly under constraint C.</p>
-<p>Thus, operational time does not "flow over" a static grid of possibilities; it is actively *generated within it* by systems capable of recursively processing and recording their own structural changes.</p>
+<p>Axiom 0 introduced minimal "memory" as the medium for the first recorded distinction. Robust memory, as a historical record enabling complex dynamics, emerges from systems capable of sequential self-reference, effectively structuring this memory medium over time. Systems with K>0, especially the <strong>Self-Computation Model (C,C,O)</strong>, have fixed Identity and Multiplicity but can vary internal Structure (S) or operational sequence. Each Δ-operation changes the system's internal state by making new "cuts" or modifications within its available memory space.</p>
+<p>If these state changes are recorded sequentially within this memory medium, the system generates an ordered sequence of its own past configurations: (S₀, M₀) →Δ₁ (S₁, M₁) →Δ₂ (S₂, M₂) ... This ordered sequence is not merely a set of states; it is a *specific structural record constructed by the system itself*, representing *its* experienced or enacted history. It is this *internally generated and ordered structure within the memory medium* that constitutes the basis for that system's operational time (τ). From the system's internal perspective, operating (accessing its memory of prior states to determine its next state via Δ-operations) necessarily creates this ordered logical sequence. **This sequential construction and recording is what transforms a timeless space of potential structures into an experienced 'unfolding' or 'dynamic' for that particular system.**</p>
+<p>This sequence defines an <strong>operational time (τ)</strong> *specific to the system and its operational perspective*. Each Δ transition, *when recorded as part of this ordered sequence*, is an elementary "tick" of its internal clock. This internally generated operational time (τ) is distinct from, and must operate within, any externally imposed limit on the total number of operational steps (T) specified by the resource budget C (thus, τ ≤ T). If a system's cumulative internal operations (its τ) reach the external limit T, the system halts. This "time" is typically irreversible because Δ-operations often involve choices, information compression, or physically irreversible processes, making exact reversal computationally unfeasible or prohibitively costly under constraint C. For systems with an open Structure axis (S=O), the effective number of distinguishable structural states, M<sub>S</sub>(τ), can dynamically increase as new configurations are encountered and recorded in memory over operational time τ.</p>
+<p>Thus, operational time does not "flow over" a static grid of possibilities; it is actively *generated within it* by systems capable of recursively processing and, crucially, *recording in an ordered manner* their own structural changes.</p>
 
 <div aria-label="A two-panel diagram contrasting the timeless global grid with the time-bound local path of an observer." class="svg-container">
 <svg viewbox="0 0 900 400">
@@ -258,7 +283,7 @@ This ordered sequence of recorded internal states, (M₀ ⊂ M₁ ⊂ M₂ ...),
 <path d="M -120 100 C -50 -70, 50 170, 120 -100" fill="none" marker-end="url(#arrowhead-blue-marker)" stroke="var(--primary-accent)" stroke-width="3"></path><text class="svg-node-text" fill="var(--primary-accent)" font-size="16px" font-weight="bold" x="0" y="20">Generated Sequence</text>
 <g><circle cx="-120" cy="100" fill="#333" r="7"></circle><text class="svg-label" font-weight="bold" x="-142" y="105">M₀</text><circle cx="-65" cy="52" fill="#333" r="7"></circle><text class="svg-label" font-weight="bold" x="-87" y="57">M₁</text><circle cx="-5" cy="65" fill="#333" r="7"></circle><text class="svg-label" font-weight="bold" x="-27" y="70">M₂</text><circle cx="60" cy="-5" fill="#333" r="7"></circle><text class="svg-label" font-weight="bold" x="38" y="0">M₃</text><circle cx="120" cy="-100" fill="#333" r="7"></circle><text class="svg-label" font-weight="bold" x="98" y="-95">M₄</text></g>
 <g transform="translate(-35, 58) rotate(20)"><path d="M 0 0 C 15 -10, 30 10, 45 0" fill="none" stroke="var(--secondary-accent)" stroke-dasharray="3 2" stroke-width="1.5"></path><text fill="var(--secondary-accent)" font-size="11px" font-weight="bold" text-anchor="middle" x="22.5" y="-10">Irreversible Update (Δ)</text></g>
-<text class="svg-label" font-style="italic" text-anchor="middle" y="180">Time is the generated, irreversible sequence of recorded states.</text>
+<text class="svg-label" font-style="italic" text-anchor="middle" y="180">From the local system's perspective, operational time is *its own generated and recorded sequence of states* (a specific path/ordering) carved out from the timeless global grid of possibilities, made possible by its capacity to sequentially process and remember.</text>
 </g>
 <defs>
 <marker id="arrowhead-marker" markerheight="8" markerwidth="8" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333"></path></marker>
@@ -266,19 +291,14 @@ This ordered sequence of recorded internal states, (M₀ ⊂ M₁ ⊂ M₂ ...),
 </defs>
 </svg>
 </div>
-<p><strong>Relativistic Note on Time:</strong> Each self-referential system with memory generates its own proper time <code>τ</code> along its world-line via its internal logical sequence of state updates. External coordinate time, as used in physics, can be understood to emerge when multiple such observers synchronize their internally generated sequences through shared, distinguishable events, naturally leading to conventions compatible with relativistic frameworks.</p>
+<p><strong>Relativistic Note on Time:</strong> Each self-referential system with memory generates its own intrinsic time <code>τ</code> along its path through states via its internal sequence of updates. External coordinate time (as in physics) can emerge when multiple observers synchronize their internal <code>τ</code> sequences through shared, distinguishable events. This leads to conventions compatible with relativistic physics: observers in different frames of reference report distinct (E,M,T) budgets but agree on invariant quantities derived from their resource expenditures (comparable to spacetime intervals).</p>
 
 <hr/>
 
 <h2>9. System Closure, Memory, and Distinction Processing</h2>
-<p>Not all realizable systems can perform new distinctions or support robust historical memory. A Determinate Object (I=C, N=C, S=C) is fully resolved (K=0). It *contains* distinctions (its defined state) but does not perform or recognize new ones. It is static and cannot support memory (beyond its fixed state) or computation in an active sense.</p>
-<p>In contrast, systems with at least one <em>open-but-finite axis</em> (state 'O'), and thus K>0, retain unrealized structural potential. Only these systems can:</p>
-<ul>
-<li>Perform new distinctions (by changing state along an 'O' axis using Δ-operations).</li>
-<li>Maintain a history of internal transformations (memory as a recorded sequence of states).</li>
-<li>Support operational time and recursive processing.</li>
-</ul>
-<p>However, for these "curved" systems (K>0) to be operationally realizable, they must still be <strong>globally closed</strong>. This means they are bounded by the overall resource constraint C (e.g., memory limits, maximum recursion depth, finite energy). Without such closure, an 'O' axis could lead to divergence (ω) or collapse (Ø), exiting the space of realizable systems.</p>
+<p>Not all achievable systems perform new distinctions or support robust historical memory. A Determinate Object (C,C,C) is fully resolved (K=0). It *contains* distinctions (its state <strong>as a fixed pattern in memory</strong>) but doesn't perform or recognize new ones from its own standpoint; it is static data.</p>
+<p>In contrast, systems with at least one <em>open-but-finite axis</em> (state 'O'), and thus K>0, retain unrealized structural potential. Only these systems can perform new distinctions, maintain a history (memory as a recorded sequence of states, enabling an internal temporal perspective), and support operational time and recursive processing.</p>
+<p>However, for these "curved" systems (K>0) to be operationally achievable, they must still be <strong>globally bounded</strong>. This means they are limited by the overall resource constraint C (e.g., memory limits, maximum recursion depth, finite energy). Without such bounds, an 'O' axis could lead to uncontrolled expansion (ω) or collapse (Ø), exiting the space of achievable systems <strong>(i.e., exceeding the capacity of the memory medium or failing to define a state within it)</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -286,76 +306,75 @@ This ordered sequence of recorded internal states, (M₀ ⊂ M₁ ⊂ M₂ ...),
 <th>Curvature (K)</th>
 <th>Can Perform New Distinctions?</th>
 <th>Supports Historical Memory?</th>
-<th>Requires Global Closure?</th>
+<th>Requires Global Bounds?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>(C, C, C) — Determinate Object</td>
+<td>(C, C, C) – Determinate Object</td>
 <td>K = 0</td>
 <td>❌</td>
 <td>❌ (is static data)</td>
-<td>Implicitly (already closed by definition)</td>
+<td>Implicitly (already bounded)</td>
 </tr>
 <tr>
-<td>(C, O, C) — Computational Processor</td>
+<td>(C, O, C) – Computational Processor</td>
 <td>K > 0</td>
 <td>✅ (on N)</td>
-<td>Partial (e.g., input states, intermediate results if S allows)</td>
+<td>Partial (e.g., input states, intermediate results if S allows for ordered recording)</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>(O, C, C) — Adaptive Recognizer</td>
+<td>(O, C, C) – Adaptive Recognizer</td>
 <td>K > 0</td>
 <td>✅ (on I)</td>
-<td>Partial (e.g., learned patterns, internal model if S allows)</td>
+<td>Partial (e.g., learned patterns, internal model if S allows for ordered recording)</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>(C, C, O) — Self-Computation Model</td>
+<td>(C, C, O) – Self-Computation Model</td>
 <td>K > 0</td>
 <td>✅ (on S)</td>
-<td>✅ (sequence of internal states)</td>
+<td>✅ (constructs sequence of internal states)</td>
 <td>✅</td>
 </tr>
 </tbody>
-<caption>Only systems with K>0 (at least one axis 'O') can actively process distinctions or support historical memory. All such dynamic systems must be globally closed by constraint C to remain realizable.</caption>
+<caption>Only systems with K>0 (at least one axis 'O') can actively process distinctions or support historical memory (by constructing an ordered record of states). All such dynamic systems must be globally bounded by constraint C to remain achievable.</caption>
 </table>
 <div class="logic-list">
-<strong>Conclusion on Realizability:</strong>
-<p>A system is 'real' or 'realizable' within this framework only if it is globally closed by finite constraints. Yet, to perform operations, generate time, or learn, it must have locally open axes (K>0), stabilized by these global constraints. This interplay distinguishes static structure from dynamic processing, and robust computation from uncontrolled divergence.</p>
+<strong>Conclusion on Achievability:</strong>
+<p>A system is 'real' or 'achievable' within this framework only if it is globally bounded by finite constraints. Yet, to perform operations, generate a perspective of time, or learn, it must have locally open axes (K>0) allowing for a sequence of configurations, stabilized by these global constraints. This interplay distinguishes static structure from perspective-dependent dynamic processing, and robust computation from uncontrolled expansion or collapse.</p>
 </div>
 
 <hr/>
 <h2>10. Higher-Order Capabilities: Emergent Layers</h2>
-<p>The development of memory and operational time in self-computational systems provides the foundation for increasingly sophisticated capabilities. The full space of distinguishable systems (D<sub>all</sub>) implies nested subsets:</p>
+<p>Memory (as an ordered historical record) and operational time in self-computational systems provide a foundation for more sophisticated capabilities. The space of all distinguishable systems (D<sub>all</sub>) implies nested subsets, indicating increasing complexity:</p>
 <div class="logic-list">
 <pre style="margin:0;font-family:monospace">
 D<sub>conscious</sub> ⊂ D<sub>Δ-self</sub> ⊂ D<sub>memory</sub> ⊂ D<sub>real</sub> ⊂ D<sub>all</sub>
 </pre>
 <p>Where:
-    <ul>
-        <li><strong>D<sub>all</sub>:</strong> The set of all formally describable structures using (I,N,S).</li>
-        <li><strong>D<sub>real</sub>:</strong> All operationally realizable systems (globally closed, satisfying Axiom 0 and Finitude Condition).</li>
-        <li><strong>D<sub>memory</sub>:</strong> Realizable systems capable of storing and retrieving records of past states (typically K>0, involving S=O or equivalent mechanisms for recording sequences).</li>
-        <li><strong>D<sub>Δ-self</sub> (Self-Modeling):</strong> Systems within D<sub>memory</sub> that use their memory and Δ-operations (especially Reflect) to model their own operations or predict future states based on past actions.</li>
-        <li><strong>D<sub>conscious</sub>:</strong> A specific subset of self-modeling systems meeting further criteria.</li>
-    </ul>
+<ul>
+<li><strong>D<sub>all</sub>:</strong> The set of all formally describable structures using (I,N,S).</li>
+<li><strong>D<sub>real</sub>:</strong> All operationally achievable systems (globally bounded, satisfying Axiom 0 and Finitude Condition).</li>
+<li><strong>D<sub>memory</sub>:</strong> Achievable systems capable of storing and retrieving records of past states *as an ordered sequence* (typically K>0, involving S=O or equivalent mechanisms for recording sequences <strong>within their memory medium</strong>).</li>
+<li><strong>D<sub>Δ-self</sub> (Self-Modeling):</strong> Systems within D<sub>memory</sub> that use their *sequentially structured memory medium* and distinction operations (especially Reflect) to model their own operations or predict future states based on past actions. This self-modeling capability enables the system to treat the fundamental perspectives (P₁, P₂, P₃, from Section 2 regarding 'figure', 'ground', and 'boundary') as objects of analysis themselves. This leads to the formation of meta-perspectives (P₄ and beyond). For example, a visual system might first distinguish an object (figure) from its background (ground) via a boundary (P₁, P₂, P₃). It could then treat its own boundary-detection process as a new 'figure' to be analyzed, asking, "Is my segmentation stable across different viewpoints?" This promotes the initial boundary, or its detection process, to an object of second-order distinction, generating a new triad of perspectives (P₄-P₆) regarding the reliability of the first-order distinction. Iterating this can create a hierarchy of self-evaluation layers, similar to metacognition. Such systems can explicitly represent, manipulate, and switch between these viewpoints.</li>
+<li><strong>D<sub>conscious</sub>:</strong> A specific subset of self-modeling systems meeting further criteria for conscious awareness.</li>
+</ul>
 </p>
-<p><strong>Important:</strong> These are necessary, not sufficient, conditions for the containing set. For example, consciousness as defined here requires self-modeling, which requires memory. However, not all memory systems self-model, nor do all self-modeling systems achieve the specific criteria for consciousness.</p>
-<p><strong>Consciousness Criterion:</strong> This framework proposes that a system is conscious if and only if it implements a Recursive Counterfactual Modeling Loop (RCML). This involves the iterative execution of a triple of distinction operations: (<code>Δ_plan</code>: Introduce potential future action sequences, <code>Δ_predict</code>: Resolve potential outcomes for those actions based on an internal model, <code>Δ_evaluate</code>: Reflect on predicted outcomes against goals to select an action). Crucially, this loop must have a branching degree ≥ 2 (genuine choice between alternatives) and a cycle time less than the timescale of relevant external perturbations for effective agency. This criterion is, in principle, operationally detectable via state-transition analysis and falsifiable through experiments that block branches or alter cycle times.</p>
+<p><strong>Important:</strong> These are necessary, not sufficient, conditions for being in the containing set. For example, consciousness as defined here requires self-modeling, which requires memory (as an ordered record). However, not all memory systems self-model, nor do all self-modeling systems achieve the specific criteria for consciousness.</p>
+<p><strong>Consciousness Criterion:</strong> This framework proposes that a system is conscious if and only if it implements a Recursive Counterfactual Modeling Loop (RCML). This involves the iterative execution of a trio of distinction operations: (<code>Δ_plan</code>: Introduce potential future action sequences, <code>Δ_predict</code>: Resolve potential outcomes for those actions based on an internal model, <code>Δ_evaluate</code>: Reflect on predicted outcomes against goals to select an action). Crucially, this loop must have a branching degree of at least two (genuine choice between alternatives) and a cycle time less than the timescale of relevant external changes for effective agency. The RCML can be seen as a sophisticated coordination of perspectives, where <code>Δ_plan</code> might involve generating scenarios by shifting perspectives on self (figure) versus environment (ground), <code>Δ_predict</code> evaluates outcomes based on models informed by these varied stances, and <code>Δ_evaluate</code> reflects on the implications across these perspectives. This criterion is, in principle, operationally detectable and falsifiable through experiments that block choices or alter cycle times.</p>
 </div>
 
 <hr/>
-<h2>11. Uniqueness of the (I,N,S) Basis Up to Relabeling</h2>
-<p>The (I,N,S) decomposition is proposed as unique up to relabeling for describing finitely distinguishable structures. This stems from the informational completeness and relative independence of these three axes in capturing the fundamental aspects of any distinguished entity.</p>
-<p><strong>Uniqueness Explained:</strong> Any system or language that aims to describe a finite structure must, implicitly or explicitly, provide answers to three distinct questions:
-<ol>
-<li>What kind of thing, pattern, or quality is being distinguished? (This is <strong>Identity</strong>)</li>
-<li>How many instances or occurrences of this kind are there? (This is <strong>Multiplicity</strong>)</li>
-<li>In what arrangement, configuration, or relationship are these instances? (This is <strong>Structure</strong>)</li>
-</ol>
-If information about any of these aspects is missing, the description of the structure becomes ambiguous or incomplete (e.g., distinguishing a list from a set, or one item from many identical items). Therefore, (I,N,S) represent a minimal and sufficient set of descriptive axes. Any other proposed triplet of fundamental descriptive axes for finite structures will likely be a relabeling or a combination of these, rather than introducing a truly orthogonal fourth fundamental degree of freedom for characterizing finite distinctions.</p>
+<h2>11. Qualified Uniqueness of the (I,N,S) Basis</h2>
+<p>The (I,N,S) decomposition is proposed as the unique minimal triplet of descriptive categories satisfying three constraints: (1) semantically distinct and interpretable axes; (2) independently accessible under resource constraint C; and (3) support for complete reconstruction via distinction operations. <strong>It is argued that (I,N,S) is unique (up to functional equivalence and permutation) among semantically meaningful, observer-accessible descriptive bases for systems operating under resource-bounded distinction operations.</strong> Any other such triplet for these operational observers would be functionally equivalent (via permutation) to (I,N,S).</p>
+<ul>
+<li><strong>Semantic distinctness:</strong> Each axis refers to a conceptually separate mode of distinction: type, quantity, or relation.</li>
+<li><strong>Operational independence (per layer):</strong> Each axis can be varied or read independently by a constrained observer *operating within a fixed descriptive layer*. While I, N, and S are operationally independent at a given layer, operations that transition between descriptive layers can induce apparent coupling. For example, an operation changing Structure (S) by breaking a complex molecule might yield a different Multiplicity (N) of components and introduce new Identities (I) for these fragments at a now finer-grained level. The framework handles this by re-evaluating the axes for the new descriptive layer, where each fragment then possesses its own (I,N,S) characterization. Thus, operational independence is maintained per layer of analysis.</li>
+<li><strong>Reconstructibility via distinction operations:</strong> The triplet allows full recovery of the object’s structure <strong>as recorded in memory</strong> through a sequence of Introduce, Resolve, and Reflect operations.</li>
+</ul>
+<p>If information about any of these aspects is missing, the description of the structure becomes ambiguous or incomplete (e.g., distinguishing a list from a set, or one item from many identical items). Therefore, (I,N,S) represent a minimal and sufficient set of descriptive axes for systems that operate through local distinction under constraint. Alternative triplets that satisfy mathematical minimality in a purely combinatorial sense may exist, but are not necessarily semantically aligned or accessible to an observer operating via distinction making.</p>
 <table>
 <thead>
 <tr><th>Alternative Proposed Triple</th><th>Maps to I (Kind)</th><th>Maps to N (Count)</th><th>Maps to S (Arrangement)</th></tr>
@@ -366,25 +385,25 @@ If information about any of these aspects is missing, the description of the str
 <tr><td>Quality / Quantity / Relation</td><td>Quality</td><td>Quantity</td><td>Relation</td></tr>
 </tbody>
 </table>
-<p>Each of these alternative framings maps cleanly onto (I,N,S), highlighting the foundational nature of the chosen axes.</p>
+<p>Each of these alternative framings maps clearly onto (I,N,S), highlighting the foundational nature of the chosen axes.</p>
 
 <hr/>
 <h2>12. Structural Correspondences with Physics (Illustrative)</h2>
-<p><strong>Note:</strong> The following are intended as structural analogies for illustration of how failures or ambiguities along the I,N,S axes within this formal model might *resemble* certain concepts in physics. They are not direct physical derivations or claims of equivalence.</p>
+<p><strong>Note:</strong> The following are intended as structural analogies illustrating how failures or ambiguities along the I,N,S axes within this formal model might *conceptually parallel* certain ideas in physics. They are not direct physical derivations or claims of equivalence.</p>
 <ul>
-<li>A system with ambiguous multiplicity (e.g., where the N-axis is Open and unresolved, or described by a probability distribution over possible counts under finite description) might resemble aspects of quantum superposition. This is not about physical amplitudes but about the structure being formally undecided between multiple distinct countable states.</li>
-<li>A system where the act of resolving its structure (an S-axis operation, e.g., measurement) necessarily changes that structure could be seen as analogous to measurement collapse: the act of "observing" (resolving S) alters what is being "observed."</li>
+<li>A system with ambiguous multiplicity (e.g., where the N-axis is Open and unresolved, or described by a probability distribution over possible counts <strong>within its memory representation</strong> under finite description) might recall aspects of quantum superposition. This is not about physical amplitudes but about the structure being formally undecided between multiple distinct countable states.</li>
+<li>A system where the act of resolving its structure (an S-axis operation, e.g., measurement) necessarily changes that structure <strong>as recorded in memory</strong> could be seen as analogous to measurement effects in quantum mechanics: the act of "observing" (resolving S) alters what is being "observed."</li>
 </ul>
-<p>These analogies aim to show how fundamental limitations in a system's capacity to distinguish and resolve information along the I,N,S axes can lead to behaviors that have conceptual parallels in physics, without importing the specific mathematics of quantum theory.</p>
+<p>These analogies aim to show how fundamental limitations in a system's capacity to distinguish and resolve information along the I,N,S axes can lead to behaviors that have conceptual parallels in physics, without importing the specific mathematics of, for instance, quantum theory.</p>
 <table>
 <thead>
 <tr><th>#</th><th>Identity (I) State</th><th>Multiplicity (N) State</th><th>Structure (S) State</th><th>Outcome Class</th><th class="left">Suggested Conceptual Parallel</th></tr>
 </thead>
 <tbody>
 <tr><td>1</td><td style="background:var(--flat-bg);">C (Finite, Resolved)</td><td style="background:var(--flat-bg);">C (Finite, Resolved)</td><td style="background:var(--flat-bg);">C (Finite, Resolved)</td><td style="background:var(--flat-bg);">Stable, Determinate Structure</td><td class="left">A classical object or event.</td></tr>
-<tr><td>2</td><td style="background:var(--sing-bg);">ω (Divergent) or Ø (Null)</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--adapt-bg);">Identity Ambiguity/Unfactorability</td><td class="left">Continuous spectra, irrational properties; identity not finitely specifiable.</td></tr>
-<tr><td>3</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--sing-bg);">O (Unresolved) or ω/Ø</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--adapt-bg);">Multiplicity Ambiguity</td><td class="left">State unresolved across a basis of countable alternatives (superposition-like).</td></tr>
-<tr><td>4</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--sing-bg);">O (Interaction-dependent) or ω/Ø</td><td style="background:var(--adapt-bg);">Measurement-induced Irreversibility</td><td class="left">Structure altered by the act of its resolution (collapse-like).</td></tr>
+<tr><td>2</td><td style="background:var(--sing-bg);">ω (Divergent) or Ø (Null)</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--adapt-bg);">Identity Ambiguity/Unfactorability</td><td class="left">Continuous spectra, properties not finitely specifiable.</td></tr>
+<tr><td>3</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--sing-bg);">O (Unresolved) or ω/Ø</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--adapt-bg);">Multiplicity Ambiguity</td><td class="left">Quantity ambiguity; cf. quantum superposition.</td></tr>
+<tr><td>4</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--flat-bg);">C</td><td style="background:var(--sing-bg);">O (Interaction-dependent) or ω/Ø</td><td style="background:var(--adapt-bg);">Measurement-induced Irreversibility</td><td class="left">Structure altered by the act of its resolution (measurement-like effect).</td></tr>
 <tr><td>5+</td><td colspan="3" style="text-align:center;">Combinations of O, ω, or Ø Axes</td><td style="background:var(--sing-bg);">Complex Hybrid Ambiguities</td><td class="left">Phenomena arising from combined indeterminacies.</td></tr>
 </tbody>
 <caption>Characteristic structural outcomes when axes are not fully Closed/Finite (C) under system constraints.</caption>
@@ -392,75 +411,257 @@ If information about any of these aspects is missing, the description of the str
 
 <hr/>
 <h2>13. The Integer Structure Grid (ISG) as a Projected Manifold</h2>
-<p>The <strong>Integer Structure Grid (ISG)</strong> is a concept referring to the structured space of finitely specifiable forms that emerges when one of the three core axes, typically <strong>Structure (S)</strong> representing order or sequence, is held constant or constrained to a very simple form (e.g., a simple sequence or set). This projection allows visualization of distinguishable constructions based primarily on variations in Identity (I) and Multiplicity (N) under constraint.</p>
+<p>The <strong>Integer Structure Grid (ISG)</strong> is the structured space of finitely specifiable forms that emerges when one core axis, typically Structure (S) (representing order or sequence), is held constant or highly constrained. This projection allows visualizing constructions based mainly on variations in Identity (I) and Multiplicity (N) under constraint, representing specific ways the <strong>memory medium</strong> can be patterned.</p>
 <p>When Structure (S) is fixed (e.g., S=C, representing a fixed arrangement like "a list of length k"), each point in this projected ISG represents a composite form defined by:
 <ul>
 <li><strong>I:</strong> A primitive generator, symbol, or identity type chosen from a finite set of available types.</li>
 <li><strong>N:</strong> The number of distinguishable instances or copies of that identity type used.</li>
 </ul>
 </p>
-<p>This yields a combinatorial map, a relatively "flat" projection (K primarily from I and N if they are Open) of the full (I, N, S) distinction manifold. It illustrates what can be constructed using specific identity-types in defined quantities, within a fixed structural template. The ISG can be seen as a foundational layer for enumerating basic mathematical objects (like numbers built from a unit '1') or constructing simple programs or data structures. More general systems, such as recursive algorithms or adaptive models, would then be understood as having dynamics or curvature along the S-axis (S=O), existing "off" this simple projected surface.</p>
+<p>This yields a combinatorial map, a relatively "flat" projection (where potential for change, K, arises primarily from I and N if they are Open) of the full (I, N, S) distinction space. It illustrates what can be constructed using specific identity-types in defined quantities, within a fixed structural template. The ISG can be seen as a foundational layer for enumerating basic mathematical objects (like numbers built from a unit '1') or constructing simple programs or data structures. More general systems, such as recursive algorithms or adaptive models, would then be understood as having dynamics or potential for change along the S-axis (S=O), existing "off" this simple projected surface.</p>
 <div class="logic-list">
 <strong>Summary of ISG:</strong>
 <ul>
-<li>The ISG is a simplified projection of the full (I, N, S) manifold, typically with a fixed or highly constrained S-axis.</li>
+<li>The ISG is a simplified projection of the full (I, N, S) space, typically with a fixed or highly constrained S-axis.</li>
 <li>It defines a space of constructible forms based on variations in I and N under specific structural rules.</li>
 <li>Many fundamental mathematical objects and basic computational constructs can be mapped onto regions of an ISG.</li>
 </ul>
 </div>
+<div class="logic-list" style="border-left-color: var(--secondary-accent); margin-top:1.5em;">
+<strong>Shadow Structure Remark:</strong> Beyond structures directly decomposable along the (I,N,S) axes by an observer using its current distinction operations, there may exist "shadow structures." These are informationally complete encodings <strong>within the memory medium</strong> that are effectively invisible or appear as noise to the observer's current Δ-toolkit. They are globally compressible or recognizable as patterned only through transformations or perspectives unavailable, prohibitively costly, or simply not yet discovered by the observer under its current operational basis. Such structures inhabit the distinction space but lie 'off-basis' relative to the observer's (I,N,S) frame. Their existence highlights the observer-relative nature of perceived complexity and the potential for new discoveries through a shift in descriptive basis (a new way of "seeing" or parsing distinctions). Signatures of their presence might manifest as persistent 'compressibility gaps': an inability to further simplify the description of observed phenomena using the current toolkit, despite available resources, hinting that a more fundamental or different kind of order is present but not yet accessible.
+</div>
 
 <hr/>
 <h2>14. Mathematics as Closure over Distinction</h2>
-<p>Within this framework, <strong>mathematics can be interpreted as the formal exploration of the total space of <em>closed distinction orderings</em></strong>. A mathematical system arises when specific rules for Identity (generators), Multiplicity (how many instances, often subject to axioms like infinity or finiteness), and Structure (rules of combination, order, relations) are defined, and then the system is "closed" under these rules.</p>
-<p>Closure means that the rules are sufficient to specify all valid entities and relations within that mathematical domain. The resulting spaces (e.g., the set of natural numbers, a topological space) may be infinite, yet their generative rules are finite and logically complete for that domain. These are typically Determinate Objects (C,C,C) at the level of their axiomatic definition, even if they describe infinite sets.</p>
+<p>Mathematics explores the space of self-consistent orderings of distinctions. A system becomes mathematical once Identity (fundamental elements or generators), Multiplicity (how many instances, e.g., per axioms of infinity or finiteness), and Structure (rules for combination or order) are fixed and self-contained under those rules, defining how an idealized (potentially infinite) <strong>memory medium</strong> can be patterned.</p>
+<p>Self-containment (closure) means that the rules are sufficient to specify all valid entities and relations within that mathematical domain. The resulting spaces (e.g., the set of natural numbers, a topological space) may be infinite, yet their generative rules are finite and logically complete for that domain. These are typically Determinate Objects (C,C,C) at the level of their axiomatic definition, even if they describe infinite sets.</p>
 <p>This perspective helps distinguish between:
-    <ul>
-        <li><strong>Formal Mathematical Systems:</strong> All logically well-formed (I,N,S) structures closed under a set of axioms or generative rules, irrespective of their direct physical realizability by a constrained observer.</li>
-        <li><strong>Operationally Realizable Systems:</strong> The subset of structures (mathematical or otherwise) that a finite observer, subject to resource budget C, can actually construct, store, process, and update.</li>
-    </ul>
+<ul>
+<li><strong>Formal Mathematical Systems:</strong> All logically well-formed (I,N,S) structures that are self-contained under a set of axioms or generative rules, irrespective of their direct physical achievability by a constrained observer.</li>
+<li><strong>Operationally Achievable Systems:</strong> The subset of structures (mathematical or otherwise) that a finite observer, subject to resource budget C, can actually construct, <strong>inscribe in its memory medium (store)</strong>, process, and update.</li>
+</ul>
 </p>
-  <div class="logic-list">
-    <strong>Representative Mathematical Closures over (I,N,S)</strong>
-    <ul>
-      <li><strong>ℕ (Natural Numbers):</strong> Identity: unit '1', successor operation. Multiplicity: unbounded count. Structure: linear order. Closure: primitive recursion axioms.</li>
-      <li><strong>ℤ, ℚ, ℝ:</strong> Identities: extended generators (0, ±, ÷, limit operations). Multiplicity: dense/continuous counts. Structure: ordered fields. Closure: algebraic operations, completeness axioms.</li>
-      <li><strong>λ-Calculus:</strong> Identities: variables, abstraction (λ), application. Multiplicity: potentially infinite self-application. Structure: tree-like terms. Closure: β-reduction to normal forms.</li>
-      <li><strong>Set Theory (ZF):</strong> Identities: sets (initially primitive). Multiplicity: cardinality determined by axioms (e.g., Power Set, Infinity). Structure: ∈-relation (membership). Closure: axioms of ZF.</li>
-      <li><strong>Group Theory:</strong> Identities: group elements. Multiplicity: size of group (finite/infinite). Structure: binary operation. Closure: group axioms (associativity, identity element, inverse elements).</li>
-    </ul>
-  </div>
-  <p>Each mathematical domain deploys the (I,N,S) triplet in a characteristic way and then achieves formal completeness through its specific closure axioms or rules of formation. The generative description itself is complete for that domain, even if the domain contains infinite elements.</p>
+<p>The treatment of apparently continuous mathematical objects, such as the set of real numbers (ℝ), also aligns with this operational perspective. Within this framework, such structures are understood as ideal limits of constructions over finitely distinguishable approximations. For example, ℝ can be defined via sequences of rational numbers (each rational being finitely specifiable). An observer operating under resource budget C never manipulates an infinitely long sequence or a true continuum directly; instead, it works with open-but-finite prefixes or approximations whose error bounds or precision are sufficient for its operational needs and within its capacity C. Continuity thus emerges, from an operational standpoint, as the conceptual limit of these finitely representable and processable segments.</p>
+<div class="logic-list">
+<strong>Representative Mathematical Closures over (I,N,S)</strong>
+<ul>
+<li><strong>ℕ (Natural Numbers):</strong> Identity: unit '1', successor operation. Multiplicity: unbounded count. Structure: linear order. Closure: defined by primitive recursion axioms.</li>
+<li><strong>ℤ, ℚ, ℝ (Integers, Rationals, Reals):</strong> Identities: extended generators (0, ±, ÷, limit operations). Multiplicity: dense/continuous counts. Structure: ordered fields. Closure: defined by algebraic operations, completeness axioms.</li>
+<li><strong>λ-Calculus:</strong> Identities: variables, abstraction (λ), application. Multiplicity: potentially infinite self-application. Structure: tree-like terms. Closure: defined by β-reduction to normal forms.</li>
+<li><strong>Set Theory (ZF):</strong> Identities: sets (initially primitive). Multiplicity: cardinality determined by axioms (e.g., Power Set, Infinity). Structure: ∈-relation (membership). Closure: defined by axioms of ZF.</li>
+<li><strong>Group Theory:</strong> Identities: group elements. Multiplicity: size of group (finite/infinite). Structure: binary operation. Closure: defined by group axioms (associativity, identity element, inverse elements).</li>
+</ul>
+</div>
+<p>Each mathematical domain deploys the (I,N,S) triplet in a characteristic way and then achieves formal completeness through its specific closure axioms or rules of formation. The generative description itself is complete for that domain, even if the domain contains an infinite number of elements.</p>
 
 <hr/>
 <h2>Appendix: Responses to Critique</h2>
-<p>This section addresses common critiques and clarifies aspects of the framework based on the revised flow.</p>
+<p>This section addresses common critiques and clarifies aspects of the framework based on the revised presentation.</p>
 
 <h3>1. Axiom 0, Memory, and Infinite Regress</h3>
-<p>Axiom 0 posits the co-generation of the first distinction (d₁) and the minimal system state (S₁,M₁) capable of recording/referencing it. "Memory" in Axiom 0 is this most primitive record (M₁=M₀∪{d₁}), not a pre-supposed complex memory system. The act of distinction and the record of that act are co-defined, avoiding a regress of pre-existing distinguishers or memory systems. This is analogous to a Turing machine's first operation defining content on an initially blank tape section.</p>
+<p>"Memory" in Axiom 0 refers to the most primitive record (M₁ formed by adding d₁ to M₀), representing the initial, undifferentiated <strong>memory medium</strong> that is "cut" or patterned by the first distinction d₁. It is not a pre-supposed complex memory system. The act of distinction and the record of that act (as a modification of this medium) are co-defined, avoiding a regress of pre-existing distinguishers or memory systems. This is analogous to a Turing machine's first operation defining content on an initially blank section of tape.</p>
 
 <h3>2. Observer-Time Circularity</h3>
 <p>The framework distinguishes:
-    <ul>
-        <li><strong>Logical Sequence (Axiom 0):</strong> The formal ordering (S₀ "before" S₁) inherent in a state-transition. This is a primitive ordering, not yet operational time.</li>
-        <li><strong>Operational Time (Section 8):</strong> Emerges from a system's capacity to record a *sequence* of its own internal state changes (memory as history), typically in Self-Computation Models (C,C,O) or other K>0 systems. This requires K>0 and Δ-operations.</li>
-        <li><strong>Physical Time:</strong> Conceived as emerging when multiple observers coordinate their operational times through shared, distinguishable events.</li>
-    </ul>
-    No circularity arises: primitive logical sequence enables the first distinction; recorded sequences of distinctions within K>0 systems generate operational time. An "observer" in the full sense (e.g., a Self-Modeler as in Section 10) relies on operational time, which is built upon, but distinct from, the primitive logical sequence of Axiom 0.</p>
+<ul>
+<li><strong>Logical Sequence (Axiom 0):</strong> The formal ordering (S₀ interpreted as "before" S₁) inherent in a state-transition. This is a primitive ordering, not yet operational time.</li>
+<li><strong>Operational Time (Section 8):</strong> Emerges as a perspective constructed by a system capable of recording an *ordered sequence* of its own internal state changes (memory as history, i.e., a structured trace <strong>within the memory medium</strong>), typically in Self-Computation Models (C,C,O) or other systems with K>0 (potential for change). This requires K>0 and distinction operations (Δ).</li>
+<li><strong>Physical Time:</strong> Conceived as emerging when multiple observers coordinate their operational times through shared, distinguishable events.</li>
+</ul>
+No circularity arises: primitive logical sequence enables the first distinction; recorded sequences of distinctions within K>0 systems generate the perspective of operational time. An "observer" in the full sense (e.g., a Self-Modeler as in Section 10) relies on this constructed operational time, which is built upon, but distinct from, the primitive logical sequence of Axiom 0.</p>
 
-<h3>3. Null-Axis Classes and "Unrealizable" Systems</h3>
-<p>The taxonomy (Canonical Forms table, Section 5) is descriptive first, enumerating all formal combinations of (I,N,S) states. The Reality Criterion and Finitude Condition (Section 4) then act prescriptively to identify which of these are operationally realizable under resource budget C. Forms with Null (Ø) or Divergent (ω) axes (e.g., (I=C, N=Ø, S=Ø)) are formally defined as boundary conditions but are generally not realizable as standalone operational systems if Ø implies non-existence or ω implies exceeding finite bounds. Their inclusion is for theoretical completeness, akin to set theory defining the empty set.</p>
+<h3>3. Null-Axis Classes and "Unachievable" Systems</h3>
+<p>The taxonomy (Canonical Forms table, Section 5) is descriptive first, enumerating all formal combinations of (I,N,S) states. The Reality Criterion and Finitude Condition (Section 4) then act prescriptively to identify which of these are operationally achievable under resource budget C. Forms with Null (Ø, signifying the axis is undefined, non-existent, or not applicable for that structure) or Divergent (ω) axes are formally defined as boundary conditions but are generally not achievable as standalone operational systems if Ø implies non-existence or ω implies exceeding finite bounds. Their inclusion is for theoretical completeness, akin to set theory defining the empty set.</p>
 
 <h3>4. Physics Analogies (Clarified)</h3>
-<p>The quantum-related analogies (Section 12) are explicitly stated as structural and conceptual parallels, not claims of physical equivalence. For instance, "multiplicity ambiguity" in the model (an unresolved 'O' state on the N-axis) resembles quantum superposition only in the abstract sense that the system's count/instantiation is not definitively resolved among several possibilities under finite descriptive power, not by invoking quantum mathematics.</p>
+<p>The quantum-related analogies (Section 12) are explicitly stated as structural and conceptual parallels, not claims of physical equivalence. For instance, "multiplicity ambiguity" in the model (an unresolved 'O' state on the N-axis) resembles quantum superposition only in the abstract sense that the system's count/instantiation is not definitively resolved among several possibilities <strong>within its memory representation</strong> under finite descriptive power, not by invoking quantum mathematics.</p>
 
 <h3>5. Hierarchy of Consciousness (Clarified Flow)</h3>
-<p>The hierarchy <em>D<sub>conscious</sub> ⊂ D<sub>Δ-self</sub> ⊂ D<sub>memory</sub> ⊂ D<sub>real</sub> ⊂ D<sub>all</sub></em> (Section 10) is presented after memory and self-modeling (Δ-self) concepts are developed. It remains a nesting of necessary, not sufficient, conditions: e.g., Consciousness (via RCML) requires self-modeling capabilities, which in turn require robust historical memory.</p>
+<p>The hierarchy <em>D<sub>conscious</sub> ⊂ D<sub>Δ-self</sub> ⊂ D<sub>memory</sub> ⊂ D<sub>real</sub> ⊂ D<sub>all</sub></em> (Section 10) is presented after memory (as an ordered record) and self-modeling (Δ-self) concepts are developed. It remains a nesting of necessary, not sufficient, conditions: e.g., Consciousness (via RCML) requires self-modeling capabilities, which in turn require robust historical memory.</p>
 
 <h3>6. Meta-logical Clarification on Non-distinction</h3>
-<p>The initial argument for the necessity of distinction (Section 1) stands: any attempt to state or conceive of "no distinctions" itself employs distinctions. Within any meta-logic capable of describing its own semantics, even a rule set allowing contradictions (P ∧ ¬P) is itself a distinguished rule set from one not allowing them. Absolute, un-referable indiscriminability is operationally void.</p>
+<p>The initial argument for the necessity of distinction (Section 1) stands: any attempt to state or conceive of "no distinctions" itself employs distinctions. Within any system of logic capable of describing its own rules, even a rule set allowing contradictions (P and not-P) is itself a distinguished rule set from one not allowing them. Absolute, un-referable indiscriminability is operationally void.</p>
 
 <h3>7. Completeness Claim and Gödel</h3>
 <p>The framework aims for a complete taxonomic classification of *finitely distinguishable structures* based on the (I,N,S) axes and their states under finite constraints. This is a completeness of categorization of forms, not an exhaustive derivation of all properties or truths about all possible systems (which would encounter Gödelian limits if applied to sufficiently rich formal systems that can be modeled within the framework, e.g., certain (C,C,O) systems capable of universal computation).</p>
 
+<h3>8. Nuance on (I,N,S) Uniqueness</h3>
+<p>The (I,N,S) basis uniqueness claim (Section 11) is for <em>semantically meaningful, observer-accessible bases</em> under finite resource constraints (C) using defined distinction operations (Δ). While other abstract/combinatorial encodings might be complete and minimal mathematically, (I,N,S) is argued as uniquely suited for an observer making distinctions operationally per this framework. Its key is alignment with how such an observer parses and interacts with distinguishable structures <strong>within its memory medium</strong>.</p>
+
+<div style="margin-top:2em;">
+<p><sup id="ref1"><a href="#fn1">1.</a></sup> Landauer, R. (1961). Irreversibility and heat generation in the computing process. IBM Journal of Research and Development, 5(3), 183-191. <a href="#ref1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p><sup id="ref2"><a href="#fn2">2.</a></sup> E.g., the Margolus-Levitin theorem sets a limit on the maximum rate of computation per unit of energy: operations/sec/joule ≤ 4/h, where h is Planck's constant. <a href="#ref2" title="Jump back to footnote 2 in the text">↩</a></p>
+</div>
+
+<h2 id="appendix-b">Appendix B – Boundary Lemma</h2>
+<p><em>This appendix provides a formal underpinning for the idea of a 'boundary' that arises from any distinction not immediately and definitively decidable by an observer. Using concepts from constructive logic (specifically, Heyting logic), if a distinction (χ) is not 'double-negation stable' (meaning, proving it's not false isn't equivalent to proving it's true, i.e., ¬¬χ ≠ χ), this implies the existence of a non-empty 'boundary region' or 'undecided fringe'. This fringe represents a real aspect that may subsequently yield further information or require additional operations to resolve. This formalizes why the 'boundary' perspective, alongside 'figure' and 'ground' (Section 2), is an unavoidable and fundamental consequence of making distinctions under finite operational constraints.</em></p>
+<p><strong>Lemma&nbsp;B.1 (Boundary&nbsp;Non-emptiness).</strong>
+Let <span class="math">χ</span> represent the distinguished part <span class="math">X</span> as a sub-region of a larger universe <span class="math">U</span> (formally, <span class="math">χ : X ↪ U</span> is an inclusion in a setting like a Heyting topos <span class="math">𝔈</span>).
+Define the boundary region <span class="math">B</span> within <span class="math">U</span> as
+<span class="math">B := (¬¬χ) ∧ ¬χ</span> (i.e., what is "not not-χ" AND "not-χ"; the region that is not definitively outside χ, but also not definitively inside χ).
+Then</p>
+<p class="math">B is not empty (B ≠ 0) if and only if ¬¬χ is not equal to χ (¬¬χ ≠ χ).</p>
+<p><em>Proof&nbsp;Sketch.</em>
+In the Heyting algebra of sub-regions of <span class="math">U</span>, <span class="math">¬¬χ</span> always contains or is equal to <span class="math">χ</span>.
+If <span class="math">χ</span> is double-negation stable (<span class="math">¬¬χ = χ</span>), the intersection
+<span class="math">(¬¬χ)∧¬χ = χ∧¬χ</span>, which is the empty region <span class="math">⊥</span>, so <span class="math">B = 0</span>.
+Conversely, suppose <span class="math">¬¬χ ≠ χ</span>; then the part of <span class="math">¬¬χ</span> that is outside <span class="math">χ</span> (<span class="math">¬¬χ \χ</span>) is not empty.
+This non-empty difference is exactly what defines <span class="math">B</span>, thus <span class="math">B ≠ 0</span>. ∎</p>
+
+<h2 id="appendix-c">Appendix C – Sufficiency of the (I,N,S) Encoding (Under Operational Constraints)</h2>
+<p><strong>Lemma&nbsp;C.2 (Sufficiency).</strong>
+Let a descriptive triple <span class="math">⟨I, N, S⟩</span> satisfy:</p>
+<ol>
+<li class="math">The total count specified by N matches the number of elements in the structural template S (i.e., |N| = |V(S)|, where V(S) is the set of nodes in S).</li>
+<li class="math">The types of connections or arities in S are compatible with the types of identities listed in I.</li>
+</ol>
+<p>Then there exists a <em>finite formal description</em> (a code <span class="math">F</span>), unique up to consistent renaming of primitive symbols, such that encoding <span class="math">F</span> yields <span class="math">⟨I, N, S⟩</span>.</p>
+
+<p><em>Proof&nbsp;Sketch.</em>
+(1) Take the nodes of the structural template <span class="math">S</span> as placeholders for actual instances.
+(2) Assign each placeholder an identity type from <span class="math">I</span> according to the counts specified in <span class="math">N</span> (specific labels can be chosen arbitrarily as long as multiplicities are respected).
+(3) Systematically traverse <span class="math">S</span> (e.g., in a standard order) to generate a linear string or set of rules whose parsing reconstructs <span class="math">S</span> with its assigned identities.
+The result is a finite code <span class="math">F</span>.
+The one-to-one nature of the original encoding map implies any two such codes <span class="math">F</span> producing the same <span class="math">⟨I, N, S⟩</span> differ only by a permutation in how primitive identity symbols are named. This sufficiency holds for observers capable of independently assigning identity, counting multiplicity, and parsing structure. More opaque encodings not decomposable into these axes exist, but do not support reconstruction via distinction operations under constraint. ∎</p>
+
+<hr/>
+<h2 id="appendix-d">Appendix D – Future Directions and Extensions</h2>
+<p>This foundational framework opens several avenues for further development and formalization. Key areas for future research include:</p>
+<ol>
+<li><strong>Formalizing Basis Transformation and Incompleteness:</strong>
+<ul>
+<li>Develop a formal system using distinction operations (Δ-operators) to define "basis rotation" (transforming from one (I,N,S)-like descriptive scheme to another, e.g., via a <code>Δ_basis-search</code> operation) and "projection failure" (when a target structure cannot be adequately represented by the current (I,N,S) basis).</li>
+<li>Further formalize the "compressibility gap" (a persistent inability to reduce descriptive complexity using all allowed Δ-operations within the current (I,N,S) basis) as a falsifiable indicator of an incomplete model and a trigger for basis transformation.</li>
+<li>Explicitly define "off-basis shadow structures" mathematically, perhaps as an injective encoding S* such that S* is not constructible by any feasible sequence of current distinction operations (Δ<sub>O</sub>) within the set of states reachable under resource budget C using the current operational basis.</li>
+</ul>
+</li>
+<li><strong>Dynamic Epistemology and Model Evolution:</strong>
+<ul>
+<li>Further develop the framework's capacity to describe not just static structures, but the dynamics of how an observer's model of reality must evolve. This involves formalizing how the system recognizes its own modeling breakdowns (e.g., via the compressibility gap or excessive K/C<sub>R</sub> ratio) and adapts its descriptive primitives.</li>
+<li>Refine the mechanisms of automated identity redefinition (currently part of Reflect operations) that allow a system to dynamically promote recurring complex patterns into new, primitive I-types, especially when K or C<sub>R</sub> exceed operational thresholds, making the system self-optimizing in its distinctions.</li>
+</ul>
+</li>
+<li><strong>Principle of Operational Closure:</strong>
+<ul>
+<li>Explore and formalize a "Principle of Operational Closure," stating that an observer's model of a system remains valid and predictive only as long as its Informational Curvature (K) and Representational Cost (C<sub>R</sub>) remain within its resource budget (C), and its descriptive (I,N,S) basis remains sufficiently complete for the phenomena being modeled (i.e., no persistent compressibility gap).</li>
+</ul>
+</li>
+<li><strong>Granular Resource Budgeting and Physical Grounding:</strong>
+<ul>
+<li>Investigate a more detailed partitioning of the resource budget C (beyond E, M, T), potentially into components like energy for state maintenance (E<sub>internal</sub>), memory access/retention (E<sub>storage</sub>), distinction operations (E<sub>processing</sub>), initial sensing/parsing (E<sub>distinction</sub>), and memory reset (E<sub>reset</sub>, e.g., Landauer cost). Analyze how these trade off and which dominate at different scales or for different operations, building on the initial physical limit considerations.</li>
+<li>Continue to strengthen the mapping between the formal constructs of the theory (like C, τ, and Δ-operations) and their physical instantiations and constraints.</li>
+</ul>
+</li>
+<li><strong>Connecting to Broader Scientific Modeling:</strong>
+<ul>
+<li>Explore how Distinction Theory, with these extensions, can provide a meta-framework for understanding the limits and evolution of scientific models in various domains, by explicitly embedding resource and representational constraints into the process of theory formation and testing.</li>
+</ul>
+</li>
+<li><strong>Testability and Falsifiability:</strong>
+<ul>
+<li>Explore concrete predictions derivable from the framework. For instance, the necessity and sufficiency of the (I,N,S) basis for resource-constrained distinction-making systems imply that attempts to create operational systems violating this minimality (e.g., using only two axes) or by adding genuinely independent, semantically separable axes beyond these three (without merely subdividing them) should lead to demonstrable incompleteness or redundancy under strict operational tests.</li>
+<li>Identify experimental setups (e.g., in AI, cognitive science, or analysis of complex datasets) where the framework's predictions about K, C<sub>R</sub>, basis transformations, or the emergence of shadow structures could be observed or challenged. An observation of a finitely distinguishable structure that cannot be mapped to an (I,N,S) tuple (or a permutation) without loss of operational information relevant to a constrained observer would challenge the framework's core tenets.</li>
+</ul>
+</li>
+</ol>
+<p>These extensions aim to mature Distinction Theory from a taxonomic framework into a predictive, self-critical, and dynamic theory of observation and modeling for resource-constrained systems.</p>
+
+<hr/>
+<div class="provisional-note">
+<strong>Note on Provisionality:</strong> The formal sketch in Appendix E outlines an argument for the uniqueness of the (I,N,S) basis under the specified constraints. This sketch is presented to invite scrutiny, further formalization, and potential counter-examples from the scientific and mathematical communities. Such engagement is crucial for refining the foundations of Distinction Theory.
+</div>
+<h2 id="appendix-e">Appendix E – Formal Sketch for Uniqueness of the (I,N,S) Basis</h2>
+<p>This appendix provides a conceptual outline arguing for the uniqueness (up to functional equivalence and permutation of axes) of the (I,N,S) basis for describing finitely distinguishable structures, given the operational and semantic constraints outlined in Section 11. The core idea uses concepts related to structured mappings (drawing analogies from category theory) to formalize the space of distinguishable objects and the nature of descriptive bases.</p>
+
+<p><strong>Goal:</strong> To show that any "acceptable descriptive basis" <code>Ψ</code>, which maps distinguishable objects <code>Dist_C</code> to a tripartite description <code>B₁ × B₂ × B₃</code>, is essentially equivalent to the canonical (I,N,S) mapping <code>Φ</code> (which maps to representations of Finite Sets for Identity, Finite Multisets for Multiplicity, and Finite Relational Structures for Structure), or a permutation thereof.</p>
+
+<p><strong>1. Definitions and Assumptions (Conceptual):</strong></p>
+<ul>
+<li><p><strong><code>Dist_C</code> (The Realm of Finitely Distinguishable Objects under Budget C):</strong></p>
+<ul>
+<li><strong>Objects:</strong> These are structures <code>X</code> defined by:
+<ul>
+<li>A finite collection of "occurrence tokens" <code>T_X</code> (<strong>distinct instances realized as separate locations or states within the memory medium</strong>).</li>
+<li>A "typing map" <code>m_X</code> that assigns labels (from a finite set <code>L_I</code> of potential primitive identity types) to these tokens, respecting the system's capacity for distinct types (<code>|I|_max</code> from budget C).</li>
+<li>A finite set of relations <code>R_X</code> among these tokens, representing their arrangement or connections (<strong>patterns of connection within memory</strong>), respecting the system's capacity for structural complexity (<code>|S|_max</code> from budget C).</li>
+<li>The total number of tokens <code>|T_X|</code> must respect the system's capacity for quantity (<code>|N|_max</code>). The entire description must be representable within the overall resource budget <code>C</code>.</li>
+</ul>
+</li>
+<li><strong>Transformations (Morphisms):</strong> Finite sequences of distinction operations (Δ-operations: Introduce, Resolve, Reflect) that are composable and change objects in <code>Dist_C</code> to other objects in <code>Dist_C</code> (i.e., staying within budget C).</li>
+</ul>
+</li>
+<li><p><strong>Canonical (I,N,S) Mapping <code>Φ</code>:</strong></p>
+<ul>
+<li><code>Φ</code> maps an object <code>X</code> from <code>Dist_C</code> to a triple <code>(Cat_I, Cat_N, Cat_S)</code>, representing its Identity, Multiplicity, and Structure aspects:
+<ul>
+<li><code>Cat_I</code> captures the set of unique Identity types present in <code>X</code>.</li>
+<li><code>Cat_N</code> captures the Multiplicity (count) of each of those types.</li>
+<li><code>Cat_S</code> captures the relational Structure or arrangement of the tokens in <code>X</code>.</li>
+</ul>
+</li>
+<li>Specifically, for an object <code>X = ⟨T_X, m_X, R_X⟩</code>, <code>Φ(X) = (I_X, N_X, S_X)</code> where:
+<ul>
+<li><code>I_X</code> is the set of identity types actually present in <code>X</code> (derived from <code>m_X</code>).</li>
+<li><code>N_X</code> is the multiset (a collection where elements can be repeated) of types given by <code>m_X</code> (i.e., for each type <code>l</code> in <code>I_X</code>, its count).</li>
+<li><code>S_X</code> is the relational structure <code>(T_X, R_X)</code>, or an equivalent representation of the arrangement.</li>
+</ul>
+</li>
+<li><code>Φ</code> maps Δ-operations to corresponding changes in these I, N, S components.</li>
+</ul>
+</li>
+<li><p><strong>"Acceptable Descriptive Basis" <code>Ψ</code>:</strong> (As defined in Section 11)</p>
+<ul>
+<li>A mapping <code>Ψ</code> from <code>Dist_C</code> to a tripartite description <code>B₁ × B₂ × B₃</code>. Let <code>Ψ_i</code> be the i-th component of this description.</li>
+<li>Must satisfy three conditions:
+<ol>
+<li><strong>Semantic Separability:</strong> Each component <code>Ψ_i</code> primarily reflects changes along one distinct conceptual axis (Identity, Multiplicity, or Structure). Δ-operations exist that change one <code>Ψ_i(X)</code> significantly while leaving other components <code>Ψ_j(X)</code> (for <code>j≠i</code>) largely unchanged.</li>
+<li><strong>Operational Independence (per layer):</strong> Δ-operations can be chosen to target modifications predominantly describable by changes in a single component <code>Bᵢ</code>, at a fixed descriptive layer.</li>
+<li><strong>Δ-Reconstructibility:</strong> From the description <code>Ψ(X)</code>, the original object <code>X</code> (or an equivalent one in <code>Dist_C</code>) can be algorithmically reconstructed by a sequence of Δ-operations within budget <code>C</code>. This means <code>Ψ</code> must be faithful enough to preserve distinguishability.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+
+<p><strong>2. Key Plausible Assumptions (Lemmas):</strong></p>
+<ul>
+<li><p><strong>Lemma E.1 (Δ-operations as Fundamental Constructions):</strong> The constructive aspects of Δ-operations (e.g., building up structures) can be seen as fundamental ways of combining or modifying objects in <code>Dist_C</code> (e.g., adding new independent tokens, forming new relations that link existing parts, selecting sub-parts). Both <code>Φ</code> and any acceptable <code>Ψ</code> must reflect these fundamental operations in their respective descriptive components.</p></li>
+<li><p><strong>Lemma E.2 (Generation from Primitives by Δ-operations):</strong> There exists a small set of "generator" objects in <code>Dist_C</code> (e.g., an empty object, single tokens of each primitive type, basic relational links) such that any object <code>X</code> in <code>Dist_C</code> can be constructed from these generators through a finite sequence of Δ-operations (as per Lemma E.1). This implies that a descriptive mapping from <code>Dist_C</code> is determined by how it describes these generators and how it reflects these constructive operations.</p></li>
+</ul>
+
+<p><strong>3. Proof Sketch for Uniqueness (up to Equivalence and Permutation):</strong></p>
+<ol>
+<li><p><strong><code>Φ</code> is an Acceptable Descriptive Basis:</strong></p>
+<ul>
+<li><em>Semantic Separability:</em> Achieved by its definition. Changing only the types in <code>m_X</code> primarily affects <code>I_X</code>. Adding/removing tokens of a given type primarily affects <code>N_X</code>. Adding/removing relations in <code>R_X</code> primarily affects <code>S_X</code>.</li>
+<li><em>Operational Independence:</em> Δ-operations are defined to target I, N, or S. For example, introducing a new type affects I. Introducing a new instance of a type affects N. Introducing a new relation between tokens affects S.</li>
+<li><em>Δ-Reconstructibility:</em> Given <code>(I_X, N_X, S_X) = Φ(X)</code>, one can reconstruct an equivalent <code>X'</code> by: (a) introducing <code>N_X(l)</code> tokens for each type <code>l ∈ I_X</code>, (b) assigning these types, and (c) instantiating the relations defined by <code>S_X</code> among these tokens. This sequence of Δ-operations is performable within budget C (as per Appendix C on Sufficiency).</li>
+</ul>
+</li>
+<li><p><strong>Let <code>Ψ: Dist_C → B₁ × B₂ × B₃</code> be any other acceptable descriptive basis.</strong> By Semantic Separability, its components <code>Ψ_1, Ψ_2, Ψ_3</code> must correspond (up to permutation) to the conceptual axes of Identity, Multiplicity, and Structure. Without loss of generality, assume <code>Ψ_1</code> tracks Identity-like aspects, <code>Ψ_2</code> Multiplicity-like, and <code>Ψ_3</code> Structure-like. This means <code>Ψ_1</code> must be "sensitive" to the same kinds of Δ-operations as <code>Φ_I</code> (the I-component of <code>Φ</code>), and so on.</p></li>
+<li><p><strong>Constructing an Equivalence <code>η: Ψ ⇒ Φ</code> (component-wise):</strong> We aim to show that <code>Ψ_1</code> is functionally equivalent to <code>Φ_I</code>, <code>Ψ_2</code> to <code>Φ_N</code>, and <code>Ψ_3</code> to <code>Φ_S</code>.</p>
+<ul>
+<li>Consider <code>Ψ_1</code> and <code>Φ_I</code>. Both map objects in <code>Dist_C</code> to descriptions representing type information.</li>
+<li>By Lemma E.2 (Generation by Δ-operations), descriptive mappings are determined by their action on primitive generators and how they reflect constructive operations (Lemma E.1).</li>
+<li>The Δ-Reconstructibility condition on <code>Ψ</code> implies that <code>Ψ_1(X)</code> must encode all the information about the identities present in <code>X</code> that <code>Φ_I(X)</code> does, and no less (otherwise <code>X</code> couldn't be reconstructed from <code>Ψ(X)</code>).</li>
+<li>The Semantic Separability and Operational Independence conditions on <code>Ψ</code> imply that <code>Ψ_1(X)</code> cannot encode significant non-Identity information (from N or S aspects) without violating these conditions. If <code>Ψ_1(X)</code> also encoded, say, multiplicity information, then a Δ-operation purely changing multiplicity would alter <code>Ψ_1(X)</code>, violating separability.</li>
+<li>Therefore, for each object <code>X</code>, there must be a way to translate between the description <code>Ψ_1(X)</code> and <code>Φ_I(X)</code> without loss of essential information. This translation (<code>η_X^1</code>) must be consistent across all objects and transformations. That is, for any transformation <code>f: X → Y</code> in <code>Dist_C</code>, applying <code>f</code> and then translating (via <code>η_Y^1</code>) must yield the same result as translating first (via <code>η_X^1</code>) and then applying the corresponding transformation in the <code>Φ_I</code> domain. This consistency follows because both <code>Ψ_1</code> and <code>Φ_I</code> must transform compatibly with the underlying Δ-operations that constitute <code>f</code>.</li>
+<li>Similar arguments apply to establish equivalences <code>η^2: Ψ_2 ⇒ Φ_N</code> and <code>η^3: Ψ_3 ⇒ Φ_S</code>.</li>
+</ul>
+</li>
+<li><p><strong>The overall equivalence <code>η: Ψ ⇒ Φ</code></strong> is then composed of these component-wise equivalences <code>(η^1, η^2, η^3)</code>. This establishes that any acceptable descriptive basis <code>Ψ</code> is functionally equivalent to <code>Φ</code> (up to permutation of its components <code>Bᵢ</code> and choice of specific descriptive formats <code>Bᵢ</code> that are themselves informationally equivalent to those used by <code>Φ</code>).</p></li>
+</ol>
+
+<p><strong>4. Conclusion on Uniqueness:</strong></p>
+<p>The three conditions for an "acceptable descriptive basis", Semantic Separability, Operational Independence (per layer), and Δ-Reconstructibility, are stringent. They effectively force any tripartite decomposition of distinguishable information by a Δ-operational observer under resource constraints to align with the (I,N,S) factorization. Any proposed alternative triplet that genuinely differs would likely violate one or more of these conditions:
+<ul>
+<li>If a component mixes information (e.g., type and count), it violates separability.</li>
+<li>If Δ-operations cannot target components independently, it violates operational independence.</li>
+<li>If a component omits necessary information or encodes it in a way inaccessible via Δ-operations (e.g., a highly compressed code requiring operations beyond budget C to decode), it violates Δ-reconstructibility.</li>
+</ul>
+Therefore, the (I,N,S) basis is unique up to functional equivalence and permutation under the specified operational and semantic constraints. No concrete counter-example satisfying all conditions but differing fundamentally from (I,N,S) in its semantic partitioning is expected.
+</p>
+
 </body>
 </html>
+
