@@ -1,7 +1,6 @@
 ### Distinction Theory: A Logic of Necessary Structure and Its Finite Realization  
 
 This logic chain demonstrates how the entirety of mathematical and physical structure arises from the fundamental nature of distinction. It posits a timeless space of all possible distinctions, with mathematics as its inherent map. Finite systems, by their nature, can only realize bounded "slivers" of this space, leading to the necessary discovery of universal boundaries and their quantitative signatures, which constitute physical reality.
-*(This Distinction Theory is further elaborated within the Informational Constructivism (IC) framework. Core IC theorems and concepts provide detailed mechanisms and proofs for many points herein. See `FoundationalPillars.md` for an overview.)*
 
 ---
 
