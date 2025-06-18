@@ -1,9 +1,9 @@
 ### Distinction Theory: A Logic of Necessary Structure and Its Finite Realization  
 
-Arvix Submission Forthcoming; 6-18-2025
+
 <img width="692" alt="image" src="https://github.com/user-attachments/assets/d9898c14-bee3-4a91-9739-1703d246cf07" />
 
-
+Arvix Submission Forthcoming; 6-18-2025
 
 This logic chain demonstrates how the entirety of mathematical and physical structure arises from the fundamental nature of distinction. It posits a timeless space of all possible distinctions, with mathematics as its inherent map. Finite systems, by their nature, can only realize bounded "slivers" of this space, leading to the necessary discovery of universal boundaries and their quantitative signatures, which constitute physical reality.
 
